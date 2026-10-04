@@ -419,3 +419,5 @@ td.mine, th.mine { background: var(--card-red-soft); }
 .q .src a { color: var(--graphite); }
 .q .pts { font-family: var(--f-mono); font-size: 12px; color: var(--graphite); margin-left: auto; }
 .sources td a { word-break: break-all; }
+.sources table { min-width: 640px; }
+@media (max-width: 560px) { .table-wrap table { min-width: 520px; } }
