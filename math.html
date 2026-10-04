@@ -1,0 +1,1391 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>數學段考準備</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&family=LXGW+WenKai+TC&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar" id="topbar"></header>
+<main class="wrap">
+  <div class="subject-head">
+    <div>
+      <p class="eyebrow">Subject · Math</p>
+      <h1>數學</h1>
+      <p class="lede">範圍是第一章「數與式」全部（1-1 數與數線、1-2 式的運算）加上 2-1 指數。重點是<mark>計算要又快又準</mark>：循環小數、分點、絕對值不等式、乘法公式、根式與雙重根式、算幾不等式、指數律，每一種都要練到不用想就會寫。</p>
+    </div>
+    <aside class="slot">
+      <div class="when">10/07（三）08:20</div>
+      <dl>
+        <dt>節次</dt><dd>第一節（當天第一科）</dd>
+        <dt>時間</dt><dd>08:20–09:30（70 分鐘）</dd>
+        <dt>範圍</dt><dd>翰林 數學I 1-1 至 2-1</dd>
+        <dt>不考</dt><dd>2-2 常用對數</dd>
+        <dt>課本</dt><dd>翰林版 數學I（高一上）</dd>
+      </dl>
+    </aside>
+  </div>
+
+  <nav class="tabs" aria-label="分頁">
+    <button data-tab="chapters">章節導覽</button>
+    <button data-tab="notes">範圍重點整理</button>
+    <button data-tab="formula">公式整理與記憶技巧</button>
+    <button data-tab="past">考古題與白話解析</button>
+    <button data-tab="apply">公式套用</button>
+    <button data-tab="tips">考前攻略</button>
+  </nav>
+
+  <!-- ================= 章節導覽 ================= -->
+  <section class="panel" id="chapters">
+    <h2>章節導覽</h2>
+    <p class="muted">本次範圍是翰林 數學I 的 2 章 3 節：第一章「數與式」（1-1、1-2）全部，加上第二章的 2-1 指數；2-2 常用對數不考。先看總覽表抓重點，再點下面的章節卡，一節一張卡，看圖表就能掌握結構，細節到「範圍重點整理」分頁看。</p>
+
+    <div class="mindmap"><div class="mm-center">數學I 第一次段考</div>
+      <div class="mm-branches">
+        <div class="mm-branch"><b>第一章 數與式</b><ul><li>1-1 數與數線</li><li>1-2 式的運算</li></ul></div>
+        <div class="mm-branch"><b>第二章 指數、對數</b><ul><li>2-1 指數（考）</li><li>2-2 常用對數（<strong>不考</strong>）</li></ul></div>
+        <div class="mm-branch"><b>貫穿全範圍的能力</b><ul><li>不用計算機的精準計算</li><li>對稱式、同底化、反例判斷</li></ul></div>
+      </div>
+    </div>
+
+    <h3>範圍總覽</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>章節</th><th>主題</th><th>重要度／常考題型</th><th>建議複習時間</th></tr></thead>
+      <tbody>
+        <tr><td>第一章 1-1 數與數線</td><td>數系、有理數與無理數、數線、分點、絕對值、區間</td><td>★★★　是非（封閉性、反例）、循環小數化分數、分點公式、絕對值方程式／不等式</td><td>約 3 小時</td></tr>
+        <tr><td>第一章 1-2 式的運算</td><td>乘法公式、根式與分式化簡、算幾不等式</td><td>★★★　對稱式求值、分母有理化、雙重根式、算幾求最大／最小值</td><td>約 3 小時</td></tr>
+        <tr><td>第二章 2-1 指數</td><td>整數、有理數、實數指數與指數律、科學記號</td><td>★★☆　指數律化簡、比較大小、<i>x</i><sup>1/2</sup>＋<i>x</i><sup>−1/2</sup> 型求值、科學記號位數</td><td>約 2 小時</td></tr>
+        <tr><td class="mine">第二章 2-2 常用對數</td><td class="mine">log 的定義與性質</td><td class="mine"><strong>本次不考</strong></td><td class="mine">0（下次段考再讀）</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted">節名依翰林版數學I目錄與多所學校的課程計畫表整理（1-1 數與數線、1-2 式的運算、2-1 指數、2-2 常用對數）；小節細項若與課本略有不同，以課本與老師公告為準。</p>
+
+    <ul class="ch-toc">
+      <li><a href="#ch-1-1"><span class="no">1-1</span><span class="tt">數與數線</span><span class="ds">數系包含關係、分點、絕對值＝距離</span></a></li>
+      <li><a href="#ch-1-2"><span class="no">1-2</span><span class="tt">式的運算</span><span class="ds">乘法公式、根式化簡、算幾不等式</span></a></li>
+      <li><a href="#ch-2-1"><span class="no">2-1</span><span class="tt">指數</span><span class="ds">指數擴充四階段、指數律、比較大小</span></a></li>
+      <li><a href="#ch-2-2"><span class="no">2-2</span><span class="tt">常用對數</span><span class="ds">本次不考，只需知道它接在指數後面</span></a></li>
+    </ul>
+
+    <!-- ===== 1-1 ===== -->
+    <article class="chapter" id="ch-1-1">
+      <header class="ch-head"><span class="ch-no">1-1</span><h3>數與數線</h3><span class="tag hot">必考</span><span class="ch-sub">第一章 數與式：認識「實數」這個大家族，並把數放到數線上，用「距離」來看絕對值。</span></header>
+      <dl class="facts">
+        <dt>課本主題</dt><dd>有理數、無理數、實數；數線與分點公式；絕對值的方程式與不等式；三一律與區間</dd>
+        <dt>前置知識</dt><dd>國中的分數、小數、平方根、一元一次不等式</dd>
+        <dt>常考題型</dt><dd>是非／多選判斷（封閉性、有限小數）、循環小數化分數、分點座標、解 |<i>x</i>−<i>a</i>| &lt; <i>b</i></dd>
+      </dl>
+
+      <h4>章節內容</h4>
+      <ul>
+        <li><strong>數系：</strong>自然數 ⊂ 整數 ⊂ 有理數 ⊂ 實數；有理數＝有限或循環小數，無理數＝無限不循環小數。最簡分數的分母只含質因數 2、5 才是有限小數。</li>
+        <li><strong>封閉性：</strong>有理數加減乘除（除數 ≠ 0）還是有理數；有理數＋無理數必為無理數；無理數之間的運算「不一定」，用反例推翻。</li>
+        <li><strong>√2 是無理數：</strong>反證法，假設 √2＝<i>p</i>/<i>q</i>（互質）推出 <i>p</i>、<i>q</i> 都是偶數而矛盾。</li>
+        <li><strong>數線：</strong>實數與數線上的點一一對應；兩點距離 |<i>a</i>−<i>b</i>|，分點公式「交叉相乘」。</li>
+        <li><strong>絕對值：</strong>|<i>x</i>−<i>a</i>| 是 <i>x</i> 到 <i>a</i> 的距離；「小於夾中間、大於分兩邊」。</li>
+        <li><strong>三一律與區間：</strong>兩實數恰有一種大小關係；區間 [ ]、( ) 的端點包含與否，∞ 一定配小括號。</li>
+      </ul>
+
+      <h4>圖解：數系包含關係</h4>
+      <figure class="diagram">
+        <svg viewBox="0 0 640 260" role="img" aria-label="數系巢狀圖：自然數包含於整數，整數包含於有理數，有理數與無理數合起來是實數">
+          <rect x="10" y="10" width="620" height="240" rx="12" style="fill:var(--sheet);stroke:var(--ink);stroke-width:2"/>
+          <text x="24" y="34" style="fill:var(--ink);font-size:16px;font-weight:700">實數 ℝ（與數線上的點一一對應）</text>
+          <rect x="24" y="48" width="400" height="190" rx="10" style="fill:var(--blue-soft);stroke:var(--blue);stroke-width:2"/>
+          <text x="38" y="72" style="fill:var(--ink);font-size:15px;font-weight:700">有理數 ℚ（有限或循環小數）</text>
+          <rect x="38" y="86" width="250" height="140" rx="10" style="fill:var(--sheet);stroke:var(--ink);stroke-width:1.5"/>
+          <text x="52" y="110" style="fill:var(--ink);font-size:15px;font-weight:700">整數 ℤ</text>
+          <rect x="52" y="122" width="150" height="80" rx="10" style="fill:var(--card-red-soft);stroke:var(--card-red);stroke-width:2"/>
+          <text x="66" y="150" style="fill:var(--ink);font-size:15px;font-weight:700">自然數 ℕ</text>
+          <text x="66" y="178" style="fill:var(--graphite);font-size:14px">1, 2, 3, …</text>
+          <text x="212" y="150" style="fill:var(--graphite);font-size:14px">0、−5</text>
+          <text x="300" y="120" style="fill:var(--graphite);font-size:14px">½、0.25</text>
+          <text x="300" y="150" style="fill:var(--graphite);font-size:14px">−4/7</text>
+          <text x="300" y="180" style="fill:var(--graphite);font-size:14px">0.333…</text>
+          <rect x="436" y="48" width="184" height="190" rx="10" style="fill:none;stroke:var(--graphite);stroke-width:1.5;stroke-dasharray:6 4"/>
+          <text x="450" y="72" style="fill:var(--ink);font-size:15px;font-weight:700">無理數</text>
+          <text x="450" y="96" style="fill:var(--graphite);font-size:13px">（無限不循環小數）</text>
+          <text x="450" y="140" style="fill:var(--graphite);font-size:14px">√2、√3、π</text>
+          <text x="450" y="170" style="fill:var(--graphite);font-size:14px">1.0100100…</text>
+        </svg>
+        <figcaption>ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ；有理數與無理數互不重疊，合起來就是實數。注意 √4＝2 屬於自然數。</figcaption>
+      </figure>
+
+      <h4>圖解：數線上的分點與絕對值</h4>
+      <figure class="diagram">
+        <svg viewBox="0 0 640 260" role="img" aria-label="數線圖：A(−2)、B(6)，AP比PB為1比3時P為0；以及|x−1|小於2的解為−1小於x小於3">
+          <line x1="40" y1="70" x2="600" y2="70" style="stroke:var(--ink);stroke-width:2;fill:none"/>
+          <path d="M592 64 L602 70 L592 76" style="fill:none;stroke:var(--ink);stroke-width:2"/>
+          <g style="stroke:var(--graphite);stroke-width:1.5;fill:none">
+            <line x1="60" y1="64" x2="60" y2="76"/><line x1="112" y1="64" x2="112" y2="76"/><line x1="164" y1="64" x2="164" y2="76"/>
+            <line x1="216" y1="64" x2="216" y2="76"/><line x1="268" y1="64" x2="268" y2="76"/><line x1="320" y1="64" x2="320" y2="76"/>
+            <line x1="372" y1="64" x2="372" y2="76"/><line x1="424" y1="64" x2="424" y2="76"/><line x1="476" y1="64" x2="476" y2="76"/>
+            <line x1="528" y1="64" x2="528" y2="76"/><line x1="580" y1="64" x2="580" y2="76"/>
+          </g>
+          <g style="fill:var(--graphite);font-size:12px" text-anchor="middle">
+            <text x="60" y="92">−3</text><text x="112" y="92">−2</text><text x="164" y="92">−1</text><text x="216" y="92">0</text>
+            <text x="268" y="92">1</text><text x="320" y="92">2</text><text x="372" y="92">3</text><text x="424" y="92">4</text>
+            <text x="476" y="92">5</text><text x="528" y="92">6</text><text x="580" y="92">7</text>
+          </g>
+          <circle cx="112" cy="70" r="6" style="fill:var(--ink)"/>
+          <circle cx="216" cy="70" r="6" style="fill:var(--card-red)"/>
+          <circle cx="528" cy="70" r="6" style="fill:var(--ink)"/>
+          <g style="font-size:14px;font-weight:700" text-anchor="middle">
+            <text x="112" y="50" style="fill:var(--ink)">A(−2)</text>
+            <text x="216" y="50" style="fill:var(--card-red)">P(0)</text>
+            <text x="528" y="50" style="fill:var(--ink)">B(6)</text>
+          </g>
+          <path d="M114 106 L114 114 L214 114 L214 106" style="fill:none;stroke:var(--card-red);stroke-width:1.5"/>
+          <path d="M218 106 L218 114 L526 114 L526 106" style="fill:none;stroke:var(--blue);stroke-width:1.5"/>
+          <text x="164" y="134" text-anchor="middle" style="fill:var(--card-red);font-size:13px">AP＝2（1 份）</text>
+          <text x="372" y="134" text-anchor="middle" style="fill:var(--blue);font-size:13px">PB＝6（3 份）</text>
+
+          <text x="268" y="180" text-anchor="middle" style="fill:var(--ink);font-size:14px;font-weight:700">|x − 1| &lt; 2：與 1 的距離小於 2</text>
+          <line x1="40" y1="210" x2="600" y2="210" style="stroke:var(--ink);stroke-width:2;fill:none"/>
+          <path d="M592 204 L602 210 L592 216" style="fill:none;stroke:var(--ink);stroke-width:2"/>
+          <line x1="164" y1="210" x2="372" y2="210" style="stroke:var(--card-red);stroke-width:6;fill:none"/>
+          <circle cx="164" cy="210" r="7" style="fill:var(--sheet);stroke:var(--card-red);stroke-width:2.5"/>
+          <circle cx="372" cy="210" r="7" style="fill:var(--sheet);stroke:var(--card-red);stroke-width:2.5"/>
+          <circle cx="268" cy="210" r="4" style="fill:var(--ink)"/>
+          <g style="fill:var(--graphite);font-size:12px" text-anchor="middle">
+            <text x="164" y="236">−1</text><text x="268" y="236">1（中心）</text><text x="372" y="236">3</text>
+          </g>
+        </svg>
+        <figcaption>上：AP : PB＝1 : 3，P＝<span class="frac"><span>3·(−2)＋1·6</span><span>1＋3</span></span>＝0，P 靠近比例小的 A。下：空心點表示不含端點，解為 −1 &lt; <i>x</i> &lt; 3。</figcaption>
+      </figure>
+
+      <h4>圖解：循環小數化分數流程</h4>
+      <ol class="flow">
+        <li><b>① 設 <i>x</i></b><i>x</i>＝0.1<span style="text-decoration:overline">23</span>＝0.12323…</li>
+        <li><b>② 乘 10 的次方</b>1000<i>x</i>＝123.2323…<br>10<i>x</i>＝1.2323…（讓循環段對齊）</li>
+        <li><b>③ 相減消尾巴</b>990<i>x</i>＝122</li>
+        <li><b>④ 約分</b><i>x</i>＝<span class="frac"><span>122</span><span>990</span></span>＝<span class="frac"><span>61</span><span>495</span></span></li>
+      </ol>
+
+      <h4>重點表格</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>題型</th><th>工具</th><th>例子</th></tr></thead>
+        <tbody>
+          <tr><td>判斷有限小數</td><td>先約分，看分母質因數是否只有 2、5</td><td><span class="frac"><span>9</span><span>12</span></span>＝<span class="frac"><span>3</span><span>4</span></span> → 有限；<span class="frac"><span>1</span><span>6</span></span> → 循環</td></tr>
+          <tr><td>循環小數化分數</td><td>分子＝全部−不循環；分母＝循環幾位寫幾個 9，不循環幾位補幾個 0</td><td>0.<span style="text-decoration:overline">27</span>＝<span class="frac"><span>3</span><span>11</span></span></td></tr>
+          <tr><td>封閉性是非題</td><td>「一定」要證明，「不一定」找反例</td><td>√2＋(−√2)＝0（無理＋無理可為有理）</td></tr>
+          <tr><td>分點</td><td>P＝<span class="frac"><span><i>na</i>＋<i>mb</i></span><span><i>m</i>＋<i>n</i></span></span>（AP : PB＝<i>m</i> : <i>n</i>）</td><td>上圖 P＝0</td></tr>
+          <tr><td>絕對值不等式（<i>b</i> &gt; 0）</td><td>|<i>x</i>−<i>a</i>| &lt; <i>b</i> ⇔ <i>a</i>−<i>b</i> &lt; <i>x</i> &lt; <i>a</i>＋<i>b</i>；&gt; <i>b</i> 則往兩邊</td><td>|<i>x</i>−1| &lt; 2 ⇔ −1 &lt; <i>x</i> &lt; 3</td></tr>
+          <tr><td>區間</td><td>[ ] 含端點、( ) 不含；∞ 只配 ( )</td><td><i>x</i> ≥ 2 ⇔ [2, ∞)</td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>關鍵詞</h4>
+      <ul class="chips">
+        <li class="hot">有理數／無理數</li><li class="hot">循環小數</li><li class="hot">分點公式</li><li class="hot">絕對值＝距離</li>
+        <li>封閉性</li><li>稠密性</li><li>反證法</li><li>互質</li><li>三一律</li><li>區間</li><li>三角不等式</li><li>√<i>a</i><sup>2</sup>＝|<i>a</i>|</li>
+      </ul>
+      <div class="box key"><span class="label">這章最常考</span>
+        <p>① 多選題的有理數／無理數判斷（尤其「有理數 × 無理數」漏掉 0 的陷阱）；② 循環小數化分數；③ 分點係數別放反；④ |<i>x</i>−<i>a</i>| 型不等式與「兩距離和」的最小值。詳見「範圍重點整理」分頁 1-1。</p>
+      </div>
+      <div class="mnemonic">自然整數有理實，一層一層往外包；絕對值就是「距離」——小於夾中間、大於分兩邊；分點交叉乘，誰比例小就離誰近。</div>
+    </article>
+
+    <!-- ===== 1-2 ===== -->
+    <article class="chapter" id="ch-1-2">
+      <header class="ch-head"><span class="ch-no">1-2</span><h3>式的運算</h3><span class="tag hot">必考</span><span class="ch-sub">第一章 數與式：把多項式、根式、分式算得又快又對，最後用算幾不等式求最大／最小值。</span></header>
+      <dl class="facts">
+        <dt>課本主題</dt><dd>乘法公式；根式的化簡與分母有理化（含雙重根式）；分式的化簡與運算；算幾不等式</dd>
+        <dt>前置知識</dt><dd>國中乘法公式、因式分解、平方根</dd>
+        <dt>常考題型</dt><dd>已知 <i>a</i>＋<i>b</i>、<i>ab</i> 求 <i>a</i><sup>3</sup>＋<i>b</i><sup>3</sup>；<i>x</i>＋<span class="frac"><span>1</span><span><i>x</i></span></span> 型求值；雙重根式化簡；算幾求最值</dd>
+      </dl>
+
+      <h4>章節內容</h4>
+      <ul>
+        <li><strong>乘法公式：</strong>國中的二次公式延伸到三項平方與三次公式（和的立方、立方和／差）。</li>
+        <li><strong>對稱式：</strong>不必解出 <i>a</i>、<i>b</i>，用 <i>a</i>＋<i>b</i>、<i>ab</i> 組出 <i>a</i><sup>2</sup>＋<i>b</i><sup>2</sup>、<i>a</i><sup>3</sup>＋<i>b</i><sup>3</sup>。</li>
+        <li><strong>根式：</strong>化最簡根式、同類根式才能合併、分母有理化（乘共軛）、雙重根式「和、積」拆開。</li>
+        <li><strong>分式：</strong>因式分解 → 通分或約分；注意分母不可為 0。</li>
+        <li><strong>算幾不等式：</strong><i>a</i>, <i>b</i> ≥ 0 時 <span class="frac"><span><i>a</i>＋<i>b</i></span><span>2</span></span> ≥ √<i>ab</i>，「和定積最大、積定和最小」。</li>
+      </ul>
+
+      <h4>重點表格：乘法公式總表</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>名稱</th><th>公式</th><th>記憶提示</th></tr></thead>
+        <tbody>
+          <tr><td>和的平方</td><td>(<i>a</i>＋<i>b</i>)<sup>2</sup>＝<i>a</i><sup>2</sup>＋2<i>ab</i>＋<i>b</i><sup>2</sup></td><td>首平方、尾平方、乘積兩倍放中央</td></tr>
+          <tr><td>差的平方</td><td>(<i>a</i>−<i>b</i>)<sup>2</sup>＝<i>a</i><sup>2</sup>−2<i>ab</i>＋<i>b</i><sup>2</sup></td><td>只有中間變號</td></tr>
+          <tr><td>平方差</td><td>(<i>a</i>＋<i>b</i>)(<i>a</i>−<i>b</i>)＝<i>a</i><sup>2</sup>−<i>b</i><sup>2</sup></td><td>分母有理化的核心</td></tr>
+          <tr><td>三項和的平方</td><td>(<i>a</i>＋<i>b</i>＋<i>c</i>)<sup>2</sup>＝<i>a</i><sup>2</sup>＋<i>b</i><sup>2</sup>＋<i>c</i><sup>2</sup>＋2<i>ab</i>＋2<i>bc</i>＋2<i>ca</i></td><td>三個平方＋兩兩乘積的兩倍</td></tr>
+          <tr><td>和的立方</td><td>(<i>a</i>＋<i>b</i>)<sup>3</sup>＝<i>a</i><sup>3</sup>＋3<i>a</i><sup>2</sup><i>b</i>＋3<i>ab</i><sup>2</sup>＋<i>b</i><sup>3</sup></td><td>係數 1 3 3 1</td></tr>
+          <tr><td>差的立方</td><td>(<i>a</i>−<i>b</i>)<sup>3</sup>＝<i>a</i><sup>3</sup>−3<i>a</i><sup>2</sup><i>b</i>＋3<i>ab</i><sup>2</sup>−<i>b</i><sup>3</sup></td><td>符號 ＋ − ＋ − 交錯</td></tr>
+          <tr><td>立方和</td><td><i>a</i><sup>3</sup>＋<i>b</i><sup>3</sup>＝(<i>a</i>＋<i>b</i>)(<i>a</i><sup>2</sup>−<i>ab</i>＋<i>b</i><sup>2</sup>)</td><td>「同、反、正」</td></tr>
+          <tr><td>立方差</td><td><i>a</i><sup>3</sup>−<i>b</i><sup>3</sup>＝(<i>a</i>−<i>b</i>)(<i>a</i><sup>2</sup>＋<i>ab</i>＋<i>b</i><sup>2</sup>)</td><td>「同、反、正」</td></tr>
+          <tr><td>對稱式轉換</td><td><i>a</i><sup>2</sup>＋<i>b</i><sup>2</sup>＝(<i>a</i>＋<i>b</i>)<sup>2</sup>−2<i>ab</i>；<i>a</i><sup>3</sup>＋<i>b</i><sup>3</sup>＝(<i>a</i>＋<i>b</i>)<sup>3</sup>−3<i>ab</i>(<i>a</i>＋<i>b</i>)</td><td>給和與積就能求</td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>圖解：根式化簡流程</h4>
+      <ol class="flow">
+        <li><b>① 化最簡根式</b>把平方數提出：√72＝6√2</li>
+        <li><b>② 合併同類根式</b>√12＋√27＝5√3；√2＋√3 不能合併</li>
+        <li><b>③ 分母有理化</b>乘共軛：<span class="frac"><span>1</span><span>√3−√2</span></span>＝√3＋√2</li>
+        <li><b>④ 拆雙重根式</b>湊成 2√□，找「和、積」：√(7−2√10)＝√5−√2</li>
+        <li><b>⑤ 檢查正負</b>√<i>a</i><sup>2</sup>＝|<i>a</i>|；減號結果要大減小</li>
+      </ol>
+
+      <h4>圖解：算幾不等式的幾何意義</h4>
+      <figure class="diagram">
+        <svg viewBox="0 0 400 240" role="img" aria-label="半圓圖：直徑長a加b，半徑為a加b的一半，分點處的垂線長為根號ab，半徑大於等於垂線">
+          <path d="M40 200 A160 160 0 0 1 360 200" style="fill:var(--blue-soft);stroke:var(--blue);stroke-width:2"/>
+          <line x1="40" y1="200" x2="360" y2="200" style="stroke:var(--ink);stroke-width:2;fill:none"/>
+          <line x1="120" y1="200" x2="120" y2="61" style="stroke:var(--card-red);stroke-width:3;fill:none"/>
+          <line x1="200" y1="200" x2="200" y2="40" style="stroke:var(--ink);stroke-width:2;stroke-dasharray:5 4;fill:none"/>
+          <circle cx="200" cy="200" r="4" style="fill:var(--ink)"/>
+          <circle cx="120" cy="200" r="4" style="fill:var(--card-red)"/>
+          <text x="80" y="222" text-anchor="middle" style="fill:var(--ink);font-size:15px;font-style:italic">a</text>
+          <text x="240" y="222" text-anchor="middle" style="fill:var(--ink);font-size:15px;font-style:italic">b</text>
+          <text x="126" y="136" style="fill:var(--card-red);font-size:15px;font-weight:700">√ab</text>
+          <text x="208" y="112" style="fill:var(--ink);font-size:15px;font-weight:700">(a+b)/2</text>
+        </svg>
+        <figcaption>直徑＝<i>a</i>＋<i>b</i>，半徑＝<span class="frac"><span><i>a</i>＋<i>b</i></span><span>2</span></span>（算術平均）；分點的垂線＝√<i>ab</i>（幾何平均）。垂線不會比半徑長，<i>a</i>＝<i>b</i> 時兩者重合（等號成立）。</figcaption>
+      </figure>
+
+      <h4>關鍵詞</h4>
+      <ul class="chips">
+        <li class="hot">乘法公式</li><li class="hot">對稱式</li><li class="hot">分母有理化</li><li class="hot">雙重根式</li><li class="hot">算幾不等式</li>
+        <li>共軛</li><li>同類根式</li><li>最簡根式</li><li>繁分式</li><li>等號成立條件</li>
+      </ul>
+      <div class="box key"><span class="label">這章最常考</span>
+        <p>① 給 <i>a</i>＋<i>b</i>、<i>ab</i> 或 <i>x</i>＋<span class="frac"><span>1</span><span><i>x</i></span></span> 求高次值；② 雙重根式（根號前不是 2 要先乘 2）；③ 算幾求最小值時，要確認兩數為正、等號取得到。詳見「範圍重點整理」分頁 1-2。</p>
+      </div>
+      <div class="mnemonic">立方和差「同、反、正」：第一括號同號，中間項反號，最後永遠正。雙重根式「和在外、積在內、大減小」。算幾「和定積最大，積定和最小」，正數、定值、等號三條件缺一不可。</div>
+    </article>
+
+    <!-- ===== 2-1 ===== -->
+    <article class="chapter" id="ch-2-1">
+      <header class="ch-head"><span class="ch-no">2-1</span><h3>指數</h3><span class="tag hot">必考</span><span class="ch-sub">第二章 指數、對數：把「次方」從正整數一路擴充到實數，並用同一套指數律計算與比大小。</span></header>
+      <dl class="facts">
+        <dt>課本主題</dt><dd>整數指數、有理數指數、實數指數與指數律；科學記號</dd>
+        <dt>前置知識</dt><dd>國中的正整數次方、根號；1-2 的乘法公式（求值題會用）</dd>
+        <dt>常考題型</dt><dd>指數律化簡、化同底／同指數比大小、<i>x</i><sup>1/2</sup>＋<i>x</i><sup>−1/2</sup> 型對稱式求值、科學記號與位數</dd>
+      </dl>
+
+      <h4>章節內容</h4>
+      <ul>
+        <li><strong>擴充原則：</strong>每擴充一次，都要讓原本的指數律繼續成立，所以 <i>a</i><sup>0</sup>＝1、<i>a</i><sup>−<i>n</i></sup>＝<span class="frac"><span>1</span><span><i>a</i><sup><i>n</i></sup></span></span> 是「被逼出來的」定義。</li>
+        <li><strong>有理數指數：</strong><i>a</i><sup><i>m</i>/<i>n</i></sup>＝<span class="sqrt"><sup><i>n</i></sup>√<span><i>a</i><sup><i>m</i></sup></span></span>，底數必須 <i>a</i> &gt; 0。</li>
+        <li><strong>實數指數：</strong>無理數次方用有理數次方去逼近，例如 2<sup>√2</sup>。</li>
+        <li><strong>比較大小：</strong>底數 &gt; 1 時指數越大值越大；0 &lt; 底數 &lt; 1 時相反。</li>
+        <li><strong>科學記號：</strong><i>a</i>×10<sup><i>n</i></sup>，1 ≤ <i>a</i> &lt; 10。</li>
+      </ul>
+
+      <h4>圖解：指數的擴充流程</h4>
+      <ol class="flow">
+        <li><b>正整數指數</b><i>a</i><sup><i>n</i></sup>＝<i>n</i> 個 <i>a</i> 相乘</li>
+        <li><b>整數指數</b><i>a</i><sup>0</sup>＝1、<i>a</i><sup>−<i>n</i></sup>＝<span class="frac"><span>1</span><span><i>a</i><sup><i>n</i></sup></span></span>（<i>a</i> ≠ 0）</li>
+        <li><b>有理數指數</b><i>a</i><sup><i>m</i>/<i>n</i></sup>＝<span class="sqrt"><sup><i>n</i></sup>√<span><i>a</i><sup><i>m</i></sup></span></span>（<i>a</i> &gt; 0）</li>
+        <li><b>實數指數</b>用有理數逼近：2<sup>1.4</sup>、2<sup>1.41</sup>、2<sup>1.414</sup>… → 2<sup>√2</sup></li>
+      </ol>
+
+      <h4>重點表格：指數律（<i>a</i>, <i>b</i> &gt; 0，<i>r</i>, <i>s</i> 為實數）</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>規則</th><th>公式</th><th>例子</th></tr></thead>
+        <tbody>
+          <tr><td>同底相乘，指數相加</td><td><i>a</i><sup><i>r</i></sup>·<i>a</i><sup><i>s</i></sup>＝<i>a</i><sup><i>r</i>＋<i>s</i></sup></td><td>2<sup>3</sup>·2<sup>4</sup>＝2<sup>7</sup>＝128</td></tr>
+          <tr><td>同底相除，指數相減</td><td><i>a</i><sup><i>r</i></sup>÷<i>a</i><sup><i>s</i></sup>＝<i>a</i><sup><i>r</i>−<i>s</i></sup></td><td>3<sup>5</sup>÷3<sup>3</sup>＝3<sup>2</sup>＝9</td></tr>
+          <tr><td>次方再次方，指數相乘</td><td>(<i>a</i><sup><i>r</i></sup>)<sup><i>s</i></sup>＝<i>a</i><sup><i>rs</i></sup></td><td>(2<sup>3</sup>)<sup>2</sup>＝2<sup>6</sup>＝64</td></tr>
+          <tr><td>同指數，底數相乘</td><td>(<i>ab</i>)<sup><i>r</i></sup>＝<i>a</i><sup><i>r</i></sup><i>b</i><sup><i>r</i></sup></td><td>2<sup>3</sup>·5<sup>3</sup>＝10<sup>3</sup>＝1000</td></tr>
+          <tr><td>同指數，底數相除</td><td>(<span class="frac"><span><i>a</i></span><span><i>b</i></span></span>)<sup><i>r</i></sup>＝<span class="frac"><span><i>a</i><sup><i>r</i></sup></span><span><i>b</i><sup><i>r</i></sup></span></span></td><td>(<span class="frac"><span>27</span><span>8</span></span>)<sup>1/3</sup>＝<span class="frac"><span>3</span><span>2</span></span></td></tr>
+          <tr><td>分數指數＝開根號</td><td><i>a</i><sup><i>m</i>/<i>n</i></sup>＝(<span class="sqrt"><sup><i>n</i></sup>√<span><i>a</i></span></span>)<sup><i>m</i></sup></td><td>8<sup>2/3</sup>＝(<span class="sqrt"><sup>3</sup>√<span>8</span></span>)<sup>2</sup>＝4</td></tr>
+          <tr><td>負指數＝倒數</td><td><i>a</i><sup>−<i>r</i></sup>＝<span class="frac"><span>1</span><span><i>a</i><sup><i>r</i></sup></span></span></td><td>9<sup>−1/2</sup>＝<span class="frac"><span>1</span><span>3</span></span>（不是 −3）</td></tr>
+        </tbody>
+      </table></div>
+
+      <h4>圖解：比較大小三招</h4>
+      <div class="mindmap"><div class="mm-center">指數比大小</div>
+        <div class="mm-branches">
+          <div class="mm-branch"><b>化成同底</b><ul><li>比指數</li><li>4<sup>3</sup>＝2<sup>6</sup>、8<sup>2</sup>＝2<sup>6</sup> → 相等</li></ul></div>
+          <div class="mm-branch"><b>化成同指數</b><ul><li>比底數</li><li>2<sup>30</sup>＝8<sup>10</sup> &lt; 3<sup>20</sup>＝9<sup>10</sup></li></ul></div>
+          <div class="mm-branch"><b>根號同取次方</b><ul><li>取根指數的公倍數</li><li>√2 與 <span class="sqrt"><sup>3</sup>√<span>3</span></span> 取 6 次方：8 &lt; 9</li></ul></div>
+          <div class="mm-branch"><b>看底數</b><ul><li>底 &gt; 1：指數大 → 值大</li><li>0 &lt; 底 &lt; 1：方向相反</li></ul></div>
+        </div>
+      </div>
+
+      <h4>關鍵詞</h4>
+      <ul class="chips">
+        <li class="hot">指數律</li><li class="hot">有理數指數</li><li class="hot">化同底</li><li class="hot">科學記號</li>
+        <li>零指數</li><li>負指數</li><li>實數指數</li><li>逼近</li><li>單調性</li><li>底數 &gt; 0</li>
+      </ul>
+      <div class="box key"><span class="label">這章最常考</span>
+        <p>① 一長串指數化簡（全部化成質數底 2、3、5 再合併）；② 比較大小；③ 已知 <i>x</i><sup>1/2</sup>＋<i>x</i><sup>−1/2</sup>＝<i>k</i>，求 <i>x</i>＋<i>x</i><sup>−1</sup>＝<i>k</i><sup>2</sup>−2（和 1-2 的對稱式同一招）；④ 科學記號乘除後要調回 1 ≤ <i>a</i> &lt; 10。詳見「範圍重點整理」分頁 2-1。</p>
+      </div>
+      <div class="mnemonic">「乘加、除減、方方乘」：同底相乘指數加、相除指數減、次方再次方指數乘。負號是倒數不是負數，分母是根號的「幾次方根」。</div>
+    </article>
+
+    <!-- ===== 2-2（不考） ===== -->
+    <article class="chapter" id="ch-2-2">
+      <header class="ch-head"><span class="ch-no">2-2</span><h3>常用對數</h3><span class="tag">本次不考</span><span class="ch-sub">第二章 指數、對數：範圍只到 2-1，這節留到下一次段考。</span></header>
+      <div class="table-wrap"><table>
+        <thead><tr><th>項目</th><th>說明</th></tr></thead>
+        <tbody>
+          <tr><td>本次要讀嗎？</td><td><strong>不用</strong>。考卷不會出現 log。</td></tr>
+          <tr><td>和 2-1 的關係</td><td>對數是指數的「反過來問」：10<sup><i>x</i></sup>＝<i>N</i> 時，<i>x</i>＝log <i>N</i>。所以現在把指數律讀熟，下次段考會輕鬆很多。</td></tr>
+        </tbody>
+      </table></div>
+      <div class="box tip"><span class="label">小撇步</span><p>考前時間有限，請把時間全部留給 1-1、1-2、2-1 的計算練習。</p></div>
+    </article>
+  </section>
+
+  <!-- ================= 範圍重點整理 ================= -->
+  <section class="panel" id="notes" hidden>
+    <h2>範圍一覽</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>章節</th><th>主題</th><th>必考重點</th></tr></thead>
+      <tbody>
+        <tr><td>1-1 數與數線</td><td>有理數、無理數、實數、數線、絕對值、區間</td><td>循環小數化分數、√2 是無理數的證明、分點公式、絕對值方程式與不等式、三一律、區間記號</td></tr>
+        <tr><td>1-2 式的運算</td><td>乘法公式、根式、分式、算幾不等式</td><td>三次乘法公式求值、分母有理化、雙重根式、分式化簡、算幾不等式求最大/最小值</td></tr>
+        <tr><td>2-1 指數</td><td>整數指數、有理數指數、實數指數、科學記號</td><td>指數律化簡、比較大小、<span class="frac"><span>1</span><span>2</span></span> 次方的對稱式求值、科學記號運算</td></tr>
+        <tr><td class="mine">2-2 常用對數</td><td class="mine" colspan="2"><strong>本次不考</strong>（範圍只到 2-1 指數）。log 先不用讀，但指數一定要讀熟，因為下一次段考的對數全部建立在指數律上。</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted">小節名稱與細項依翰林版目錄整理，若與課本或老師公告略有不同，以課本為準。</p>
+
+    <!-- 1-1 -->
+    <h2>1-1 數與數線</h2>
+
+    <h3>一、數系：從自然數到實數</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>名稱</th><th>符號</th><th>內容</th><th>例子</th></tr></thead>
+      <tbody>
+        <tr><td>自然數（正整數）</td><td>ℕ</td><td>1, 2, 3, …</td><td>5、100</td></tr>
+        <tr><td>整數</td><td>ℤ</td><td>…, −2, −1, 0, 1, 2, …</td><td>−7、0</td></tr>
+        <tr><td>有理數</td><td>ℚ</td><td>可以寫成 <span class="frac"><span><i>p</i></span><span><i>q</i></span></span>（<i>p</i>、<i>q</i> 為整數，<i>q</i> ≠ 0）的數＝<mark>有限小數或循環小數</mark></td><td>0.25、<span class="frac"><span>1</span><span>3</span></span>、−4</td></tr>
+        <tr><td>無理數</td><td>—</td><td>不能寫成分數的實數＝<mark>無限不循環小數</mark></td><td>√2、√3、π、1.010010001…</td></tr>
+        <tr><td>實數</td><td>ℝ</td><td>有理數＋無理數，與數線上的點<strong>一一對應</strong></td><td>全部</td></tr>
+      </tbody>
+    </table></div>
+    <p>包含關係：ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ。</p>
+
+    <div class="box key"><span class="label">核心觀念</span>
+      <p><strong>有限小數的判斷：</strong>把分數化成<mark>最簡分數</mark>後，若分母的質因數<strong>只有 2 和 5</strong>，就是有限小數；否則是循環小數。</p>
+      <p>例：<span class="frac"><span>7</span><span>40</span></span>（40＝2³×5）→ 有限小數 0.175；<span class="frac"><span>9</span><span>12</span></span>＝<span class="frac"><span>3</span><span>4</span></span> → 有限小數（一定要先約分！）；<span class="frac"><span>1</span><span>6</span></span>（6＝2×3）→ 循環小數 0.1<span style="text-decoration:overline">6</span>。</p>
+    </div>
+
+    <h3>二、運算的封閉性（常考是非題）</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>運算</th><th>有理數 ○ 有理數</th><th>有理數 ○ 無理數</th><th>無理數 ○ 無理數</th></tr></thead>
+      <tbody>
+        <tr><td>加、減</td><td>一定是有理數</td><td><strong>一定是無理數</strong></td><td>不一定（√2＋(−√2)＝0）</td></tr>
+        <tr><td>乘、除</td><td>一定是有理數（除數 ≠ 0）</td><td><strong>非零</strong>有理數時一定是無理數（0×√2＝0 是例外）</td><td>不一定（√2×√2＝2、√2×√3＝√6）</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box warn"><span class="label">易錯陷阱</span>
+      <ul>
+        <li>「有理數 × 無理數 ＝ 無理數」是<strong>錯的</strong>，因為有理數可能是 0。要寫「非零有理數 × 無理數 ＝ 無理數」才對。</li>
+        <li>「兩無理數的和是無理數」錯；判斷「不一定」的題目，<mark>找一個反例</mark>就能推翻。</li>
+        <li>√4、√0.09、<span class="sqrt"><sup>3</sup>√<span>8</span></span> 看起來有根號，但它們是 2、0.3、2，都是有理數。</li>
+        <li>0.<span style="text-decoration:overline">9</span>＝1，不是「比 1 小一點點」。</li>
+      </ul>
+    </div>
+    <p><strong>稠密性：</strong>任兩個相異實數之間，都有無限多個有理數，也有無限多個無理數。例如 <i>a</i>、<i>b</i> 之間一定有 <span class="frac"><span><i>a</i>+<i>b</i></span><span>2</span></span>。</p>
+
+    <h3>三、循環小數化成分數</h3>
+    <div class="box key"><span class="label">核心觀念</span>
+      <p>設 <i>x</i>＝循環小數，乘上 10 的次方讓<strong>小數點後的循環部分對齊</strong>，兩式相減消掉無限的尾巴。</p>
+      <p>速算規則（純小數部分）：<strong>分子＝「全部數字」−「不循環部分」；分母＝循環位數寫幾個 9，不循環位數再補幾個 0。</strong></p>
+      <ul>
+        <li>0.<span style="text-decoration:overline">27</span>＝<span class="frac"><span>27</span><span>99</span></span>＝<span class="frac"><span>3</span><span>11</span></span></li>
+        <li>0.1<span style="text-decoration:overline">23</span>＝<span class="frac"><span>123−1</span><span>990</span></span>＝<span class="frac"><span>122</span><span>990</span></span>＝<span class="frac"><span>61</span><span>495</span></span></li>
+        <li>2.<span style="text-decoration:overline">3</span>＝2＋<span class="frac"><span>3</span><span>9</span></span>＝<span class="frac"><span>7</span><span>3</span></span>（整數部分另外加）</li>
+      </ul>
+    </div>
+
+    <h3>四、√2 是無理數的證明（反證法）</h3>
+    <ol class="steps">
+      <li><span><strong>假設</strong> √2 是有理數，則可寫成 √2＝<span class="frac"><span><i>p</i></span><span><i>q</i></span></span>，其中 <i>p</i>、<i>q</i> 為<mark>互質</mark>的正整數。</span></li>
+      <li><span>兩邊平方：2＝<span class="frac"><span><i>p</i><sup>2</sup></span><span><i>q</i><sup>2</sup></span></span>，所以 <i>p</i><sup>2</sup>＝2<i>q</i><sup>2</sup>，<i>p</i><sup>2</sup> 是偶數 ⇒ <i>p</i> 是偶數（奇數的平方是奇數）。</span></li>
+      <li><span>令 <i>p</i>＝2<i>k</i>，代入得 4<i>k</i><sup>2</sup>＝2<i>q</i><sup>2</sup>，<i>q</i><sup>2</sup>＝2<i>k</i><sup>2</sup> ⇒ <i>q</i> 也是偶數。</span></li>
+      <li><span><i>p</i>、<i>q</i> 都是偶數，有公因數 2，和「互質」<strong>矛盾</strong>。故假設錯誤，√2 是無理數。</span></li>
+    </ol>
+    <div class="box tip"><span class="label">小撇步</span><p>同樣方法可證 √3（改用「3 的倍數」）。考試常問「第一步假設什麼」或「矛盾出在哪裡」，關鍵字是<strong>互質</strong>。</p></div>
+
+    <h3>五、數線、距離與分點公式</h3>
+    <ul>
+      <li>數線上 A(<i>a</i>)、B(<i>b</i>) 的距離：<span style="white-space:nowrap">AB＝|<i>a</i>−<i>b</i>|</span>。</li>
+      <li>中點：<span class="frac"><span><i>a</i>+<i>b</i></span><span>2</span></span>。</li>
+      <li>內分點：P 在線段 AB 上且 AP : PB＝<i>m</i> : <i>n</i>，則 P＝<span class="frac"><span><i>n a</i>+<i>m b</i></span><span><i>m</i>+<i>n</i></span></span>（<mark>交叉相乘</mark>：靠近 A 的比例 <i>m</i> 乘到 <i>b</i> 上）。</li>
+    </ul>
+    <div class="box warn"><span class="label">易錯陷阱</span><p>分點公式最常錯在<strong>係數放反</strong>。檢查法：P 應該比較靠近比例小的那一端。AP : PB＝1 : 3 時，P 離 A 比較近，算出來若靠近 B 就是放反了。</p></div>
+
+    <h3>六、絕對值</h3>
+    <div class="two">
+      <div class="box info"><span class="label">代數定義</span>
+        <p>|<i>a</i>|＝<i>a</i>（<i>a</i> ≥ 0）；|<i>a</i>|＝−<i>a</i>（<i>a</i> &lt; 0）。</p>
+        <p>所以 |<i>a</i>| ≥ 0，且 <span class="sqrt">√<span><i>a</i><sup>2</sup></span></span>＝|<i>a</i>|（不是 <i>a</i>！）。</p>
+      </div>
+      <div class="box info"><span class="label">幾何意義</span>
+        <p>|<i>x</i>|＝<i>x</i> 到原點的距離；</p>
+        <p>|<i>x</i>−<i>a</i>|＝數線上 <i>x</i> 到 <i>a</i> 的距離。</p>
+        <p>|<i>x</i>+3|＝|<i>x</i>−(−3)|，是到 <strong>−3</strong> 的距離。</p>
+      </div>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>型態（<i>b</i> &gt; 0）</th><th>解</th><th>白話</th></tr></thead>
+      <tbody>
+        <tr><td>|<i>x</i>−<i>a</i>|＝<i>b</i></td><td><i>x</i>＝<i>a</i>±<i>b</i></td><td>離 <i>a</i> 剛好 <i>b</i> 的兩點</td></tr>
+        <tr><td>|<i>x</i>−<i>a</i>| &lt; <i>b</i></td><td><i>a</i>−<i>b</i> &lt; <i>x</i> &lt; <i>a</i>+<i>b</i></td><td>離 <i>a</i> 不到 <i>b</i>：夾在中間（「小於」→「夾」）</td></tr>
+        <tr><td>|<i>x</i>−<i>a</i>| &gt; <i>b</i></td><td><i>x</i> &lt; <i>a</i>−<i>b</i> 或 <i>x</i> &gt; <i>a</i>+<i>b</i></td><td>離 <i>a</i> 超過 <i>b</i>：往兩邊跑（「大於」→「分」）</td></tr>
+        <tr><td>|<i>x</i>−<i>a</i>|＋|<i>x</i>−<i>b</i>|</td><td>最小值＝|<i>a</i>−<i>b</i>|，發生在 <i>x</i> 介於 <i>a</i>、<i>b</i> 之間</td><td>到兩點距離和，站在中間最短</td></tr>
+      </tbody>
+    </table></div>
+    <p>若 <i>b</i> ≤ 0：|<i>x</i>−<i>a</i>| &lt; <i>b</i> 無解；|<i>x</i>−<i>a</i>| &gt; <i>b</i>（<i>b</i> &lt; 0）則所有實數都成立。<strong>題目 <i>x</i> 前有係數</strong>（如 |2<i>x</i>−3|≤5），直接拆成 −5 ≤ 2<i>x</i>−3 ≤ 5 再解最穩。</p>
+    <p><strong>三角不等式：</strong>|<i>a</i>+<i>b</i>| ≤ |<i>a</i>|+|<i>b</i>|（<i>ab</i> ≥ 0 時等號成立）；||<i>a</i>|−|<i>b</i>|| ≤ |<i>a</i>−<i>b</i>|。</p>
+
+    <h3>七、三一律與區間</h3>
+    <p><strong>三一律：</strong>任兩實數 <i>a</i>、<i>b</i>，<i>a</i> &gt; <i>b</i>、<i>a</i>＝<i>b</i>、<i>a</i> &lt; <i>b</i> <mark>恰有一個</mark>成立。比較大小常用「相減看正負」或「平方後比較（兩數皆正時）」。</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>區間記號</th><th>不等式</th><th>端點</th></tr></thead>
+      <tbody>
+        <tr><td>[<i>a</i>, <i>b</i>]</td><td><i>a</i> ≤ <i>x</i> ≤ <i>b</i></td><td>閉區間，兩端都包含（實心點）</td></tr>
+        <tr><td>(<i>a</i>, <i>b</i>)</td><td><i>a</i> &lt; <i>x</i> &lt; <i>b</i></td><td>開區間，兩端都不含（空心點）</td></tr>
+        <tr><td>[<i>a</i>, <i>b</i>)、(<i>a</i>, <i>b</i>]</td><td><i>a</i> ≤ <i>x</i> &lt; <i>b</i>、<i>a</i> &lt; <i>x</i> ≤ <i>b</i></td><td>半開區間</td></tr>
+        <tr><td>[<i>a</i>, ∞)、(−∞, <i>b</i>)</td><td><i>x</i> ≥ <i>a</i>、<i>x</i> &lt; <i>b</i></td><td>∞ 不是數，<strong>一定用小括號</strong></td></tr>
+      </tbody>
+    </table></div>
+
+    <!-- 1-2 -->
+    <h2>1-2 式的運算</h2>
+
+    <h3>一、乘法公式</h3>
+    <p>二次：(<i>a</i>±<i>b</i>)<sup>2</sup>、(<i>a</i>+<i>b</i>)(<i>a</i>−<i>b</i>)、(<i>a</i>+<i>b</i>+<i>c</i>)<sup>2</sup>。三次：(<i>a</i>±<i>b</i>)<sup>3</sup>、<i>a</i><sup>3</sup>±<i>b</i><sup>3</sup>。完整清單在「公式整理」分頁。</p>
+    <div class="box key"><span class="label">老師最愛考</span>
+      <p><strong>給 <i>a</i>+<i>b</i> 和 <i>ab</i>，求 <i>a</i><sup>2</sup>+<i>b</i><sup>2</sup>、<i>a</i><sup>3</sup>+<i>b</i><sup>3</sup>、(<i>a</i>−<i>b</i>)<sup>2</sup>。</strong>不必解出 <i>a</i>、<i>b</i>，用對稱式轉換：</p>
+      <ul>
+        <li><i>a</i><sup>2</sup>+<i>b</i><sup>2</sup>＝(<i>a</i>+<i>b</i>)<sup>2</sup>−2<i>ab</i></li>
+        <li><i>a</i><sup>3</sup>+<i>b</i><sup>3</sup>＝(<i>a</i>+<i>b</i>)<sup>3</sup>−3<i>ab</i>(<i>a</i>+<i>b</i>)</li>
+        <li>(<i>a</i>−<i>b</i>)<sup>2</sup>＝(<i>a</i>+<i>b</i>)<sup>2</sup>−4<i>ab</i></li>
+      </ul>
+      <p>變形：<i>x</i>+<span class="frac"><span>1</span><span><i>x</i></span></span>＝<i>k</i> 時，<i>x</i>·<span class="frac"><span>1</span><span><i>x</i></span></span>＝1，所以 <i>x</i><sup>2</sup>+<span class="frac"><span>1</span><span><i>x</i><sup>2</sup></span></span>＝<i>k</i><sup>2</sup>−2，<i>x</i><sup>3</sup>+<span class="frac"><span>1</span><span><i>x</i><sup>3</sup></span></span>＝<i>k</i><sup>3</sup>−3<i>k</i>。</p>
+    </div>
+
+    <h3>二、根式運算</h3>
+    <ul>
+      <li><i>a</i>, <i>b</i> ≥ 0 時：√<i>a</i>·√<i>b</i>＝<span class="sqrt">√<span><i>ab</i></span></span>；<i>b</i> &gt; 0 時 <span class="frac"><span>√<i>a</i></span><span>√<i>b</i></span></span>＝<span class="sqrt">√<span><i>a</i>/<i>b</i></span></span>。</li>
+      <li>化成最簡根式：√12＝2√3、√50＝5√2、√72＝6√2。</li>
+      <li><strong>同類根式</strong>才能相加減：√12＋√27＝2√3＋3√3＝5√3。但 √2＋√3 <mark>≠ √5</mark>。</li>
+      <li><span class="sqrt">√<span><i>a</i><sup>2</sup></span></span>＝|<i>a</i>|：例如 <i>x</i> &lt; 1 時，<span class="sqrt">√<span>(<i>x</i>−1)<sup>2</sup></span></span>＝1−<i>x</i>。</li>
+    </ul>
+
+    <h3>三、分母有理化</h3>
+    <p>分母是 √<i>a</i>：上下同乘 √<i>a</i>。分母是 √<i>a</i>±√<i>b</i>：上下同乘<strong>共軛</strong> √<i>a</i>∓√<i>b</i>，利用平方差 (√<i>a</i>+√<i>b</i>)(√<i>a</i>−√<i>b</i>)＝<i>a</i>−<i>b</i>。</p>
+    <p>例：<span class="frac"><span>1</span><span>√3−√2</span></span>＝<span class="frac"><span>√3+√2</span><span>3−2</span></span>＝√3+√2；<span class="frac"><span>1</span><span>√2+1</span></span>＝√2−1。</p>
+
+    <h3>四、雙重根式</h3>
+    <div class="box key"><span class="label">核心觀念</span>
+      <p><i>a</i> &gt; <i>b</i> &gt; 0 時：<span class="sqrt">√<span>(<i>a</i>+<i>b</i>)+2<span class="sqrt">√<span><i>ab</i></span></span></span></span>＝√<i>a</i>+√<i>b</i>；<span class="sqrt">√<span>(<i>a</i>+<i>b</i>)−2<span class="sqrt">√<span><i>ab</i></span></span></span></span>＝√<i>a</i>−√<i>b</i>（<mark>大的減小的</mark>）。</p>
+      <p>步驟：先把裡面的根號整理成「<strong>2√□</strong>」的形式 → 找兩數「和＝前面的數、積＝□」。</p>
+      <p>例：√(7−2√10)：和 7、積 10 → 5 和 2 → √5−√2。<br>例：√(4+√12)＝√(4+2√3)：和 4、積 3 → 3 和 1 → √3+1。</p>
+    </div>
+    <div class="box warn"><span class="label">易錯陷阱</span><p>根號前面不是 2 時（例如 √(2+√3)），要先上下乘 2：√(2+√3)＝<span class="sqrt">√<span>(4+2√3)/2</span></span>＝<span class="frac"><span>√3+1</span><span>√2</span></span>＝<span class="frac"><span>√6+√2</span><span>2</span></span>。減號的答案一定要是正的，寫成 √2−√5 就錯了。</p></div>
+
+    <h3>五、分式運算</h3>
+    <ul>
+      <li>加減：先因式分解分母 → 找最低公分母通分 → 分子合併 → 能約分就約分。</li>
+      <li>乘除：先因式分解，交叉約分；除以一個分式＝乘以它的倒數。</li>
+      <li>繁分式：上下同乘「所有小分母的公倍式」最快。</li>
+      <li>注意定義域：分母不可為 0，約分前要記下 <i>x</i> 不能是哪些值。</li>
+    </ul>
+
+    <h3>六、算幾不等式（算術平均數 ≥ 幾何平均數）</h3>
+    <div class="formula">
+      <div class="name">算幾不等式</div>
+      <div class="expr"><i>a</i>, <i>b</i> ≥ 0：<span class="frac"><span><i>a</i>+<i>b</i></span><span>2</span></span> ≥ <span class="sqrt">√<span><i>ab</i></span></span>，等號成立 ⇔ <i>a</i>＝<i>b</i></div>
+      <div class="note">兩個條件缺一不可：①兩數非負（求最值時通常要正）②等號要「取得到」。</div>
+    </div>
+    <div class="two">
+      <div class="box ok"><span class="label">和固定 → 積有最大值</span><p><i>a</i>+<i>b</i>＝<i>S</i>（定值）⇒ <i>ab</i> ≤ <span class="frac"><span><i>S</i><sup>2</sup></span><span>4</span></span>。例：周長固定的長方形，正方形面積最大。</p></div>
+      <div class="box ok"><span class="label">積固定 → 和有最小值</span><p><i>ab</i>＝<i>P</i>（定值）⇒ <i>a</i>+<i>b</i> ≥ 2√<i>P</i>。例：<i>x</i> &gt; 0 時 <i>x</i>+<span class="frac"><span>1</span><span><i>x</i></span></span> ≥ 2。</p></div>
+    </div>
+    <p><strong>幾何證明：</strong>以長 <i>a</i>+<i>b</i> 的線段為直徑畫半圓，在分點處作垂線，垂線長＝√<i>ab</i>（由相似三角形），半徑＝<span class="frac"><span><i>a</i>+<i>b</i></span><span>2</span></span>，半徑 ≥ 垂線，當垂線剛好是半徑時（<i>a</i>＝<i>b</i>）等號成立。</p>
+
+    <!-- 2-1 -->
+    <h2>2-1 指數</h2>
+    <h3>一、指數的擴充</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>階段</th><th>定義</th><th>條件</th></tr></thead>
+      <tbody>
+        <tr><td>正整數指數</td><td><i>a</i><sup><i>n</i></sup>＝<i>a</i>×<i>a</i>×…×<i>a</i>（<i>n</i> 個）</td><td>—</td></tr>
+        <tr><td>零指數</td><td><i>a</i><sup>0</sup>＝1</td><td><i>a</i> ≠ 0（0<sup>0</sup> 無意義）</td></tr>
+        <tr><td>負整數指數</td><td><i>a</i><sup>−<i>n</i></sup>＝<span class="frac"><span>1</span><span><i>a</i><sup><i>n</i></sup></span></span></td><td><i>a</i> ≠ 0</td></tr>
+        <tr><td>有理數指數</td><td><i>a</i><sup><i>m</i>/<i>n</i></sup>＝<span class="sqrt"><sup><i>n</i></sup>√<span><i>a</i><sup><i>m</i></sup></span></span>＝(<span class="sqrt"><sup><i>n</i></sup>√<span><i>a</i></span></span>)<sup><i>m</i></sup></td><td><i>a</i> &gt; 0，<i>n</i> 為正整數</td></tr>
+        <tr><td>實數指數</td><td>用有理數逼近，例如 2<sup>√2</sup> 由 2<sup>1.4</sup>、2<sup>1.41</sup>、2<sup>1.414</sup>… 逼近</td><td><i>a</i> &gt; 0</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>二、指數律（<i>a</i>, <i>b</i> &gt; 0，<i>r</i>, <i>s</i> 為實數）</h3>
+    <ol>
+      <li><i>a</i><sup><i>r</i></sup>·<i>a</i><sup><i>s</i></sup>＝<i>a</i><sup><i>r</i>+<i>s</i></sup>（同底相乘，指數相加）</li>
+      <li>(<i>a</i><sup><i>r</i></sup>)<sup><i>s</i></sup>＝<i>a</i><sup><i>rs</i></sup>（次方再次方，指數相乘）</li>
+      <li>(<i>ab</i>)<sup><i>r</i></sup>＝<i>a</i><sup><i>r</i></sup><i>b</i><sup><i>r</i></sup>（同指數，底數相乘）</li>
+    </ol>
+    <div class="box warn"><span class="label">易錯陷阱</span>
+      <ul>
+        <li>2<sup>3</sup>·2<sup>4</sup>＝2<sup>7</sup>，不是 2<sup>12</sup>；(2<sup>3</sup>)<sup>4</sup> 才是 2<sup>12</sup>。</li>
+        <li><i>a</i><sup>−<i>n</i></sup> 是倒數，不是負數：9<sup>−1/2</sup>＝<span class="frac"><span>1</span><span>3</span></span>，不是 −3。</li>
+        <li>(<i>a</i>+<i>b</i>)<sup>2</sup> ≠ <i>a</i><sup>2</sup>+<i>b</i><sup>2</sup>：指數律只對「乘法」分配，不對「加法」分配。</li>
+        <li>有理數指數要求底數 <strong>&gt; 0</strong>，看到負底數要小心。</li>
+      </ul>
+    </div>
+
+    <h3>三、比較大小（指數函數的單調性）</h3>
+    <ul>
+      <li><i>a</i> &gt; 1：指數越大值越大（<i>r</i> &lt; <i>s</i> ⇔ <i>a</i><sup><i>r</i></sup> &lt; <i>a</i><sup><i>s</i></sup>）。</li>
+      <li>0 &lt; <i>a</i> &lt; 1：方向相反（指數越大值越小）。</li>
+      <li>方法一：<strong>化成同底</strong>比指數（4<sup>3</sup>＝2<sup>6</sup>、8<sup>2</sup>＝2<sup>6</sup>）。</li>
+      <li>方法二：<strong>化成同指數</strong>比底數（2<sup>30</sup>＝8<sup>10</sup>、3<sup>20</sup>＝9<sup>10</sup>）。</li>
+      <li>方法三：根號比大小，<strong>同時取公倍數次方</strong>（√2 與 <span class="sqrt"><sup>3</sup>√<span>3</span></span> 同取 6 次方：8 &lt; 9）。</li>
+    </ul>
+
+    <h3>四、科學記號</h3>
+    <p>把正數寫成 <i>a</i>×10<sup><i>n</i></sup>，其中 <mark>1 ≤ <i>a</i> &lt; 10</mark>，<i>n</i> 為整數。</p>
+    <ul>
+      <li>乘除：前面的數相乘除、10 的指數相加減，最後<strong>再調整成 1 ≤ <i>a</i> &lt; 10</strong>。例：16×10<sup>−3</sup> 要改寫成 1.6×10<sup>−2</sup>。</li>
+      <li>若 <i>N</i>＝<i>a</i>×10<sup><i>n</i></sup> 且 <i>n</i> ≥ 0，則 <i>N</i> 的整數部分是 <i>n</i>+1 位數。</li>
+      <li>若 <i>n</i> &lt; 0，則 <i>N</i> 從小數點後第 |<i>n</i>| 位開始出現不為 0 的數字。</li>
+    </ul>
+  </section>
+
+  <!-- ================= 公式整理 ================= -->
+  <section class="panel" id="formula" hidden>
+    <h2>1-1 數與數線</h2>
+    <div class="formula">
+      <div class="name">循環小數化分數（純小數部分）</div>
+      <div class="expr">0.<i>a</i><sub>1</sub>…<i>a</i><sub><i>k</i></sub><span style="text-decoration:overline"><i>b</i><sub>1</sub>…<i>b</i><sub><i>m</i></sub></span> ＝ <span class="frac"><span>（全部數字）−（不循環部分）</span><span><i>m</i> 個 9 後接 <i>k</i> 個 0</span></span></div>
+      <div class="note">例：0.1<span style="text-decoration:overline">23</span>＝<span class="frac"><span>123−1</span><span>990</span></span>。最後記得約分。</div>
+    </div>
+    <div class="mnemonic">循環幾位寫幾個九，不循環幾位補幾個零；分子全部減掉不循環的頭。</div>
+
+    <div class="formula">
+      <div class="name">兩點距離、中點</div>
+      <div class="expr">AB ＝ |<i>a</i> − <i>b</i>|　　中點 M ＝ <span class="frac"><span><i>a</i> + <i>b</i></span><span>2</span></span></div>
+    </div>
+    <div class="formula">
+      <div class="name">內分點公式</div>
+      <div class="expr">AP : PB ＝ <i>m</i> : <i>n</i> ⇒ P ＝ <span class="frac"><span><i>n</i>·<i>a</i> + <i>m</i>·<i>b</i></span><span><i>m</i> + <i>n</i></span></span></div>
+      <div class="note">P 在 A(<i>a</i>)、B(<i>b</i>) 之間。比例和分母，係數交叉配對。</div>
+    </div>
+    <div class="mnemonic">分點公式「交叉乘」：A 的比例給 B 用，B 的比例給 A 用。離誰近，誰的權重就大。</div>
+
+    <div class="formula">
+      <div class="name">絕對值不等式（<i>b</i> &gt; 0）</div>
+      <div class="expr">|<i>x</i> − <i>a</i>| &lt; <i>b</i> ⇔ <i>a</i> − <i>b</i> &lt; <i>x</i> &lt; <i>a</i> + <i>b</i><br>|<i>x</i> − <i>a</i>| &gt; <i>b</i> ⇔ <i>x</i> &lt; <i>a</i> − <i>b</i> 或 <i>x</i> &gt; <i>a</i> + <i>b</i></div>
+      <div class="note">反過來：<i>p</i> &lt; <i>x</i> &lt; <i>q</i> 可寫成 |<i>x</i> − <span class="frac"><span><i>p</i>+<i>q</i></span><span>2</span></span>| &lt; <span class="frac"><span><i>q</i>−<i>p</i></span><span>2</span></span>（中心、半徑）。</div>
+    </div>
+    <div class="mnemonic">小於夾中間，大於分兩邊。（「小夾大分」）</div>
+
+    <div class="formula">
+      <div class="name">三角不等式</div>
+      <div class="expr">|<i>a</i> + <i>b</i>| ≤ |<i>a</i>| + |<i>b</i>|　　|<i>a</i>| − |<i>b</i>| ≤ |<i>a</i> − <i>b</i>|</div>
+      <div class="note">|<i>ab</i>|＝|<i>a</i>||<i>b</i>|、<span class="sqrt">√<span><i>a</i><sup>2</sup></span></span>＝|<i>a</i>|。</div>
+    </div>
+
+    <h2>1-2 乘法公式</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>名稱</th><th>公式</th></tr></thead>
+      <tbody>
+        <tr><td>和的平方</td><td>(<i>a</i>+<i>b</i>)<sup>2</sup>＝<i>a</i><sup>2</sup>+2<i>ab</i>+<i>b</i><sup>2</sup></td></tr>
+        <tr><td>差的平方</td><td>(<i>a</i>−<i>b</i>)<sup>2</sup>＝<i>a</i><sup>2</sup>−2<i>ab</i>+<i>b</i><sup>2</sup></td></tr>
+        <tr><td>平方差</td><td>(<i>a</i>+<i>b</i>)(<i>a</i>−<i>b</i>)＝<i>a</i><sup>2</sup>−<i>b</i><sup>2</sup></td></tr>
+        <tr><td>三項和的平方</td><td>(<i>a</i>+<i>b</i>+<i>c</i>)<sup>2</sup>＝<i>a</i><sup>2</sup>+<i>b</i><sup>2</sup>+<i>c</i><sup>2</sup>+2<i>ab</i>+2<i>bc</i>+2<i>ca</i></td></tr>
+        <tr><td>和的立方</td><td>(<i>a</i>+<i>b</i>)<sup>3</sup>＝<i>a</i><sup>3</sup>+3<i>a</i><sup>2</sup><i>b</i>+3<i>ab</i><sup>2</sup>+<i>b</i><sup>3</sup>＝<i>a</i><sup>3</sup>+<i>b</i><sup>3</sup>+3<i>ab</i>(<i>a</i>+<i>b</i>)</td></tr>
+        <tr><td>差的立方</td><td>(<i>a</i>−<i>b</i>)<sup>3</sup>＝<i>a</i><sup>3</sup>−3<i>a</i><sup>2</sup><i>b</i>+3<i>ab</i><sup>2</sup>−<i>b</i><sup>3</sup>＝<i>a</i><sup>3</sup>−<i>b</i><sup>3</sup>−3<i>ab</i>(<i>a</i>−<i>b</i>)</td></tr>
+        <tr><td>立方和</td><td><i>a</i><sup>3</sup>+<i>b</i><sup>3</sup>＝(<i>a</i>+<i>b</i>)(<i>a</i><sup>2</sup>−<i>ab</i>+<i>b</i><sup>2</sup>)</td></tr>
+        <tr><td>立方差</td><td><i>a</i><sup>3</sup>−<i>b</i><sup>3</sup>＝(<i>a</i>−<i>b</i>)(<i>a</i><sup>2</sup>+<i>ab</i>+<i>b</i><sup>2</sup>)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="mnemonic">立方展開「1 3 3 1」；差的立方符號「＋−＋−」輪流換。<br>立方和差「同、反、正」：第一個括號跟原式同號，中間 <i>ab</i> 反號，最後永遠是正。</div>
+
+    <h3>對稱式轉換（求值題的萬用工具）</h3>
+    <div class="formula">
+      <div class="name">已知 <i>a</i>+<i>b</i>、<i>ab</i></div>
+      <div class="expr"><i>a</i><sup>2</sup>+<i>b</i><sup>2</sup>＝(<i>a</i>+<i>b</i>)<sup>2</sup>−2<i>ab</i><br><i>a</i><sup>3</sup>+<i>b</i><sup>3</sup>＝(<i>a</i>+<i>b</i>)<sup>3</sup>−3<i>ab</i>(<i>a</i>+<i>b</i>)<br>(<i>a</i>−<i>b</i>)<sup>2</sup>＝(<i>a</i>+<i>b</i>)<sup>2</sup>−4<i>ab</i></div>
+      <div class="note">已知 <i>a</i>−<i>b</i>、<i>ab</i>：<i>a</i><sup>3</sup>−<i>b</i><sup>3</sup>＝(<i>a</i>−<i>b</i>)<sup>3</sup>+3<i>ab</i>(<i>a</i>−<i>b</i>)。</div>
+    </div>
+    <div class="formula">
+      <div class="name">已知 <i>x</i>+<span class="frac"><span>1</span><span><i>x</i></span></span>＝<i>k</i></div>
+      <div class="expr"><i>x</i><sup>2</sup>+<span class="frac"><span>1</span><span><i>x</i><sup>2</sup></span></span>＝<i>k</i><sup>2</sup>−2　　<i>x</i><sup>3</sup>+<span class="frac"><span>1</span><span><i>x</i><sup>3</sup></span></span>＝<i>k</i><sup>3</sup>−3<i>k</i></div>
+      <div class="note">同理 <i>a</i><sup>1/2</sup>+<i>a</i><sup>−1/2</sup>＝<i>k</i> ⇒ <i>a</i>+<i>a</i><sup>−1</sup>＝<i>k</i><sup>2</sup>−2，<i>a</i><sup>3/2</sup>+<i>a</i><sup>−3/2</sup>＝<i>k</i><sup>3</sup>−3<i>k</i>（2-1 指數也會考）。</div>
+    </div>
+
+    <h2>1-2 根式、雙重根式、算幾</h2>
+    <div class="formula">
+      <div class="name">分母有理化（共軛）</div>
+      <div class="expr"><span class="frac"><span>1</span><span>√<i>a</i> + √<i>b</i></span></span> ＝ <span class="frac"><span>√<i>a</i> − √<i>b</i></span><span><i>a</i> − <i>b</i></span></span>　　<span class="frac"><span>1</span><span>√<i>a</i> − √<i>b</i></span></span> ＝ <span class="frac"><span>√<i>a</i> + √<i>b</i></span><span><i>a</i> − <i>b</i></span></span></div>
+    </div>
+    <div class="formula">
+      <div class="name">雙重根式（<i>a</i> &gt; <i>b</i> &gt; 0）</div>
+      <div class="expr"><span class="sqrt">√<span>(<i>a</i>+<i>b</i>) ± 2√<i>ab</i></span></span> ＝ √<i>a</i> ± √<i>b</i></div>
+      <div class="note">先湊出「2√」，再找「和、積」。減號時大的在前。</div>
+    </div>
+    <div class="mnemonic">雙重根式「先湊 2，找和積；加號直接拆，減號大減小」。</div>
+    <div class="formula">
+      <div class="name">算幾不等式</div>
+      <div class="expr"><i>a</i>, <i>b</i> ≥ 0：<span class="frac"><span><i>a</i>+<i>b</i></span><span>2</span></span> ≥ √<i>ab</i>（等號 ⇔ <i>a</i>＝<i>b</i>）</div>
+      <div class="note">和定積最大：<i>ab</i> ≤ (<span class="frac"><span><i>a</i>+<i>b</i></span><span>2</span></span>)<sup>2</sup>；積定和最小：<i>a</i>+<i>b</i> ≥ 2√<i>ab</i>。</div>
+    </div>
+    <div class="mnemonic">「一正、二定、三相等」：兩數要正、和或積要固定、等號要取得到。</div>
+
+    <h3>不用計算機必背數值</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>根號近似值</th><th>平方數</th><th>次方數</th></tr></thead>
+      <tbody>
+        <tr><td>√2 ≈ 1.414（意思意思）</td><td>11²＝121、12²＝144、13²＝169</td><td>2<sup>10</sup>＝1024</td></tr>
+        <tr><td>√3 ≈ 1.732（一起爬山）</td><td>14²＝196、15²＝225、16²＝256</td><td>3<sup>5</sup>＝243、3<sup>6</sup>＝729</td></tr>
+        <tr><td>√5 ≈ 2.236（兒兒善留）</td><td>17²＝289、18²＝324、19²＝361</td><td>5<sup>4</sup>＝625、2<sup>5</sup>＝32</td></tr>
+        <tr><td>√6 ≈ 2.449、√7 ≈ 2.646</td><td>20²＝400、25²＝625</td><td>4<sup>5</sup>＝1024、7<sup>3</sup>＝343</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>2-1 指數</h2>
+    <div class="formula">
+      <div class="name">指數定義</div>
+      <div class="expr"><i>a</i><sup>0</sup>＝1　　<i>a</i><sup>−<i>n</i></sup>＝<span class="frac"><span>1</span><span><i>a</i><sup><i>n</i></sup></span></span>　　<i>a</i><sup><i>m</i>/<i>n</i></sup>＝<span class="sqrt"><sup><i>n</i></sup>√<span><i>a</i><sup><i>m</i></sup></span></span></div>
+      <div class="note">分數指數：分母是「開幾次根號」、分子是「幾次方」。底數 <i>a</i> &gt; 0。</div>
+    </div>
+    <div class="mnemonic">分數指數像樹：「分母是根（根號）、分子是枝（次方）」——根在下面、枝在上面。</div>
+    <div class="formula">
+      <div class="name">指數律</div>
+      <div class="expr"><i>a</i><sup><i>r</i></sup><i>a</i><sup><i>s</i></sup>＝<i>a</i><sup><i>r</i>+<i>s</i></sup>　　(<i>a</i><sup><i>r</i></sup>)<sup><i>s</i></sup>＝<i>a</i><sup><i>rs</i></sup>　　(<i>ab</i>)<sup><i>r</i></sup>＝<i>a</i><sup><i>r</i></sup><i>b</i><sup><i>r</i></sup>　　<span class="frac"><span><i>a</i><sup><i>r</i></sup></span><span><i>a</i><sup><i>s</i></sup></span></span>＝<i>a</i><sup><i>r</i>−<i>s</i></sup></div>
+    </div>
+    <div class="mnemonic">「乘變加、方變乘、除變減」：運算降一級。</div>
+    <div class="formula">
+      <div class="name">科學記號</div>
+      <div class="expr"><i>N</i> ＝ <i>a</i> × 10<sup><i>n</i></sup>，1 ≤ <i>a</i> &lt; 10，<i>n</i> ∈ ℤ</div>
+      <div class="note">算完一定檢查 <i>a</i> 有沒有落在 1 到 10 之間（可以等於 1，不能等於 10）。</div>
+    </div>
+
+    <h3>常用底數換算表（同底比大小必備）</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>以 2 為底</th><th>以 3 為底</th><th>以 5 為底</th></tr></thead>
+      <tbody>
+        <tr><td>4＝2<sup>2</sup>、8＝2<sup>3</sup>、16＝2<sup>4</sup>、32＝2<sup>5</sup>、64＝2<sup>6</sup></td><td>9＝3<sup>2</sup>、27＝3<sup>3</sup>、81＝3<sup>4</sup>、243＝3<sup>5</sup></td><td>25＝5<sup>2</sup>、125＝5<sup>3</sup>、625＝5<sup>4</sup></td></tr>
+        <tr><td>√2＝2<sup>1/2</sup>、<span class="frac"><span>1</span><span>8</span></span>＝2<sup>−3</sup>、0.5＝2<sup>−1</sup></td><td>√3＝3<sup>1/2</sup>、<span class="frac"><span>1</span><span>9</span></span>＝3<sup>−2</sup></td><td>0.2＝5<sup>−1</sup>、0.04＝5<sup>−2</sup></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ================= 考古題 ================= -->
+  <section class="panel" id="past" hidden>
+    <h2>考古題與白話解析</h2>
+    <div class="box info"><span class="label">說明</span>
+      <p>以下為依本次範圍（1-1 至 2-1）、比照歷屆段考常見題型整理的練習題，<strong>非陽明高中原始試卷</strong>。共 25 題：單選 17 題、多選 5 題、填充 3 題。每題答案都已逐題驗算。</p>
+      <p>單選題點選項立刻對答案；多選題選好後按藍色按鈕對答案。<mark>請拿紙筆算，不要用計算機</mark>，模擬正式考試。</p>
+    </div>
+
+    <h3>一、單選題</h3>
+
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">第 1 題</span><span class="tag hot">高頻考點</span><span class="tag">1-1 循環小數</span></div>
+      <div class="q-stem">將循環小數 0.1<span style="text-decoration:overline">23</span>（即 0.1232323…）化為最簡分數，結果為何？</div>
+      <ul class="opts">
+        <li><button><span class="frac"><span>123</span><span>999</span></span></button></li>
+        <li><button><span class="frac"><span>122</span><span>999</span></span></button></li>
+        <li><button><span class="frac"><span>61</span><span>495</span></span></button></li>
+        <li><button><span class="frac"><span>41</span><span>330</span></span></button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p>設 <i>x</i>＝0.12323…，則 1000<i>x</i>＝123.2323…，10<i>x</i>＝1.2323…，相減 990<i>x</i>＝122，<i>x</i>＝<span class="frac"><span>122</span><span>990</span></span>＝<span class="frac"><span>61</span><span>495</span></span>。</p>
+        <div class="plain">循環的是「23」，不是「123」，所以 A 是 0.123123… 的答案，陷阱！速算：分子「123 減掉不循環的 1」＝122，分母「兩個 9 一個 0」＝990，再約分。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="D">
+      <div class="q-head"><span class="q-no">第 2 題</span><span class="tag">1-1 有理數與無理數</span></div>
+      <div class="q-stem">下列哪一個數是無理數？</div>
+      <ul class="opts">
+        <li><button>√0.04</button></li>
+        <li><button>0.<span style="text-decoration:overline">142857</span></button></li>
+        <li><button><span class="frac"><span>√8</span><span>√2</span></span></button></li>
+        <li><button>π − 3.14</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：D</p>
+        <p>(A) √0.04＝0.2；(B) 循環小數是有理數（＝<span class="frac"><span>1</span><span>7</span></span>）；(C) √(8/2)＝√4＝2；(D) π 是無理數，無理數 − 有理數仍為無理數。</p>
+        <div class="plain">有根號不代表無理數，要先算算看能不能開乾淨。π 減掉一個有理數，小數點後面還是亂跳不循環，所以是無理數。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="B">
+      <div class="q-head"><span class="q-no">第 3 題</span><span class="tag hot">高頻考點</span><span class="tag">1-1 分點公式</span></div>
+      <div class="q-stem">數線上兩點 A(−2)、B(10)，點 P 在線段 AB 上且 AP : PB＝1 : 3，則 P 點坐標為何？</div>
+      <ul class="opts">
+        <li><button>7</button></li>
+        <li><button>1</button></li>
+        <li><button>4</button></li>
+        <li><button>3</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：B</p>
+        <p>P＝<span class="frac"><span>3×(−2)+1×10</span><span>1+3</span></span>＝<span class="frac"><span>4</span><span>4</span></span>＝1。驗算：AP＝1−(−2)＝3，PB＝10−1＝9，3 : 9＝1 : 3。</p>
+        <div class="plain">AB 全長 12，切成 1+3＝4 份，每份 3。P 離 A 一份，所以 −2+3＝1。選 7 的人是把係數放反了（那是離 B 比較近的點）。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">第 4 題</span><span class="tag hot">高頻考點</span><span class="tag">1-1 絕對值不等式</span></div>
+      <div class="q-stem">滿足 |2<i>x</i> − 3| ≤ 5 的整數 <i>x</i> 共有幾個？</div>
+      <ul class="opts">
+        <li><button>4 個</button></li>
+        <li><button>5 個</button></li>
+        <li><button>6 個</button></li>
+        <li><button>7 個</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p>−5 ≤ 2<i>x</i>−3 ≤ 5 ⇒ −2 ≤ 2<i>x</i> ≤ 8 ⇒ −1 ≤ <i>x</i> ≤ 4，整數為 −1, 0, 1, 2, 3, 4，共 6 個。</p>
+        <div class="plain">「小於等於」就夾在中間，三邊一起加 3、一起除以 2。數整數時兩端都包含（有等號），別漏掉 −1 和 4。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="B">
+      <div class="q-head"><span class="q-no">第 5 題</span><span class="tag">1-1 絕對值不等式</span></div>
+      <div class="q-stem">不等式 |<i>x</i> + 1| &gt; 3 的解為何？</div>
+      <ul class="opts">
+        <li><button>−4 &lt; <i>x</i> &lt; 2</button></li>
+        <li><button><i>x</i> &lt; −4 或 <i>x</i> &gt; 2</button></li>
+        <li><button><i>x</i> &lt; −2 或 <i>x</i> &gt; 4</button></li>
+        <li><button>−2 &lt; <i>x</i> &lt; 4</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：B</p>
+        <p><i>x</i>+1 &gt; 3 或 <i>x</i>+1 &lt; −3 ⇒ <i>x</i> &gt; 2 或 <i>x</i> &lt; −4。</p>
+        <div class="plain">|<i>x</i>+1| 是「<i>x</i> 到 −1 的距離」。距離大於 3，就是從 −1 往左超過 −4、往右超過 2。C、D 是把中心當成 +1 的錯誤。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">第 6 題</span><span class="tag">1-1 絕對值幾何意義</span></div>
+      <div class="q-stem">方程式 |<i>x</i> − 1| + |<i>x</i> + 3|＝4 的解為何？</div>
+      <ul class="opts">
+        <li><button><i>x</i>＝1 或 <i>x</i>＝−3</button></li>
+        <li><button><i>x</i> ≥ 1</button></li>
+        <li><button>−3 ≤ <i>x</i> ≤ 1</button></li>
+        <li><button>無解</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p>|<i>x</i>−1|+|<i>x</i>+3| 表示 <i>x</i> 到 1 與到 −3 的距離和，兩點相距 4。當 <i>x</i> 在兩點之間（含端點）時距離和恰為 4；在外側時大於 4。故 −3 ≤ <i>x</i> ≤ 1。</p>
+        <div class="plain">想像你站在數線上，兩個朋友站在 −3 和 1。你只要站在他們中間，走到兩人的路程加起來都剛好是 4；一旦站到外面就會變多。所以答案是一整段，不是只有兩個點。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="D">
+      <div class="q-head"><span class="q-no">第 7 題</span><span class="tag hot">高頻考點</span><span class="tag">1-2 乘法公式</span></div>
+      <div class="q-stem">已知 <i>a</i> + <i>b</i>＝4、<i>ab</i>＝1，則 <i>a</i><sup>3</sup> + <i>b</i><sup>3</sup>＝？</div>
+      <ul class="opts">
+        <li><button>64</button></li>
+        <li><button>60</button></li>
+        <li><button>76</button></li>
+        <li><button>52</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：D</p>
+        <p><i>a</i><sup>3</sup>+<i>b</i><sup>3</sup>＝(<i>a</i>+<i>b</i>)<sup>3</sup>−3<i>ab</i>(<i>a</i>+<i>b</i>)＝64−3×1×4＝52。<br>另解：<i>a</i><sup>2</sup>+<i>b</i><sup>2</sup>＝16−2＝14，<i>a</i><sup>3</sup>+<i>b</i><sup>3</sup>＝(<i>a</i>+<i>b</i>)(<i>a</i><sup>2</sup>−<i>ab</i>+<i>b</i><sup>2</sup>)＝4×(14−1)＝52。</p>
+        <div class="plain">(<i>a</i>+<i>b</i>)³ 展開會多出 3<i>ab</i>(<i>a</i>+<i>b</i>) 這一塊，把它扣掉就是 <i>a</i>³+<i>b</i>³。兩種算法都得 52，考試時可以用第二種驗算。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">第 8 題</span><span class="tag">1-2 乘法公式</span></div>
+      <div class="q-stem">若 <i>x</i> + <span class="frac"><span>1</span><span><i>x</i></span></span>＝3，則 <i>x</i><sup>3</sup> + <span class="frac"><span>1</span><span><i>x</i><sup>3</sup></span></span>＝？</div>
+      <ul class="opts">
+        <li><button>27</button></li>
+        <li><button>24</button></li>
+        <li><button>18</button></li>
+        <li><button>21</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p><i>x</i>·<span class="frac"><span>1</span><span><i>x</i></span></span>＝1，所求＝3<sup>3</sup>−3×1×3＝27−9＝18。（驗算：<i>x</i><sup>2</sup>+<span class="frac"><span>1</span><span><i>x</i><sup>2</sup></span></span>＝9−2＝7，所求＝3×(7−1)＝18。）</p>
+        <div class="plain">把 <i>x</i> 當 <i>a</i>、1/<i>x</i> 當 <i>b</i>，它們相乘剛好是 1，直接套 <i>k</i>³−3<i>k</i>。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="B">
+      <div class="q-head"><span class="q-no">第 9 題</span><span class="tag">1-2 分母有理化</span></div>
+      <div class="q-stem">化簡 <span class="frac"><span>4</span><span>√7 + √3</span></span>＝？</div>
+      <ul class="opts">
+        <li><button><span class="frac"><span>√7 − √3</span><span>4</span></span></button></li>
+        <li><button>√7 − √3</button></li>
+        <li><button>√7 + √3</button></li>
+        <li><button>4(√7 − √3)</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：B</p>
+        <p>上下同乘 (√7−√3)：<span class="frac"><span>4(√7−√3)</span><span>7−3</span></span>＝√7−√3。</p>
+        <div class="plain">分母有兩個根號相加，就乘「換號的那一組」，分母變成 7−3＝4，剛好和分子的 4 約掉。驗算：√7−√3 ≈ 2.646−1.732＝0.914，4÷(2.646+1.732)＝4÷4.378≈0.914，對！</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">第 10 題</span><span class="tag hot">高頻考點</span><span class="tag">1-2 雙重根式</span></div>
+      <div class="q-stem">化簡 <span class="sqrt">√<span>7 − 2√10</span></span>＝？</div>
+      <ul class="opts">
+        <li><button>√7 − √10</button></li>
+        <li><button>√2 − √5</button></li>
+        <li><button>√5 − √2</button></li>
+        <li><button>√5 + √2</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p>找兩數和為 7、積為 10：5 與 2。(√5−√2)<sup>2</sup>＝5+2−2√10＝7−2√10，且 √5−√2 &gt; 0，故為 √5−√2。</p>
+        <div class="plain">B 和 C 平方後一樣，但根號開出來一定是正的，√2−√5 是負數，不行！記住「減號時大的放前面」。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="A">
+      <div class="q-head"><span class="q-no">第 11 題</span><span class="tag">1-2 雙重根式</span></div>
+      <div class="q-stem">化簡 <span class="sqrt">√<span>4 + √12</span></span>＝？</div>
+      <ul class="opts">
+        <li><button>√3 + 1</button></li>
+        <li><button>2 + √3</button></li>
+        <li><button>√3 − 1</button></li>
+        <li><button>√6</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：A</p>
+        <p>√12＝2√3，所以原式＝√(4+2√3)。和 4、積 3 → 3 與 1，得 √3+√1＝√3+1。驗算：(√3+1)<sup>2</sup>＝3+2√3+1＝4+2√3。</p>
+        <div class="plain">先把 √12 改寫成 2√3，湊出「2 根號」的樣子才能拆。很多人看到 √12 就去找「積 12」，那就錯了。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">第 12 題</span><span class="tag hot">高頻考點</span><span class="tag">1-2 算幾不等式</span></div>
+      <div class="q-stem">設 <i>x</i> &gt; 0，則 <i>x</i> + <span class="frac"><span>9</span><span><i>x</i></span></span> 的最小值為何？</div>
+      <ul class="opts">
+        <li><button>3</button></li>
+        <li><button>9</button></li>
+        <li><button>6</button></li>
+        <li><button>18</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p>由算幾不等式，<i>x</i>+<span class="frac"><span>9</span><span><i>x</i></span></span> ≥ 2<span class="sqrt">√<span><i>x</i>·<span class="frac"><span>9</span><span><i>x</i></span></span></span></span>＝2×3＝6，等號在 <i>x</i>＝<span class="frac"><span>9</span><span><i>x</i></span></span> 即 <i>x</i>＝3 時成立。</p>
+        <div class="plain">兩項相乘是 9（固定），所以「積定和最小」，最小值＝2√9＝6。代 <i>x</i>＝3 檢查：3+3＝6，真的取得到。選 3 的人是把「<i>x</i> 的值」當成「最小值」了。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="B">
+      <div class="q-head"><span class="q-no">第 13 題</span><span class="tag">1-2 算幾不等式</span></div>
+      <div class="q-stem">設 <i>a</i>、<i>b</i> 為正數且 2<i>a</i> + 3<i>b</i>＝12，則 <i>ab</i> 的最大值為何？</div>
+      <ul class="opts">
+        <li><button>36</button></li>
+        <li><button>6</button></li>
+        <li><button>18</button></li>
+        <li><button>12</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：B</p>
+        <p><span class="frac"><span>2<i>a</i>+3<i>b</i></span><span>2</span></span> ≥ <span class="sqrt">√<span>2<i>a</i>·3<i>b</i></span></span> ⇒ 6 ≥ √(6<i>ab</i>) ⇒ 36 ≥ 6<i>ab</i> ⇒ <i>ab</i> ≤ 6。等號在 2<i>a</i>＝3<i>b</i>＝6，即 <i>a</i>＝3、<i>b</i>＝2 時成立（驗算 3×2＝6）。</p>
+        <div class="plain">和固定的是「2<i>a</i>」和「3<i>b</i>」，不是 <i>a</i> 和 <i>b</i>。所以先算出 (2<i>a</i>)(3<i>b</i>) 最大是 36，再除以 6 才是 <i>ab</i>。選 36 就是忘了除。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="D">
+      <div class="q-head"><span class="q-no">第 14 題</span><span class="tag">2-1 有理數指數</span></div>
+      <div class="q-stem">8<sup>2/3</sup> × (<span class="frac"><span>1</span><span>4</span></span>)<sup>−1/2</sup>＝？</div>
+      <ul class="opts">
+        <li><button>2</button></li>
+        <li><button>4</button></li>
+        <li><button>16</button></li>
+        <li><button>8</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：D</p>
+        <p>8<sup>2/3</sup>＝(2<sup>3</sup>)<sup>2/3</sup>＝2<sup>2</sup>＝4；(<span class="frac"><span>1</span><span>4</span></span>)<sup>−1/2</sup>＝4<sup>1/2</sup>＝2。相乘得 8。（或全部化成 2 為底：2<sup>2</sup>×2<sup>1</sup>＝2<sup>3</sup>＝8。）</p>
+        <div class="plain">8 的 2/3 次方：先開立方根得 2，再平方得 4。負指數就是「倒過來」，1/4 倒過來變 4，再開平方得 2。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="A">
+      <div class="q-head"><span class="q-no">第 15 題</span><span class="tag hot">高頻考點</span><span class="tag">2-1 比較大小</span></div>
+      <div class="q-stem">設 <i>a</i>＝2<sup>1/2</sup>、<i>b</i>＝3<sup>1/3</sup>、<i>c</i>＝5<sup>1/5</sup>，則大小關係為何？</div>
+      <ul class="opts">
+        <li><button><i>b</i> &gt; <i>a</i> &gt; <i>c</i></button></li>
+        <li><button><i>a</i> &gt; <i>b</i> &gt; <i>c</i></button></li>
+        <li><button><i>c</i> &gt; <i>a</i> &gt; <i>b</i></button></li>
+        <li><button><i>a</i> &gt; <i>c</i> &gt; <i>b</i></button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：A</p>
+        <p>三數皆正，同取 30 次方（2、3、5 的最小公倍數）：<i>a</i><sup>30</sup>＝2<sup>15</sup>＝32768，<i>b</i><sup>30</sup>＝3<sup>10</sup>＝59049，<i>c</i><sup>30</sup>＝5<sup>6</sup>＝15625，故 <i>b</i> &gt; <i>a</i> &gt; <i>c</i>。<br>（也可兩兩比：<i>a</i><sup>6</sup>＝8 &lt; <i>b</i><sup>6</sup>＝9；<i>a</i><sup>10</sup>＝32 &gt; <i>c</i><sup>10</sup>＝25。）</p>
+        <div class="plain">指數不同、底數也不同，就把它們同時「次方」到指數都變整數再比。兩兩比較數字比較小，不用計算機也算得出來，推薦用括號裡的方法。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">第 16 題</span><span class="tag">2-1 科學記號</span></div>
+      <div class="q-stem">(3.2 × 10<sup>5</sup>) × (5 × 10<sup>−8</sup>) 以科學記號表示為何？</div>
+      <ul class="opts">
+        <li><button>1.6 × 10<sup>−3</sup></button></li>
+        <li><button>1.6 × 10<sup>3</sup></button></li>
+        <li><button>1.6 × 10<sup>−2</sup></button></li>
+        <li><button>1.6 × 10<sup>−4</sup></button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p>3.2×5＝16，10<sup>5</sup>×10<sup>−8</sup>＝10<sup>−3</sup>，得 16×10<sup>−3</sup>＝1.6×10<sup>1</sup>×10<sup>−3</sup>＝1.6×10<sup>−2</sup>。</p>
+        <div class="plain">前面的 16 超過 10，要把它變成 1.6，等於借了一個 10 出來，所以指數要 +1，從 −3 變成 −2。最常見錯誤就是忘了調指數而選 A。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="D">
+      <div class="q-head"><span class="q-no">第 17 題</span><span class="tag">1-1 √2 是無理數</span></div>
+      <div class="q-stem">以反證法證明「√2 是無理數」時，第一步應假設什麼？</div>
+      <ul class="opts">
+        <li><button>假設 √2 是無理數</button></li>
+        <li><button>假設 √2＝<span class="frac"><span><i>p</i></span><span><i>q</i></span></span>，<i>p</i>、<i>q</i> 都是偶數</button></li>
+        <li><button>假設 √2 ≈ 1.414，再驗證它不循環</button></li>
+        <li><button>假設 √2 是有理數，可寫成 <span class="frac"><span><i>p</i></span><span><i>q</i></span></span>，<i>p</i>、<i>q</i> 為互質的正整數</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：D</p>
+        <p>反證法先假設結論的反面（√2 是有理數），且取最簡分數（<i>p</i>、<i>q</i> 互質），推得 <i>p</i>、<i>q</i> 都是偶數，與互質矛盾。</p>
+        <div class="plain">反證法＝「先假裝相反的事情是真的，結果推出矛盾」。B 的「都是偶數」是推導出來的結果，不是一開始的假設。</div>
+      </div></details>
+    </div>
+
+    <h3>二、多選題</h3>
+    <p class="small muted">多選題可能有一個或多個正確選項，請全部選出。</p>
+
+    <div class="q" data-answer="BCE" data-multi>
+      <div class="q-head"><span class="q-no">第 18 題</span><span class="tag hot">高頻考點</span><span class="tag">1-1 運算封閉性</span></div>
+      <div class="q-stem">下列敘述哪些正確？</div>
+      <ul class="opts">
+        <li><button>兩個無理數的和必為無理數</button></li>
+        <li><button>有理數與無理數的和必為無理數</button></li>
+        <li><button>非零有理數與無理數的乘積必為無理數</button></li>
+        <li><button>兩個無理數的乘積必為無理數</button></li>
+        <li><button>任兩個相異有理數之間，必存在無理數</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：BCE</p>
+        <p>(A) 反例 √2＋(−√2)＝0。(B) 若 <i>r</i>＋<i>x</i>＝<i>s</i>（有理），則 <i>x</i>＝<i>s</i>−<i>r</i> 為有理，矛盾，故正確。(C) 同理，<i>x</i>＝<span class="frac"><span><i>s</i></span><span><i>r</i></span></span> 會是有理，矛盾，正確。(D) 反例 √2×√2＝2。(E) 例如 <i>a</i> &lt; <i>b</i> 時 <i>a</i>＋<span class="frac"><span><i>b</i>−<i>a</i></span><span>√2</span></span> 為介於兩者之間的無理數，正確。</p>
+        <div class="plain">「無理數＋無理數」「無理數×無理數」都可以用 √2 和 −√2 或 √2 自己湊出整數，所以「必為」都錯。有理數加上無理數，沒辦法把無理的部分消掉，一定還是無理數。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="ADE" data-multi>
+      <div class="q-head"><span class="q-no">第 19 題</span><span class="tag">2-1 指數律</span></div>
+      <div class="q-stem">下列哪些等式正確？</div>
+      <ul class="opts">
+        <li><button>(2<sup>3</sup>)<sup>4</sup>＝2<sup>12</sup></button></li>
+        <li><button>2<sup>3</sup> × 2<sup>4</sup>＝2<sup>12</sup></button></li>
+        <li><button>9<sup>−1/2</sup>＝−3</button></li>
+        <li><button>4<sup>3/2</sup>＝8</button></li>
+        <li><button>(√2)<sup>6</sup>＝8</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：ADE</p>
+        <p>(A) 3×4＝12，正確。(B) 應為 2<sup>3+4</sup>＝2<sup>7</sup>。(C) 9<sup>−1/2</sup>＝<span class="frac"><span>1</span><span>√9</span></span>＝<span class="frac"><span>1</span><span>3</span></span>。(D) 4<sup>3/2</sup>＝(√4)<sup>3</sup>＝8，正確。(E) (2<sup>1/2</sup>)<sup>6</sup>＝2<sup>3</sup>＝8，正確。</p>
+        <div class="plain">同底相乘是指數「相加」，次方的次方才是「相乘」。負指數代表倒數，正數的任何次方都還是正數，不可能變成 −3。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="ACE" data-multi>
+      <div class="q-head"><span class="q-no">第 20 題</span><span class="tag">1-1 絕對值性質</span></div>
+      <div class="q-stem">設 <i>a</i>、<i>b</i> 為任意實數，下列哪些必定成立？</div>
+      <ul class="opts">
+        <li><button>|<i>a</i> + <i>b</i>| ≤ |<i>a</i>| + |<i>b</i>|</button></li>
+        <li><button><span class="sqrt">√<span><i>a</i><sup>2</sup></span></span>＝<i>a</i></button></li>
+        <li><button>|<i>ab</i>|＝|<i>a</i>||<i>b</i>|</button></li>
+        <li><button>若 |<i>a</i>|＝<i>a</i>，則 <i>a</i> &gt; 0</button></li>
+        <li><button>|<i>a</i>| − |<i>b</i>| ≤ |<i>a</i> − <i>b</i>|</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：ACE</p>
+        <p>(A) 三角不等式，正確。(B) 應為 |<i>a</i>|，反例 <i>a</i>＝−2 時 √4＝2 ≠ −2。(C) 正確。(D) <i>a</i>＝0 也滿足 |0|＝0，應為 <i>a</i> ≥ 0。(E) 由 |<i>a</i>|＝|(<i>a</i>−<i>b</i>)+<i>b</i>| ≤ |<i>a</i>−<i>b</i>|+|<i>b</i>| 移項得證，正確。</p>
+        <div class="plain">「必定成立」的題目，試試看代負數和 0，最容易找到反例。B 用 −2 一代就破功；D 用 0 一代就破功。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="ABE" data-multi>
+      <div class="q-head"><span class="q-no">第 21 題</span><span class="tag">1-1 絕對值不等式</span></div>
+      <div class="q-stem">下列哪些 <i>x</i> 值滿足 1 &lt; |<i>x</i> − 2| ≤ 3？</div>
+      <ul class="opts">
+        <li><button><i>x</i>＝−1</button></li>
+        <li><button><i>x</i>＝0</button></li>
+        <li><button><i>x</i>＝1</button></li>
+        <li><button><i>x</i>＝3</button></li>
+        <li><button><i>x</i>＝5</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：ABE</p>
+        <p>|<i>x</i>−2| ≤ 3 ⇒ −1 ≤ <i>x</i> ≤ 5；|<i>x</i>−2| &gt; 1 ⇒ <i>x</i> &lt; 1 或 <i>x</i> &gt; 3。取交集：−1 ≤ <i>x</i> &lt; 1 或 3 &lt; <i>x</i> ≤ 5，即 [−1, 1) ∪ (3, 5]。逐一代入：|−3|＝3 ✓、|−2|＝2 ✓、|−1|＝1 ✗（不大於 1）、|1|＝1 ✗、|3|＝3 ✓。</p>
+        <div class="plain">到 2 的距離要「超過 1、但不超過 3」，像一個中間挖空的甜甜圈。距離剛好 1 的點（1 和 3）不算，距離剛好 3 的點（−1 和 5）要算。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="BD" data-multi>
+      <div class="q-head"><span class="q-no">第 22 題</span><span class="tag">1-2 根式運算</span></div>
+      <div class="q-stem">下列哪些運算正確？</div>
+      <ul class="opts">
+        <li><button>√2 + √3＝√5</button></li>
+        <li><button>√12 + √27＝5√3</button></li>
+        <li><button>(√3 − √2)<sup>2</sup>＝1</button></li>
+        <li><button>√8 × √2＝4</button></li>
+        <li><button><span class="sqrt">√<span>(−3)<sup>2</sup></span></span>＝−3</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：BD</p>
+        <p>(A) 非同類根式不能合併（√2+√3 ≈ 3.146，√5 ≈ 2.236）。(B) 2√3+3√3＝5√3，正確。(C) ＝3+2−2√6＝5−2√6。(D) √16＝4，正確。(E) √9＝3。</p>
+        <div class="plain">根號「乘除可以合併、加減不行」。C 是把 (√3−√2)(√3+√2)＝1 跟平方搞混了。E 記住：開根號出來一定是正的。</div>
+      </div></details>
+    </div>
+
+    <h3>三、填充題（非選）</h3>
+
+    <div class="q">
+      <div class="q-head"><span class="q-no">第 23 題</span><span class="tag hot">高頻考點</span><span class="tag">1-2 有理化＋整數部分</span></div>
+      <div class="q-stem">設 <span class="frac"><span>√3 + 1</span><span>√3 − 1</span></span> 的整數部分為 <i>a</i>、小數部分為 <i>b</i>。求 (1) <i>a</i>＝？ (2) <i>b</i>＝？ (3) <i>b</i><sup>2</sup> + 2<i>b</i>＝？</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：(1) 3　(2) √3 − 1　(3) 2</p>
+        <p>有理化：<span class="frac"><span>(√3+1)<sup>2</sup></span><span>3−1</span></span>＝<span class="frac"><span>4+2√3</span><span>2</span></span>＝2+√3 ≈ 3.732，故 <i>a</i>＝3，<i>b</i>＝(2+√3)−3＝√3−1。<br><i>b</i><sup>2</sup>+2<i>b</i>＝(<i>b</i>+1)<sup>2</sup>−1＝(√3)<sup>2</sup>−1＝2。</p>
+        <div class="plain">小數部分＝原數−整數部分，所以是 √3−1（約 0.732），不是 0.732 這種近似值。第 (3) 小題看到 <i>b</i>²+2<i>b</i> 就想到「配方」，<i>b</i>+1 剛好是 √3，平方就乾淨了。</div>
+      </div></details>
+    </div>
+
+    <div class="q">
+      <div class="q-head"><span class="q-no">第 24 題</span><span class="tag">1-2 乘法公式＋根式</span></div>
+      <div class="q-stem">設 <i>x</i>＝√3 + √2、<i>y</i>＝√3 − √2。求 (1) <i>xy</i>＝？ (2) <i>x</i><sup>2</sup> + <i>y</i><sup>2</sup>＝？ (3) <i>x</i><sup>3</sup> + <i>y</i><sup>3</sup>＝？</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：(1) 1　(2) 10　(3) 18√3</p>
+        <p><i>x</i>+<i>y</i>＝2√3，<i>xy</i>＝3−2＝1。<br><i>x</i><sup>2</sup>+<i>y</i><sup>2</sup>＝(2√3)<sup>2</sup>−2×1＝12−2＝10。<br><i>x</i><sup>3</sup>+<i>y</i><sup>3</sup>＝(2√3)<sup>3</sup>−3×1×2√3＝24√3−6√3＝18√3。<br>驗算：(<i>x</i>+<i>y</i>)(<i>x</i><sup>2</sup>−<i>xy</i>+<i>y</i><sup>2</sup>)＝2√3×(10−1)＝18√3。</p>
+        <div class="plain">不要硬把 (√3+√2)³ 展開！先算「和」與「積」兩個簡單的數，再套對稱式公式。(2√3)³＝8×3√3＝24√3，這一步最容易算錯，慢慢來。</div>
+      </div></details>
+    </div>
+
+    <div class="q">
+      <div class="q-head"><span class="q-no">第 25 題</span><span class="tag">2-1 指數律</span></div>
+      <div class="q-stem">已知 2<sup><i>x</i></sup>＝3，求 (1) 4<sup><i>x</i></sup>＝？ (2) 2<sup><i>x</i>+2</sup>＝？ (3) 8<sup>−<i>x</i>/3</sup>＝？</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：(1) 9　(2) 12　(3) <span class="frac"><span>1</span><span>3</span></span></p>
+        <p>(1) 4<sup><i>x</i></sup>＝(2<sup>2</sup>)<sup><i>x</i></sup>＝(2<sup><i>x</i></sup>)<sup>2</sup>＝9。(2) 2<sup><i>x</i>+2</sup>＝2<sup><i>x</i></sup>×2<sup>2</sup>＝3×4＝12。(3) 8<sup>−<i>x</i>/3</sup>＝(2<sup>3</sup>)<sup>−<i>x</i>/3</sup>＝2<sup>−<i>x</i></sup>＝<span class="frac"><span>1</span><span>3</span></span>。</p>
+        <div class="plain">不用把 <i>x</i> 解出來（那要用對數，這次不考）。全部改寫成「2 的 <i>x</i> 次方」的樣子，再把 3 代進去就好。</div>
+      </div></details>
+    </div>
+  </section>
+
+  <!-- ================= 公式套用 ================= -->
+  <section class="panel" id="apply" hidden>
+    <h2>公式套用：看到題目 → 選工具 → 代入 → 驗算</h2>
+    <p>以下 8 種是段考最常出現的計算題型，每種都有完整示範，下面附一題「換你試試」。</p>
+
+    <!-- 1 -->
+    <h3>1. 循環小數化分數</h3>
+    <div class="box key"><span class="label">看到什麼就用</span><p>看到小數點上方有一條線（或寫「…」循環），要化成分數、或要做循環小數的加減。</p></div>
+    <p><strong>例題：</strong>將 0.3<span style="text-decoration:overline">18</span> 化為最簡分數。</p>
+    <ol class="steps">
+      <li><span>設 <i>x</i>＝0.31818…，不循環 1 位（3）、循環 2 位（18）。</span></li>
+      <li><span>乘 1000 讓小數點跳過「3 和一組 18」：1000<i>x</i>＝318.1818…；乘 10 讓小數點只跳過「3」：10<i>x</i>＝3.1818…。</span></li>
+      <li><span>相減：990<i>x</i>＝315 ⇒ <i>x</i>＝<span class="frac"><span>315</span><span>990</span></span>。</span></li>
+      <li><span>約分（同除 45）：<span class="frac"><span>7</span><span>22</span></span>。</span></li>
+      <li><span>驗算：7÷22＝0.31818…（長除法 70÷22＝3 餘 4，40÷22＝1 餘 18，180÷22＝8 餘 4… 循環）✓。</span></li>
+    </ol>
+    <div class="q" data-answer="B">
+      <div class="q-head"><span class="q-no">換你試試</span><span class="tag">循環小數</span></div>
+      <div class="q-stem">1.2<span style="text-decoration:overline">3</span>（＝1.2333…）化為最簡分數為何？</div>
+      <ul class="opts">
+        <li><button><span class="frac"><span>123</span><span>99</span></span></button></li>
+        <li><button><span class="frac"><span>37</span><span>30</span></span></button></li>
+        <li><button><span class="frac"><span>41</span><span>33</span></span></button></li>
+        <li><button><span class="frac"><span>111</span><span>99</span></span></button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：B</p>
+        <p>100<i>x</i>＝123.33…，10<i>x</i>＝12.33…，相減 90<i>x</i>＝111，<i>x</i>＝<span class="frac"><span>111</span><span>90</span></span>＝<span class="frac"><span>37</span><span>30</span></span>。驗算：37÷30＝1.2333… ✓</p>
+        <div class="plain">只有 3 在循環，2 沒有。分母是「一個 9 一個 0」＝90，不是 99。</div>
+      </div></details>
+    </div>
+
+    <!-- 2 -->
+    <h3>2. 分點公式</h3>
+    <div class="box key"><span class="label">看到什麼就用</span><p>數線上兩點，題目給「AP : PB＝<i>m</i> : <i>n</i>」或「把 AB 分成幾等分」。</p></div>
+    <p><strong>例題：</strong>A(−3)、B(9)，P 在 AB 上且 AP : PB＝2 : 1，求 P。</p>
+    <ol class="steps">
+      <li><span>判斷：P 在線段上、給比例 → 內分點公式 P＝<span class="frac"><span><i>n a</i>+<i>m b</i></span><span><i>m</i>+<i>n</i></span></span>，<i>m</i>＝2、<i>n</i>＝1。</span></li>
+      <li><span>代入（交叉）：P＝<span class="frac"><span>1×(−3)+2×9</span><span>3</span></span>＝<span class="frac"><span>15</span><span>3</span></span>＝5。</span></li>
+      <li><span>驗算：AP＝5−(−3)＝8，PB＝9−5＝4，8 : 4＝2 : 1 ✓；P 比較靠近 B（比例小的那端）✓。</span></li>
+    </ol>
+    <div class="q" data-answer="A">
+      <div class="q-head"><span class="q-no">換你試試</span><span class="tag">分點公式</span></div>
+      <div class="q-stem">A(−4)、B(11)，P 在線段 AB 上且 AP : PB＝3 : 2，則 P＝？</div>
+      <ul class="opts">
+        <li><button>5</button></li>
+        <li><button>2</button></li>
+        <li><button>3.5</button></li>
+        <li><button>8</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：A</p>
+        <p>P＝<span class="frac"><span>2×(−4)+3×11</span><span>5</span></span>＝<span class="frac"><span>25</span><span>5</span></span>＝5。驗算：AP＝9、PB＝6，9 : 6＝3 : 2 ✓。</p>
+        <div class="plain">另一種想法：AB 長 15，分 5 份每份 3，從 A 走 3 份：−4+9＝5。選 2 是係數放反了。</div>
+      </div></details>
+    </div>
+
+    <!-- 3 -->
+    <h3>3. 絕對值不等式 |<i>x</i> − <i>a</i>| &lt; <i>b</i></h3>
+    <div class="box key"><span class="label">看到什麼就用</span><p>絕對值裡面是一次式、右邊是正數，或題目問「到某點距離小於／大於多少」。</p></div>
+    <p><strong>例題：</strong>解 |2<i>x</i> + 1| &lt; 7。</p>
+    <ol class="steps">
+      <li><span>判斷：「小於」→ 夾中間：−7 &lt; 2<i>x</i>+1 &lt; 7。</span></li>
+      <li><span>三邊同減 1：−8 &lt; 2<i>x</i> &lt; 6。</span></li>
+      <li><span>三邊同除 2（正數，不等號不變向）：−4 &lt; <i>x</i> &lt; 3。</span></li>
+      <li><span>驗算：取端點內的 <i>x</i>＝0：|1|＝1 &lt; 7 ✓；取外面的 <i>x</i>＝3：|7|＝7 不小於 7 ✓（端點不含）。</span></li>
+    </ol>
+    <div class="box tip"><span class="label">反向題型</span><p>「−1 &lt; <i>x</i> &lt; 7 寫成 |<i>x</i>−<i>a</i>| &lt; <i>b</i>」：中心 <i>a</i>＝<span class="frac"><span>−1+7</span><span>2</span></span>＝3，半徑 <i>b</i>＝<span class="frac"><span>7−(−1)</span><span>2</span></span>＝4。</p></div>
+    <div class="q">
+      <div class="q-head"><span class="q-no">換你試試</span><span class="tag">絕對值不等式</span></div>
+      <div class="q-stem">(1) 解 |<i>x</i> − 3| ≥ 2。(2) 若 |<i>x</i> − <i>a</i>| &lt; <i>b</i> 的解為 −5 &lt; <i>x</i> &lt; 9，求 <i>a</i>、<i>b</i>。</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：(1) <i>x</i> ≤ 1 或 <i>x</i> ≥ 5　(2) <i>a</i>＝2、<i>b</i>＝7</p>
+        <p>(1) <i>x</i>−3 ≥ 2 或 <i>x</i>−3 ≤ −2 ⇒ <i>x</i> ≥ 5 或 <i>x</i> ≤ 1。(2) <i>a</i>＝<span class="frac"><span>−5+9</span><span>2</span></span>＝2，<i>b</i>＝<span class="frac"><span>9−(−5)</span><span>2</span></span>＝7。驗算：2−7＝−5、2+7＝9 ✓。</p>
+        <div class="plain">(1)「大於等於」就往兩邊分，而且有等號，端點 1 和 5 都要。(2) 解集合的正中間就是 <i>a</i>，半個長度就是 <i>b</i>。</div>
+      </div></details>
+    </div>
+
+    <!-- 4 -->
+    <h3>4. 乘法公式求值（已知 <i>a</i>+<i>b</i>、<i>ab</i>）</h3>
+    <div class="box key"><span class="label">看到什麼就用</span><p>題目給兩數的和（或差）與積，要求平方和、立方和、差的平方……而且 <i>a</i>、<i>b</i> 本身很醜（有根號）或根本沒給。</p></div>
+    <p><strong>例題：</strong><i>a</i>+<i>b</i>＝5、<i>ab</i>＝3，求 <i>a</i><sup>2</sup>+<i>b</i><sup>2</sup>、<i>a</i><sup>3</sup>+<i>b</i><sup>3</sup>、(<i>a</i>−<i>b</i>)<sup>2</sup>。</p>
+    <ol class="steps">
+      <li><span>判斷：只知道和與積 → 用對稱式公式，不要解方程式。</span></li>
+      <li><span><i>a</i><sup>2</sup>+<i>b</i><sup>2</sup>＝(<i>a</i>+<i>b</i>)<sup>2</sup>−2<i>ab</i>＝25−6＝19。</span></li>
+      <li><span><i>a</i><sup>3</sup>+<i>b</i><sup>3</sup>＝(<i>a</i>+<i>b</i>)<sup>3</sup>−3<i>ab</i>(<i>a</i>+<i>b</i>)＝125−45＝80。</span></li>
+      <li><span>(<i>a</i>−<i>b</i>)<sup>2</sup>＝(<i>a</i>+<i>b</i>)<sup>2</sup>−4<i>ab</i>＝25−12＝13。</span></li>
+      <li><span>驗算：<i>a</i><sup>3</sup>+<i>b</i><sup>3</sup>＝(<i>a</i>+<i>b</i>)(<i>a</i><sup>2</sup>−<i>ab</i>+<i>b</i><sup>2</sup>)＝5×(19−3)＝80 ✓（兩種公式答案一致）。</span></li>
+    </ol>
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">換你試試</span><span class="tag">乘法公式</span></div>
+      <div class="q-stem">已知 <i>a</i> − <i>b</i>＝3、<i>ab</i>＝2，則 <i>a</i><sup>3</sup> − <i>b</i><sup>3</sup>＝？</div>
+      <ul class="opts">
+        <li><button>27</button></li>
+        <li><button>9</button></li>
+        <li><button>45</button></li>
+        <li><button>39</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p><i>a</i><sup>3</sup>−<i>b</i><sup>3</sup>＝(<i>a</i>−<i>b</i>)<sup>3</sup>+3<i>ab</i>(<i>a</i>−<i>b</i>)＝27+18＝45。驗算：<i>a</i><sup>2</sup>+<i>b</i><sup>2</sup>＝9+4＝13，(<i>a</i>−<i>b</i>)(<i>a</i><sup>2</sup>+<i>ab</i>+<i>b</i><sup>2</sup>)＝3×15＝45 ✓。</p>
+        <div class="plain">差的立方展開是 <i>a</i>³−<i>b</i>³−3<i>ab</i>(<i>a</i>−<i>b</i>)，所以要「加回」3<i>ab</i>(<i>a</i>−<i>b</i>)。符號搞反就會得到 9。</div>
+      </div></details>
+    </div>
+
+    <!-- 5 -->
+    <h3>5. 雙重根式化簡</h3>
+    <div class="box key"><span class="label">看到什麼就用</span><p>根號裡面還有根號：√(□ ± √△) 或 √(□ ± 2√△)。</p></div>
+    <p><strong>例題：</strong>化簡 <span class="sqrt">√<span>8 − √60</span></span>。</p>
+    <ol class="steps">
+      <li><span>湊出「2√」：√60＝√(4×15)＝2√15，原式＝√(8−2√15)。</span></li>
+      <li><span>找兩數：和＝8、積＝15 → 5 和 3。</span></li>
+      <li><span>減號 → 大減小：√5−√3。</span></li>
+      <li><span>驗算：(√5−√3)<sup>2</sup>＝5+3−2√15＝8−2√15 ✓，且 √5−√3 &gt; 0 ✓。</span></li>
+    </ol>
+    <div class="box tip"><span class="label">進階：根號前不是 2</span><p>√(2+√3)：上下乘 2 → <span class="sqrt">√<span>(4+2√3)/2</span></span>＝<span class="frac"><span>√3+1</span><span>√2</span></span>＝<span class="frac"><span>√6+√2</span><span>2</span></span>。</p></div>
+    <div class="q" data-answer="D">
+      <div class="q-head"><span class="q-no">換你試試</span><span class="tag">雙重根式</span></div>
+      <div class="q-stem">化簡 <span class="sqrt">√<span>9 − √56</span></span>＝？</div>
+      <ul class="opts">
+        <li><button>√2 − √7</button></li>
+        <li><button>√7 + √2</button></li>
+        <li><button>3 − √7</button></li>
+        <li><button>√7 − √2</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：D</p>
+        <p>√56＝2√14，和 9、積 14 → 7 與 2，得 √7−√2。驗算：(√7−√2)<sup>2</sup>＝9−2√14 ✓。</p>
+        <div class="plain">56 拆成 4×14，把 4 開出來變成 2√14，這一步做完就跟課本例題一模一樣了。</div>
+      </div></details>
+    </div>
+
+    <!-- 6 -->
+    <h3>6. 算幾不等式求最小值</h3>
+    <div class="box key"><span class="label">看到什麼就用</span><p>題目有「<i>x</i> &gt; 0」之類的正數條件，要求「最小值／最大值」，而且式子是兩項相加、兩項乘起來會是常數（或兩項加起來是常數）。</p></div>
+    <p><strong>例題：</strong><i>x</i> &gt; 0，求 4<i>x</i> + <span class="frac"><span>9</span><span><i>x</i></span></span> 的最小值，以及此時的 <i>x</i>。</p>
+    <ol class="steps">
+      <li><span>檢查「一正」：<i>x</i> &gt; 0，兩項都正 ✓。「二定」：4<i>x</i>·<span class="frac"><span>9</span><span><i>x</i></span></span>＝36 是定值 ✓。</span></li>
+      <li><span>套公式：4<i>x</i>+<span class="frac"><span>9</span><span><i>x</i></span></span> ≥ 2√36＝12。</span></li>
+      <li><span>「三相等」：4<i>x</i>＝<span class="frac"><span>9</span><span><i>x</i></span></span> ⇒ <i>x</i><sup>2</sup>＝<span class="frac"><span>9</span><span>4</span></span> ⇒ <i>x</i>＝<span class="frac"><span>3</span><span>2</span></span>（取正）。</span></li>
+      <li><span>驗算：4×1.5＋9÷1.5＝6＋6＝12 ✓。最小值 12，發生在 <i>x</i>＝<span class="frac"><span>3</span><span>2</span></span>。</span></li>
+    </ol>
+    <div class="q" data-answer="B">
+      <div class="q-head"><span class="q-no">換你試試</span><span class="tag">算幾不等式</span></div>
+      <div class="q-stem">設 <i>x</i> &gt; 1，則 <i>x</i> + <span class="frac"><span>4</span><span><i>x</i> − 1</span></span> 的最小值為何？</div>
+      <ul class="opts">
+        <li><button>4</button></li>
+        <li><button>5</button></li>
+        <li><button>3</button></li>
+        <li><button>6</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：B</p>
+        <p>改寫成 (<i>x</i>−1)+<span class="frac"><span>4</span><span><i>x</i>−1</span></span>+1，因 <i>x</i>−1 &gt; 0，前兩項 ≥ 2√4＝4，故原式 ≥ 5，等號在 <i>x</i>−1＝2 即 <i>x</i>＝3。驗算：3＋4÷2＝5 ✓。</p>
+        <div class="plain"><i>x</i> 和 4/(<i>x</i>−1) 乘起來不是定值，所以要「湊」：先把 <i>x</i> 拆成 (<i>x</i>−1)+1，讓兩項相乘變 4。選 4 的人忘了把多出來的 +1 加回去。</div>
+      </div></details>
+    </div>
+
+    <!-- 7 -->
+    <h3>7. 指數律化簡與比較大小</h3>
+    <div class="box key"><span class="label">看到什麼就用</span><p>分數指數、負指數混在一起要化簡；或幾個指數式要比大小。</p></div>
+    <p><strong>例題 A（化簡）：</strong>設 <i>a</i>, <i>b</i> &gt; 0，化簡 <span class="frac"><span>(<i>a</i><sup>2/3</sup><i>b</i><sup>−1/2</sup>)<sup>6</sup></span><span><i>a</i><sup>3</sup><i>b</i><sup>−2</sup></span></span>。</p>
+    <ol class="steps">
+      <li><span>分子用 (<i>a</i><sup><i>r</i></sup>)<sup><i>s</i></sup>＝<i>a</i><sup><i>rs</i></sup>：<i>a</i><sup>4</sup><i>b</i><sup>−3</sup>。</span></li>
+      <li><span>同底相除指數相減：<i>a</i><sup>4−3</sup><i>b</i><sup>−3−(−2)</sup>＝<i>a</i><sup>1</sup><i>b</i><sup>−1</sup>。</span></li>
+      <li><span>答案：<span class="frac"><span><i>a</i></span><span><i>b</i></span></span>。驗算：代 <i>a</i>＝8、<i>b</i>＝1：分子 (4)<sup>6</sup>＝4096，分母 512，4096÷512＝8＝<i>a</i>/<i>b</i> ✓。</span></li>
+    </ol>
+    <p><strong>例題 B（比較大小）：</strong>比較 2<sup>30</sup>、3<sup>20</sup>、5<sup>10</sup>。</p>
+    <ol class="steps">
+      <li><span>指數 30、20、10 的最大公因數是 10 → 化成同指數：2<sup>30</sup>＝(2<sup>3</sup>)<sup>10</sup>＝8<sup>10</sup>、3<sup>20</sup>＝(3<sup>2</sup>)<sup>10</sup>＝9<sup>10</sup>、5<sup>10</sup>。</span></li>
+      <li><span>指數相同（正），底數越大值越大：9 &gt; 8 &gt; 5。</span></li>
+      <li><span>結論：3<sup>20</sup> &gt; 2<sup>30</sup> &gt; 5<sup>10</sup>。</span></li>
+    </ol>
+    <div class="q" data-answer="A">
+      <div class="q-head"><span class="q-no">換你試試</span><span class="tag">指數＋乘法公式</span></div>
+      <div class="q-stem">設 <i>a</i> &gt; 0 且 <i>a</i><sup>1/2</sup> + <i>a</i><sup>−1/2</sup>＝3，則 <i>a</i> + <i>a</i><sup>−1</sup>＝？</div>
+      <ul class="opts">
+        <li><button>7</button></li>
+        <li><button>9</button></li>
+        <li><button>11</button></li>
+        <li><button>6</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：A</p>
+        <p>兩邊平方：<i>a</i>+2·<i>a</i><sup>1/2</sup><i>a</i><sup>−1/2</sup>+<i>a</i><sup>−1</sup>＝9，中間項＝2×1＝2，故 <i>a</i>+<i>a</i><sup>−1</sup>＝7。（延伸：<i>a</i><sup>3/2</sup>+<i>a</i><sup>−3/2</sup>＝27−9＝18。）</p>
+        <div class="plain">這題其實就是「<i>x</i>+1/<i>x</i>＝3 求 <i>x</i>²+1/<i>x</i>²」穿上指數的衣服，<i>a</i> 的 1/2 次方平方就是 <i>a</i>。選 9 是忘了扣掉中間的 2。</div>
+      </div></details>
+    </div>
+
+    <!-- 8 -->
+    <h3>8. 科學記號運算</h3>
+    <div class="box key"><span class="label">看到什麼就用</span><p>很大或很小的數（天文距離、細胞大小、原子質量）做乘除；或問「是幾位數」「小數點後第幾位開始不為 0」。</p></div>
+    <p><strong>例題：</strong>計算 <span class="frac"><span>6 × 10<sup>8</sup></span><span>1.5 × 10<sup>−3</sup></span></span>，並以科學記號表示。</p>
+    <ol class="steps">
+      <li><span>係數相除：6÷1.5＝4。</span></li>
+      <li><span>10 的次方相除，指數相減：10<sup>8−(−3)</sup>＝10<sup>11</sup>。</span></li>
+      <li><span>檢查 1 ≤ 4 &lt; 10 ✓，答案 4×10<sup>11</sup>（是 12 位數）。</span></li>
+    </ol>
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">換你試試</span><span class="tag">科學記號</span></div>
+      <div class="q-stem">光速約 3 × 10<sup>8</sup> 公尺/秒，太陽到地球的距離約 1.5 × 10<sup>11</sup> 公尺。太陽光到達地球大約需要多少秒？</div>
+      <ul class="opts">
+        <li><button>5 × 10<sup>3</sup> 秒</button></li>
+        <li><button>4.5 × 10<sup>19</sup> 秒</button></li>
+        <li><button>5 × 10<sup>2</sup> 秒</button></li>
+        <li><button>2 × 10<sup>−3</sup> 秒</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p>時間＝距離÷速度＝<span class="frac"><span>1.5×10<sup>11</sup></span><span>3×10<sup>8</sup></span></span>＝0.5×10<sup>3</sup>＝5×10<sup>2</sup> 秒（約 8 分 20 秒）。</p>
+        <div class="plain">1.5÷3＝0.5 小於 1，要往右借一位變 5，指數就要 −1，從 3 變 2。也可以用常識驗算：陽光大約 8 分鐘到地球，500 秒差不多就是 8 分多鐘。</div>
+      </div></details>
+    </div>
+  </section>
+
+  <!-- ================= 考前攻略 ================= -->
+  <section class="panel" id="tips" hidden>
+    <h2>考前 3 天讀書排程</h2>
+    <p>數學是 <strong>10/07 第一節</strong>，考完當天還有國文、地理、物理，所以數學要在 10/06 晚上前「收尾」，當天早上只做暖身。</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>日期</th><th>數學任務</th><th>建議時間</th></tr></thead>
+      <tbody>
+        <tr><td>10/04（日）</td><td>讀「範圍重點整理」1-1 全部＋「公式整理」1-1；做考古題 1–6、17、18、20、21；把課本 1-1 例題蓋住答案重算一遍。</td><td>約 2 小時</td></tr>
+        <tr><td>10/05（一）</td><td>1-2 乘法公式、根式、雙重根式、算幾；做「公式套用」1–6 示範與換你試試；考古題 7–13、22–24。錯題寫進訂正本（寫錯在哪一步）。</td><td>約 2–2.5 小時</td></tr>
+        <tr><td>10/06（二）</td><td>2-1 指數＋科學記號；公式套用 7–8；考古題 14–16、19、25。晚上<strong>計時 70 分鐘</strong>做一回習作或講義的綜合題，然後只複習錯題，背「必背數值」表。</td><td>約 2.5 小時，<mark>23:00 前睡</mark></td></tr>
+        <tr><td>10/07（三）早上</td><td>到校後到 08:20 前：只看「公式整理」分頁＋自己的錯題本，口唸一遍立方公式、雙重根式口訣、「一正二定三相等」。<strong>不要再做新題目</strong>，避免卡住影響心情。</td><td>15–20 分鐘</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>70 分鐘時間分配</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>時段</th><th>做什麼</th></tr></thead>
+      <tbody>
+        <tr><td>08:20–08:22</td><td>填寫（劃記）班級座號、看一遍題目數量與配分，先找出自己最有把握的區塊。</td></tr>
+        <tr><td>08:22–08:45（約 23 分）</td><td>單選題。一題超過 2 分鐘還沒頭緒就<strong>先圈起來跳過</strong>。</td></tr>
+        <tr><td>08:45–09:00（約 15 分）</td><td>多選題。每個選項都要獨立判斷，能找反例的先找反例。</td></tr>
+        <tr><td>09:00–09:15（約 15 分）</td><td>填充／計算題。答案寫最簡形式（分數約分、根號化簡、分母有理化）。</td></tr>
+        <tr><td>09:15–09:25（約 10 分）</td><td>回頭做跳過的題目；<mark>檢查答案卡劃記</mark>有沒有對齊題號、多選有沒有劃完整。</td></tr>
+        <tr><td>09:25–09:30</td><td>驗算計算題（見下方方法）。鐘響停筆，不可提早交卷。</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box warn"><span class="label">考試規則</span><p><strong>數學考試不能用計算機</strong>，所有數值都要手算，所以平常就要練手算速度。答案卡用 <strong>2B 鉛筆</strong>劃記，帶好橡皮擦；鐘響畢就要停筆。</p></div>
+
+    <h2>計算題驗算方法（不用計算機）</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>題型</th><th>驗算方法</th></tr></thead>
+      <tbody>
+        <tr><td>循環小數化分數</td><td>用長除法把分數除回去，看前 3–4 位小數是否一樣。</td></tr>
+        <tr><td>分點、中點</td><td>算出 AP、PB 的長度看比例；看 P 是否靠近比例小的那端。</td></tr>
+        <tr><td>絕對值方程式／不等式</td><td>把解代回原式；不等式取「範圍內一點」和「端點」各代一次，確認有沒有等號。</td></tr>
+        <tr><td>乘法公式求值</td><td>用兩種公式各算一次（例如 <i>a</i>³+<i>b</i>³ 用「(<i>a</i>+<i>b</i>)³−3<i>ab</i>(<i>a</i>+<i>b</i>)」和「(<i>a</i>+<i>b</i>)(<i>a</i>²−<i>ab</i>+<i>b</i>²)」），答案要一致。</td></tr>
+        <tr><td>分母有理化、根式</td><td>用近似值估算：√2≈1.414、√3≈1.732、√5≈2.236，比較化簡前後大概相等。</td></tr>
+        <tr><td>雙重根式</td><td>把答案平方，看是否還原成題目；確認答案是正數（大減小）。</td></tr>
+        <tr><td>算幾不等式</td><td>把「等號成立時的 <i>x</i>」代回原式，看是否真的等於你算的最小值；也要確認 <i>x</i> 符合題目範圍。</td></tr>
+        <tr><td>指數化簡</td><td>代簡單的數（如 <i>a</i>＝4 或 8、<i>b</i>＝1）進原式和答案，看是否相等。</td></tr>
+        <tr><td>科學記號</td><td>檢查 1 ≤ <i>a</i> &lt; 10；用常識或數量級估算（10 的幾次方大概對不對）。</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>常見失分原因</h2>
+    <div class="box warn"><span class="label">易錯陷阱</span>
+      <ul>
+        <li>循環節抓錯（0.1<span style="text-decoration:overline">23</span> 當成 0.<span style="text-decoration:overline">123</span>）、分數沒約到最簡。</li>
+        <li>分點公式係數放反。</li>
+        <li>|<i>x</i>+3| 的中心寫成 3（應是 −3）；不等式端點該不該含等號弄錯。</li>
+        <li><span class="sqrt">√<span><i>a</i><sup>2</sup></span></span> 直接寫成 <i>a</i>（應為 |<i>a</i>|）。</li>
+        <li>立方公式符號錯；(2√3)³ 這類計算算錯。</li>
+        <li>雙重根式沒先湊出「2√」，或減號時把小的放前面變成負數。</li>
+        <li>算幾不等式忘了檢查等號能不能成立、或題目要求的是 <i>ab</i> 而不是 (2<i>a</i>)(3<i>b</i>)。</li>
+        <li>2³·2⁴ 寫成 2¹²；負指數當成負數。</li>
+        <li>科學記號最後沒把係數調整到 1～10 之間。</li>
+        <li>多選題漏選、答案卡劃記錯位。</li>
+      </ul>
+    </div>
+
+    <h2>考前一晚必看清單</h2>
+    <ul class="checklist" data-key="math-final">
+      <li><label><input type="checkbox"><span>能用速算規則把循環小數化成最簡分數（有不循環部分的也會）。</span></label></li>
+      <li><label><input type="checkbox"><span>能判斷一個分數是不是有限小數（先約分，分母只含 2、5）。</span></label></li>
+      <li><label><input type="checkbox"><span>能寫出 √2 是無理數的反證法四步驟，知道矛盾在「互質」。</span></label></li>
+      <li><label><input type="checkbox"><span>知道有理數、無理數加減乘除的封閉性，並能舉反例。</span></label></li>
+      <li><label><input type="checkbox"><span>分點公式會交叉配對，並能用「靠近哪端」檢查。</span></label></li>
+      <li><label><input type="checkbox"><span>「小於夾中間、大於分兩邊」，會解 |<i>ax</i>+<i>b</i>| &lt; <i>c</i> 和 &gt; <i>c</i>。</span></label></li>
+      <li><label><input type="checkbox"><span>知道 |<i>x</i>−<i>a</i>|+|<i>x</i>−<i>b</i>| 的最小值與發生範圍。</span></label></li>
+      <li><label><input type="checkbox"><span>會用區間記號，知道 ∞ 一定用小括號。</span></label></li>
+      <li><label><input type="checkbox"><span>八個乘法公式（含立方和、立方差）能默寫。</span></label></li>
+      <li><label><input type="checkbox"><span>已知 <i>a</i>+<i>b</i>、<i>ab</i>，會求 <i>a</i>²+<i>b</i>²、<i>a</i>³+<i>b</i>³、(<i>a</i>−<i>b</i>)²；已知 <i>x</i>+1/<i>x</i> 也會。</span></label></li>
+      <li><label><input type="checkbox"><span>會分母有理化（單根號、兩根號共軛）。</span></label></li>
+      <li><label><input type="checkbox"><span>會化簡雙重根式，包含根號前不是 2 的情況。</span></label></li>
+      <li><label><input type="checkbox"><span>會分式通分、約分、繁分式化簡。</span></label></li>
+      <li><label><input type="checkbox"><span>算幾不等式「一正二定三相等」，會湊項（如 <i>x</i>−1）。</span></label></li>
+      <li><label><input type="checkbox"><span>零指數、負指數、分數指數的定義與底數條件。</span></label></li>
+      <li><label><input type="checkbox"><span>指數律三條，會用「同底」或「同指數」比大小。</span></label></li>
+      <li><label><input type="checkbox"><span>科學記號乘除，並會調整係數到 1 ≤ <i>a</i> &lt; 10。</span></label></li>
+      <li><label><input type="checkbox"><span>背熟 √2、√3、√5 近似值，11²～20²，2 的 1～10 次方。</span></label></li>
+      <li><label><input type="checkbox"><span>準備好 2B 鉛筆、橡皮擦、黑筆、尺；書包裡不要放計算機以免誤會。</span></label></li>
+    </ul>
+
+    <h2>免費線上資源</h2>
+    <ul>
+      <li><a href="https://www.junyiacademy.org/" target="_blank" rel="noopener">均一教育平台</a>：搜尋「乘法公式」「根式」「算幾不等式」「指數」等主題，有影片與練習題。</li>
+      <li><a href="https://cooc.tp.edu.tw/" target="_blank" rel="noopener">臺北酷課雲</a>：臺北市教育局的線上學習平台，有高中數學課程影片。</li>
+      <li><a href="https://adl.edu.tw/" target="_blank" rel="noopener">教育部因材網</a>：有知識節點診斷，可以找出自己哪個觀念沒弄懂。</li>
+    </ul>
+    <div class="box ok"><span class="label">學長姐的話</span><p>數學段考拚的不是難題，而是<strong>基本題全對</strong>。把這頁的 25 題考古題和 8 題換你試試做到「不看解析也能全對」，就已經準備得很好了。第一節考完數學不要對答案，馬上切換到國文模式！</p></div>
+  </section>
+
+  <footer class="footer">資料來源：陽明高中 115-1 第一次段考考程表（10/03 修正）、考試範圍表（09/30 修正）、115 學年度教科書版本表。各節名稱若與課本目錄不同，以課本與老師公告為準。練習題為依範圍自編，非學校原始試卷。</footer>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>
