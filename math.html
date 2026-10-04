@@ -35,6 +35,7 @@
     <button data-tab="notes">範圍重點整理</button>
     <button data-tab="formula">公式整理與記憶技巧</button>
     <button data-tab="past">考古題與白話解析</button>
+    <button data-tab="mock">模擬段考</button>
     <button data-tab="apply">公式套用</button>
     <button data-tab="tips">考前攻略</button>
   </nav>
@@ -1074,6 +1075,313 @@
         <p>(1) 4<sup><i>x</i></sup>＝(2<sup>2</sup>)<sup><i>x</i></sup>＝(2<sup><i>x</i></sup>)<sup>2</sup>＝9。(2) 2<sup><i>x</i>+2</sup>＝2<sup><i>x</i></sup>×2<sup>2</sup>＝3×4＝12。(3) 8<sup>−<i>x</i>/3</sup>＝(2<sup>3</sup>)<sup>−<i>x</i>/3</sup>＝2<sup>−<i>x</i></sup>＝<span class="frac"><span>1</span><span>3</span></span>。</p>
         <div class="plain">不用把 <i>x</i> 解出來（那要用對數，這次不考）。全部改寫成「2 的 <i>x</i> 次方」的樣子，再把 3 代進去就好。</div>
       </div></details>
+    </div>
+  </section>
+
+  <!-- ================= 模擬段考 ================= -->
+  <section class="panel" id="mock" hidden>
+    <h2>模擬段考</h2>
+    <div class="box info"><span class="label">這份模擬卷怎麼來的</span>
+      <p><strong>陽明高中：</strong>我們搜尋了陽明高中官網與相關網頁，只找到考程表、考試範圍與暑假作業，<strong>沒有找到公開的數學段考試卷</strong>（試題可能只在校內流通）。</p>
+      <p><strong>改用北一女：</strong>北一女數學科網站公開了歷年「高一上第一次期中考」試卷與答案。我們實際打開並讀過 110～114 學年度共 5 份（都是 108 課綱、範圍「第一冊 數與式」），挑出與本次範圍（1-1、1-2、2-1）相符的考點<strong>改編</strong>：保留考點和題型，但題目敘述、數字、選項都重新設計，答案也全部自己重算過，沒有逐字照抄。北一女的考卷有考「常用對數」，那些題目本次不考，全部排除。</p>
+      <p><strong>卷面結構：</strong>參考北一女 114-1 與 112-1 的結構（單選＋多選＋填充＋計算證明，總分 100），題數調成 70 分鐘寫得完的份量：單選 5 題、多選 3 題、填充 7 題、計算證明 2 題。每題標題列都註明改編來源。</p>
+    </div>
+
+    <h3>考古題來源</h3>
+    <div class="table-wrap sources"><table>
+      <thead><tr><th>學校</th><th>考試</th><th>與本次範圍重疊</th><th>原卷連結</th></tr></thead>
+      <tbody>
+        <tr><td>北一女中</td><td>114 學年度第 1 學期 高一數學 第一次期中考（題目＋簡答，不可用計算機）</td><td>多選 1～2、填充 3～5、7～11、計算證明 12～14；第 6 題（常用對數）本次不考</td><td><a href="https://drive.google.com/file/d/1gFNmq_iWtPwLqZEatFV0YsXBnpD6eDHE/view" target="_blank" rel="noopener">114-1 第一次段考 PDF</a></td></tr>
+        <tr><td>北一女中</td><td>113 學年度第 1 學期 高一數學 第一次期中考（題目＋參考答案）</td><td>多選 1、2、4，填充 1～5，混合題（算幾）；多選 3 部分選項與填充 6～8 用到對數，不考</td><td><a href="https://drive.google.com/file/d/10gZpGel12DVK49co9iaDYvVThcxJiI8Y/view" target="_blank" rel="noopener">113-1 第一次段考 PDF</a></td></tr>
+        <tr><td>北一女中</td><td>112 學年度第 1 學期 高一數學 第一次期中考（題目＋簡答＋詳解）</td><td>1～3、5～10、12～16、17(1)(3)；第 4、11、17(2) 題用到對數，不考</td><td><a href="https://drive.google.com/file/d/1CNPBAMs6GdonKdavr9qz5-lxCyt1COIY/view" target="_blank" rel="noopener">112-1 第一次段考 PDF</a></td></tr>
+        <tr><td>北一女中</td><td>111 學年度第 1 學期 高一數學 第一次期中考（題目＋答案）</td><td>單選 1、多選 1～2、填充 1～4、6、8～10；單選 2、填充 5、7 與混合題用到對數，不考</td><td><a href="https://drive.google.com/file/d/1YUjYawd0XYqKuUF_r8x5qAec19QiHHA9/view" target="_blank" rel="noopener">111-1 第一次段考 PDF</a></td></tr>
+        <tr><td>北一女中</td><td>110 學年度第 1 學期 高一數學 第一次期中考（題目＋答案）</td><td>2～7、9～11、13～15；第 1、8、12 題含對數，不考</td><td><a href="https://drive.google.com/file/d/1tgZ1ByaWrxow0uuGobLgmKolYdPbu38Q/view" target="_blank" rel="noopener">110-1 第一次段考 PDF</a></td></tr>
+        <tr><td>北一女中</td><td>數學科「段考試題」總頁（101～114 學年度各次段考）</td><td>想多練可以從這裡找其他年度；寫之前先跳過有 log 的題目</td><td><a href="https://sites.google.com/a/gapps.fg.tp.edu.tw/math/exam" target="_blank" rel="noopener">北一女數學科 段考試題</a></td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted">連結是北一女數學科網站上公開的 Google 雲端硬碟檔案，著作權屬原命題老師；這裡只提供連結，方便你下載原卷練習。若連結失效，請從總頁進入「高一試題」。</p>
+
+    <div class="exam">
+      <div class="paper-head">
+        <span class="ttl">陽明高中 高一 數學 第一次段考 模擬卷</span>
+        <span class="meta">範圍：翰林 數學I 1-1 數與數線、1-2 式的運算、2-1 指數（不含 2-2 常用對數） ｜ 時間 70 分鐘 ｜ 滿分 100 分 ｜ 不使用計算機</span>
+      </div>
+      <div class="exam-bar">
+        <div class="exam-timer" data-min="70"></div>
+        <div class="exam-score"></div>
+      </div>
+      <p class="muted small">作答方式：先按「開始計時」，像真的考試一樣拿紙筆一題一題寫完再看解析。選擇題點選項會立刻對答案並計分（多選題選好後按藍色按鈕；網站只判「全對才給分」，正式考試通常是每個選項各 2 分）。填充與計算證明題請寫完再打開解析，依評分標準自己給分。選擇題共 50 分，加上非選 50 分＝100 分。</p>
+
+      <div class="paper-sec">一、單選題（每題 4 分，共 20 分）</div>
+      <p>每題有 5 個選項，只有一個正確。答錯不倒扣。</p>
+
+      <div class="q" data-answer="B" data-points="4">
+        <div class="q-head"><span class="q-no">1.</span><span class="tag">1-1 絕對值不等式</span><span class="src">改編自：北一女 111-1 第一次期中考 單選第 1 題</span><span class="pts">4 分</span></div>
+        <div class="q-stem">滿足 2 ≤ |3<i>x</i> − 5| ≤ 10 的整數 <i>x</i> 共有幾個？</div>
+        <ul class="opts">
+          <li><button>5 個</button></li>
+          <li><button>6 個</button></li>
+          <li><button>7 個</button></li>
+          <li><button>8 個</button></li>
+          <li><button>9 個</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>① |3<i>x</i>−5| ≤ 10 ⇔ −10 ≤ 3<i>x</i>−5 ≤ 10 ⇔ −<span class="frac"><span>5</span><span>3</span></span> ≤ <i>x</i> ≤ 5，整數為 −1, 0, 1, 2, 3, 4, 5。<br>② |3<i>x</i>−5| ≥ 2 ⇔ 3<i>x</i>−5 ≥ 2 或 3<i>x</i>−5 ≤ −2 ⇔ <i>x</i> ≥ <span class="frac"><span>7</span><span>3</span></span> 或 <i>x</i> ≤ 1。<br>取交集：去掉落在 1 &lt; <i>x</i> &lt; <span class="frac"><span>7</span><span>3</span></span> 的 <i>x</i>＝2（此時 |1|＝1 &lt; 2），剩 −1, 0, 1, 3, 4, 5，共 6 個。</p>
+          <div class="plain">「夾在兩個數中間」的絕對值不等式＝拆成兩個不等式再取交集。最常錯的是忘了把中間「太靠近 <span class="frac"><span>5</span><span>3</span></span>」的 <i>x</i>＝2 挖掉，就會選 7 個。寫完可以把每個整數代回去檢查，只有 7 個數，很快。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="4">
+        <div class="q-head"><span class="q-no">2.</span><span class="tag">1-1 循環小數</span><span class="src">改編自：北一女 110-1 第一次期中考 第 2 題</span><span class="pts">4 分</span></div>
+        <div class="q-stem">將 <span class="frac"><span>2</span><span>7</span></span> + <span class="frac"><span>1</span><span>3</span></span> 化成小數後，小數點後第 2026 位的數字為何？</div>
+        <ul class="opts">
+          <li><button>6</button></li>
+          <li><button>1</button></li>
+          <li><button>9</button></li>
+          <li><button>0</button></li>
+          <li><button>4</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：D</p>
+          <p><span class="frac"><span>2</span><span>7</span></span> + <span class="frac"><span>1</span><span>3</span></span>＝<span class="frac"><span>6 + 7</span><span>21</span></span>＝<span class="frac"><span>13</span><span>21</span></span>＝0.<span style="text-decoration:overline">619047</span>，循環節「619047」長度 6。<br>2026 ÷ 6＝337 餘 4，第 2026 位＝循環節第 4 個數字＝0。</p>
+          <div class="plain">先通分成一個分數再長除法，不要兩個小數分別寫出來再加（會進位，很容易錯）。找到循環節長度後用「除以長度看餘數」：餘 4 就數到第 4 個。如果整除（餘 0）要取循環節的「最後一個」數字。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="4">
+        <div class="q-head"><span class="q-no">3.</span><span class="tag">2-1 有理數指數</span><span class="src">改編自：北一女 110-1 第一次期中考 第 1 題</span><span class="pts">4 分</span></div>
+        <div class="q-stem">下列五個數：4<sup>−1/4</sup>、<span class="frac"><span>√2</span><span>2</span></span>、8<sup>−1/3</sup>、(√2)<sup>−2</sup>、(<span class="frac"><span>1</span><span>2</span></span>)<sup>−1/2</sup>，在數線上共代表幾個相異的點？</div>
+        <ul class="opts">
+          <li><button>1 個</button></li>
+          <li><button>2 個</button></li>
+          <li><button>3 個</button></li>
+          <li><button>4 個</button></li>
+          <li><button>5 個</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>全部化成 2 的次方：4<sup>−1/4</sup>＝2<sup>−1/2</sup>；<span class="frac"><span>√2</span><span>2</span></span>＝2<sup>1/2−1</sup>＝2<sup>−1/2</sup>；8<sup>−1/3</sup>＝2<sup>−1</sup>；(√2)<sup>−2</sup>＝2<sup>−1</sup>；(<span class="frac"><span>1</span><span>2</span></span>)<sup>−1/2</sup>＝2<sup>1/2</sup>。<br>相異的值只有 2<sup>−1/2</sup>、2<sup>−1</sup>、2<sup>1/2</sup> 三個。</p>
+          <div class="plain">看到一堆長得不一樣的數，第一招就是「同底化」：全部改寫成 2 的幾次方，指數一樣就是同一個點。(<span class="frac"><span>1</span><span>2</span></span>)<sup>−1/2</sup> 的負號會把分數翻過來，變成 √2，不是 <span class="frac"><span>1</span><span>√2</span></span>。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="E" data-points="4">
+        <div class="q-head"><span class="q-no">4.</span><span class="tag">2-1 比較大小</span><span class="src">改編自：北一女 114-1 第一次期中考 第 10 題</span><span class="pts">4 分</span></div>
+        <div class="q-stem">設 <i>a</i>＝2<sup>60</sup>、<i>b</i>＝3<sup>40</sup>、<i>c</i>＝5<sup>24</sup>，則三數的大小關係為何？</div>
+        <ul class="opts">
+          <li><button><i>a</i> &lt; <i>b</i> &lt; <i>c</i></button></li>
+          <li><button><i>a</i> &lt; <i>c</i> &lt; <i>b</i></button></li>
+          <li><button><i>b</i> &lt; <i>a</i> &lt; <i>c</i></button></li>
+          <li><button><i>c</i> &lt; <i>b</i> &lt; <i>a</i></button></li>
+          <li><button><i>c</i> &lt; <i>a</i> &lt; <i>b</i></button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：E</p>
+          <p>60、40、24 的最大公因數是 4，化成同指數：<i>a</i>＝(2<sup>15</sup>)<sup>4</sup>＝32768<sup>4</sup>，<i>b</i>＝(3<sup>10</sup>)<sup>4</sup>＝59049<sup>4</sup>，<i>c</i>＝(5<sup>6</sup>)<sup>4</sup>＝15625<sup>4</sup>。<br>底數 15625 &lt; 32768 &lt; 59049，且指數相同（正數），故 <i>c</i> &lt; <i>a</i> &lt; <i>b</i>。</p>
+          <div class="plain">底數不同、指數不同時，想辦法讓「指數一樣」再比底數。找指數的最大公因數，把它留在外面。3<sup>10</sup>＝59049、5<sup>6</sup>＝15625、2<sup>15</sup>＝32768 都是常見數字，算一次就記起來。不要直覺以為底數大的就比較大。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="4">
+        <div class="q-head"><span class="q-no">5.</span><span class="tag">2-1 科學記號</span><span class="src">改編自：北一女 114-1 第一次期中考 第 8 題</span><span class="pts">4 分</span></div>
+        <div class="q-stem">地球的質量約為 5.97 × 10<sup>24</sup> 公斤，月球的質量約為 7.35 × 10<sup>22</sup> 公斤。地球質量約是月球質量的幾倍？（以科學記號表示，取三位有效數字）</div>
+        <ul class="opts">
+          <li><button>8.12 × 10<sup>0</sup></button></li>
+          <li><button>8.12 × 10<sup>2</sup></button></li>
+          <li><button>8.12 × 10<sup>1</sup></button></li>
+          <li><button>1.23 × 10<sup>−2</sup></button></li>
+          <li><button>1.23 × 10<sup>2</sup></button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p><span class="frac"><span>5.97 × 10<sup>24</sup></span><span>7.35 × 10<sup>22</sup></span></span>＝<span class="frac"><span>5.97</span><span>7.35</span></span> × 10<sup>2</sup> ≈ 0.8122 × 10<sup>2</sup>＝8.122 × 10<sup>1</sup> ≈ 8.12 × 10<sup>1</sup>（約 81.2 倍）。</p>
+          <div class="plain">係數相除、10 的次方相減。5.97 ÷ 7.35 小於 1（約 0.812），要把小數點往右移一位變 8.12，同時指數要「減 1」，從 10² 變 10¹。D、E 是把除法上下顛倒（月球是地球的幾倍）。</div>
+        </div></details>
+      </div>
+
+      <div class="paper-sec">二、多選題（每題 10 分，共 30 分）</div>
+      <p>每題有 5 個選項，至少一個正確。正式考試通常每個選項 2 分；本網站只判全對才給 10 分。</p>
+
+      <div class="q" data-answer="ADE" data-multi data-points="10">
+        <div class="q-head"><span class="q-no">6.</span><span class="tag hot">高頻考點</span><span class="tag">1-1 有理數與無理數</span><span class="src">改編自：北一女 113-1 多選第 1 題、114-1 第 1 題、110-1 第 3 題</span><span class="pts">10 分</span></div>
+        <div class="q-stem">下列關於實數的敘述，哪些正確？</div>
+        <ul class="opts">
+          <li><button>若 <i>a</i><sup>3</sup> 與 <i>a</i><sup>5</sup> 都是有理數，則 <i>a</i> 一定是有理數</button></li>
+          <li><button>若 <i>a</i> + <i>b</i> 與 <i>ab</i> 都是有理數，則 <i>a</i>、<i>b</i> 都是有理數</button></li>
+          <li><button>若 <i>a</i>、<i>b</i> 為實數且 <i>a</i> + <i>b</i>√3＝5 − 2√3，則 <i>a</i>＝5 且 <i>b</i>＝−2</button></li>
+          <li><button>0.4<span style="text-decoration:overline">9</span>（即 0.4999…）＝<span class="frac"><span>1</span><span>2</span></span></button></li>
+          <li><button><span class="frac"><span>21</span><span>600</span></span> 可以化成有限小數</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：ADE</p>
+          <p>(A) 若 <i>a</i>＝0 顯然成立；若 <i>a</i> ≠ 0，<i>a</i><sup>2</sup>＝<span class="frac"><span><i>a</i><sup>5</sup></span><span><i>a</i><sup>3</sup></span></span> 為有理數，<i>a</i>＝<span class="frac"><span><i>a</i><sup>3</sup></span><span><i>a</i><sup>2</sup></span></span> 也是有理數（有理數對除法封閉），正確。<br>(B) 反例 <i>a</i>＝1+√2、<i>b</i>＝1−√2：<i>a</i>+<i>b</i>＝2、<i>ab</i>＝−1 都是有理數，但 <i>a</i>、<i>b</i> 是無理數，錯誤。<br>(C) 只說「實數」就不能比較係數，反例 <i>a</i>＝5−2√3、<i>b</i>＝0 也成立，錯誤（要 <i>a</i>、<i>b</i> 是<strong>有理數</strong>才能比較係數）。<br>(D) 設 <i>x</i>＝0.4999…，100<i>x</i>−10<i>x</i>＝49.99…−4.99…＝45，<i>x</i>＝<span class="frac"><span>45</span><span>90</span></span>＝<span class="frac"><span>1</span><span>2</span></span>，正確。<br>(E) <span class="frac"><span>21</span><span>600</span></span>＝<span class="frac"><span>7</span><span>200</span></span>，200＝2<sup>3</sup>×5<sup>2</sup>，分母約分後只有質因數 2、5，正確。</p>
+          <div class="plain">這種「判斷敘述」題的兩個武器：① 想用封閉性推導（A 就是用除法把 <i>a</i> 算出來）；② 想反例（B 用 1±√2 這對最常用的反例）。C 是陷阱：「比較係數」一定要有「有理數」這個條件。E 一定要<strong>先約分</strong>再看分母，21 和 600 有公因數 3，約完分母就沒有 3 了。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="BCD" data-multi data-points="10">
+        <div class="q-head"><span class="q-no">7.</span><span class="tag hot">高頻考點</span><span class="tag">1-1 分點公式</span><span class="src">改編自：北一女 113-1 多選第 2 題、112-1 第 7 題</span><span class="pts">10 分</span></div>
+        <div class="q-stem">設 <i>a</i> &lt; <i>b</i>，數線上有五點 A(<i>a</i>)、B(<i>b</i>)、P(<span class="frac"><span>2<i>a</i> + 3<i>b</i></span><span>5</span></span>)、Q(<span class="frac"><span>3<i>b</i> − <i>a</i></span><span>2</span></span>)、R(<span class="frac"><span>5<i>a</i> − <i>b</i></span><span>4</span></span>)。下列哪些正確？</div>
+        <ul class="opts">
+          <li><button>P 在線段 AB 上，且 AP : PB＝2 : 3</button></li>
+          <li><button>Q 在 B 的右邊</button></li>
+          <li><button>R 是五點中最左邊的點</button></li>
+          <li><button>AR : RB＝1 : 5</button></li>
+          <li><button>若 <i>b</i> − <i>a</i>＝8，則 PQ＝6</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：BCD</p>
+          <p>令 <i>d</i>＝<i>b</i>−<i>a</i> &gt; 0，把每點寫成「<i>a</i> 或 <i>b</i> 加減幾段」：<br>P＝<i>a</i> + <span class="frac"><span>3</span><span>5</span></span><i>d</i>（在 AB 上，離 A 有 <span class="frac"><span>3</span><span>5</span></span>），AP : PB＝3 : 2，(A) 錯（係數 3 掛在 <i>b</i> 上，表示比較靠近 B）。<br>Q＝<i>b</i> + <span class="frac"><span>1</span><span>2</span></span><i>d</i>，在 B 右邊，(B) 對。<br>R＝<i>a</i> − <span class="frac"><span>1</span><span>4</span></span><i>d</i>，在 A 左邊；由左到右為 R、A、P、B、Q，(C) 對。<br>AR＝<span class="frac"><span>1</span><span>4</span></span><i>d</i>，RB＝<span class="frac"><span>5</span><span>4</span></span><i>d</i>，比為 1 : 5，(D) 對。<br>PQ＝(<i>b</i> + <span class="frac"><span>1</span><span>2</span></span><i>d</i>) − (<i>a</i> + <span class="frac"><span>3</span><span>5</span></span><i>d</i>)＝<span class="frac"><span>9</span><span>10</span></span><i>d</i>＝7.2，(E) 錯。<br>驗算：取 <i>a</i>＝1、<i>b</i>＝9，得 R＝−1、P＝5.8、Q＝13，全部吻合。</p>
+          <div class="plain">分點題最穩的方法：<strong>直接代數字</strong>！取 <i>a</i>＝1、<i>b</i>＝9（差 8），五個點的坐標馬上算出來，畫在數線上排順序。A 選項的陷阱：內分點公式 <span class="frac"><span>2<i>a</i>+3<i>b</i></span><span>5</span></span> 是「交叉相乘」來的，AP : PB 是 3 : 2，不是 2 : 3。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="BCE" data-multi data-points="10">
+        <div class="q-head"><span class="q-no">8.</span><span class="tag">2-1 指數律</span><span class="src">改編自：北一女 113-1 多選第 3 題、112-1 第 4 題（指數部分）</span><span class="pts">10 分</span></div>
+        <div class="q-stem">下列哪些選項正確？</div>
+        <ul class="opts">
+          <li><button><span class="sqrt">√<span>(−3)<sup>2</sup></span></span>＝−3</button></li>
+          <li><button>27<sup>−2/3</sup>＝<span class="frac"><span>1</span><span>9</span></span></button></li>
+          <li><button>4<sup>1/2</sup> + 4<sup>−1/2</sup>＝<span class="frac"><span>5</span><span>2</span></span></button></li>
+          <li><button>3<sup>50</sup> &gt; 2<sup>80</sup></button></li>
+          <li><button>5<sup>0.5</sup> × 5<sup>1.5</sup>＝25</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：BCE</p>
+          <p>(A) <span class="sqrt">√<span>(−3)<sup>2</sup></span></span>＝√9＝|−3|＝3，錯。<br>(B) 27<sup>−2/3</sup>＝(3<sup>3</sup>)<sup>−2/3</sup>＝3<sup>−2</sup>＝<span class="frac"><span>1</span><span>9</span></span>，對。<br>(C) 2 + <span class="frac"><span>1</span><span>2</span></span>＝<span class="frac"><span>5</span><span>2</span></span>，對。<br>(D) 3<sup>50</sup>＝(3<sup>5</sup>)<sup>10</sup>＝243<sup>10</sup>，2<sup>80</sup>＝(2<sup>8</sup>)<sup>10</sup>＝256<sup>10</sup>，所以 3<sup>50</sup> &lt; 2<sup>80</sup>，錯。<br>(E) 5<sup>0.5+1.5</sup>＝5<sup>2</sup>＝25，對。</p>
+          <div class="plain">A：根號開出來一定是「非負」，√(負數²)＝它的絕對值。D：又是同指數比底數的技巧，把指數的公因數 10 提出來，比 243 和 256 就好。E：小數指數一樣適用「同底相乘、指數相加」。</div>
+        </div></details>
+      </div>
+
+      <div class="paper-sec">三、填充題（每題 5 分，共 35 分）</div>
+      <p>答案須化為最簡分數、最簡根式，分母有理化；有兩格的題目兩格都對才給分。</p>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">9.</span><span class="tag">2-1 有理數指數</span><span class="src">改編自：北一女 113-1 填充第 1 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">化簡 (0.25)<sup>−1/2</sup> × 27<sup>2/3</sup> ÷ (<span class="frac"><span>16</span><span>81</span></span>)<sup>−3/4</sup>＝＿＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：<span class="frac"><span>16</span><span>3</span></span></p>
+          <p>(0.25)<sup>−1/2</sup>＝(<span class="frac"><span>1</span><span>4</span></span>)<sup>−1/2</sup>＝4<sup>1/2</sup>＝2；27<sup>2/3</sup>＝(3<sup>3</sup>)<sup>2/3</sup>＝9；(<span class="frac"><span>16</span><span>81</span></span>)<sup>−3/4</sup>＝(<span class="frac"><span>81</span><span>16</span></span>)<sup>3/4</sup>＝(<span class="frac"><span>3</span><span>2</span></span>)<sup>3</sup>＝<span class="frac"><span>27</span><span>8</span></span>。<br>原式＝2 × 9 ÷ <span class="frac"><span>27</span><span>8</span></span>＝18 × <span class="frac"><span>8</span><span>27</span></span>＝<span class="frac"><span>16</span><span>3</span></span>。</p>
+          <div class="plain">一項一項處理：小數先變分數；負指數先把分數「翻過來」；分數指數「分母開根、分子次方」，先開根比較好算（81 開四次方＝3、16 開四次方＝2）。最後一步是「除以」，別忘了乘倒數。</div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">10.</span><span class="tag">1-2 乘法公式</span><span class="src">改編自：北一女 113-1 填充第 2 題、112-1 第 6 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">設 <i>a</i> &gt; 0 且 <i>a</i> − <span class="frac"><span>1</span><span><i>a</i></span></span>＝2，則 (1) <i>a</i><sup>3</sup> − <span class="frac"><span>1</span><span><i>a</i><sup>3</sup></span></span>＝＿＿＿＿；(2) <i>a</i> + <span class="frac"><span>1</span><span><i>a</i></span></span>＝＿＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：(1) 14　(2) 2√2</p>
+          <p>(1) 由 (<i>x</i>−<i>y</i>)<sup>3</sup>＝<i>x</i><sup>3</sup>−<i>y</i><sup>3</sup>−3<i>xy</i>(<i>x</i>−<i>y</i>)，取 <i>x</i>＝<i>a</i>、<i>y</i>＝<span class="frac"><span>1</span><span><i>a</i></span></span>（<i>xy</i>＝1）：<i>a</i><sup>3</sup>−<span class="frac"><span>1</span><span><i>a</i><sup>3</sup></span></span>＝2<sup>3</sup> + 3×1×2＝14。<br>(2) (<i>a</i>+<span class="frac"><span>1</span><span><i>a</i></span></span>)<sup>2</sup>＝(<i>a</i>−<span class="frac"><span>1</span><span><i>a</i></span></span>)<sup>2</sup> + 4＝8，又 <i>a</i> &gt; 0 故 <i>a</i>+<span class="frac"><span>1</span><span><i>a</i></span></span> &gt; 0，得 2√2。<br>驗算：<i>a</i>＝1+√2（滿足 <i>a</i>−<span class="frac"><span>1</span><span><i>a</i></span></span>＝(1+√2)−(√2−1)＝2），<i>a</i>+<span class="frac"><span>1</span><span><i>a</i></span></span>＝2√2 ✓。</p>
+          <div class="plain">「減號版」的立方公式最容易記錯符號：<i>a</i>³−<span class="frac"><span>1</span><span><i>a</i>³</span></span>＝(差)³ <strong>＋</strong> 3×(差)。第 (2) 小題的關鍵是「和的平方＝差的平方＋4」，開根號時題目說 <i>a</i> &gt; 0，所以取正的。</div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">11.</span><span class="tag">1-2 根式化簡</span><span class="src">改編自：北一女 112-1 第 9 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">設 √40 的整數部分為 <i>a</i>、小數部分為 <i>b</i>，則 (1) <span class="frac"><span>1</span><span><i>b</i></span></span>＝＿＿＿＿；(2) <i>b</i><sup>2</sup> + 2<i>ab</i>＝＿＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：(1) <span class="frac"><span>√10 + 3</span><span>2</span></span>　(2) 4</p>
+          <p>36 &lt; 40 &lt; 49 ⇒ 6 &lt; √40 &lt; 7，<i>a</i>＝6，<i>b</i>＝√40 − 6＝2√10 − 6。<br>(1) <span class="frac"><span>1</span><span>2√10 − 6</span></span>＝<span class="frac"><span>2√10 + 6</span><span>40 − 36</span></span>＝<span class="frac"><span>2√10 + 6</span><span>4</span></span>＝<span class="frac"><span>√10 + 3</span><span>2</span></span>。<br>(2) <i>b</i><sup>2</sup>+2<i>ab</i>＝(<i>b</i>+<i>a</i>)<sup>2</sup> − <i>a</i><sup>2</sup>＝(√40)<sup>2</sup> − 36＝4。</p>
+          <div class="plain">小數部分＝「原數 − 整數部分」，一定是個帶根號的式子，不能寫 0.32 之類的近似值。第 (2) 小題不要硬展開：看到 <i>b</i>² + 2<i>ab</i> 就配方成 (<i>a</i>+<i>b</i>)² − <i>a</i>²，而 <i>a</i>+<i>b</i> 就是 √40 本人。</div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">12.</span><span class="tag">1-2 分母有理化</span><span class="src">改編自：北一女 114-1 第 4 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem"><span class="frac"><span>1</span><span>1 + √2 + √3</span></span> + <span class="frac"><span>1</span><span>1 + √2 − √3</span></span>＝＿＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：<span class="frac"><span>2 + √2</span><span>2</span></span>（或 1 + <span class="frac"><span>√2</span><span>2</span></span>）</p>
+          <p>把 1+√2 看成一整塊。通分：分子＝(1+√2−√3)+(1+√2+√3)＝2+2√2；分母＝(1+√2)<sup>2</sup> − (√3)<sup>2</sup>＝3+2√2−3＝2√2。<br>原式＝<span class="frac"><span>2 + 2√2</span><span>2√2</span></span>＝<span class="frac"><span>1 + √2</span><span>√2</span></span>＝<span class="frac"><span>√2 + 2</span><span>2</span></span>。<br>驗算：≈ 0.2411 + 1.4659 ≈ 1.707，而 <span class="frac"><span>2+1.414</span><span>2</span></span> ≈ 1.707 ✓。</p>
+          <div class="plain">兩個分母剛好是「(1+√2) 加 √3」和「(1+√2) 減 √3」，直接通分就會變成平方差，√3 一下就消失。最後別忘了分母還有 √2，要再有理化一次。</div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">13.</span><span class="tag">1-1 絕對值不等式</span><span class="src">改編自：北一女 110-1 第 7 題、114-1 第 7 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">設 <i>a</i> &gt; 0。若不等式 |<i>ax</i> − <i>b</i>| &lt; 6 的解為 −1 &lt; <i>x</i> &lt; 5，則數對 (<i>a</i>, <i>b</i>)＝＿＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：(2, 4)</p>
+          <p>|<i>ax</i>−<i>b</i>| &lt; 6 ⇔ −6 &lt; <i>ax</i>−<i>b</i> &lt; 6 ⇔ <span class="frac"><span><i>b</i>−6</span><span><i>a</i></span></span> &lt; <i>x</i> &lt; <span class="frac"><span><i>b</i>+6</span><span><i>a</i></span></span>（<i>a</i> &gt; 0 不變號）。<br>比較得 <i>b</i>−6＝−<i>a</i>、<i>b</i>+6＝5<i>a</i>，相減 12＝6<i>a</i>，<i>a</i>＝2，<i>b</i>＝4。<br>驗算：|2<i>x</i>−4| &lt; 6 ⇔ −6 &lt; 2<i>x</i>−4 &lt; 6 ⇔ −2 &lt; 2<i>x</i> &lt; 10 ⇔ −1 &lt; <i>x</i> &lt; 5 ✓。</p>
+          <div class="plain">另一種想法用「距離」：解 −1 &lt; <i>x</i> &lt; 5 的中點是 2、半徑是 3，所以就是 |<i>x</i>−2| &lt; 3。兩邊乘 2 變成 |2<i>x</i>−4| &lt; 6，一眼就看出 <i>a</i>＝2、<i>b</i>＝4。</div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">14.</span><span class="tag hot">高頻考點</span><span class="tag">1-1 絕對值不等式（分段討論）</span><span class="src">改編自：北一女 111-1 填充第 10 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">解不等式 |2<i>x</i> − 1| − |<i>x</i> + 2| ≥ 1，以區間表示其解為＿＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：(−∞, −<span class="frac"><span>2</span><span>3</span></span>] ∪ [4, ∞)</p>
+          <p>分界點 <i>x</i>＝−2 與 <i>x</i>＝<span class="frac"><span>1</span><span>2</span></span>。<br>① <i>x</i> &lt; −2：(1−2<i>x</i>) − (−<i>x</i>−2)＝3 − <i>x</i> ≥ 1 ⇒ <i>x</i> ≤ 2，與 <i>x</i> &lt; −2 取交集：<i>x</i> &lt; −2。<br>② −2 ≤ <i>x</i> &lt; <span class="frac"><span>1</span><span>2</span></span>：(1−2<i>x</i>) − (<i>x</i>+2)＝−1 − 3<i>x</i> ≥ 1 ⇒ <i>x</i> ≤ −<span class="frac"><span>2</span><span>3</span></span>，交集：−2 ≤ <i>x</i> ≤ −<span class="frac"><span>2</span><span>3</span></span>。<br>③ <i>x</i> ≥ <span class="frac"><span>1</span><span>2</span></span>：(2<i>x</i>−1) − (<i>x</i>+2)＝<i>x</i> − 3 ≥ 1 ⇒ <i>x</i> ≥ 4。<br>聯集：<i>x</i> ≤ −<span class="frac"><span>2</span><span>3</span></span> 或 <i>x</i> ≥ 4。<br>驗算：<i>x</i>＝−<span class="frac"><span>2</span><span>3</span></span> 時 <span class="frac"><span>7</span><span>3</span></span> − <span class="frac"><span>4</span><span>3</span></span>＝1 ✓；<i>x</i>＝0 時 1 − 2＝−1 &lt; 1，不在解內 ✓。</p>
+          <div class="plain">兩個絕對值＝找「讓絕對值裡面變 0」的點（−2 和 <span class="frac"><span>1</span><span>2</span></span>），把數線切成三段，每一段把絕對值拿掉（裡面是負的就加負號），解完要和那一段的範圍「取交集」，最後三段「取聯集」。端點有等號，所以用中括號。</div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">15.</span><span class="tag">2-1 指數的應用</span><span class="src">改編自：北一女 114-1 第 9 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">某種細菌每經過 8 小時，數量就變為原來的 <i>a</i> 倍。實驗開始 2 天後細菌有 6400 隻，開始 3 天後有 51200 隻。則 (1) 實驗開始時細菌有＿＿＿＿隻；(2) 實驗開始 20 小時後，細菌有＿＿＿＿隻（以最簡根式表示）。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：(1) 100　(2) 400√2</p>
+          <p>設最初 <i>N</i> 隻。2 天＝48 小時＝6 個週期，3 天＝72 小時＝9 個週期：<i>N</i>·<i>a</i><sup>6</sup>＝6400、<i>N</i>·<i>a</i><sup>9</sup>＝51200。<br>相除得 <i>a</i><sup>3</sup>＝8，<i>a</i>＝2；<i>N</i>＝<span class="frac"><span>6400</span><span>2<sup>6</sup></span></span>＝100。<br>20 小時＝<span class="frac"><span>20</span><span>8</span></span>＝<span class="frac"><span>5</span><span>2</span></span> 個週期：100 × 2<sup>5/2</sup>＝100 × 4√2＝400√2（約 566 隻）。</p>
+          <div class="plain">先把時間換成「幾個 8 小時」，這是最容易漏的一步（2 天不是 2 個週期！）。兩個條件相除，<i>N</i> 會消掉，馬上得到 <i>a</i>。20 小時是 2.5 個週期，指數可以是分數：2<sup>2.5</sup>＝2<sup>2</sup>×2<sup>0.5</sup>＝4√2。</div>
+        </div></details>
+      </div>
+
+      <div class="paper-sec">四、計算證明題（共 15 分）</div>
+      <p>須寫出計算過程或理由，否則酌予扣分。</p>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">16.</span><span class="tag hot">高頻考點</span><span class="tag">1-2 算幾不等式</span><span class="src">改編自：北一女 114-1 第 13 題</span><span class="pts">8 分</span></div>
+        <div class="q-stem">農夫想沿著一面很長的磚牆，用鐵網圍出一塊面積 1250 平方公尺的長方形菜園（靠牆的那一邊不必圍鐵網）。<br>(1) 至少需要多少公尺的鐵網？（4 分）<br>(2) 此時菜園垂直於牆的邊長與平行於牆的邊長各為多少公尺？（4 分）</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：(1) 100 公尺　(2) 垂直牆的兩邊各 25 公尺、平行牆的一邊 50 公尺</p>
+          <p>設垂直於牆的邊長為 <i>x</i>、平行於牆的邊長為 <i>y</i>（<i>x</i>, <i>y</i> &gt; 0），則 <i>xy</i>＝1250，鐵網長 <i>L</i>＝2<i>x</i> + <i>y</i>。<br>由算幾不等式：<span class="frac"><span>2<i>x</i> + <i>y</i></span><span>2</span></span> ≥ <span class="sqrt">√<span>2<i>x</i> · <i>y</i></span></span>＝√2500＝50，故 <i>L</i> ≥ 100。<br>等號成立 ⇔ 2<i>x</i>＝<i>y</i>，代入 <i>xy</i>＝1250 得 2<i>x</i><sup>2</sup>＝1250，<i>x</i>＝25，<i>y</i>＝50。<br>驗算：25 × 50＝1250，2×25 + 50＝100 ✓。</p>
+          <p><strong>評分標準：</strong>(1) 正確列出 <i>xy</i>＝1250 與 <i>L</i>＝2<i>x</i>+<i>y</i>（1 分）；正確使用算幾不等式（2 分）；答案 100（1 分）。(2) 寫出等號成立條件 2<i>x</i>＝<i>y</i>（2 分）；求出 25、50 且說明哪一邊（2 分）。</p>
+          <div class="plain">算幾不等式要用「積是定值」：直接拿 <i>x</i> 和 <i>y</i> 不行，因為要求的是 2<i>x</i>+<i>y</i>，所以把 2<i>x</i> 和 <i>y</i> 當成兩個數，它們的乘積 2<i>xy</i>＝2500 是定值。等號條件「兩數相等」就是 2<i>x</i>＝<i>y</i>。第 (2) 小題一定要寫清楚哪個是 25、哪個是 50，不然會被扣分。</div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">17.</span><span class="tag">1-1 反證法、封閉性</span><span class="src">改編自：北一女 114-1 第 14 題、110-1 第 15 題</span><span class="pts">7 分</span></div>
+        <div class="q-stem">已知 √6 是無理數。請利用有理數的四則運算封閉性，以反證法證明：√2 + √3 是無理數。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案（參考證明）：</p>
+          <p>假設 √2 + √3 是有理數，記為 <i>r</i>（<i>r</i> 為有理數）。<br>兩邊平方：<i>r</i><sup>2</sup>＝2 + 2√6 + 3＝5 + 2√6，所以 √6＝<span class="frac"><span><i>r</i><sup>2</sup> − 5</span><span>2</span></span>。<br>因為有理數對加、減、乘、除（除數不為 0）封閉，<i>r</i><sup>2</sup> − 5 是有理數，再除以 2 仍是有理數，故 √6 為有理數，與「√6 是無理數」矛盾。<br>因此假設錯誤，√2 + √3 是無理數。</p>
+          <p><strong>評分標準：</strong>寫出反證假設「設 √2+√3＝<i>r</i> 為有理數」（2 分）；平方並解出 √6＝<span class="frac"><span><i>r</i><sup>2</sup>−5</span><span>2</span></span>（2 分）；說明由封閉性得 √6 為有理數（2 分）；寫出「矛盾，故得證」的結論（1 分）。</p>
+          <div class="plain">反證法三步驟：<strong>假設相反 → 推出矛盾 → 所以原命題對</strong>。這題的技巧是「平方」把 √2+√3 變成只剩一個根號 √6，然後把 √6 單獨移到一邊。記得一定要寫出「根據有理數的封閉性」這句話，老師給分看的就是這個理由。</div>
+        </div></details>
+      </div>
+    </div>
+
+    <h3>考後檢討</h3>
+    <p>寫完後把選擇題得分（上方計分列）加上非選題自評分數，對照下表決定接下來怎麼複習：</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>總分</th><th>狀態</th><th>建議</th></tr></thead>
+      <tbody>
+        <tr><td>80 分以上</td><td>準備得很好</td><td>只複習錯題，再到「考古題來源」下載北一女 112-1 或 114-1 原卷，限時 70 分鐘再寫一次（跳過有 log 的題目），練速度與計算穩定度。</td></tr>
+        <tr><td>60～79 分</td><td>觀念大致有，計算或細節會掉分</td><td>用下面的錯題對應表找出弱的節，回「公式套用」分頁照步驟重做一次，再寫「考古題與白話解析」同章節的題目。特別注意：分段討論、指數同底化、有理化最後一步。</td></tr>
+        <tr><td>60 分以下</td><td>基本觀念還不穩</td><td>先回「範圍重點整理」把 1-1（絕對值、分點）、1-2（乘法公式、算幾）、2-1（指數律）各讀一遍，再看「公式整理與記憶技巧」把公式背熟，最後做「公式套用」的「換你試試」。考前不要再寫新難題，把基本題做到全對。</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>錯題對應章節表</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>章節</th><th>題號</th><th>考點</th><th>回去複習哪裡</th></tr></thead>
+      <tbody>
+        <tr><td>1-1 數與數線</td><td>2、6</td><td>循環小數、有理數／無理數判斷、有限小數</td><td><a href="#ch-1-1">1-1 章節卡</a>、「範圍重點整理」1-1</td></tr>
+        <tr><td>1-1 數與數線</td><td>7</td><td>分點公式、點的相對位置</td><td>「公式套用」分點公式</td></tr>
+        <tr><td>1-1 數與數線</td><td>1、13、14</td><td>絕對值不等式（含反求參數、分段討論）</td><td>「公式套用」絕對值不等式；「範圍重點整理」絕對值</td></tr>
+        <tr><td>1-1 數與數線</td><td>17</td><td>反證法、封閉性</td><td>「範圍重點整理」√2 是無理數的證明</td></tr>
+        <tr><td>1-2 式的運算</td><td>10</td><td>乘法公式、對稱式求值</td><td><a href="#ch-1-2">1-2 章節卡</a>、「公式整理」乘法公式</td></tr>
+        <tr><td>1-2 式的運算</td><td>11、12</td><td>根式化簡、分母有理化、整數／小數部分</td><td>「公式套用」雙重根式與有理化</td></tr>
+        <tr><td>1-2 式的運算</td><td>16</td><td>算幾不等式的應用（最大／最小值）</td><td>「公式套用」算幾不等式</td></tr>
+        <tr><td>2-1 指數</td><td>3、8、9</td><td>指數律、有理數指數化簡</td><td><a href="#ch-2-1">2-1 章節卡</a>、「公式整理」指數律</td></tr>
+        <tr><td>2-1 指數</td><td>4</td><td>指數比較大小（同指數比底數）</td><td>「範圍重點整理」2-1 比較大小</td></tr>
+        <tr><td>2-1 指數</td><td>5、15</td><td>科學記號、指數成長應用</td><td>「公式套用」科學記號</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box tip"><span class="label">小撇步</span>
+      <p>錯的題目不要只看解析點頭說「喔懂了」，要<strong>把解析蓋起來自己重算一次</strong>，算對才算真的會。把錯的題號和錯的原因（觀念不懂／計算粗心／看錯題目）寫在一張小紙條，10/07 早上自習時看一遍。</p>
     </div>
   </section>
 

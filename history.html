@@ -33,6 +33,7 @@
     <button data-tab="notes">範圍重點整理</button>
     <button data-tab="formula">年代表與記憶技巧</button>
     <button data-tab="past">考古題與白話解析</button>
+    <button data-tab="mock">模擬段考</button>
     <button data-tab="apply">題型解法套用</button>
     <button data-tab="tips">考前攻略</button>
   </nav>
@@ -977,6 +978,747 @@
       </div></details>
     </div>
   </section>
+
+  <!-- ============================ MOCK EXAM ============================ -->
+  <section class="panel" id="mock" hidden>
+    <h2>模擬段考</h2>
+    <div class="box info"><span class="label">這份模擬卷怎麼來的</span>
+      <p><strong>陽明高中：</strong>沒有找到公開的歷史科段考試題（陽明官網只公告考程、範圍與補考範圍，試題可能需要校內帳號）。<strong>其他臺北市高中：</strong>北一女、中山女高、師大附中、成淵、百齡、中崙、南湖等校查得到的都是「考試範圍表／課程計畫」，沒有可公開下載的歷史試卷。</p>
+      <p>最後實際讀到、且範圍幾乎相同的真實考卷是<strong>新北市立新店高中 114 學年度第 1 學期 高一歷史第一次段考</strong>（翰林版第一冊 ch1～ch2：史前、原住民族、各政權原住民政策、移民），另外參考了一份出版社的段考素養題範例。本卷的<strong>卷面結構</strong>（單選為主、題組、名詞填空＋限字論述的混合題）比照新店高中那份考卷，但份量配合陽明 60 分鐘考試略為調整。</p>
+      <p><strong>改編原則：</strong>只保留考點與題型，題幹全部用自己的話重寫、選項重新設計，不逐字照抄；「史料」為依史實改寫的教學用文字，或公版清代文獻的短句。標「自編」的題目是比照段考題型自己出的。三民版與翰林版的節名不同，但主題相同；序篇只出 1 題（是否考以老師為準）。</p>
+    </div>
+
+    <h3>考古題來源</h3>
+    <div class="table-wrap sources"><table>
+      <thead><tr><th>學校</th><th>考試</th><th>與本次範圍重疊</th><th>原卷連結</th></tr></thead>
+      <tbody>
+        <tr><td>臺北市立陽明高中</td><td>—（查無公開歷史試卷）</td><td>—</td><td><a href="https://www.ymsh.tp.edu.tw/" target="_blank" rel="noopener">https://www.ymsh.tp.edu.tw/</a>（只有考程、範圍公告）</td></tr>
+        <tr><td>新北市立新店高中</td><td>114 學年度第 1 學期 第一次段考 歷史科 高一（翰林 B1 ch1～ch2）；題目卷，<strong>未附解答</strong>（本頁答案為自行判斷並查證）</td><td>大部分重疊：單選約 1、2、4、5、9～17、19、20、23～25 題；題組 27、28、31～38、41、42 題；混合題 43～54 題。第 3、6、18、21、26、39、40 題屬戰後或清代社會，超出本次範圍</td><td><a href="https://www.htsh.ntpc.edu.tw/p/405-1000-13528,c858.php" target="_blank" rel="noopener">https://www.htsh.ntpc.edu.tw/p/405-1000-13528,c858.php</a>（頁面中的「114-1第一次期中考.zip」，內含「11411高一歷史.pdf」）</td></tr>
+        <tr><td>（出版社範例，非學校考卷）</td><td>泰宇出版《素養超展開－歷史科》高中歷史第一次段考範圍 素養命題實例（附解析）</td><td>實例 1（羅妹號／牡丹社事件）、實例 2（鄭氏到清初人口變化）屬本範圍</td><td><a href="https://docs.google.com/document/d/1_hmSSsPSHnwXZONKebSlZFDHvGuIjdNT/export?format=pdf" target="_blank" rel="noopener">https://docs.google.com/document/d/1_hmSSsPSHnwXZONKebSlZFDHvGuIjdNT/export?format=pdf</a></td></tr>
+      </tbody></table></div>
+    <p class="muted small">另有搜尋到基隆市立中山高中 111-1 高一歷史段考題目卷與解析卷的連結，但目前連結已失效（404），沒有讀到內容，所以沒有採用。</p>
+
+    <div class="exam">
+      <div class="paper-head">
+        <span class="ttl">陽明高中 高一 歷史 第一次段考 模擬卷</span>
+        <span class="meta">範圍：三民 歷史I 1-1～2-1（含序篇 1 題）｜ 時間 60 分鐘 ｜ 滿分 100 分</span>
+      </div>
+      <div class="exam-bar">
+        <div class="exam-timer" data-min="60"></div>
+        <div class="exam-score"></div>
+      </div>
+      <p class="muted small">作答方式：先按「開始計時」，像真的考試一樣一題一題寫完再看解析；點選項會立刻對答案並計分（多選題選好後按下方按鈕對答案）。計分列只算選擇題（共 76 分）；混合題的填空與論述共 24 分，請看解析的評分標準自己給分，再加回去。建議時間分配：單選 20 分鐘、多選 6 分鐘、題組 10 分鐘、混合題 15 分鐘、檢查 9 分鐘。</p>
+
+      <!-- ===== 一、單選 ===== -->
+      <div class="paper-sec">一、單選題（第 1～22 題，每題 2 分，共 44 分）</div>
+      <p>每題只有一個最適當的選項，答錯不倒扣。</p>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">1.</span><span class="tag">序篇 史料</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">研究者想了解 17 世紀大員的鹿皮貿易，主要依據荷蘭東印度公司人員當年逐日記錄的《熱蘭遮城日誌》（研究者讀的是後來出版的中文譯本）。關於這份資料的性質，下列何者最恰當？</div>
+        <ul class="opts">
+          <li><button>屬於一手史料，但記錄者是公司人員，使用時仍要留意其立場與視角</button></li>
+          <li><button>屬於二手史料，因為研究者讀的是後人翻譯的中文本</button></li>
+          <li><button>屬於二手史料，因為記錄者不是臺灣本地人</button></li>
+          <li><button>屬於官方紀錄，所以內容一定完全客觀正確</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>一手史料是事件發生當時、由當事者或目擊者留下的紀錄。《熱蘭遮城日誌》是荷蘭人在臺當時的逐日紀錄，屬一手史料；翻譯不會改變史料的性質（B 錯）；是不是「本地人」寫的與一手、二手無關（C 錯）；官方紀錄也有立場，不等於客觀（D 錯）。</p>
+          <div class="plain">一手、二手看的是「是不是當時留下來的」，不是看語言、不是看誰寫的。但一手史料也不保證公正，荷蘭人寫的當然站在公司那邊。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">2.</span><span class="tag">1-1 史前文化</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">臺北盆地某處遺址中，史前人類吃剩的貝殼層層堆積成「貝塚」，並出土有段石錛、有肩石斧等磨製石器。這個遺址最可能屬於哪一個文化？</div>
+        <ul class="opts">
+          <li><button>大坌坑文化</button></li>
+          <li><button>圓山文化</button></li>
+          <li><button>長濱文化</button></li>
+          <li><button>十三行文化</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>圓山文化（新石器時代中晚期，臺北圓山）以大型貝塚與有段石錛、有肩石斧著稱。大坌坑以粗繩紋陶為特徵；長濱為舊石器、打製石器；十三行為金屬器時代、會煉鐵。</p>
+          <div class="plain">「貝塚」＝圓山，這是送分關鍵字。看到「磨製石器」就知道一定是新石器，長濱（打製石器）先刪掉。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">3.</span><span class="tag">1-1 南島語族</span><span class="src">改編自：新店高中 114-1 第一次段考 第 19 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">語言學者發現：臺灣阿美族語、馬來語和夏威夷語中，數字「五」的說法都近似 lima；許多基本詞彙也有類似的對應關係。對於這個現象，下列解釋何者最合理？</div>
+        <ul class="opts">
+          <li><button>臺灣原住民族曾大規模遠征太平洋各島，強迫當地人改說族語</button></li>
+          <li><button>這只是世界各地語言的自然巧合，沒有研究價值</button></li>
+          <li><button>這些語言都源自漢語，透過商人貿易傳播出去</button></li>
+          <li><button>這些語言同屬南島語系，可能來自共同的祖語</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：D</p>
+          <p>阿美語、馬來語、夏威夷語都屬南島語系。基本詞彙（數字、身體部位等）不易因借用而改變，若大量對應，代表這些語言有共同來源（祖語），族群曾經擴散遷移。南島語系與漢語屬不同語系（C 錯）；A 是過度推論；B 忽略了大量系統性對應。</p>
+          <div class="plain">很多地方的「五」都念 lima，不是巧合，是因為大家的語言是「遠房親戚」，從同一個祖先語言分出去的。這就是南島語族研究的證據之一。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">4.</span><span class="tag">1-1 平埔族群</span><span class="src">改編自：新店高中 114-1 第一次段考 第 25 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某族原本居住在宜蘭平原，19 世紀漢人大量入墾後，部分族人南遷到花蓮新城、豐濱一帶；2002 年該族獲政府認定，是第一個正名成功的平埔族群。此族是：</div>
+        <ul class="opts">
+          <li><button>凱達格蘭族</button></li>
+          <li><button>噶瑪蘭族</button></li>
+          <li><button>西拉雅族</button></li>
+          <li><button>巴宰族</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>噶瑪蘭族原居蘭陽平原（「噶瑪蘭」也是宜蘭舊稱），清代漢人入墾後部分族人南遷至花蓮；2002 年成為官方認定的第 11 族。凱達格蘭在臺北、基隆一帶；西拉雅在臺南；巴宰在臺中豐原一帶。</p>
+          <div class="plain">「宜蘭＝噶瑪蘭」，連名字都一樣。再加上「2002 年、平埔第一個正名」，就是它。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">5.</span><span class="tag">1-1 原住民族文化</span><span class="src">改編自：新店高中 114-1 第一次段考 第 15 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某族居住在新竹、苗栗的山區，每兩年舉行一次祭典、每十年舉行一次大祭，追念並安撫傳說中曾教導族人農耕與歌舞的矮人。此族是：</div>
+        <ul class="opts">
+          <li><button>鄒族</button></li>
+          <li><button>布農族</button></li>
+          <li><button>賽夏族</button></li>
+          <li><button>邵族</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>矮靈祭（paSta'ay）是賽夏族最重要的祭儀，兩年一小祭、十年一大祭；賽夏族主要分布在新竹、苗栗。鄒族有戰祭、布農族有射耳祭與八部合音、邵族居日月潭。</p>
+          <div class="plain">「矮人」＝矮靈祭＝賽夏族。地點「新竹苗栗」也是提示，鄒在阿里山、邵在日月潭、布農在中央山脈中南段。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">6.</span><span class="tag">1-1 原住民族文化</span><span class="src">改編自：新店高中 114-1 第一次段考 第 38 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某族有特別的命名習慣：夫妻生下第一個孩子後，族人改稱他們為「某某（孩子名）的爸爸」「某某的媽媽」，有了孫子後祖父母也跟著改名。該族男子以家族或漁團為單位合力造舟出海捕魚。此族最可能是：</div>
+        <ul class="opts">
+          <li><button>達悟族</button></li>
+          <li><button>阿美族</button></li>
+          <li><button>泰雅族</button></li>
+          <li><button>排灣族</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>達悟族（雅美族）有「親從子名」的命名制度，社會以家族、漁團為組織，造拼板舟、舉行飛魚祭。阿美族為母系與年齡階級；泰雅族重 Gaga 與紋面；排灣族為貴族與平民的階級社會。</p>
+          <div class="plain">「漁團、造舟出海」→ 蘭嶼的達悟族。名字跟著孩子改，是達悟族很有名的習俗，記成「生了孩子連爸媽都改名」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">7.</span><span class="tag">1-1 社會組織</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某族社會分為頭目（貴族）與平民，平民耕種頭目的土地須繳納部分收穫；家屋與家產由第一個出生的孩子繼承，不分男女；族人崇敬百步蛇，視琉璃珠為珍貴財富。此族是：</div>
+        <ul class="opts">
+          <li><button>阿美族</button></li>
+          <li><button>卑南族</button></li>
+          <li><button>排灣族</button></li>
+          <li><button>鄒族</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>排灣族為貴族（頭目）與平民的階級社會，實行長嗣繼承（不分男女），百步蛇與琉璃珠是重要文化象徵。阿美族母系、年齡階級；卑南族有會所與年齡階級；鄒族為父系、男子會所。</p>
+          <div class="plain">三個關鍵字一起出現：「貴族平民」「長嗣不分男女」「百步蛇」→ 排灣。魯凱也有階級，但多由長男繼承，所以「不分男女」這句是排灣的招牌。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">8.</span><span class="tag">1-1 族群分類</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">2001 年以前，政府認定的原住民族共有 9 族（阿美、泰雅、排灣、布農、卑南、魯凱、鄒、賽夏、雅美）。這個 9 族的分類架構，主要奠基於哪一時期的調查研究？</div>
+        <ul class="opts">
+          <li><button>清代官員依「生番、熟番」所做的區分</button></li>
+          <li><button>日治時期官方與學者進行的民族調查</button></li>
+          <li><button>荷蘭傳教士以羅馬字記錄各社語言</button></li>
+          <li><button>1990 年代原住民族運動中族人自行提出</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>日治時期總督府與人類學者（如鳥居龍藏、伊能嘉矩等）進行大規模調查，逐步建立原住民族的分類，最後形成 9 族的架構，戰後政府沿用。清代的生番、熟番是以「是否歸化、納餉」為標準的統治分類，不是族群分類。2001 年後各族陸續正名，才增加到 16 族。</p>
+          <div class="plain">清朝只分「乖不乖」（熟番、生番），真正去山裡做研究、把各族分清楚的是日本學者。戰後政府直接拿來用，所以一直是 9 族，直到 2001 年邵族正名才變多。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">9.</span><span class="tag">1-2 清代</span><span class="src">改編自：新店高中 114-1 第一次段考 第 10 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">雍正年間，中部某平埔族社因地方官員大量徵派族人搬運木料等勞役，不堪負荷，聯合附近十餘社起事抗官；清廷調兵鎮壓，事後還將該社改名為「德化社」。這是哪一事件？</div>
+        <ul class="opts">
+          <li><button>麻豆社事件</button></li>
+          <li><button>郭懷一事件</button></li>
+          <li><button>林爽文事件</button></li>
+          <li><button>大甲西社事件</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：D</p>
+          <p>大甲西社事件（1731–1732，雍正年間）起因於官府勞役過重，中部多社平埔族群聯合抗官，遭清軍鎮壓，大甲西社被改名德化社。麻豆社事件為荷蘭時期（1629）；郭懷一事件為荷蘭時期漢人反抗（1652）；林爽文事件是乾隆年間漢人民變（1786–1788）。</p>
+          <div class="plain">先用「雍正」「平埔族」「抗官」把時期鎖定在清代、主角是原住民：郭懷一和林爽文是漢人，麻豆社是荷蘭時期，剩下大甲西社。「德化」＝用德來教化，很典型的清朝改名風格。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">10.</span><span class="tag">1-2 清代</span><span class="src">改編自：新店高中 114-1 第一次段考 第 14 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">1878 年，花蓮奇萊平原的撒奇萊雅族與噶瑪蘭族聯合抗清，失敗後撒奇萊雅族人隱身在阿美族部落中生活，直到 2007 年才正名。這場衝突的背景，與清廷哪一項政策最有關？</div>
+        <ul class="opts">
+          <li><button>劃界封山</button></li>
+          <li><button>開山撫番</button></li>
+          <li><button>番屯制度</button></li>
+          <li><button>五年理蕃計畫</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>這是加禮宛事件（1878）。1875 年起清廷推動開山撫番，開路、駐軍進入後山（東部），與原住民衝突增加。劃界封山是清前期的隔離政策；番屯始於林爽文事件後；五年理蕃計畫是日治時期。</p>
+          <div class="plain">看年份：1878 在 1875 之後，清朝正在「往東部、往山裡推進」，衝突就在花蓮爆發。五年理蕃計畫是日本人的，時代不對。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">11.</span><span class="tag">1-2 清代</span><span class="src">改編自：新店高中 114-1 第一次段考 第 12 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">1886 年，臺灣巡撫在大嵙崁（今桃園大溪）設立總局、各地設分局，負責招撫原住民、管理山地開墾與樟腦，並派人到部落教讀書、教耕作。推動這項措施的是哪一位官員？</div>
+        <ul class="opts">
+          <li><button>施琅</button></li>
+          <li><button>沈葆楨</button></li>
+          <li><button>劉銘傳</button></li>
+          <li><button>藍鼎元</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>1885 年臺灣建省，劉銘傳任首任巡撫，1886 年設「撫墾總局」於大嵙崁，延續開山撫番、管理番務與樟腦等山地資源。沈葆楨是 1874–1875 年提出開山撫番的欽差大臣；施琅是攻臺將領；藍鼎元是清初主張積極治臺的文人。</p>
+          <div class="plain">「巡撫」兩個字就是答案：臺灣 1885 年才建省、才有巡撫，第一任就是劉銘傳。沈葆楨是開頭的人，劉銘傳是接手做大的人。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">12.</span><span class="tag hot">史料題</span><span class="tag">1-2 清代</span><span class="src">改編自：新店高中 114-1 第一次段考 第 20 題、泰宇《素養超展開》實例 1</span><span class="pts">2 分</span></div>
+        <div class="q-stem">1867 年美國商船羅妹號在恆春半島觸礁，船員遭當地原住民殺害。美方要求處理時，清朝地方官以「生番之地不隸版圖、非王化所及」推託責任。後來這種說法被日本利用，成為哪一事件中出兵臺灣的藉口？</div>
+        <ul class="opts">
+          <li><button>牡丹社事件</button></li>
+          <li><button>霧社事件</button></li>
+          <li><button>加禮宛事件</button></li>
+          <li><button>甲午戰爭</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>1871 年琉球人船難漂至恆春半島、遭牡丹社等原住民殺害；日本主張「番地無主」，於 1874 年出兵恆春半島，即牡丹社事件。清官員過去「番地不隸版圖」的說法被日方利用（曾任美國領事的李仙得後來擔任日方顧問）。事件後清廷改採開山撫番。</p>
+          <div class="plain">清朝官員想推卸責任說「那邊不歸我管」，結果日本說：「好，那不歸你管，我就去打。」這就是「番地無主論」→ 牡丹社事件 → 清朝驚醒開始開山撫番，一條因果鏈。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">13.</span><span class="tag">1-2 日治</span><span class="src">改編自：新店高中 114-1 第一次段考 第 16 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">1930 年代起，總督府推動「蕃人集團移住」，在警察主導下把許多部落由高山遷到較低的山麓、河谷，並教導種植水稻。下列何者最能說明此政策的目的？</div>
+        <ul class="opts">
+          <li><button>尊重原住民意願，讓各部落自由選擇居住地點</button></li>
+          <li><button>把山地開放給中國移民墾殖</button></li>
+          <li><button>回應原住民族運動返還傳統領域的要求</button></li>
+          <li><button>便於警察監控管理、改變原住民生活方式，並取得山地資源</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：D</p>
+          <p>霧社事件（1930）後，總督府檢討理蕃政策，轉向以集團移住、定耕水田、蕃童教育等方式加強控制與同化，將部落遷到易於監控之處，同時方便開發山地林業等資源。A 違反強制性質；B 日本限制中國移民；C 原住民族運動是 1980 年代以後的事。</p>
+          <div class="plain">把住在高山的人搬到警察看得到的地方、改種水稻不再打獵，好管又好同化，山林資源也順便拿到。這不是「為原住民好」，是統治者方便。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">14.</span><span class="tag hot">史料題</span><span class="tag">1-2 清代</span><span class="src">改編自：新店高中 114-1 第一次段考 第 17 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某官員奏報（依史實改寫）：「某社每年須納社餉數百兩。昔日社地廣闊，鹿多麻盛，尚能完納；近年流民日多，鹿場麻地多被墾為田園，番眾生計日蹙。」這段史料反映的是：</div>
+        <ul class="opts">
+          <li><button>荷蘭時期，東印度公司強占村社土地種植甘蔗</button></li>
+          <li><button>西班牙時期，在雞籠招募漢人開墾番地</button></li>
+          <li><button>清治前期，漢人越界進入番社土地開墾，原住民生計受影響</button></li>
+          <li><button>日治時期，總督府在番地設立官營移民村</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>「社餉」是清廷向歸化番社徵收的稅；「流民日多、鹿場被墾為田園」說明漢人移民湧入並侵墾番地，熟番失去獵場與土地，因而難以繳稅。這也是清廷劃界、立番界的背景。</p>
+          <div class="plain">「社餉＋流民」＝清朝。人越來越多、鹿場變田，原住民沒鹿可打卻還要繳一樣的稅，日子當然越來越難過。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">15.</span><span class="tag">1-2 清代</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">道光年間，新竹北埔一帶由閩、粵兩籍人士合資組成墾號，招募隘丁在山區設隘防守，一面防備原住民、一面開墾土地。關於此組織與其影響，下列何者最恰當？</div>
+        <ul class="opts">
+          <li><button>金廣福；使漢人開墾範圍更深入山區</button></li>
+          <li><button>贌社；使荷蘭公司獨占鹿皮貿易</button></li>
+          <li><button>番屯；使熟番成為清廷的防守武力</button></li>
+          <li><button>撫墾局；使清廷全面停止山地開發</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>金廣福（1835 年成立）是閩粵合資的隘墾組織（「金」為吉祥字，「廣」指廣東，「福」指福建），以設隘防守的名義推進開墾，使漢人勢力深入新竹山區，原住民的生活空間被壓縮。</p>
+          <div class="plain">名字就是提示：「廣」＋「福」＝廣東人和福建人合夥。設隘表面上是防守，實際上是一路往山裡開墾。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">16.</span><span class="tag">1-2 戰後</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">1980 年代原住民族運動中，許多人要求刪除教科書裡「吳鳳捨身革除出草習俗」的故事，1989 年嘉義縣吳鳳鄉也改名為阿里山鄉。他們反對這個故事的主要理由是：</div>
+        <ul class="opts">
+          <li><button>歷史上根本沒有吳鳳這個人</button></li>
+          <li><button>故事以漢人觀點把鄒族塑造成需要被教化的野蠻形象，造成刻板印象</button></li>
+          <li><button>故事是日本統治者編造來宣揚皇民化的</button></li>
+          <li><button>族人希望改用西方傳教士的故事放進課本</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>吳鳳是清代阿里山的通事，確有其人（A 錯），但「捨身取義、感化原住民」的情節是後來不斷加工的神話，以漢人中心觀點描寫鄒族，造成歧視。原住民族運動要求破除此神話，是爭取歷史詮釋權與尊嚴的一部分。</p>
+          <div class="plain">問題不是「吳鳳是不是真的人」，而是「故事怎麼講」：把原住民講成野蠻人、漢人是犧牲自己的英雄，這就是偏見。這題也能跟序篇的「觀點」連起來。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">17.</span><span class="tag">2-1 大航海</span><span class="src">改編自：新店高中 114-1 第一次段考 第 2 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">17 世紀，某歐洲公司的帆船從位於巴達維亞的總部出發，載著胡椒、香料抵達「甲」港，卸貨後裝上當地的鹿皮、砂糖，再前往日本換取白銀，回程到中國沿海採購生絲和瓷器。「甲」港最可能是：</div>
+        <ul class="opts">
+          <li><button>雞籠</button></li>
+          <li><button>鹿港</button></li>
+          <li><button>打狗</button></li>
+          <li><button>大員（今臺南安平）</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：D</p>
+          <p>總部在巴達維亞（今雅加達）的是荷蘭東印度公司，其在臺據點為大員，建熱蘭遮城，經營轉口貿易：鹿皮、砂糖輸往日本，換取白銀再購買中國生絲、瓷器。雞籠是西班牙據點；鹿港、打狗是清代以後才興起的港口。</p>
+          <div class="plain">巴達維亞＝荷蘭總部，荷蘭在臺灣的基地＝大員。鹿皮賣日本是荷蘭時期最常考的貿易路線，記成「鹿皮去日本、白銀買中國貨」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">18.</span><span class="tag">2-1 大航海</span><span class="src">改編自：新店高中 114-1 第一次段考 第 9 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某國為了與中國貿易，在 1604 年與 1622 年兩度占領澎湖。第一次被明朝將領勸退；第二次與明軍對峙，最後於 1624 年轉往當時不在明朝版圖內的大員。這個國家是：</div>
+        <ul class="opts">
+          <li><button>葡萄牙</button></li>
+          <li><button>西班牙</button></li>
+          <li><button>荷蘭</button></li>
+          <li><button>英國</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>荷蘭東印度公司 1604 年首度占澎湖，被明將沈有容勸退；1622 年再占澎湖，與明軍對峙，1624 年雙方議和，荷蘭撤出澎湖、轉占大員。葡萄牙以澳門為據點；西班牙 1626 年占雞籠。</p>
+          <div class="plain">「先澎湖、後大員、1624」三個關鍵＝荷蘭。荷蘭不是一開始就想要臺灣，是被明朝趕出澎湖才「退而求其次」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">19.</span><span class="tag">2-1 大航海</span><span class="src">改編自：新店高中 114-1 第一次段考 第 24 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">近年在基隆和平島的考古發掘中，出土了 17 世紀城堡與修道院的遺構和墓葬。建立這座城堡的政權，下列敘述何者正確？</div>
+        <ul class="opts">
+          <li><button>以贌社制度控制原住民村社的貿易</button></li>
+          <li><button>為保護馬尼拉與中國、日本間的航線而占領北臺灣，1642 年被荷蘭逐出</button></li>
+          <li><button>實施屯田，在臺灣留下許多帶有「營」字的地名</button></li>
+          <li><button>以大員為統治中心，建熱蘭遮城</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>和平島（舊稱社寮島）是西班牙 1626 年建聖薩爾瓦多城之處。西班牙以馬尼拉為基地，占北臺灣以保護航線、對抗荷蘭並發展對中、日貿易；1642 年被荷蘭逐出。A、D 是荷蘭；C 是鄭氏。</p>
+          <div class="plain">北部（雞籠、淡水）＝西班牙，南部（大員）＝荷蘭。西班牙只待了 16 年，1642 年被荷蘭趕走。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">20.</span><span class="tag">2-1 大航海</span><span class="src">改編自：新店高中 114-1 第一次段考 第 11 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">這位明末海商早年在日本平戶活動，後來在臺灣西南沿海聚眾，勢力大到荷蘭人也得與他打交道；1628 年接受明朝招撫，清軍南下後又降清。據清初文獻記載，他曾在福建大旱時協助官府招募饑民來臺開墾。此人是：</div>
+        <ul class="opts">
+          <li><button>鄭芝龍</button></li>
+          <li><button>顏思齊</button></li>
+          <li><button>鄭經</button></li>
+          <li><button>施琅</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>鄭芝龍（鄭成功之父）曾追隨顏思齊在臺灣活動，顏思齊死後接掌勢力，1628 年受明朝招撫，1646 年降清。清初文獻記載他曾招募福建饑民來臺，是漢人移民史常提到的例子（人數等細節學界有討論）。顏思齊在 1625 年已過世，不可能降清；鄭經是鄭成功之子；施琅是清朝攻臺將領。</p>
+          <div class="plain">「降清」把顏思齊刪掉，「受明朝招撫」又是海商，答案就是鄭芝龍。記住：爸爸鄭芝龍降清，兒子鄭成功反清。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">21.</span><span class="tag">2-1 日治移民</span><span class="src">改編自：新店高中 114-1 第一次段考 第 5 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">關於日治時期日本人移民臺灣的過程，下列敘述何者正確？</div>
+        <ul class="opts">
+          <li><button>日治初期移民多來自福建、廣東兩省</button></li>
+          <li><button>官營移民村多設在西部嘉南平原</button></li>
+          <li><button>戰後在臺日本人多數選擇留在臺灣定居</button></li>
+          <li><button>初期民間企業在東部招募的日本移民，因疾病、氣候與衝突等因素成效不佳，總督府後來改辦官營移民村</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：D</p>
+          <p>日治初期由民間企業（如賀田組）在花蓮招募日本移民，因瘧疾等風土病、氣候不適與原住民衝突，多半失敗；1909 年起總督府改辦官營移民，1910 年設吉野村等。A 福建、廣東是清代漢人移民來源；B 官營移民村集中在東部花蓮；C 戰後日本人絕大多數被遣返。</p>
+          <div class="plain">日本移民的順序是「先民間、失敗；再官方、在花蓮」。看到「西部」「留在臺灣」都是陷阱。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">22.</span><span class="tag">2-1 清治移民</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">1860 年代臺灣開港通商後，北部丘陵地區吸引大量人口移入，臺北盆地逐漸成為新的經濟重心。最主要的原因是：</div>
+        <ul class="opts">
+          <li><button>清廷將臺灣府城由臺南遷到臺北</button></li>
+          <li><button>日本人在北部設立大量官營移民村</button></li>
+          <li><button>茶、樟腦成為重要出口商品，產地多在北部丘陵山區</button></li>
+          <li><button>荷蘭東印度公司在淡水設立商館</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>開港後，茶、糖、樟腦為三大出口品，其中茶與樟腦多產於北部丘陵與山區，帶動人口北移、淡水與大稻埕繁榮。A 錯，清代臺灣府並未從臺南遷到臺北（1875 年是另設臺北府）；B 是日治時期且在東部；D 荷蘭在 17 世紀，時代不符。</p>
+          <div class="plain">「開港」→「賣什麼」→「在哪裡產」→「人往哪裡走」。茶和樟腦長在北部山坡，賺錢的地方在北部，人就往北跑。</div>
+        </div></details>
+      </div>
+
+      <!-- ===== 二、多選 ===== -->
+      <div class="paper-sec">二、多選題（第 23～26 題，每題 3 分，共 12 分）</div>
+      <p>每題有 5 個選項，至少有一個是正確的。本網站只判全對才給分；實際段考多半依答錯選項數給部分分數，以老師規定為準。</p>
+
+      <div class="q" data-answer="ABD" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">23.</span><span class="tag">1-1 史前文化</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列史前文化與其特徵的配對，哪些正確？</div>
+        <ul class="opts">
+          <li><button>長濱文化：打製石器、骨角器，沒有陶器</button></li>
+          <li><button>大坌坑文化：粗繩紋陶，已出現陶器</button></li>
+          <li><button>卑南文化：會煉鐵，出土唐宋錢幣</button></li>
+          <li><button>十三行文化：人面陶罐、煉鐵遺跡</button></li>
+          <li><button>圓山文化：大量石板棺與大型立石</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：ABD</p>
+          <p>C 錯：煉鐵、唐宋錢幣是十三行文化；E 錯：石板棺、大型立石（月形石柱）是卑南文化，圓山的特徵是貝塚。</p>
+          <div class="plain">這題就是把特徵「交換位置」騙你。口訣：長濱沒陶、大坌坑繩紋、圓山貝塚、卑南石板棺玉器、十三行煉鐵。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="BCE" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">24.</span><span class="tag hot">高頻考點</span><span class="tag">1-2 清代</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列哪些是清代對原住民或山地所採取的措施？</div>
+        <ul class="opts">
+          <li><button>設置隘勇線，架設通電鐵絲網包圍山區</button></li>
+          <li><button>立石為界、挖土牛溝，禁止漢人越界私墾</button></li>
+          <li><button>挑選熟番組成屯丁，並配給養贍埔地</button></li>
+          <li><button>推行山地人民生活改進運動</button></li>
+          <li><button>設立撫墾局，管理番務與山地開墾</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：BCE</p>
+          <p>B 劃界封山（1722 年起）、C 番屯（林爽文事件後）、E 撫墾局（1886 年劉銘傳）皆為清代措施。A 通電鐵絲網的隘勇線是日治時期理蕃手段（清代有「隘」，但通電鐵絲網是日治）；D 是 1950 年代戰後政府的山地平地化政策。</p>
+          <div class="plain">「隘」清朝就有，但「通電鐵絲網」是日本人的科技，這是半對半錯的陷阱。山地人民生活改進運動一聽就是戰後的口號。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="ACE" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">25.</span><span class="tag">1-2 日治</span><span class="src">改編自：新店高中 114-1 第一次段考 第 43 題（改為多選）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">關於日治時期的理蕃政策，下列敘述哪些正確？</div>
+        <ul class="opts">
+          <li><button>將蕃地劃為特別行政區，不適用一般法令，由警察管理</button></li>
+          <li><button>霧社事件主要起因於總督府強迫原住民改信基督教</button></li>
+          <li><button>佐久間左馬太推動五年理蕃計畫，1914 年發動太魯閣戰役</button></li>
+          <li><button>日治初期即承認原住民族的自治權與傳統領域</button></li>
+          <li><button>設立蕃童教育所，推行日語教育</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：ACE</p>
+          <p>B 錯：霧社事件原因包括勞役剝削、文化壓迫（禁紋面、限制狩獵）、日警與原住民婦女婚姻問題等，並非宗教。D 錯：日本視蕃地為國有、由警察統治，沒有承認自治；原住民族自治、土地權是 2005 年《原住民族基本法》才明文保障。</p>
+          <div class="plain">日本對原住民就是「警察管＋武力打＋教日語」。看到「承認自治」這種好話放在日治時期，幾乎一定錯。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="ACD" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">26.</span><span class="tag">2-1 清治移民</span><span class="src">改編自：新店高中 114-1 第一次段考 第 27 題（改為多選）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">關於清代漢人移民臺灣，下列敘述哪些正確？</div>
+        <ul class="opts">
+          <li><button>移民主要來自福建泉州、漳州與廣東客家地區</button></li>
+          <li><button>「羅漢腳」指有家室、有田產的大墾戶</button></li>
+          <li><button>牡丹社事件後，沈葆楨奏請解除渡臺禁令</button></li>
+          <li><button>開港通商後，茶、糖、樟腦成為主要出口品</button></li>
+          <li><button>艋舺的「頂下郊拚」是漳州人與廣東人之間的械鬥</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：ACD</p>
+          <p>B 錯：羅漢腳是無家室、無恆產的單身遊民；E 錯：頂下郊拚（1853）是泉州三邑人（頂郊）與同安人（下郊）之爭，兩邊都是泉州人。</p>
+          <div class="plain">頂下郊拚是「泉州人打泉州人」，這個很多人會記錯成漳泉拚。羅漢腳就是「沒老婆、沒田」的單身漢，跟大墾戶剛好相反。</div>
+        </div></details>
+      </div>
+
+      <!-- ===== 三、題組 ===== -->
+      <div class="paper-sec">三、題組題（第 27～34 題，每題 2 分，共 16 分）</div>
+      <p>請先讀資料再作答，答案要以資料內容為依據。</p>
+
+      <div class="box info"><span class="label">題組一（第 27～29 題）</span>
+        <p>臺北捷運石牌站附近保存一塊清代石碑，碑文大意是：官府判定此地以東的水田、以南的旱園，歸當地番社管業。這塊碑立於 18 世紀中葉，地方上就是因為這塊「石牌」而得名，現已被登錄為古物。</p>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">27.</span><span class="tag hot">史料題</span><span class="tag">1-2 清代</span><span class="src">改編自：新店高中 114-1 第一次段考 第 33 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">根據資料，這塊石碑最可能是：</div>
+        <ul class="opts">
+          <li><button>漢人捐建廟宇時所立的紀念碑</button></li>
+          <li><button>日治時期警察劃定的蕃地界線標誌</button></li>
+          <li><button>清代官府為處理番漢土地爭議所立的界碑</button></li>
+          <li><button>荷蘭東印度公司標示贌社範圍的界石</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>碑文說官府「判定」田園歸番社管業，表示漢人與番社之間有土地糾紛，官府立碑劃分番漢界線、確認番社的土地權利。時間是 18 世紀中葉（清乾隆年間），排除日治與荷蘭時期。</p>
+          <div class="plain">「官府判定」＋「歸番管業」＝官方出面劃界。年代是 18 世紀，只能是清朝。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">28.</span><span class="tag">1-1 / 1-2</span><span class="src">改編自：新店高中 114-1 第一次段考 第 34 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">與這塊石碑關係最密切的原住民族是：</div>
+        <ul class="opts">
+          <li><button>凱達格蘭族</button></li>
+          <li><button>西拉雅族</button></li>
+          <li><button>布農族</button></li>
+          <li><button>噶瑪蘭族</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>石牌位於臺北盆地北側（今北投、士林一帶），當地原住民為平埔族群凱達格蘭族（如北投社）。西拉雅在臺南、布農在中央山脈、噶瑪蘭在宜蘭。</p>
+          <div class="plain">這題考「地點對族群」：臺北盆地＝凱達格蘭（總統府前的凱達格蘭大道就是為了紀念他們）。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">29.</span><span class="tag">1-2 清代</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">研究者比對清代不同時期的地圖，發現番界（紅線、藍線等）的位置一次比一次更往山區推移。這個現象最能說明：</div>
+        <ul class="opts">
+          <li><button>原住民主動向平原擴張生活領域</button></li>
+          <li><button>漢人持續越界開墾，清廷的劃界禁令難以完全落實</button></li>
+          <li><button>日本人擴大官營移民村的範圍</button></li>
+          <li><button>清廷自始就積極鼓勵漢人進入山區開墾</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>番界一再重劃、往山區推進，表示漢人不斷越界墾殖，清廷只好事後承認既成事實、再劃新界。清廷前期是消極隔離，到 1875 年開山撫番才轉為積極（D 錯）；A 方向相反；C 時代錯。</p>
+          <div class="plain">界線一直往山裡移，代表「線擋不住人」。漢人先越界開墾，政府再把線往後畫，追著承認。</div>
+        </div></details>
+      </div>
+
+      <div class="box info"><span class="label">題組二（第 30～32 題）</span>
+        <p>下表為日治時期幾次人口普查的概數（取整數，僅供判讀）：</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>年份</th><th>全臺總人口</th><th>在臺日本人</th><th>日本人占比</th></tr></thead>
+          <tbody>
+            <tr><td>1905</td><td>約 304 萬</td><td>約 5.7 萬</td><td>約 1.9%</td></tr>
+            <tr><td>1920</td><td>約 366 萬</td><td>約 16.7 萬</td><td>約 4.6%</td></tr>
+            <tr><td>1930</td><td>約 459 萬</td><td>約 23 萬</td><td>約 5.0%</td></tr>
+            <tr><td>1940</td><td>約 587 萬</td><td>約 31.2 萬</td><td>約 5.3%</td></tr>
+          </tbody></table></div>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">30.</span><span class="tag hot">圖表題</span><span class="tag">2-1 日治移民</span><span class="src">改編自：新店高中 114-1 第一次段考 第 31 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">根據上表，下列判讀何者正確？</div>
+        <ul class="opts">
+          <li><button>在臺日本人數持續增加，但占全臺人口的比例始終不到一成</button></li>
+          <li><button>1930 到 1940 年間，在臺日本人數減少</button></li>
+          <li><button>日本人占全臺人口的比例曾經超過三成</button></li>
+          <li><button>1905 到 1940 年間，全臺總人口逐漸減少</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>日本人數由約 5.7 萬增至約 31.2 萬，持續增加，但占比最高約 5.3%，不到一成。B、C、D 都與表中數字不符。</p>
+          <div class="plain">圖表題第一步：只看表格說話。數字一路變大、百分比最多 5%，答案就出來了。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">31.</span><span class="tag">2-1 日治移民</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">關於表中這些在臺日本人，下列敘述何者最正確？</div>
+        <ul class="opts">
+          <li><button>大多數是住在東部官營移民村的農民</button></li>
+          <li><button>戰後大多數選擇留在臺灣，成為今日新住民的主體</button></li>
+          <li><button>在臺灣出生的日本人被稱為「羅漢腳」</button></li>
+          <li><button>多集中在都市，從事官吏、警察、教師、商業等工作</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：D</p>
+          <p>在臺日本人多居住在臺北等城市，擔任公務員、軍警、教師或經商；官營移民村的農民只占少數（A 錯）。戰後日本人絕大多數被遣返（B 錯）。在臺出生的日本人俗稱「灣生」；羅漢腳是清代無家室的漢人單身漢（C 錯）。</p>
+          <div class="plain">日本人來臺灣主要是「來管理、來做生意」，所以住城市。移民村雖然常考，但人數其實不多。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">32.</span><span class="tag">2-1 日治移民</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">表中 1905 到 1940 年間，全臺總人口增加了約 280 萬人。造成總人口大幅成長的主要原因最可能是：</div>
+        <ul class="opts">
+          <li><button>總督府開放中國人大量移民來臺</button></li>
+          <li><button>公共衛生與醫療改善，死亡率下降，人口自然增加</button></li>
+          <li><button>日本移民占了新增人口的大多數</button></li>
+          <li><button>原住民大量由山區移入平地</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>日治時期總督府限制中國人入臺（A 錯）；同期日本人只增加約 25 萬（C 錯）；原住民人口相對很少，遷移也不會增加「全臺」總人口（D 錯）。總人口成長主要來自臺灣人的自然增加：防疫、自來水、下水道、醫療等公共衛生改善，使死亡率下降。</p>
+          <div class="plain">新增 280 萬人，日本人只佔 25 萬，中國人又被限制進來，剩下的就是「本地人自己生、而且比較不容易死」。用表格數字刪選項是這題的關鍵。</div>
+        </div></details>
+      </div>
+
+      <div class="box info"><span class="label">題組三（第 33～34 題）</span>
+        <p>1683 年清軍攻下臺灣後，朝廷中有人主張放棄臺灣、只守澎湖。攻臺將領施琅上奏〈恭陳臺灣棄留疏〉，其中寫道：「臺灣一地，雖屬外島，實關四省之要害。」並指出若放棄臺灣，此地可能再被外國勢力或海盜占據。</p>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">33.</span><span class="tag hot">史料題</span><span class="tag">2-1 清治</span><span class="src">自編（比照段考題型；史料為公版清代文獻短句）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">根據資料，施琅的主張是：</div>
+        <ul class="opts">
+          <li><button>放棄臺灣，將居民全部遷回大陸</button></li>
+          <li><button>將臺灣交還荷蘭以換取貿易利益</button></li>
+          <li><button>將臺灣納入版圖，以屏障東南沿海各省</button></li>
+          <li><button>將臺灣開放給日本作為貿易港</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>「實關四省之要害」指臺灣關係到江、浙、閩、粵沿海四省的安危，施琅主張保留臺灣。康熙採納後，1684 年將臺灣納入版圖，設臺灣府，隸屬福建省。</p>
+          <div class="plain">「雖屬外島，實關要害」＝雖然是海外小島，但很重要，所以要留。清朝最後聽了施琅的。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">34.</span><span class="tag">2-1 鄭氏→清治</span><span class="src">改編自：泰宇《素養超展開》實例 2</span><span class="pts">2 分</span></div>
+        <div class="q-stem">清廷領有臺灣初期，臺灣的漢人人口曾經一度減少。主要原因是：</div>
+        <ul class="opts">
+          <li><button>清廷將鄭氏的官兵、眷屬與部分人民大批遣回大陸</button></li>
+          <li><button>清軍與鄭軍在臺灣本島激戰，死傷慘重</button></li>
+          <li><button>總督府實施戶口調查，掌握了較正確的人數</button></li>
+          <li><button>開山撫番使大批漢人移往東部</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>清廷為避免臺灣再成為反清基地，將鄭氏官兵、宗室與眷屬等大量遷回大陸，加上渡臺限制，清初漢人人口一度減少。B 錯：決戰在澎湖，鄭克塽隨後投降，臺灣本島未發生大戰；C「總督府」是日治時期；D 開山撫番是 1875 年以後，而且是移往臺灣東部，不會讓全臺人口減少。</p>
+          <div class="plain">打完仗清朝怕臺灣又有人造反，就把鄭家的人一批一批送回大陸，人當然變少。C 的「總督府」三個字直接露餡，是日本時代的機關。</div>
+        </div></details>
+      </div>
+
+      <!-- ===== 四、混合題 ===== -->
+      <div class="paper-sec">四、混合題（第 35～38 題，共 28 分）</div>
+      <p>名詞須寫正確中文，錯字不給分；論述題請在限字內寫出關鍵理由。選擇部分點選項計分，非選部分請對照評分標準自己給分。</p>
+
+      <div class="q" data-points="12">
+        <div class="q-head"><span class="q-no">35.</span><span class="tag hot">名詞填空</span><span class="tag">1-1 / 1-2 / 2-1</span><span class="src">改編自：新店高中 114-1 第一次段考 第 43～52 題（題型）</span><span class="pts">12 分（每格 2 分）</span></div>
+        <div class="q-stem">請寫出下列各題所指的名詞：<br>
+          (1) 西拉雅等平埔族群中，負責主持祭儀、為族人治病解厄的女祭司，漢文文獻稱為什麼？<br>
+          (2) 清代中部岸裡社的漢人通事，被稱為「番駙馬」，以「割地換水」方式與族人合作開圳。此人是誰？<br>
+          (3) 1906 年來臺就任，推動「五年理蕃計畫」的臺灣總督是誰？<br>
+          (4) 牡丹社事件後來臺督辦防務，並於 1875 年奏請開山撫番、解除渡臺禁令的欽差大臣是誰？<br>
+          (5) 1652 年大員附近漢人因不滿荷蘭重稅等因素起事，遭荷蘭與原住民聯軍鎮壓，此事件稱為什麼？<br>
+          (6) 日治時期在臺灣出生的日本人，俗稱為什麼？</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：(1) 尪姨　(2) 張達京　(3) 佐久間左馬太　(4) 沈葆楨　(5) 郭懷一事件　(6) 灣生</p>
+          <p>(1) 尪姨（尫姨）是平埔族群的女性祭司，負責公廨祭儀。(2) 張達京為岸裡社通事，娶社內女子，以出資開圳換取土地（割地換水），開鑿葫蘆墩圳（貓霧捒圳）一帶水利。(3) 佐久間左馬太任期 1906–1915，五年理蕃計畫 1910–1915。(4) 沈葆楨 1874 年以欽差大臣身分來臺。(5) 郭懷一事件。(6) 灣生。</p>
+          <p><strong>評分標準：</strong>每格 2 分，錯一字即不給分；(5) 寫「郭懷一」未加事件可依老師標準酌給；(3) 須寫全名。</p>
+          <div class="plain">填空題最怕錯字：「葆」「楨」「左馬太」都要練寫一次。「尪姨」也常寫作「尫姨」，兩種寫法都常見。</div>
+        </div></details>
+      </div>
+
+      <div class="box info"><span class="label">第 36 題資料</span>
+        <p>關於清代漢人移民依祖籍（漳、泉、粵）形成聚落的分布現象，學界有幾種解釋：</p>
+        <p>甲、<strong>先來後到說</strong>：先來的人占據條件較好的平原與港口，晚到的只好往近山丘陵開墾。<br>
+           乙、<strong>分類械鬥說</strong>：械鬥中弱勢的一方被迫遷移，投靠同祖籍的大聚落，久了就形成同籍聚居。<br>
+           丙、<strong>原鄉生活說</strong>：移民依照原鄉的環境與生活方式，選擇相似的地方開墾。</p>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">36(1)</span><span class="tag">2-1 清治移民</span><span class="src">改編自：新店高中 114-1 第一次段考 第 53 題（題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某村落原本漳、泉籍居民混居，一場大規模械鬥後，落敗的泉籍居民集體遷往鄰近的泉籍大庄定居，此後該村幾乎只剩漳籍人家。這個例子最能支持哪一種說法？</div>
+        <ul class="opts">
+          <li><button>先來後到說</button></li>
+          <li><button>分類械鬥說</button></li>
+          <li><button>原鄉生活說</button></li>
+          <li><button>三種說法都無法解釋</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>械鬥後弱勢者遷往同籍聚落，造成同籍聚居，正是分類械鬥說的描述。</p>
+          <div class="plain">關鍵字「械鬥後搬家投靠同鄉」，直接對應乙說。這類題只要把例子跟說法的「關鍵動作」對起來就好。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-points="4">
+        <div class="q-head"><span class="q-no">36(2)</span><span class="tag">2-1 清治移民</span><span class="src">改編自：新店高中 114-1 第一次段考 第 53 題（題型）</span><span class="pts">4 分</span></div>
+        <div class="q-stem">許多客家移民的原鄉（如廣東嘉應州一帶）多山、平地少，來臺後不少人選擇在丘陵台地開墾，種植適合坡地的作物。請問這個現象最適合用哪一種說法解釋？（2 分）並說明理由（40 字以內，2 分）。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">參考答案：原鄉生活說。理由：客家原鄉多山地丘陵，移民依熟悉的環境與耕作方式，選擇臺灣的丘陵台地開墾。</p>
+          <p><strong>評分標準：</strong>說法選對 2 分（選錯本題 0 分）；理由須同時提到「原鄉環境（多山、丘陵）」與「來臺選擇相似環境或延續原鄉生活方式」才給 2 分，只寫一項給 1 分。若寫「先來後到說，因客家人較晚來臺只能去丘陵」，因題目資料強調原鄉環境，不給分（但可以補充：這正是學界認為「先來後到說」不夠完整的原因之一）。</p>
+          <div class="plain">題目已經把「原鄉多山」寫給你了，就是在提示丙說。論述題的訣竅：從資料裡抓關鍵詞，套進說法的定義句裡，40 字很快就寫完。</div>
+        </div></details>
+      </div>
+
+      <div class="box info"><span class="label">第 37 題資料（教學用改寫，非原文）</span>
+        <p>資料甲（某清代地方官的紀錄大意）：山中生番時常出草殺人，凶頑難以教化，應嚴守番界，防範其出擾。<br>
+           資料乙（某原住民部落耆老的口述大意）：祖先的獵場被外人一塊一塊開墾成田，我們出草是為了守護土地與祖靈的規範。</p>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">37(1)</span><span class="tag">序篇 多元觀點</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">研究者要運用這兩份資料研究清代的番漢衝突，最適當的做法是：</div>
+        <ul class="opts">
+          <li><button>只採用資料甲，因為官方紀錄才可信</button></li>
+          <li><button>只採用資料乙，因為原住民是受害者，說法一定正確</button></li>
+          <li><button>比對兩份資料，分析不同立場造成的不同解釋，並找其他證據佐證</button></li>
+          <li><button>兩份資料互相矛盾，所以都不能使用</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>官方紀錄與口述歷史都是可用的史料，但各有立場與限制。研究者應交叉比對、說明觀點差異，並以其他證據（契約、地圖、碑文等）檢驗，才能建構較完整的歷史解釋。</p>
+          <div class="plain">史料「說法不同」不是問題，反而是研究的起點。只信一邊、或兩邊都丟掉，都是錯的研究態度。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-points="4">
+        <div class="q-head"><span class="q-no">37(2)</span><span class="tag">序篇 / 1-2</span><span class="src">自編（比照段考題型）</span><span class="pts">4 分</span></div>
+        <div class="q-stem">同樣是「出草」，資料甲與資料乙對它的解釋有什麼不同？請各用一句話說明（2 分），並寫出造成差異的主要原因（40 字以內，2 分）。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">參考答案：甲把出草視為原住民凶暴、需要防範的「番害」；乙則認為出草是保衛土地、遵守祖靈規範的行為。差異原因：兩者立場不同，甲站在統治者、維持治安的角度，乙站在土地被侵墾的原住民角度。</p>
+          <p><strong>評分標準：</strong>甲、乙的解釋各 1 分；原因須寫出「立場／觀點不同」並點出雙方身分（統治者 vs. 原住民）才給 2 分，只寫「立場不同」給 1 分。</p>
+          <div class="plain">這題就是序篇的核心：事實（出草）只有一個，解釋卻因立場而不同。寫答案時用「站在誰的角度」這個句型最穩。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-points="4">
+        <div class="q-head"><span class="q-no">38.</span><span class="tag hot">時序題</span><span class="tag">1-2 / 2-1</span><span class="src">自編（比照段考題型）</span><span class="pts">4 分</span></div>
+        <div class="q-stem">請將下列事件依發生先後排列：<br>
+          甲、西班牙占領雞籠　乙、大甲西社事件　丙、加禮宛事件　丁、鄭芝龍接受明朝招撫　戊、劉銘傳設撫墾總局　己、總督府設立吉野村</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：甲 → 丁 → 乙 → 丙 → 戊 → 己</p>
+          <p>甲 1626 → 丁 1628 → 乙 1731–1732 → 丙 1878 → 戊 1886 → 己 1910。</p>
+          <p><strong>評分標準：</strong>全對 4 分；只有相鄰兩項對調給 2 分；其餘 0 分。</p>
+          <div class="plain">先貼政權標籤：甲、丁是大航海時代（1620 年代，西班牙 1626 比鄭芝龍受撫 1628 早兩年）；乙是清前期；丙、戊是清後期（1875 開山撫番之後，加禮宛 1878 比撫墾局 1886 早）；己是日治。</div>
+        </div></details>
+      </div>
+
+      <p class="muted small" style="text-align:center;margin-top:24px">— 試題結束，如果還有時間，請回頭檢查劃記與錯字 —</p>
+    </div>
+
+    <h3>考後檢討</h3>
+    <p>把計分列的選擇題得分（滿分 76）加上混合題自評分數（滿分 24），就是你的模擬成績。</p>
+    <div class="two">
+      <div class="box ok"><span class="label">80 分以上</span>
+        <p>觀念穩了。把錯題對應的章節在「範圍重點整理」再看一次，考前一晚只需複習「年代表與記憶技巧」和名詞錯字。</p>
+      </div>
+      <div class="box tip"><span class="label">60～79 分</span>
+        <p>大方向對，但細節（族群特徵、各政權政策、年代）不夠熟。先用下表找出最弱的一節，回「章節導覽」看圖表，再做「考古題與白話解析」同章節的題目。</p>
+      </div>
+    </div>
+    <div class="box warn"><span class="label">60 分以下</span>
+      <p>先不要再刷題。依序回到「範圍重點整理」的 1-2「各政權對原住民政策」與 2-1「各時期移民」，這兩塊占分最多；再背「年代表」裡的關鍵年份（1624、1626、1642、1662、1683、1721、1786、1874、1875、1885、1895、1930），最後重做本卷錯題。</p>
+    </div>
+
+    <h4>錯題對應章節</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>章節</th><th>本卷題號</th><th>錯了要回去看</th></tr></thead>
+      <tbody>
+        <tr><td>序篇 如何認識過去</td><td>1、37</td><td>「範圍重點整理」最後一段（史料、多元觀點）</td></tr>
+        <tr><td>1-1 史前文化</td><td>2、23</td><td>史前文化比較表（長濱、大坌坑、圓山、卑南、十三行）</td></tr>
+        <tr><td>1-1 南島語族與原住民族</td><td>3、4、5、6、7、8、28</td><td>16 族分布表、社會組織三大考型、正名年份</td></tr>
+        <tr><td>1-2 清代原住民政策</td><td>9、10、11、12、14、15、24、27、29</td><td>清代番界政策演變（劃界 → 土牛 → 隘墾 → 番屯 → 開山撫番 → 撫墾局）</td></tr>
+        <tr><td>1-2 日治、戰後</td><td>13、16、25</td><td>理蕃政策、霧社事件、原住民族運動時間線</td></tr>
+        <tr><td>2-1 大航海、鄭氏</td><td>17、18、19、20、34</td><td>荷西時期比較、鄭氏屯田、清初遷民</td></tr>
+        <tr><td>2-1 清治移民</td><td>22、26、33、36</td><td>渡臺禁令、移民來源、分類械鬥、開港</td></tr>
+        <tr><td>2-1 日治人口移動</td><td>21、30、31、32</td><td>移民村、在臺日本人、人口成長原因</td></tr>
+        <tr><td>綜合時序</td><td>35、38</td><td>「年代表與記憶技巧」重要年代時序</td></tr>
+      </tbody></table></div>
+  </section>
+
 
   <!-- ============================ APPLY ============================ -->
   <section class="panel" id="apply" hidden>

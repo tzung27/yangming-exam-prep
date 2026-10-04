@@ -91,6 +91,11 @@
       b.innerHTML = '<span class="bubble" aria-hidden="true">' + letter + "</span><span>" + b.innerHTML + "</span>";
     });
     function reveal() {
+      var picked = buttons.filter(function (b) { return b.classList.contains("picked"); })
+        .map(function (b) { return b.dataset.opt; }).sort().join("");
+      q.dataset.result = picked === ans.split("").sort().join("") ? "right" : "wrong";
+      var exam = q.closest(".exam");
+      if (exam && exam._score) exam._score();
       buttons.forEach(function (b) {
         var isAns = ans.indexOf(b.dataset.opt) >= 0;
         if (isAns) b.classList.add("correct");
@@ -113,6 +118,48 @@
       q.querySelector(".opts").after(chk);
       chk.addEventListener("click", function () { reveal(); chk.remove(); });
     }
+  });
+
+  /* ---------- mock exam: live score + timer ---------- */
+  document.querySelectorAll(".exam").forEach(function (exam) {
+    var qs = Array.prototype.slice.call(exam.querySelectorAll(".q[data-answer]"));
+    var pts = function (q) { return parseFloat(q.dataset.points || "1"); };
+    var total = qs.reduce(function (s, q) { return s + pts(q); }, 0);
+    var box = exam.querySelector(".exam-score");
+    exam._score = function () {
+      var done = 0, got = 0;
+      qs.forEach(function (q) {
+        if (!q.dataset.result) return;
+        done++;
+        if (q.dataset.result === "right") got += pts(q);
+      });
+      if (box) box.innerHTML = "選擇題已作答 <b>" + done + "</b> / " + qs.length + " 題　得分 <b>" + (Math.round(got * 10) / 10) + "</b> / " + total +
+        (done === qs.length && qs.length ? "　<span class=\"done\">全部完成！非選題請對照解析自行給分</span>" : "");
+    };
+    exam._score();
+  });
+
+  document.querySelectorAll(".exam-timer[data-min]").forEach(function (el) {
+    var total = parseInt(el.dataset.min, 10) * 60, left = total, id = null;
+    el.innerHTML = '<span class="clock" aria-live="off"></span>' +
+      '<button type="button" data-act="go">開始計時</button><button type="button" data-act="reset">重設</button>';
+    var clock = el.querySelector(".clock"), go = el.querySelector('[data-act="go"]');
+    function draw() {
+      var m = Math.floor(left / 60), s = left % 60;
+      clock.textContent = (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+      el.classList.toggle("low", left <= 300 && left > 0);
+      el.classList.toggle("over", left <= 0);
+      if (left <= 0) clock.textContent = "時間到，停筆！";
+    }
+    function stop() { clearInterval(id); id = null; go.textContent = left < total ? "繼續" : "開始計時"; }
+    go.addEventListener("click", function () {
+      if (id) return stop();
+      if (left <= 0) return;
+      go.textContent = "暫停";
+      id = setInterval(function () { left--; draw(); if (left <= 0) stop(); }, 1000);
+    });
+    el.querySelector('[data-act="reset"]').addEventListener("click", function () { stop(); left = total; draw(); go.textContent = "開始計時"; });
+    draw();
   });
 
   /* ---------- countdown ---------- */

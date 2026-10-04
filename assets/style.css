@@ -380,3 +380,42 @@ td.mine, th.mine { background: var(--card-red-soft); }
 .diagram svg { display: block; max-width: 100%; height: auto; margin: 0 auto; }
 .diagram figcaption { font-size: 13px; color: var(--graphite); text-align: center; margin-top: 6px; }
 @media (max-width: 560px) { .diagram svg { min-width: 460px; } }
+
+/* ======================================================================
+   模擬段考: sticky exam bar (timer + live score), paper sections, sources
+   ====================================================================== */
+.exam-bar {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + var(--topbar-h, 56px) + 52px); z-index: 5;
+  display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between;
+  background: var(--sheet); border: 1.5px solid var(--card-red); border-radius: 10px; padding: 8px 14px; margin: 14px 0;
+  box-shadow: var(--shadow);
+}
+.exam-timer { display: flex; gap: 8px; align-items: center; }
+.exam-timer .clock { font-family: var(--f-mono); font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; min-width: 4.2em; }
+.exam-timer.low .clock { color: var(--warn); }
+.exam-timer.over .clock { color: var(--card-red); font-size: 16px; }
+.exam-timer button {
+  font: inherit; font-size: 13px; cursor: pointer; border-radius: 6px; padding: 3px 10px;
+  border: 1px solid var(--ink); background: var(--ink); color: var(--sheet);
+}
+.exam-timer button[data-act="reset"] { background: var(--sheet); color: var(--ink); }
+.exam-score { font-size: 14px; color: var(--graphite); font-variant-numeric: tabular-nums; }
+.exam-score b { color: var(--card-red); font-family: var(--f-mono); }
+.exam-score .done { color: var(--ok); font-weight: 700; }
+@media (max-width: 560px) { .exam-bar { position: static; } }
+
+.paper-head {
+  border: 2px solid var(--ink); border-radius: 4px; padding: 12px 16px; margin: 14px 0; background: var(--sheet);
+  display: grid; gap: 4px; text-align: center;
+}
+.paper-head .ttl { font-family: var(--f-display); font-weight: 900; font-size: 20px; }
+.paper-head .meta { font-size: 14px; color: var(--graphite); }
+.paper-sec {
+  font-family: var(--f-display); font-weight: 800; font-size: 18px; margin: 28px 0 6px;
+  padding: 6px 12px; background: var(--ink); color: var(--sheet); border-radius: 6px;
+}
+.paper-sec + p { font-size: 14px; color: var(--graphite); }
+.q .src { font-size: 12px; color: var(--graphite); }
+.q .src a { color: var(--graphite); }
+.q .pts { font-family: var(--f-mono); font-size: 12px; color: var(--graphite); margin-left: auto; }
+.sources td a { word-break: break-all; }

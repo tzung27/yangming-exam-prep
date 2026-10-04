@@ -34,6 +34,7 @@
     <button data-tab="notes">範圍重點整理</button>
     <button data-tab="formula">公式整理與記憶技巧</button>
     <button data-tab="past">考古題與白話解析</button>
+    <button data-tab="mock">模擬段考</button>
     <button data-tab="apply">題型解法套用</button>
     <button data-tab="tips">考前攻略</button>
   </nav>
@@ -1621,6 +1622,956 @@
           <div class="plain">西部海岸 = 沙灘、沙洲、潟湖，都是「堆」出來的；北部、東北角才是岩石被浪打出來的海蝕地形。</div>
         </div>
       </details>
+    </div>
+  </section>
+
+  <!-- ===================== MOCK EXAM ===================== -->
+  <section class="panel" id="mock" hidden>
+    <h2>模擬段考</h2>
+    <div class="box info"><span class="label">這份模擬卷怎麼來的</span>
+      <p><strong>陽明高中：</strong>官網只公告考程與考試範圍，搜尋（含 site:ymsh.tp.edu.tw、教學研究會網頁）都沒有找到公開的地理段考試題，所以這份不是陽明原卷。</p>
+      <p><strong>參考的他校考卷：</strong>臺北市高中的「高一上第一次段考地理」公開試卷很少。實際打開並讀到內容的是<strong>北一女中 113 學年度第一學期期末考 高一地理</strong>（答案、出處與解析，含非選題試題頁）。這份是期末考，大半在考地形，但其中的地圖投影、TM2 座標、坐標網格、方位、坡向、衛星影像、統計地圖、風花圖和 GIS 非選題，剛好和本次第 1～4 章重疊，所以只挑這些考點改編。永春高中 108-1 第一次期中考的試卷有搜尋到連結，但這台電腦連不上該網站、沒有讀到內容，所以<strong>沒有採用</strong>，只放在下表給你自己去看。</p>
+      <p><strong>改編原則：</strong>他校考卷是老師的著作，這裡<strong>只保留考點與題型</strong>，題目敘述、情境、數字、選項都重新寫過，答案也都重新算過一遍。題號旁會標「改編自…」或「自編（比照段考題型）」。卷面結構參考北一女的單選題加非選題（含表格填答）格式，再依 60 分鐘縮成：單選 20 題、題組 15 題、多選 2 題、非選 3 大題，共 100 分。地形（第 5～6 章）不出題。</p>
+    </div>
+
+    <h3>考古題來源</h3>
+    <div class="table-wrap sources"><table>
+      <thead><tr><th>學校</th><th>考試</th><th>與本次範圍重疊</th><th>原卷連結</th></tr></thead>
+      <tbody>
+        <tr><td>臺北市立陽明高中</td><td>高一地理 第一次段考</td><td>未找到公開試題（官網只有考程與範圍）</td><td>無</td></tr>
+        <tr><td>臺北市立第一女子高中</td><td>113 學年度第一學期期末考 高一地理（答案、出處與解析，含非選第 3 題試題）</td><td>單選第 2、3、11、13～17、20、29 題，非選第 3 題（GIS）；其餘為地形題，不在本次範圍。已實際讀過</td><td><a href="https://www.fg.tp.edu.tw/wp-content/uploads/doc/examination/北一女中113-1-高一地理科期末考解答(恭).pdf" target="_blank" rel="noopener">https://www.fg.tp.edu.tw/wp-content/uploads/doc/examination/北一女中113-1-高一地理科期末考解答(恭).pdf</a></td></tr>
+        <tr><td>臺北市立永春高中</td><td>108 學年度第一學期第一次期中考 高一地理（龍騰版第 1 章～3-1）</td><td>依搜尋摘要含地圖、TM2 座標等題目；<strong>連結無法開啟，未讀到內容，未採用</strong></td><td><a href="https://exam.naer.edu.tw/otc/testStoreFile/10050595dc36d7a3a039.pdf" target="_blank" rel="noopener">https://exam.naer.edu.tw/otc/testStoreFile/10050595dc36d7a3a039.pdf</a></td></tr>
+      </tbody></table></div>
+
+    <div class="exam">
+      <div class="paper-head">
+        <span class="ttl">陽明高中 高一 地理 第一次段考 模擬卷</span>
+        <span class="meta">範圍：翰林 地理I 第 1～4 章 ｜ 時間 60 分鐘 ｜ 滿分 100 分</span>
+      </div>
+      <div class="exam-bar">
+        <div class="exam-timer" data-min="60"></div>
+        <div class="exam-score"></div>
+      </div>
+      <p class="muted small">作答方式：先按「開始計時」，像真的考試一樣一題一題寫完再看解析。點選項會立刻對答案並計分（選擇題共 80 分）。非選題 20 分請對照解析裡的評分標準自己給分。建議時間分配：單選 15 分鐘、題組 18 分鐘、多選 5 分鐘、非選 12 分鐘，最後 10 分鐘檢查答案卡劃記。</p>
+
+      <!-- ========== 一、單選題 ========== -->
+      <div class="paper-sec">一、單選題（每題 2 分，共 40 分）</div>
+      <p>每題只有一個最適當的答案，答錯不倒扣。</p>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">1.</span><span class="tag">CH1 地理觀點</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某報告比較「臺灣東部與西部在人口密度、產業結構和交通網路上的差異」，並說明兩地各自的特色是怎麼形成的。這份報告主要採用哪一種地理學觀點？</div>
+        <ul class="opts">
+          <li><button>空間觀點</button></li>
+          <li><button>生態觀點</button></li>
+          <li><button>區域觀點</button></li>
+          <li><button>歷史觀點</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>把地表分成不同區域（東部、西部），比較區域特色與差異並解釋成因，屬於<strong>區域觀點</strong>。</p>
+            <div class="plain">關鍵字是「比較兩個地區的差異」。「東部 vs 西部」就是在劃區比較，所以選區域觀點。如果題目問的是東西部之間的人口怎麼流動，那才偏向空間觀點。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">2.</span><span class="tag">CH1 地理是什麼</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">關於地理學的研究內容，下列敘述何者最正確？</div>
+        <ul class="opts">
+          <li><button>只研究山川、氣候等自然環境，人類活動屬於歷史學</button></li>
+          <li><button>探討人類活動與自然環境在空間上的分布與關係</button></li>
+          <li><button>以背誦地名、物產為主要目的</button></li>
+          <li><button>只需要文字描述，不使用地圖與統計資料</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>地理學兼具自然與人文，核心是「人與環境在空間上的關係」，並大量使用地圖、統計資料與地理資訊技術來分析。</p>
+            <div class="plain">地理不是背地名。它在問「東西在哪裡、為什麼在那裡、人跟環境怎麼互相影響」。A 把人文地理整個丟掉，D 漏掉了地理最重要的工具「地圖」，都不對。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">3.</span><span class="tag">CH1 尺度</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">以全臺灣為範圍討論人口分布時，常說「人口集中在西部平原」；若只看臺北市，則會發現「人口集中在捷運站周邊與舊市區」。這個例子最主要說明了什麼？</div>
+        <ul class="opts">
+          <li><button>地圖比例尺越大，資料一定越正確</button></li>
+          <li><button>研究尺度不同，觀察到的現象和解釋可能不同</button></li>
+          <li><button>空間觀點比區域觀點更重要</button></li>
+          <li><button>人口分布不受自然環境影響</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>研究範圍（尺度）由全國縮小到城市時，影響人口分布的主要因素從「地形、平原」變成「交通、都市發展」，結論也跟著改變。</p>
+            <div class="plain">這題的「尺度」指的是研究範圍的大小，不是地圖上的比例尺。看全國時看到的是大方向，看城市時看到的是細節，所以兩個說法都對，只是尺度不同。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">4.</span><span class="tag hot">CH2 比例尺</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">在比例尺 1:5,000 的校園平面圖上，操場量得長 4 公分、寬 2 公分（視為長方形）。操場的實際面積約為多少？</div>
+        <ul class="opts">
+          <li><button>400 平方公尺</button></li>
+          <li><button>2,000 平方公尺</button></li>
+          <li><button>20,000 平方公尺</button></li>
+          <li><button>200,000 平方公尺</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>長：4 cm × 5,000 = 20,000 cm = 200 m；寬：2 cm × 5,000 = 10,000 cm = 100 m。面積 = 200 × 100 = 20,000 m²（2 公頃）。</p>
+            <div class="plain">先把長、寬各自換成實際距離（公尺）再相乘最不容易錯。如果先算圖上面積 8 cm²，就要乘 5,000 的「平方」，只乘一次 5,000 會差了 5,000 倍。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">5.</span><span class="tag">CH2 地圖類別</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">地圖依用途可分為「普通地圖」（呈現多種基本地理要素）與「主題地圖」（專門呈現某一主題）。下列哪一張屬於主題地圖？</div>
+        <ul class="opts">
+          <li><button>經建版 1:25,000 地形圖</button></li>
+          <li><button>標示地形、河川、城市與道路的臺灣全圖</button></li>
+          <li><button>臺灣各縣市 65 歲以上人口比例分布圖</button></li>
+          <li><button>標示山脈、平原與主要河川的地勢圖</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>人口比例分布圖只呈現「高齡人口」這個特定主題，屬主題（專題）地圖；地形圖、一般全圖、地勢圖則呈現地形、水系、聚落、交通等多項基本要素，屬普通地圖。</p>
+            <div class="plain">看地圖是不是「只講一件事」。人口比例、雨量、土地利用這類只畫一個主題的就是主題地圖。名稱以課本用語為準，有的版本叫「專題地圖」。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">6.</span><span class="tag hot">CH2 統計地圖</span><span class="src">改編自：北一女中 113-1 期末考 第 11 題（考點：點子圖）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某研究想在地圖上呈現「臺灣各地養豬場分布的疏密情形」，最適合使用哪一種統計地圖？</div>
+        <ul class="opts">
+          <li><button>點子圖（一個點代表固定數量）</button></li>
+          <li><button>等值線圖</button></li>
+          <li><button>流線圖</button></li>
+          <li><button>面量圖（分層設色）</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>點子圖以一點代表一定數量（如 1 點 = 10 座養豬場），把點畫在實際位置上，點的疏密可以直接表現分布的集中或分散。</p>
+            <div class="plain">題目只要出現「分布的疏密」，第一個想到點子圖：點越擠代表越多。面量圖是整個行政區塗同一種顏色，看不出區內哪裡比較集中。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">7.</span><span class="tag">CH2 統計地圖</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">交通部想把「春節連假期間各縣市往返臺北的旅次方向與人數多寡」畫在同一張地圖上，最適合使用哪一種統計地圖？</div>
+        <ul class="opts">
+          <li><button>點子圖</button></li>
+          <li><button>等值線圖</button></li>
+          <li><button>流線圖</button></li>
+          <li><button>面量圖</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>流線圖用箭頭表示移動方向，線條粗細表示數量多寡，適合呈現人口遷移、貨物或旅次流動。</p>
+            <div class="plain">有「從哪裡到哪裡」又有「多或少」，就畫箭頭，箭頭越粗代表越多人，這就是流線圖。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">8.</span><span class="tag">CH2 方位表示法</span><span class="src">改編自：北一女中 113-1 期末考 第 16 題（考點：方位表示法）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">從學校看捷運站的方位角是 300°。下列關於兩地相對位置的敘述，何者正確？</div>
+        <ul class="opts">
+          <li><button>捷運站在學校的西北方；從捷運站看學校的方位角是 120°</button></li>
+          <li><button>捷運站在學校的西北方；從捷運站看學校的方位角是 240°</button></li>
+          <li><button>捷運站在學校的東南方；從捷運站看學校的方位角是 120°</button></li>
+          <li><button>捷運站在學校的東北方；從捷運站看學校的方位角是 60°</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>方位角由正北順時針量起：270° 為正西、360° 為正北，300° 落在兩者之間，所以捷運站在學校的西北方。反方位角 = 300° − 180° = 120°（東南方）。</p>
+            <div class="plain">先畫一個十字：上 0°、右 90°、下 180°、左 270°。300° 在左上那一格，也就是西北。反過來看就差 180°，大於 180° 就減 180，所以是 120°。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">9.</span><span class="tag">CH2 等高線</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">經建版 1:25,000 地形圖的首曲線每 10 公尺一條、計曲線每 50 公尺一條。在 100 公尺與 150 公尺兩條相鄰的計曲線之間，應該會有幾條首曲線？</div>
+        <ul class="opts">
+          <li><button>2 條</button></li>
+          <li><button>4 條</button></li>
+          <li><button>5 條</button></li>
+          <li><button>9 條</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>100 與 150 之間的首曲線為 110、120、130、140 m，共 4 條。</p>
+            <div class="plain">很多人算 50 ÷ 10 = 5 就選 5，但頭尾兩條 100 和 150 本身是計曲線，夾在中間的只有 4 條，跟「種樹問題」一樣。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">10.</span><span class="tag">CH2 衛星影像</span><span class="src">改編自：北一女中 113-1 期末考 第 20 題（考點：衛星影像）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">關於衛星影像與航空攝影（含無人機空拍）的比較，下列敘述何者正確？</div>
+        <ul class="opts">
+          <li><button>衛星影像的空間解析度常以長度表示，例如 2 公尺代表一個像元約對應地面 2 m × 2 m</button></li>
+          <li><button>衛星可以隨時離開軌道，飛到災區上空低空拍攝</button></li>
+          <li><button>無人機一次拍攝的範圍通常比衛星影像大</button></li>
+          <li><button>被動式光學衛星影像不受雲層影響，陰雨天也能清楚拍到地表</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>空間解析度以一個像元代表的地面長度描述，數字越小越清楚。衛星沿固定軌道運行，只能在一定範圍內調整拍攝角度；飛機或無人機的航線、高度、時間都較靈活，但單次涵蓋範圍較小。光學（被動式）衛星會被雲遮住。</p>
+            <div class="plain">衛星很高，看得廣但不能說走就走（有固定軌道）。無人機飛得低、看得清楚又機動，但一次拍的範圍小。雲層會擋住光學衛星，要穿雲得靠會自己發射電波的雷達衛星。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">11.</span><span class="tag hot">CH3 經緯度距離</span><span class="src">改編自：北一女中 113-1 期末考 第 15 題（考點：坐標網格）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">已知同一經線上緯度相差 1° 約 111 公里。下列哪兩地之間的地表距離最接近 1,110 公里？</div>
+        <ul class="opts">
+          <li><button>（10°N, 120°E）與（20°N, 120°E）</button></li>
+          <li><button>（60°N, 0°）與（60°N, 10°E）</button></li>
+          <li><button>（0°, 170°E）與（0°, 170°W）</button></li>
+          <li><button>（23.5°N, 121°E）與（23.5°S, 121°E）</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>A：同經線、緯度差 10° → 10 × 111 = 1,110 km。B：60°N 上經度 1° 約 111 × cos60° ≈ 55.5 km，10° 約 555 km。C：赤道上 170°E 到 170°W 經度差 20°（跨 180° 經線）→ 約 2,220 km。D：緯度差 47° → 約 5,217 km。</p>
+            <div class="plain">緯度差 1° 到哪裡都是 111 km，經度差 1° 則越往高緯越短，60°N 只剩一半。C 是陷阱：170°E 和 170°W 只差 20°，不是 340°，因為中間隔著 180° 經線。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">12.</span><span class="tag">CH3 經度與時間</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">以經度推算地方時。當 120°E 為 10 月 7 日 13:00（地理科開考）時，位於 45°E 的甲地，地方時應為何？</div>
+        <ul class="opts">
+          <li><button>10 月 7 日 08:00</button></li>
+          <li><button>10 月 7 日 18:00</button></li>
+          <li><button>10 月 6 日 08:00</button></li>
+          <li><button>10 月 7 日 05:00</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>經度差 = 120 − 45 = 75°，75 ÷ 15 = 5 小時。甲地在西邊，時間較早：13:00 − 5 = 08:00，仍為 10 月 7 日。</p>
+            <div class="plain">兩地都在東經，經度直接相減。越西邊越晚看到太陽，所以時間比較早，減 5 小時就好，沒有跨過午夜，日期不變。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">13.</span><span class="tag hot">CH3 時區換算</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">臺灣使用 UTC+8。英文科英聽於臺灣時間 10 月 8 日 08:20 開始時，使用 UTC−3 的甲城市是當地什麼時間？</div>
+        <ul class="opts">
+          <li><button>10 月 7 日 21:20</button></li>
+          <li><button>10 月 8 日 19:20</button></li>
+          <li><button>10 月 7 日 19:20</button></li>
+          <li><button>10 月 8 日 21:20</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>時差 = 8 − (−3) = 11 小時，甲城市較晚進入新的一天。10/8 08:20 − 11 小時 = 10/7 21:20。</p>
+            <div class="plain">一個 +8、一個 −3，時差要相加變 11 小時。臺灣在東邊比較「早到明天」，所以對方的時間要往回推 11 小時，過了午夜就退回前一天。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">14.</span><span class="tag hot">CH3 地圖投影</span><span class="src">改編自：北一女中 113-1 期末考 第 2 題（考點：圓柱、等角投影）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某張世界地圖的經線與緯線都是直線且互相垂直，船長在圖上畫一條直線，照著這條線上固定的羅盤方向航行，就能抵達目的地。這張圖的投影最可能是：</div>
+        <ul class="opts">
+          <li><button>圓柱投影，具正形（等角）性質</button></li>
+          <li><button>圓錐投影，具等積性質</button></li>
+          <li><button>方位投影，具等距性質</button></li>
+          <li><button>圓柱投影，具等積性質</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>經緯線皆為互相垂直的直線 → 正軸圓柱投影；圖上直線即恆向線（固定羅盤方向的航線）→ 正形（等角）性質，即麥卡托投影，傳統航海圖使用。</p>
+            <div class="plain">「經緯線都是直的、互相垂直」先鎖定圓柱投影；「照固定方向開船」就是恆向線，要等角才會畫成直線，所以是麥卡托。等積的圓柱投影雖然也是直角格子，但恆向線不會是直線。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">15.</span><span class="tag">CH3 地圖投影</span><span class="src">改編自：北一女中 113-1 期末考 第 3 題（考點：方位投影）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">南極考察隊需要一張「以南極點為中心、能完整呈現整個南極洲」的地圖，最適合採用下列哪一種投影方式？</div>
+        <ul class="opts">
+          <li><button>以南極點為切點的方位（平面）投影</button></li>
+          <li><button>與赤道相切的圓柱投影</button></li>
+          <li><button>以 30°S 為標準緯線的圓錐投影</button></li>
+          <li><button>以赤道上一點為中心的方位投影</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>方位投影在切點附近變形最小；以極點為切點時，緯線為同心圓、經線為放射直線，適合繪製極區。圓柱投影在高緯變形極大，極點甚至無法表示。</p>
+            <div class="plain">投影「貼在哪裡，哪裡就最準」。要畫南極就把平面貼在南極點上，畫出來像一個圓盤，經線像車輪的輻條。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">16.</span><span class="tag">CH3 地圖投影</span><span class="src">改編自：北一女中 113-1 期末考 第 11 題（考點：投影避免視覺誤判）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">老師要在世界地圖上用點子圖比較各大洲熱帶雨林分布的面積大小，為了避免學生因地圖變形而誤判，最適合選用哪一種投影？</div>
+        <ul class="opts">
+          <li><button>麥卡托投影</button></li>
+          <li><button>等積投影（如莫爾威德投影）</button></li>
+          <li><button>心射方位投影</button></li>
+          <li><button>以臺北為中心的等距方位投影</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>比較面積或分布密度須使用面積比例正確的等積投影。麥卡托投影高緯面積嚴重放大（格陵蘭看起來和非洲差不多大），會造成誤判。</p>
+            <div class="plain">要比「大小、多少」就要等積。如果用麥卡托，北方的地方會被吹大，同樣多的點放在被放大的面積上，會看起來比較稀疏，判斷就錯了。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">17.</span><span class="tag hot">CH3 TM2 座標</span><span class="src">改編自：北一女中 113-1 期末考 第 14 題（考點：TM2 中央經線）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">臺灣本島使用的 TM2（二度分帶）座標，以 121°E 為中央經線，並把中央經線的橫座標（X）設為 250,000 公尺。若某點的 X = 268,000 公尺，則此點位於：</div>
+        <ul class="opts">
+          <li><button>121°E 經線以東約 18 公里</button></li>
+          <li><button>121°E 經線以西約 18 公里</button></li>
+          <li><button>121°E 經線以東約 268 公里</button></li>
+          <li><button>赤道以北約 268 公里</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>X 值向東增加。268,000 − 250,000 = 18,000 m = 18 km，且大於 250,000，故在中央經線以東 18 km。</p>
+            <div class="plain">把 250,000 想成「121°E 的門牌號碼」。比它大就在東邊，比它小就在西邊，差多少公尺就離多遠。設成 250,000 是為了讓全島的 X 都是正數，方便計算。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">18.</span><span class="tag">CH3 TM2 座標</span><span class="src">改編自：北一女中 113-1 期末考 第 13 題（考點：TM2 與臺灣南北狹長）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">TM2 座標採用橫麥卡托投影，每個分帶只涵蓋經度 2°。這種設計特別適合臺灣本島，主要原因是：</div>
+        <ul class="opts">
+          <li><button>投影在中央經線附近變形最小，而臺灣本島東西窄、全島都在中央經線兩側約 1° 以內</button></li>
+          <li><button>這種投影能同時保持正形與等積</button></li>
+          <li><button>這種投影的經緯線全部都是互相垂直的直線</button></li>
+          <li><button>這種投影最適合用來繪製全世界的地圖</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>橫麥卡托投影的圓柱與中央經線相切，沿中央經線變形最小，越往東西兩側變形越大。臺灣本島約在 120°～122°E 之間，南北狹長、東西窄，以 121°E 為中央經線、分帶寬 2°，全島變形都很小。</p>
+            <div class="plain">「橫著放的圓柱」貼在 121°E 這條南北向的線上，沿著這條線最準。臺灣剛好是南北長、東西窄的形狀，整座島都貼在線的附近，所以很適合。B 是常見陷阱：沒有任何投影能同時正形又等積。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">19.</span><span class="tag">CH4 GNSS 與 GIS</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">共享單車的 App 能即時顯示每一臺車的位置，並把車輛位置畫在地圖上，統計各租賃站的借還次數、找出車輛不足的站點。這項服務主要結合了哪兩種地理資訊技術？</div>
+        <ul class="opts">
+          <li><button>GNSS 與 GIS</button></li>
+          <li><button>遙測（RS）與 GIS</button></li>
+          <li><button>遙測（RS）與 GNSS</button></li>
+          <li><button>只需要遙測（RS）</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>車上的接收器透過 GNSS 定位取得位置；將位置與借還資料儲存、分析並繪製成地圖，則是 GIS 的功能。本例沒有用到遙測影像。</p>
+            <div class="plain">「找到在哪裡」靠 GNSS（衛星定位），「把資料放上地圖分析」靠 GIS。遙測是「從高空拍照片」，這題沒有用到。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">20.</span><span class="tag hot">CH4 GIS 分析</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">颱風來襲前，縣政府要先在地圖上畫出「土石流潛勢溪流兩側 500 公尺內」的範圍，作為預防性撤離的參考。畫出這個範圍主要使用哪一種 GIS 分析？</div>
+        <ul class="opts">
+          <li><button>環域分析</button></li>
+          <li><button>視域分析</button></li>
+          <li><button>網路分析</button></li>
+          <li><button>地形（坡度）分析</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>以點、線、面為中心向外劃出一定距離的範圍，屬於環域分析（buffer）。本題以溪流（線）為中心，向兩側各劃 500 m。</p>
+            <div class="plain">看到「距離某東西幾公尺以內」就是環域。像在溪流兩側畫一條等寬的帶子，帶子裡面的人都要撤離。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- ========== 二、題組 ========== -->
+      <div class="paper-sec">二、題組題（每題 2 分，共 30 分）</div>
+      <p>請先閱讀各題組的圖文資料，再回答問題。每題只有一個最適當的答案。</p>
+
+      <!-- 題組一 -->
+      <p><strong>題組一（第 21～23 題）</strong>下圖為某山坡的等高線示意圖，比例尺 1:10,000，等高距 50 公尺。甲點位於 400 公尺等高線以西的坡頂附近，乙點位於 200 公尺等高線以東的山腳。</p>
+      <figure class="diagram">
+        <svg viewBox="0 0 460 250" role="img" aria-label="等高線示意圖：由西到東依序為 400、350、300、250、200 公尺等高線，西側間距大、東側間距小；甲在西側坡頂，乙在東側山腳">
+          <g style="fill:none;stroke:var(--ink)" stroke-width="1.5">
+            <path d="M70 30 C85 95, 55 160, 70 220"/>
+            <path d="M160 30 C175 95, 145 160, 160 220"/>
+            <path d="M250 30 C265 95, 235 160, 250 220"/>
+            <path d="M300 30 C315 95, 285 160, 300 220"/>
+            <path d="M340 30 C355 95, 325 160, 340 220"/>
+          </g>
+          <g font-size="12" text-anchor="middle" style="fill:var(--ink)">
+            <text x="70" y="22">400</text>
+            <text x="160" y="22">350</text>
+            <text x="250" y="22">300</text>
+            <text x="300" y="22">250</text>
+            <text x="340" y="22">200</text>
+          </g>
+          <line x1="35" y1="125" x2="395" y2="125" style="stroke:var(--card-red);fill:none" stroke-width="1.5" stroke-dasharray="5 4"/>
+          <circle cx="35" cy="125" r="5" style="fill:var(--card-red);stroke:none"/>
+          <circle cx="395" cy="125" r="5" style="fill:var(--card-red);stroke:none"/>
+          <g font-size="14" font-weight="700" text-anchor="middle" style="fill:var(--card-red)">
+            <text x="35" y="112">甲</text>
+            <text x="395" y="112">乙</text>
+          </g>
+          <line x1="430" y1="75" x2="430" y2="40" style="stroke:var(--ink);fill:none" stroke-width="1.5"/>
+          <polygon points="430,32 424,46 436,46" style="fill:var(--ink);stroke:none"/>
+          <text x="430" y="24" font-size="12" text-anchor="middle" style="fill:var(--ink)">N</text>
+          <text x="230" y="243" font-size="12" text-anchor="middle" style="fill:var(--graphite)">比例尺 1:10,000　等高距 50 m　（單位：公尺）</text>
+        </svg>
+        <figcaption>等高線示意圖（自繪）。注意由西往東，等高線間距先寬後窄。</figcaption>
+      </figure>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">21.</span><span class="tag hot">CH2 等高線・坡向</span><span class="src">改編自：北一女中 113-1 期末考 第 17 題（考點：坡向判讀）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">此山坡的坡向（坡面面對的方向）為何？</div>
+        <ul class="opts">
+          <li><button>東</button></li>
+          <li><button>西</button></li>
+          <li><button>南</button></li>
+          <li><button>北</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>海拔由西（400 m）向東（200 m）遞減，地勢西高東低，坡面朝向低處的東方，為東向坡。</p>
+            <div class="plain">想像你站在坡上往下看，你面對的方向就是坡向。這裡越往東越低，所以面向東。不要選「高的那一側」。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">22.</span><span class="tag hot">CH2 坡度計算</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">沿甲乙連線，400 公尺與 200 公尺兩條等高線之間的圖上距離量得 5 公分。這一段的平均坡度約為多少？</div>
+        <ul class="opts">
+          <li><button>4%</button></li>
+          <li><button>20%</button></li>
+          <li><button>40%</button></li>
+          <li><button>50%</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>水平距離 = 5 cm × 10,000 = 50,000 cm = 500 m；高度差 = 400 − 200 = 200 m。坡度 = 200 ÷ 500 × 100% = 40%。</p>
+            <div class="plain">坡度 = 高度差 ÷ 水平距離。最容易錯的是單位：5 cm 要先換成 500 m，再跟 200 m 相除。選 4% 的通常是把公分直接拿去除。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">23.</span><span class="tag">CH2 坡形與通視</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">關於甲、乙之間的坡形與通視，下列敘述何者正確？</div>
+        <ul class="opts">
+          <li><button>上緩下陡的凸坡，站在甲看不到乙</button></li>
+          <li><button>上陡下緩的凹坡，站在甲看得到乙</button></li>
+          <li><button>上緩下陡的凹坡，站在甲看得到乙</button></li>
+          <li><button>等高線間距不同無法判斷坡形</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>靠坡頂（西側 400～300 m）等高線疏 → 坡緩；靠山腳（東側 300～200 m）等高線密 → 坡陡。上緩下陡為凸坡，坡面中段向外鼓起，會擋住從坡頂往山腳的視線，故甲乙不通視。</p>
+            <div class="plain">口訣：「疏緩密陡」。上面疏、下面密，就是上面平緩、下面突然變陡，像一顆饅頭的肩膀。站在饅頭頂往下看，肩膀會擋住下面，所以看不到山腳。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 題組二 -->
+      <p><strong>題組二（第 24～26 題）</strong>某市政府想用 GIS 為新建的社區公園選址，條件為：（1）坡度小於 15%；（2）位於主要道路 500 公尺以內。下圖為兩個網格圖層，每格代表相同大小的土地，格內「1」表示符合該條件、「0」表示不符合。</p>
+      <figure class="diagram">
+        <svg viewBox="0 0 360 200" role="img" aria-label="兩個 4 乘 4 網格。甲為坡度圖層，乙為道路 500 公尺範圍圖層，格內為 0 或 1">
+          <g font-size="13" font-weight="700" text-anchor="middle" style="fill:var(--ink)">
+            <text x="88" y="26">甲：坡度＜15%</text>
+            <text x="272" y="26">乙：道路 500 m 內</text>
+          </g>
+          <g style="fill:none;stroke:var(--graphite)" stroke-width="1.2">
+            <rect x="20" y="40" width="136" height="136"/>
+            <line x1="54" y1="40" x2="54" y2="176"/><line x1="88" y1="40" x2="88" y2="176"/><line x1="122" y1="40" x2="122" y2="176"/>
+            <line x1="20" y1="74" x2="156" y2="74"/><line x1="20" y1="108" x2="156" y2="108"/><line x1="20" y1="142" x2="156" y2="142"/>
+            <rect x="204" y="40" width="136" height="136"/>
+            <line x1="238" y1="40" x2="238" y2="176"/><line x1="272" y1="40" x2="272" y2="176"/><line x1="306" y1="40" x2="306" y2="176"/>
+            <line x1="204" y1="74" x2="340" y2="74"/><line x1="204" y1="108" x2="340" y2="108"/><line x1="204" y1="142" x2="340" y2="142"/>
+          </g>
+          <g font-size="15" text-anchor="middle" style="fill:var(--ink)">
+            <!-- 甲 rows: 1100 / 1110 / 0110 / 0011 -->
+            <text x="37" y="62">1</text><text x="71" y="62">1</text><text x="105" y="62">0</text><text x="139" y="62">0</text>
+            <text x="37" y="96">1</text><text x="71" y="96">1</text><text x="105" y="96">1</text><text x="139" y="96">0</text>
+            <text x="37" y="130">0</text><text x="71" y="130">1</text><text x="105" y="130">1</text><text x="139" y="130">0</text>
+            <text x="37" y="164">0</text><text x="71" y="164">0</text><text x="105" y="164">1</text><text x="139" y="164">1</text>
+            <!-- 乙 rows: 0110 / 1110 / 1100 / 1000 -->
+            <text x="221" y="62">0</text><text x="255" y="62">1</text><text x="289" y="62">1</text><text x="323" y="62">0</text>
+            <text x="221" y="96">1</text><text x="255" y="96">1</text><text x="289" y="96">1</text><text x="323" y="96">0</text>
+            <text x="221" y="130">1</text><text x="255" y="130">1</text><text x="289" y="130">0</text><text x="323" y="130">0</text>
+            <text x="221" y="164">1</text><text x="255" y="164">0</text><text x="289" y="164">0</text><text x="323" y="164">0</text>
+          </g>
+          <text x="180" y="194" font-size="11" text-anchor="middle" style="fill:var(--graphite)">兩圖層範圍相同、網格一一對應（1＝符合，0＝不符合）</text>
+        </svg>
+        <figcaption>公園選址的兩個網格圖層（自繪）。</figcaption>
+      </figure>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">24.</span><span class="tag hot">CH4 GIS 疊圖</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">同時符合兩項條件的網格共有幾格？</div>
+        <ul class="opts">
+          <li><button>3 格</button></li>
+          <li><button>5 格</button></li>
+          <li><button>7 格</button></li>
+          <li><button>9 格</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>逐格相乘（兩者皆為 1 才為 1）：第 1 列 0 1 0 0（1 格）、第 2 列 1 1 1 0（3 格）、第 3 列 0 1 0 0（1 格）、第 4 列 0 0 0 0（0 格），合計 5 格。</p>
+            <div class="plain">「同時符合」就是兩張圖同一格都要是 1。一列一列對，對完再加起來。考試時可以在題本上把答案格圈起來，比較不會數錯。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">25.</span><span class="tag">CH4 GIS 分析流程</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">製作乙圖時，先以道路圖層為中心向外劃出 500 公尺範圍；接著再把甲、乙兩圖相疊，找出同時符合條件的網格。這兩個步驟依序使用了哪兩種 GIS 分析？</div>
+        <ul class="opts">
+          <li><button>環域分析 → 疊圖分析</button></li>
+          <li><button>疊圖分析 → 環域分析</button></li>
+          <li><button>視域分析 → 疊圖分析</button></li>
+          <li><button>網路分析 → 環域分析</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>依距離劃範圍 → 環域；多圖層相疊找共同符合區 → 疊圖。選址題常是「環域＋疊圖」的組合。</p>
+            <div class="plain">先畫「離路 500 m 的帶子」（環域），再把帶子跟坡度圖疊在一起找交集（疊圖）。順序不能反，因為要先有帶子才能拿去疊。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">26.</span><span class="tag">CH4 GIS 資料</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">甲圖的坡度資料，最適合由下列哪一種資料經 GIS 計算產生？</div>
+        <ul class="opts">
+          <li><button>數值地形模型（DEM），以網格儲存各點高程</button></li>
+          <li><button>各里人口統計表</button></li>
+          <li><button>以向量線段儲存的道路圖層</button></li>
+          <li><button>市民手機的衛星定位軌跡</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>DEM 以網格儲存連續變化的高程，GIS 可由相鄰網格的高差計算坡度、坡向（地形分析）。</p>
+            <div class="plain">坡度 = 高度差 ÷ 距離，所以一定要先有「每一格有多高」的資料，那就是 DEM。人口表和道路圖裡都沒有高度。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 題組三 -->
+      <p><strong>題組三（第 27～29 題）</strong>下圖為某測站一年的風花圖。各方向的長條表示「風從該方向吹來」的頻率（%），每一圈代表 10%；中央小圓表示靜風（無風），頻率 10%。</p>
+      <figure class="diagram">
+        <svg viewBox="0 0 320 310" role="img" aria-label="風花圖：北風 8%、東北風 30%、東風 12%、東南風 5%、南風 4%、西南風 6%、西風 10%、西北風 15%，靜風 10%">
+          <g style="fill:none;stroke:var(--graphite)" stroke-width="1" stroke-dasharray="3 3">
+            <circle cx="160" cy="150" r="40"/>
+            <circle cx="160" cy="150" r="80"/>
+            <circle cx="160" cy="150" r="120"/>
+          </g>
+          <g style="fill:none;stroke:var(--rule)" stroke-width="1">
+            <line x1="160" y1="30" x2="160" y2="270"/>
+            <line x1="40" y1="150" x2="280" y2="150"/>
+            <line x1="75.1" y1="65.1" x2="244.9" y2="234.9"/>
+            <line x1="244.9" y1="65.1" x2="75.1" y2="234.9"/>
+          </g>
+          <g style="fill:none;stroke:var(--blue)" stroke-width="8" stroke-linecap="butt">
+            <line x1="160" y1="150" x2="160" y2="118"/>
+            <line x1="160" y1="150" x2="244.9" y2="65.1"/>
+            <line x1="160" y1="150" x2="208" y2="150"/>
+            <line x1="160" y1="150" x2="174.1" y2="164.1"/>
+            <line x1="160" y1="150" x2="160" y2="166"/>
+            <line x1="160" y1="150" x2="143" y2="167"/>
+            <line x1="160" y1="150" x2="120" y2="150"/>
+            <line x1="160" y1="150" x2="117.6" y2="107.6"/>
+          </g>
+          <circle cx="160" cy="150" r="8" style="fill:var(--sheet);stroke:var(--ink)" stroke-width="1.5"/>
+          <g font-size="10" style="fill:var(--graphite)">
+            <text x="198" y="168">10%</text>
+            <text x="235" y="183">20%</text>
+            <text x="272" y="198">30%</text>
+          </g>
+          <g font-size="13" font-weight="700" text-anchor="middle" style="fill:var(--ink)">
+            <text x="160" y="18">北</text>
+            <text x="160" y="296">南</text>
+            <text x="296" y="155">東</text>
+            <text x="24" y="155">西</text>
+            <text x="264" y="48">東北</text>
+            <text x="264" y="264">東南</text>
+            <text x="56" y="264">西南</text>
+            <text x="56" y="48">西北</text>
+          </g>
+        </svg>
+        <figcaption>某測站年風花圖（自繪資料）。長條越長，風從該方向吹來的次數越多。</figcaption>
+      </figure>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">27.</span><span class="tag">CH2 統計圖：風花圖</span><span class="src">改編自：北一女中 113-1 期末考 第 29 題（考點：風花圖判讀）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">此測站全年出現頻率最高的風向為何？</div>
+        <ul class="opts">
+          <li><button>東北風</button></li>
+          <li><button>西南風</button></li>
+          <li><button>西北風</button></li>
+          <li><button>東風</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>最長的長條指向東北，延伸到第 3 圈（30%），表示風由東北方吹來的頻率最高，即東北風。</p>
+            <div class="plain">風花圖的長條指向「風的來處」，而風向也是用來處命名，所以長條指向東北就是東北風，不必反過來想。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">28.</span><span class="tag">CH2 統計圖：風花圖</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">此測站全年吹「北風、東北風、西北風」三者合計的頻率約為多少？</div>
+        <ul class="opts">
+          <li><button>38%</button></li>
+          <li><button>45%</button></li>
+          <li><button>53%</button></li>
+          <li><button>60%</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>北風 8%（未達第 1 圈，約 0.8 圈）＋ 東北風 30%（3 圈）＋ 西北風 15%（1.5 圈）= 53%。檢核：八方位合計 8＋30＋12＋5＋4＋6＋10＋15 = 90%，加靜風 10% 正好 100%。</p>
+            <div class="plain">用「圈數 × 10%」來讀長度：東北剛好到第 3 圈 = 30%，西北到第 1、2 圈中間 = 15%，北邊短短的不到 1 圈 = 8%。加起來 53%。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">29.</span><span class="tag">CH2 統計圖：風花圖</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某日此測站吹東北風。若在測站放一個氣球任它隨風飄走，氣球大致會往哪個方向移動？</div>
+        <ul class="opts">
+          <li><button>往西南方移動</button></li>
+          <li><button>往東北方移動</button></li>
+          <li><button>往東方移動</button></li>
+          <li><button>往北方移動</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>東北風是由東北方吹來的風，空氣由東北吹向西南，氣球隨風往西南方移動。</p>
+            <div class="plain">風向是用「從哪裡來」命名，不是「往哪裡去」。東北風從東北來，所以會把東西吹到對面的西南。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 題組四 -->
+      <p><strong>題組四（第 30～32 題）</strong>某年颱風帶來豪雨，造成山區多處崩塌，部分道路中斷、村落對外交通受阻。颱風離開、天氣轉晴後，政府運用地理資訊技術進行災情調查與救援規劃。</p>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">30.</span><span class="tag">CH4 遙測</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">若要找出這次颱風「新增」的崩塌地位置與範圍，最有效率的方法是：</div>
+        <ul class="opts">
+          <li><button>比對颱風前、後同一地區的衛星影像，找出地表改變處</button></li>
+          <li><button>只用手機衛星定位記錄救難人員的位置</button></li>
+          <li><button>查閱各村落的人口統計表</button></li>
+          <li><button>翻閱十年前出版的紙本地形圖</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>遙測影像可大範圍、定期取得地表資訊，比對前後期影像（變遷偵測）即可找出植被消失、裸露的新崩塌地。</p>
+            <div class="plain">要知道「多了什麼」，就把前後兩張照片拿來比，多出來的那塊光禿禿的地就是新的崩塌地。舊地圖拍不到這次的災害。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">31.</span><span class="tag hot">CH4 GIS 分析</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">救災中心把「崩塌範圍圖層」和「村落圖層」、「道路圖層」套在一起，找出位於崩塌範圍內的村落與中斷的路段。這主要運用了哪一種 GIS 分析？</div>
+        <ul class="opts">
+          <li><button>環域分析</button></li>
+          <li><button>視域分析</button></li>
+          <li><button>疊圖分析</button></li>
+          <li><button>網路分析</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>將兩個以上的圖層相疊，找出空間上重疊的部分，屬疊圖分析。</p>
+            <div class="plain">關鍵字「套在一起」。這題沒有出現「距離幾公尺」，所以不是環域，就是單純把圖層疊起來看哪裡重疊。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">32.</span><span class="tag">CH4 GIS 分析</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">部分道路中斷後，救護車要從消防分隊前往受災村落。若要沿著仍可通行的道路，算出最快抵達的替代路線，應使用哪一種 GIS 分析？</div>
+        <ul class="opts">
+          <li><button>環域分析</button></li>
+          <li><button>視域分析</button></li>
+          <li><button>坡度分析</button></li>
+          <li><button>網路（路徑）分析</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：D</p>
+            <p>網路分析以道路網為基礎，計算兩點間最短或最快路徑，也可排除中斷路段重新規劃路線。</p>
+            <div class="plain">「沿著道路找最快的路」就是網路分析，跟手機導航一樣。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 題組五 -->
+      <p><strong>題組五（第 33～35 題）</strong>某班地理小組關心「社區長者看病方便嗎？」。他們在社區發放問卷、訪問里長，把長者住家與診所位置標在地圖上，發現「住家距離診所超過 1 公里的長者，每月就醫次數明顯較少」，最後建議市政府增設社區巡迴醫療車。</p>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">33.</span><span class="tag">CH1 地理觀點</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">這項研究關心「長者住家到診所的距離與就醫的方便程度」，主要採用哪一種地理學觀點？</div>
+        <ul class="opts">
+          <li><button>空間觀點</button></li>
+          <li><button>生態觀點</button></li>
+          <li><button>區域觀點</button></li>
+          <li><button>環境決定論</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>研究重點為住家與醫療設施之間的距離、區位與可及性，屬空間觀點。</p>
+            <div class="plain">「距離」「位置」「方不方便到」都是空間觀點的關鍵字。這裡沒有在講人怎麼適應自然環境，所以不是生態。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">34.</span><span class="tag">CH1 研究流程</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">小組「在社區發放問卷、訪問里長」，屬於地理研究流程中的哪一個步驟？使用的是哪一類方法？</div>
+        <ul class="opts">
+          <li><button>發現問題；文獻分析</button></li>
+          <li><button>蒐集資料；野外實察</button></li>
+          <li><button>分析資料；GIS 疊圖</button></li>
+          <li><button>提出結論；遙測判讀</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>問卷、訪談、觀察、測量都是研究者親自到現場取得第一手資料的野外實察方法，屬「蒐集資料」步驟。</p>
+            <div class="plain">走出教室去問人、去看、去量，就是野外實察。這一步是在「收集資料」，還沒開始分析，也還沒下結論。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">35.</span><span class="tag">CH2 統計地圖</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">小組想再做一張地圖，比較全市「各里 65 歲以上人口所占比例」的高低，最適合使用哪一種統計地圖？</div>
+        <ul class="opts">
+          <li><button>點子圖</button></li>
+          <li><button>流線圖</button></li>
+          <li><button>面量圖（以各里為單位分層設色）</button></li>
+          <li><button>等值線圖</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>以行政區（里）為單位的比例或密度資料，適合用面量圖依數值分級設色呈現。點子圖適合絕對數量的分布疏密；等值線圖適合氣溫、雨量等連續變化的現象。</p>
+            <div class="plain">資料是「每個里一個百分比」，就把每個里依高低塗不同深淺的顏色，越深代表比例越高，這就是面量圖。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- ========== 三、多選題 ========== -->
+      <div class="paper-sec">三、多選題（每題 5 分，共 10 分）</div>
+      <p>每題有 5 個選項，至少一個正確。實際段考通常錯一個選項得 3 分、錯兩個得 1 分；本網站只判全對（5 分）或不對（0 分），請自行依此標準加分。</p>
+
+      <div class="q" data-answer="ACDE" data-multi data-points="5">
+        <div class="q-head"><span class="q-no">36.</span><span class="tag">CH2 比例尺與地圖要素</span><span class="src">自編（比照段考題型）</span><span class="pts">5 分</span></div>
+        <div class="q-stem">關於比例尺與地圖的基本要素，下列敘述哪些正確？</div>
+        <ul class="opts">
+          <li><button>1:5,000 的比例尺比 1:50,000 的比例尺大</button></li>
+          <li><button>在同樣大小的紙上，比例尺越大，地圖能涵蓋的範圍越大</button></li>
+          <li><button>地圖放大影印後，線段（圖解）比例尺仍可直接使用</button></li>
+          <li><button>數字比例尺 1:25,000 表示圖上 1 公分代表實地 250 公尺</button></li>
+          <li><button>地圖上沒有指北針也沒有經緯線時，一般以地圖上方為北方</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ACDE</p>
+            <p>A：1/5,000 &gt; 1/50,000，正確。B：比例尺越大，同樣圖幅涵蓋的範圍越小、內容越詳細，錯誤。C：線段比例尺會隨地圖一起縮放，正確。D：25,000 cm = 250 m，正確。E：慣例「上北下南、左西右東」，正確。</p>
+            <div class="plain">「大比例尺 = 分母小 = 看得細 = 範圍小」，B 剛好講反了。影印後只有線段比例尺會跟著一起變大變小，所以還能用。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="ADE" data-multi data-points="5">
+        <div class="q-head"><span class="q-no">37.</span><span class="tag hot">CH3 經緯度</span><span class="src">自編（比照段考題型）</span><span class="pts">5 分</span></div>
+        <div class="q-stem">有甲（30°N, 60°E）、乙（30°S, 60°E）、丙（30°N, 120°E）、丁（0°, 60°E）四地。下列敘述哪些正確？</div>
+        <ul class="opts">
+          <li><button>甲、乙兩地位於同一條經線上</button></li>
+          <li><button>甲位於乙的正南方</button></li>
+          <li><button>甲與丙的經度相差 180°</button></li>
+          <li><button>甲、乙兩地以經度推算的地方時相同</button></li>
+          <li><button>丁到甲沿經線的距離約 3,330 公里</button></li>
+        </ul>
+        <details>
+          <summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ADE</p>
+            <p>A：兩地經度都是 60°E，正確。B：甲在北緯、乙在南緯，甲在乙的正北方，錯誤。C：120 − 60 = 60°，錯誤。D：同經度 → 地方時相同，正確。E：緯度差 30° × 111 km ≈ 3,330 km，正確。</p>
+            <div class="plain">經度一樣就是在同一條南北向的線上，時間也一樣；經度決定時間，緯度決定南北。甲、丙都是東經，經度直接相減得 60°，不是 180°。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- ========== 四、非選擇題 ========== -->
+      <div class="paper-sec">四、非選擇題（共 20 分）</div>
+      <p>請將答案寫在答案卷上。不用寫題號以外的抄題文字，但計算題要寫出算式。</p>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">一、</span><span class="tag">CH3 地圖投影</span><span class="src">自編（比照段考題型）</span><span class="pts">6 分</span></div>
+        <div class="q-stem">請依下列需求，各寫出最適合的地圖投影性質或投影名稱，並簡述理由（每小題 2 分）。<br>
+          (1) 遠洋漁船船長希望在圖上畫一條直線，照著固定的羅盤方向航行就能抵達漁場。<br>
+          (2) 航空公司想在臺北辦公室掛一張地圖，能直接量出臺北到世界各城市的距離與方向。<br>
+          (3) 聯合國糧農組織要比較各國耕地面積的大小。</div>
+        <details>
+          <summary>看答案與解析與評分標準</summary>
+          <div class="explain">
+            <p class="ans">參考答案：(1) 正形（等角）圓柱投影，即麥卡托投影；(2) 以臺北為中心的等距方位投影；(3) 等積投影（如莫爾威德、古德分瓣投影）。</p>
+            <p>(1) 麥卡托投影的直線即恆向線，便於依固定方位航行。(2) 等距方位投影從中心點到任一點的距離與方位都正確。(3) 等積投影的面積比例正確，適合比較面積大小與分布。</p>
+            <p><strong>評分標準：</strong>每小題投影答對 1 分、理由合理 1 分。(1) 只寫「圓柱投影」沒寫等角或麥卡托，給 0.5 分；(2) 沒寫「以臺北為中心」扣 0.5 分。</p>
+            <div class="plain">口訣：「開船看麥卡托（方向對）、飛機看等距方位（距離對）、比大小看等積（面積對）」。每一種投影只能顧好一樣，題目要什麼就選保留那一樣的投影。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">二、</span><span class="tag hot">CH4 GIS 混合題</span><span class="src">改編自：北一女中 113-1 期末考 非選擇題第 3 題（考點：GIS 資料儲存格式與分析方式）</span><span class="pts">8 分</span></div>
+        <div class="q-stem">請依下表各應用情境，寫出最適合的「空間資料儲存格式（向量式／網格式）」或「GIS 分析方式」（每格 2 分）。</div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>應用情境</th><th>請作答</th></tr></thead>
+          <tbody>
+            <tr><td>(1) 記錄全市每一個捷運站的位置與每日進出站人次</td><td>儲存格式：＿＿＿＿</td></tr>
+            <tr><td>(2) 製作全臺灣年雨量連續分布的資料</td><td>儲存格式：＿＿＿＿</td></tr>
+            <tr><td>(3) 找出垃圾焚化廠周圍 3 公里內的所有學校</td><td>分析方式：＿＿＿＿</td></tr>
+            <tr><td>(4) 在山頂設置觀景臺前，先算出從各候選點能看見的範圍</td><td>分析方式：＿＿＿＿</td></tr>
+          </tbody></table></div>
+        <details>
+          <summary>看答案與解析與評分標準</summary>
+          <div class="explain">
+            <p class="ans">參考答案：(1) 向量式（點）；(2) 網格式；(3) 環域分析；(4) 視域分析。</p>
+            <p>(1) 捷運站是位置明確的離散物件，以點表示並附屬性資料（進出站人次），屬向量式。(2) 雨量在空間上連續變化，以網格儲存每格數值較合適。(3) 以焚化廠為中心劃 3 km 範圍 → 環域分析（再查詢範圍內的學校）。(4) 由 DEM 計算某點可見範圍 → 視域分析。</p>
+            <p><strong>評分標準：</strong>每格 2 分，內容完整且正確才給分；(1) 寫「向量」即可，寫「點」但沒寫向量給 1 分；(3) 寫「環域＋疊圖」也給分。</p>
+            <div class="plain">邊界清楚、一個一個的東西（站、學校、道路）用向量；到處都有數值、一直連續變化的東西（雨量、高度、氣溫）用網格。分析方式看關鍵字：「幾公里內」= 環域，「看得到」= 視域。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">三、</span><span class="tag hot">CH3 TM2 座標＋CH2 比例尺</span><span class="src">自編（比照段考題型）</span><span class="pts">6 分</span></div>
+        <div class="q-stem">臺北市某校地理社以 TM2 座標記錄兩個觀察點：A 點（X = 300,000 m，Y = 2,770,000 m）、B 點（X = 303,000 m，Y = 2,774,000 m）。X 值向東增加、Y 值向北增加。請回答（每小題 2 分）：<br>
+          (1) A、B 兩點的直線距離為多少公里？請寫出算式。<br>
+          (2) B 點位於 A 點的哪一個方位？（以八方位作答）<br>
+          (3) 若要把兩點畫在比例尺 1:25,000 的地圖上，兩點的圖上距離應為多少公分？</div>
+        <details>
+          <summary>看答案與解析與評分標準</summary>
+          <div class="explain">
+            <p class="ans">參考答案：(1) 5 公里；(2) 東北方；(3) 20 公分。</p>
+            <p>(1) 東西差 ΔX = 303,000 − 300,000 = 3,000 m；南北差 ΔY = 2,774,000 − 2,770,000 = 4,000 m。距離 = <span class="sqrt">√<span>3,000² + 4,000²</span></span> = 5,000 m = 5 km。</p>
+            <p>(2) B 在 A 的東方 3 km、北方 4 km，位於東北象限；方位角約 37°，最接近東北（45°），故為東北方。</p>
+            <p>(3) 5,000 m = 500,000 cm，500,000 ÷ 25,000 = 20 cm。</p>
+            <p><strong>評分標準：</strong>(1) 算式 1 分、答案 1 分；(2) 寫「東北」或「北偏東」皆給 2 分；(3) 答案 2 分，單位錯扣 1 分。</p>
+            <div class="plain">TM2 座標就像方格紙：X 是往右（東）走幾公尺，Y 是往上（北）走幾公尺。兩點的差畫出來是一個 3、4、5 的直角三角形，斜邊就是距離 5 km。最後換成公分再除以 25,000 就是圖上距離。</div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <h3>考後檢討</h3>
+    <p>先算出選擇題得分（上方計分列），再依評分標準加上非選題分數。</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>總分</th><th>你目前的狀況</th><th>接下來怎麼做</th></tr></thead>
+      <tbody>
+        <tr><td>80 分以上</td><td>觀念與計算都穩</td><td>只看錯題，把錯題的關鍵字抄進「考前一晚必看清單」；再做一次「考古題與白話解析」分頁中曾錯過的題目。</td></tr>
+        <tr><td>60～79 分</td><td>觀念大致有，但計算或判讀會失分</td><td>依下表找出錯最多的章，回「範圍重點整理」重讀該主題，再到「題型解法套用」各做一題「換你試試」。計算題（比例尺、坡度、時區）每種再練 2 題。</td></tr>
+        <tr><td>60 分以下</td><td>基本觀念還不熟</td><td>先回「章節導覽」看四章的心智圖與表格，再讀「範圍重點整理」的主題二（地圖）和主題三（地理資訊）。這兩塊占分最多，先把 GIS 分析方法表和投影表背熟，可以最快拉分。</td></tr>
+      </tbody></table></div>
+
+    <h4>錯題對應章節</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>章節</th><th>題號</th><th>錯了回去看</th></tr></thead>
+      <tbody>
+        <tr><td>CH1 認識地理</td><td>1、2、3、33、34</td><td>範圍重點整理 → 主題一（三大觀點、探究流程、尺度）</td></tr>
+        <tr><td>CH2 地圖類別與使用</td><td>4～10、21～23、27～29、35、36、非選三(3)</td><td>主題二：比例尺、方位角、等高線、剖面與通視；統計地圖與風花圖請對照本卷解析</td></tr>
+        <tr><td>CH3 座標網格與地圖投影</td><td>11～18、37、非選一、非選三(1)(2)</td><td>主題二：經緯度與座標、時區與經度、地圖投影；公式整理分頁的時區與距離公式</td></tr>
+        <tr><td>CH4 地理資訊</td><td>19、20、24～26、30～32、非選二</td><td>主題三：遙測、GNSS、GIS 資料模式、GIS 常見分析方法表</td></tr>
+      </tbody></table></div>
+    <div class="box warn"><span class="label">這份卷子最容易失分的地方</span>
+      <p>第 9 題首曲線的「頭尾不算」、第 13 題時差要相加、第 22 題公分換公尺、第 29 題風向是「從哪裡來」、第 36 題大比例尺範圍反而小。錯了任何一題，考前一晚再看一次解析。</p>
     </div>
   </section>
 

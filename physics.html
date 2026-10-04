@@ -38,6 +38,7 @@
     <button data-tab="notes">範圍重點整理</button>
     <button data-tab="formula">公式整理與記憶技巧</button>
     <button data-tab="past">考古題與白話解析</button>
+    <button data-tab="mock">模擬段考</button>
     <button data-tab="apply">公式套用</button>
     <button data-tab="tips">考前攻略</button>
   </nav>
@@ -1264,6 +1265,535 @@
         </div>
       </details>
     </div>
+  </section>
+
+  <!-- ===================== MOCK EXAM ===================== -->
+  <section class="panel" id="mock" hidden>
+    <h2>模擬段考</h2>
+    <div class="box info"><span class="label">這份模擬卷怎麼來的</span>
+      <p><strong>陽明高中：沒有找到公開的物理段考試卷。</strong>陽明官網只公告考程與考試範圍，試題可能放在需要校內帳號的地方。<strong>其他臺北市高中：</strong>搜尋了北一女、中山女高、師大附中、中崙、南湖等校網站，公開的只有範圍表和教學進度表，沒有可讀的物理試卷。搜尋時另有一份疑似臺北市高中的物理期中考檔案（放在教育部題庫網站），但檔案主機無法連線、沒有讀到內容，所以不採用。</p>
+      <p>最後實際打開並讀過的，是<strong>國立彰化高中 111 學年度第二學期 高一物理 第一次期中考</strong>（基礎物理 CH1～CH3-2，附答案）。它不是臺北的學校，範圍也比我們多了 CH3 的運動學，但其中「單位運算、數量級估算、原子結構史、基本交互作用、庫侖力比例、萬有引力估算」這些題目跟我們這次範圍高度重疊。卷面結構（5 選 1 單選每題 3 分、多選每題 5 分）也參考這份考卷。</p>
+      <p><strong>改編原則：</strong>只保留考點與題型，題目敘述、數字、選項全部重寫，答案都重新算過，不逐字照抄。標「自編」的題目是依本次範圍、比照段考常見題型出的。題目與「考古題與白話解析」分頁不重複。</p>
+    </div>
+
+    <h3>考古題來源</h3>
+    <div class="table-wrap sources"><table>
+      <thead><tr><th>學校</th><th>考試</th><th>與本次範圍重疊</th><th>原卷連結</th></tr></thead>
+      <tbody>
+        <tr><td>國立彰化高中</td><td>111 學年度第二學期 高一物理 第一次期中考（範圍：基礎物理 CH1～CH3-2；附答案）</td><td>第 6、10、13、15、16、17、19、20、21、23、24、26、27、31 題（單位、數量級、原子結構、基本交互作用、萬有引力、庫侖力）；其餘題目屬於 CH3 運動學，不在這次範圍</td><td><a href="https://www.chsh.chc.edu.tw/var/file/9/1009/attach/4/pta_78648_9268045_62623.pdf" target="_blank" rel="noopener">https://www.chsh.chc.edu.tw/var/file/9/1009/attach/4/pta_78648_9268045_62623.pdf</a></td></tr>
+      </tbody></table></div>
+    <p class="muted small">寫原卷時只寫上面列出的重疊題號；CH3 的直線運動題目這次不會考，可以跳過。</p>
+
+    <div class="exam">
+      <div class="paper-head">
+        <span class="ttl">陽明高中 高一 基礎物理 第一次段考 模擬卷</span>
+        <span class="meta">範圍：泰宇版 基礎物理 CH1～CH2-3 部分 ｜ 時間 60 分鐘 ｜ 滿分 100 分</span>
+      </div>
+      <div class="exam-bar">
+        <div class="exam-timer" data-min="60"></div>
+        <div class="exam-score"></div>
+      </div>
+      <p class="muted small">作答方式：先按「開始計時」，像真的考試一樣一題一題寫完再看解析；點選項會立刻對答案並計分（非選題請看解析自行給分）。建議時間分配：單選 20 分鐘、多選 15 分鐘、非選 15 分鐘，留 10 分鐘檢查與劃卡。</p>
+
+      <!-- ========== 一、單選題 ========== -->
+      <div class="paper-sec">一、單選題（每題 3 分，共 16 題，48 分）</div>
+      <p>每題有 5 個選項，請選出一個最適當的答案。答錯不倒扣。</p>
+
+      <div class="q" data-answer="C" data-points="3">
+        <div class="q-head"><span class="q-no">1.</span><span class="tag">1-2 科學的方法</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">小華發現放在窗邊的吐司比放在冰箱裡的吐司更快發霉，他心想：「溫度可能會影響黴菌生長的速率。」這句話在科學方法中屬於哪一個步驟？</div>
+        <ul class="opts">
+          <li><button>觀察</button></li>
+          <li><button>提出問題</button></li>
+          <li><button>提出假說</button></li>
+          <li><button>設計實驗</button></li>
+          <li><button>歸納結論</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>「可能是溫度造成的」是對現象的<strong>暫時性解釋</strong>，還沒有經過實驗驗證，屬於假說。「吐司在窗邊較快發霉」才是觀察；接下來控制其他變因、只改變溫度去比較，才是設計實驗。</p>
+            <div class="plain">看到「可能」「也許」「我猜」這種還沒驗證過的說法，就是假說。觀察是「看到了什麼」，假說是「我猜原因是什麼」，兩個很容易混。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="3">
+        <div class="q-head"><span class="q-no">2.</span><span class="tag">1-1 科學的態度</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列哪一種做法<strong>違反</strong>了應有的科學態度？</div>
+        <ul class="opts">
+          <li><button>實驗結果與預期不符時，重新檢查步驟並再做一次</button></li>
+          <li><button>詳細記錄實驗時的溫度、器材等條件</button></li>
+          <li><button>即使是知名科學家的說法，也要用實驗證據檢驗</button></li>
+          <li><button>把與預期不符的數據刪掉，只留下符合假說的數據寫進報告</button></li>
+          <li><button>公開實驗方法，讓其他人可以重複驗證</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：D</p>
+            <p>科學態度要求實事求是、誠實記錄。刪除不利數據等於竄改證據，結論就不可信。其他選項分別是：重複驗證、不盲從權威、詳實記錄、公開可檢驗，都是正確的科學態度。</p>
+            <div class="plain">數據「不好看」也是數據，說不定它正好告訴你假說錯了。考題問「違反」時，記得找那個「作弊」的選項。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="3">
+        <div class="q-head"><span class="q-no">3.</span><span class="tag hot">1-3 物理量與單位</span><span class="src">改編自：彰化高中 111-2 第一次期中考 第 10 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">彈簧下掛一個質量 <i>m</i>（單位 kg）的物體上下振動，彈簧的力常數 <i>k</i> 的單位是 N/m。只用單位判斷，下列哪一個組合的單位是「時間（s）」？</div>
+        <ul class="opts">
+          <li><button><span class="sqrt">√<span><i>m</i>/<i>k</i></span></span></button></li>
+          <li><button><span class="sqrt">√<span><i>k</i>/<i>m</i></span></span></button></li>
+          <li><button><i>m</i>/<i>k</i></button></li>
+          <li><button><i>mk</i></button></li>
+          <li><button><span class="sqrt">√<span><i>mk</i></span></span></button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>1 N = 1 kg·m/s<sup>2</sup>，所以 <i>k</i> 的單位 N/m = kg/s<sup>2</sup>。<br><i>m</i>/<i>k</i> 的單位 = kg ÷ (kg/s<sup>2</sup>) = s<sup>2</sup>，開根號後得 s。<br>（B）單位為 1/s；（C）為 s<sup>2</sup>；（D）為 kg<sup>2</sup>/s<sup>2</sup>；（E）為 kg/s。</p>
+            <div class="plain">遇到陌生公式不要慌，先把每個單位拆成 kg、m、s，再像約分一樣消掉。N 一定要先拆成 kg·m/s²，這步最常忘。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="3">
+        <div class="q-head"><span class="q-no">4.</span><span class="tag hot">1-3 SI 基本單位</span><span class="src">改編自：彰化高中 111-2 第一次期中考 第 13 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">能量的單位焦耳（J）定義為 1 J = 1 N·m。若改以 SI 基本單位表示，1 J 等於下列何者？</div>
+        <ul class="opts">
+          <li><button>kg·m/s<sup>2</sup></button></li>
+          <li><button>kg·m<sup>2</sup>/s<sup>2</sup></button></li>
+          <li><button>kg·m<sup>2</sup>/s</button></li>
+          <li><button>kg·m/s</button></li>
+          <li><button>kg<sup>2</sup>·m/s<sup>2</sup></button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>1 N = 1 kg·m/s<sup>2</sup>，所以 1 J = 1 N × 1 m = 1 kg·m<sup>2</sup>/s<sup>2</sup>。（A）是牛頓本身；（D）是動量的單位。</p>
+            <div class="plain">焦耳＝牛頓再乘一個公尺，所以 m 多一次方，變成 m²。把 N 拆開是這類題目的萬用鑰匙。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="3">
+        <div class="q-head"><span class="q-no">5.</span><span class="tag">1-3 詞頭</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">某種病毒的直徑約為 120 nm，換算成微米（μm）約為多少？</div>
+        <ul class="opts">
+          <li><button>0.012 μm</button></li>
+          <li><button>0.12 μm</button></li>
+          <li><button>1.2 μm</button></li>
+          <li><button>12 μm</button></li>
+          <li><button>1.2 × 10<sup>5</sup> μm</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>1 μm = 10<sup>−6</sup> m，1 nm = 10<sup>−9</sup> m，所以 1 μm = 1000 nm。120 nm = 120 ÷ 1000 μm = 0.12 μm。</p>
+            <div class="plain">微（μ）和奈（n）差 1000 倍。單位變大，數字就變小，所以 120 要除以 1000。一直往同一個方向想就不會乘錯。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="3">
+        <div class="q-head"><span class="q-no">6.</span><span class="tag hot">1-3 數量級估算</span><span class="src">改編自：彰化高中 111-2 第一次期中考 第 6 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">金屬原子的直徑約 0.20 nm。一條金屬細線的截面直徑為 0.60 mm。若原子緊密排列，並以「截面積比」粗略估算，則細線的一個截面上大約排了多少個原子？</div>
+        <ul class="opts">
+          <li><button>3 × 10<sup>6</sup></button></li>
+          <li><button>9 × 10<sup>6</sup></button></li>
+          <li><button>3 × 10<sup>12</sup></button></li>
+          <li><button>9 × 10<sup>12</sup></button></li>
+          <li><button>9 × 10<sup>18</sup></button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：D</p>
+            <p>直徑比 = (0.60 × 10<sup>−3</sup> m) ÷ (0.20 × 10<sup>−9</sup> m) = 3 × 10<sup>6</sup>。<br>面積和直徑的平方成正比，原子數 ≈ 面積比 = (3 × 10<sup>6</sup>)<sup>2</sup> = 9 × 10<sup>12</sup> 個。</p>
+            <div class="plain">兩個陷阱：一是 mm 和 nm 要統一單位（差 10⁶ 倍）；二是「截面」是面積，要把直徑比<strong>平方</strong>。只算直徑比的人會選 A。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="3">
+        <div class="q-head"><span class="q-no">7.</span><span class="tag">1-3 科學記號</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">計算 <span class="frac"><span>(3.0 × 10<sup>4</sup>) × (4.0 × 10<sup>−7</sup>)</span><span>2.0 × 10<sup>−2</sup></span></span> 的結果為何？</div>
+        <ul class="opts">
+          <li><button>6.0 × 10<sup>−1</sup></button></li>
+          <li><button>6.0 × 10<sup>−5</sup></button></li>
+          <li><button>6.0 × 10<sup>1</sup></button></li>
+          <li><button>2.4 × 10<sup>−1</sup></button></li>
+          <li><button>6.0 × 10<sup>−13</sup></button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>係數：3.0 × 4.0 ÷ 2.0 = 6.0。<br>指數：4 + (−7) − (−2) = −1。<br>結果 6.0 × 10<sup>−1</sup>（= 0.60）。</p>
+            <div class="plain">係數和指數分開算。乘法指數相加、除法指數相減；最容易錯的是「減掉一個負數」，−(−2) 是 +2。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="3">
+        <div class="q-head"><span class="q-no">8.</span><span class="tag hot">2-3 萬有引力</span><span class="tag">數量級</span><span class="src">改編自：彰化高中 111-2 第一次期中考 第 19 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">地表的重力加速度 <i>g</i> = 9.8 m/s<sup>2</sup>，地球半徑約 6.4 × 10<sup>3</sup> km，萬有引力常數 <i>G</i> = 6.67 × 10<sup>−11</sup> N·m<sup>2</sup>/kg<sup>2</sup>。利用「物體在地表的重量 = 地球對它的萬有引力」，估算地球質量最接近下列何者？</div>
+        <ul class="opts">
+          <li><button>10<sup>15</sup> kg</button></li>
+          <li><button>10<sup>20</sup> kg</button></li>
+          <li><button>10<sup>25</sup> kg</button></li>
+          <li><button>10<sup>30</sup> kg</button></li>
+          <li><button>10<sup>35</sup> kg</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p><i>mg</i> = <span class="frac"><span><i>GMm</i></span><span><i>R</i><sup>2</sup></span></span> ⇒ <i>M</i> = <span class="frac"><span><i>gR</i><sup>2</sup></span><span><i>G</i></span></span>。<br><i>R</i> = 6.4 × 10<sup>3</sup> km = 6.4 × 10<sup>6</sup> m，<i>R</i><sup>2</sup> ≈ 4.1 × 10<sup>13</sup> m<sup>2</sup>。<br><i>M</i> = 9.8 × 4.1 × 10<sup>13</sup> ÷ (6.67 × 10<sup>−11</sup>) ≈ 6.0 × 10<sup>24</sup> kg，最接近 10<sup>25</sup> kg。</p>
+            <div class="plain">先把 km 換成 m（乘 10³），不換的話答案會差 10⁶ 倍、選到 B。地球質量 6 × 10²⁴ kg 本身也值得背起來，可以用來檢查答案。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="3">
+        <div class="q-head"><span class="q-no">9.</span><span class="tag hot">2-1～2-2 原子模型演進</span><span class="src">改編自：彰化高中 111-2 第一次期中考 第 17 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">道耳頓的原子說認為「原子不可再分割」。下列哪一項發現<strong>最早</strong>讓科學家知道原子內部還有更小的粒子？</div>
+        <ul class="opts">
+          <li><button>布朗運動的發現</button></li>
+          <li><button>湯姆森由陰極射線實驗發現電子</button></li>
+          <li><button>拉塞福的 α 粒子散射實驗</button></li>
+          <li><button>查兌克發現中子</button></li>
+          <li><button>蓋爾曼提出夸克模型</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>1897 年湯姆森發現各種金屬都能放出同一種帶負電、質量遠小於原子的粒子（電子），表示原子內部有更小的組成，原子可以再分割。拉塞福散射實驗（1911）、查兌克發現中子（1932）、夸克模型（1964）都比較晚。布朗運動則是支持分子、原子存在的證據，與原子可否分割無關。</p>
+            <div class="plain">關鍵字是「最早」。時間順序：電子（湯姆森）→ 原子核（拉塞福）→ 中子（查兌克）→ 夸克（蓋爾曼）。第一個打破「原子不可分」的就是電子。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="3">
+        <div class="q-head"><span class="q-no">10.</span><span class="tag hot">2-1 夸克</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">質子由兩個上夸克（u，電量 +<span class="frac"><span>2</span><span>3</span></span><i>e</i>）和一個下夸克（d，電量 −<span class="frac"><span>1</span><span>3</span></span><i>e</i>）組成。若把質子中的一個 u 夸克換成 d 夸克，得到的粒子是什麼？電量如何改變？</div>
+        <ul class="opts">
+          <li><button>變成中子，電量減少 <i>e</i></button></li>
+          <li><button>變成中子，電量減少 <span class="frac"><span>1</span><span>3</span></span><i>e</i></button></li>
+          <li><button>仍是質子，電量不變</button></li>
+          <li><button>變成電子，電量變為 −<i>e</i></button></li>
+          <li><button>變成中子，電量增加 <i>e</i></button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>質子 uud：<span class="frac"><span>2</span><span>3</span></span> + <span class="frac"><span>2</span><span>3</span></span> − <span class="frac"><span>1</span><span>3</span></span> = +1（單位 <i>e</i>）。<br>換成 udd：<span class="frac"><span>2</span><span>3</span></span> − <span class="frac"><span>1</span><span>3</span></span> − <span class="frac"><span>1</span><span>3</span></span> = 0，這就是中子。電量由 +<i>e</i> 變成 0，減少 <i>e</i>。</p>
+            <div class="plain">u 換成 d，單顆夸克的電量從 +⅔ 變成 −⅓，差了整整 1。所以一換就差一個 <i>e</i>，不是 ⅓。電子不是夸克組成的，D 直接刪掉。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="3">
+        <div class="q-head"><span class="q-no">11.</span><span class="tag">2-2 原子的內部結構</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">鈉原子的原子序為 11、質量數為 23。鈉離子（Na<sup>+</sup>）所含的質子數、中子數、電子數依序為何？</div>
+        <ul class="opts">
+          <li><button>11、12、11</button></li>
+          <li><button>12、11、10</button></li>
+          <li><button>11、12、12</button></li>
+          <li><button>11、12、10</button></li>
+          <li><button>11、23、10</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：D</p>
+            <p>質子數 = 原子序 = 11；中子數 = 質量數 − 質子數 = 23 − 11 = 12；中性原子電子數 = 11，Na<sup>+</sup> 失去一個電子，剩 10 個。</p>
+            <div class="plain">離子帶電是因為「電子」多了或少了，原子核（質子、中子）完全沒變。帶 + 號表示少電子，帶 − 號表示多電子。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="3">
+        <div class="q-head"><span class="q-no">12.</span><span class="tag hot">2-2 原子的尺度</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">原子直徑約 10<sup>−10</sup> m，原子核直徑約 10<sup>−15</sup> m。若把原子與原子核都視為球體，原子核的<strong>體積</strong>約為整個原子體積的多少倍？</div>
+        <ul class="opts">
+          <li><button>10<sup>−5</sup></button></li>
+          <li><button>10<sup>−10</sup></button></li>
+          <li><button>10<sup>−15</sup></button></li>
+          <li><button>10<sup>−20</sup></button></li>
+          <li><button>10<sup>−30</sup></button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>直徑比 = 10<sup>−15</sup> ÷ 10<sup>−10</sup> = 10<sup>−5</sup>。球體積與直徑的三次方成正比，所以體積比 = (10<sup>−5</sup>)<sup>3</sup> = 10<sup>−15</sup>。</p>
+            <div class="plain">長度比要「三次方」才是體積比（面積是平方）。這也說明原子裡幾乎都是空的，但質量卻幾乎全集中在那一丁點的原子核。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="E" data-points="3">
+        <div class="q-head"><span class="q-no">13.</span><span class="tag hot">2-3 基本交互作用</span><span class="src">改編自：彰化高中 111-2 第一次期中考 第 24 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">關於自然界的基本交互作用，下列敘述何者正確？</div>
+        <ul class="opts">
+          <li><button>電子與電子之間有強交互作用</button></li>
+          <li><button>原子核內質子與中子能結合在一起，主要靠弱交互作用</button></li>
+          <li><button>重力是四種基本交互作用中作用範圍最短的</button></li>
+          <li><button>強交互作用的作用範圍約為 10<sup>−10</sup> m，與原子大小相當</button></li>
+          <li><button>摩擦力、彈力和繩子的張力，本質上都源自電磁交互作用</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：E</p>
+            <p>日常的接觸力（摩擦力、彈力、正向力、張力）都是原子、分子間電磁力的巨觀表現。（A）電子不受強力作用；（B）應為強力；（C）重力與電磁力作用範圍可達無限遠；（D）強力範圍約 10<sup>−15</sup> m（原子核大小）。</p>
+            <div class="plain">除了重力，你在生活中摸得到、推得到的力，全部都是電磁力。強力只在原子核那麼小的範圍內有用，而且只作用在夸克組成的粒子上，電子不算。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="3">
+        <div class="q-head"><span class="q-no">14.</span><span class="tag">2-3 弱交互作用</span><span class="src">改編自：彰化高中 111-2 第一次期中考 第 20 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">碳-14 的原子核有 6 個質子、8 個中子，會自發衰變成有 7 個質子、7 個中子的氮-14 原子核，並放出電子。造成這種衰變的基本交互作用是哪一種？</div>
+        <ul class="opts">
+          <li><button>強交互作用</button></li>
+          <li><button>弱交互作用</button></li>
+          <li><button>電磁交互作用</button></li>
+          <li><button>重力交互作用</button></li>
+          <li><button>摩擦力</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>質子數 +1、中子數 −1，表示核內一個中子變成質子並放出電子，這是 β 衰變，由弱交互作用造成（夸克層次：一個 d 變成 u）。摩擦力不是基本交互作用。</p>
+            <div class="plain">看到「中子變質子」或「放出電子（β 射線）」，直接想到弱力。強力負責「黏住」原子核，弱力負責讓粒子「變身」。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="3">
+        <div class="q-head"><span class="q-no">15.</span><span class="tag hot">2-3 庫侖定律</span><span class="src">改編自：彰化高中 111-2 第一次期中考 第 15 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">兩個完全相同的小金屬球 A、B 分別帶 +2<i>q</i> 與 −3<i>q</i> 的電荷，相距 <i>d</i> 時彼此的吸引力為 <i>F</i>。今使兩球接觸後再分開，放到相距 2<i>d</i> 處，則兩球間的靜電力為何？</div>
+        <ul class="opts">
+          <li><button><span class="frac"><span><i>F</i></span><span>96</span></span>，相斥</button></li>
+          <li><button><span class="frac"><span><i>F</i></span><span>96</span></span>，相吸</button></li>
+          <li><button><span class="frac"><span><i>F</i></span><span>24</span></span>，相斥</button></li>
+          <li><button><span class="frac"><span><i>F</i></span><span>16</span></span>，相斥</button></li>
+          <li><button><span class="frac"><span>3<i>F</i></span><span>8</span></span>，相吸</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>接觸前：<i>F</i> = <i>k</i> · 2<i>q</i> · 3<i>q</i> / <i>d</i><sup>2</sup> = 6<i>kq</i><sup>2</sup>/<i>d</i><sup>2</sup>（只看大小）。<br>相同金屬球接觸後平分總電量：(+2<i>q</i> − 3<i>q</i>) ÷ 2 = −<span class="frac"><span>1</span><span>2</span></span><i>q</i>，兩球同號 → 相斥。<br><i>F</i>′ = <i>k</i> · (<span class="frac"><span>1</span><span>2</span></span><i>q</i>)<sup>2</sup> / (2<i>d</i>)<sup>2</sup> = <i>kq</i><sup>2</sup>/(16<i>d</i><sup>2</sup>)。<br><i>F</i>′/<i>F</i> = (1/16) ÷ 6 = 1/96。</p>
+            <div class="plain">三步驟：①總電量相加（正負要抵銷！）再平分 ②看新的電性決定吸或斥 ③套「電量乘積 ÷ 距離平方」的比例。很多人忘了 +2 和 −3 會抵銷，直接算成 2.5q。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="E" data-points="3">
+        <div class="q-head"><span class="q-no">16.</span><span class="tag hot">2-3 萬有引力定律</span><span class="src">改編自：彰化高中 111-2 第一次期中考 第 21 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">某行星的質量是地球的 <span class="frac"><span>1</span><span>2</span></span>，半徑也是地球的 <span class="frac"><span>1</span><span>2</span></span>。在地球表面重 600 N 的太空人，站在這顆行星表面時重量約為多少？</div>
+        <ul class="opts">
+          <li><button>150 N</button></li>
+          <li><button>300 N</button></li>
+          <li><button>600 N</button></li>
+          <li><button>2400 N</button></li>
+          <li><button>1200 N</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：E</p>
+            <p>重量 <i>W</i> = <span class="frac"><span><i>GMm</i></span><span><i>R</i><sup>2</sup></span></span> ∝ <span class="frac"><span><i>M</i></span><span><i>R</i><sup>2</sup></span></span>。<br>比值 = (1/2) ÷ (1/2)<sup>2</sup> = (1/2) ÷ (1/4) = 2，所以重量 = 600 × 2 = 1200 N。</p>
+            <div class="plain">質量變一半讓重量變一半，但半徑變一半會讓重量變 4 倍（距離在分母、還要平方），合起來是 2 倍。半徑的影響比質量大，這是比例題最愛考的地方。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- ========== 二、多選題 ========== -->
+      <div class="paper-sec">二、多選題（每題 5 分，共 6 題，30 分）</div>
+      <p>每題至少有一個選項正確。實際段考通常有部分給分（例如錯一個選項得 3 分），本網站只判斷全對或不對。</p>
+
+      <div class="q" data-answer="ACD" data-multi data-points="5">
+        <div class="q-head"><span class="q-no">17.</span><span class="tag">1-1、1-2 科學的態度與方法</span><span class="tag">多選</span><span class="src">自編（比照段考題型）</span><span class="pts">5 分</span></div>
+        <div class="q-stem">關於科學的態度與方法，下列敘述哪些正確？</div>
+        <ul class="opts">
+          <li><button>科學理論若遇到無法解釋的新證據，可能被修正甚至推翻</button></li>
+          <li><button>一個假說只要有一次實驗結果與它相符，就成為定律</button></li>
+          <li><button>做控制變因的實驗時，一次只改變一個操縱變因</button></li>
+          <li><button>重複多次測量再取平均，可以減少隨機（偶然）誤差</button></li>
+          <li><button>系統誤差可以靠多次測量取平均來消除</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ACD</p>
+            <p>（A）科學知識具有暫時性與可修正性。（B）假說需經過大量、可重複的實驗檢驗，一次相符不足以成為定律。（C）一次只改變一個變因，才能確定結果的差異是由它造成的。（D）隨機誤差有時偏大有時偏小，平均後可互相抵銷。（E）系統誤差每次都往同一方向偏，平均也消不掉，要靠校正儀器或改進方法。</p>
+            <div class="plain">誤差分兩種：「每次都偏同一邊」的是系統誤差（像秤沒歸零），平均沒用；「忽高忽低」的是隨機誤差，平均有用。這組觀念每年都考。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="ACE" data-multi data-points="5">
+        <div class="q-head"><span class="q-no">18.</span><span class="tag hot">1-3 有效數字</span><span class="tag">多選</span><span class="src">自編（比照段考題型）</span><span class="pts">5 分</span></div>
+        <div class="q-stem">下列哪些測量值恰好有 <strong>3 位</strong>有效數字？</div>
+        <ul class="opts">
+          <li><button>0.0305 m</button></li>
+          <li><button>3.050 × 10<sup>2</sup> g</button></li>
+          <li><button>6.02 × 10<sup>23</sup> 個</button></li>
+          <li><button>1.0 × 10<sup>−3</sup> s</button></li>
+          <li><button>2.00 kg</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ACE</p>
+            <p>（A）前面的 0 不算，3、0、5 共 3 位。（B）3.050 共 4 位（最後的 0 是測量出來的，要算）。（C）6.02 共 3 位。（D）1.0 共 2 位。（E）2.00 共 3 位。科學記號只看係數部分。</p>
+            <div class="plain">口訣：「開頭的 0 不算，中間的 0 算，小數點後結尾的 0 也算」。寫成科學記號時，10 的幾次方不影響位數，只數前面的係數。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="ABC" data-multi data-points="5">
+        <div class="q-head"><span class="q-no">19.</span><span class="tag hot">2-2 原子的尺度與內部結構</span><span class="tag">多選</span><span class="src">自編（比照段考題型）</span><span class="pts">5 分</span></div>
+        <div class="q-stem">關於原子的大小與結構，下列敘述哪些正確？</div>
+        <ul class="opts">
+          <li><button>原子直徑的數量級約為 10<sup>−10</sup> m</button></li>
+          <li><button>原子核直徑的數量級約為 10<sup>−15</sup> m</button></li>
+          <li><button>電子的質量約為質子質量的 <span class="frac"><span>1</span><span>1840</span></span></button></li>
+          <li><button>原子的質量主要集中在核外的電子</button></li>
+          <li><button>電中性的原子中，質子數一定等於中子數</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ABC</p>
+            <p>（A）（B）原子約 10<sup>−10</sup> m，原子核約 10<sup>−15</sup> m，相差約 10<sup>5</sup> 倍。（C）電子質量約 9.11 × 10<sup>−31</sup> kg，質子約 1.67 × 10<sup>−27</sup> kg，比值約 1/1840。（D）質量集中在原子核（質子、中子）。（E）電中性是「質子數 = 電子數」，中子數不一定相同（例如鈉有 11 個質子、12 個中子）。</p>
+            <div class="plain">電中性看的是「正電（質子）＝負電（電子）」，中子不帶電，跟電中性無關。這種把名詞偷換的選項是多選題的常見陷阱。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="ACE" data-multi data-points="5">
+        <div class="q-head"><span class="q-no">20.</span><span class="tag hot">2-3 萬有引力與庫侖定律</span><span class="tag">多選</span><span class="src">改編自：彰化高中 111-2 第一次期中考 第 27 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">比較牛頓的萬有引力定律與庫侖的靜電力定律，下列敘述哪些正確？</div>
+        <ul class="opts">
+          <li><button>兩種力的大小都與兩物體距離的平方成反比</button></li>
+          <li><button>質子與電子之間，萬有引力比靜電力大得多</button></li>
+          <li><button>萬有引力只有吸引力；靜電力則可能相吸也可能相斥</button></li>
+          <li><button>牛頓提出萬有引力定律時，已用實驗測出常數 <i>G</i> 的數值</button></li>
+          <li><button>兩種力在理論上的作用範圍都可以到無限遠</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ACE</p>
+            <p>（A）<i>F</i> = <i>GMm</i>/<i>r</i><sup>2</sup>、<i>F</i> = <i>kQq</i>/<i>r</i><sup>2</sup>，都是平方反比。（B）相反，靜電力約是萬有引力的 10<sup>39</sup> 倍。（C）質量只有正值，所以重力只吸引；電荷有正負，同性相斥、異性相吸。（D）<i>G</i> 是 1798 年卡文迪西以扭秤實驗測得，牛頓當時並未測出。（E）兩者都是長程力。</p>
+            <div class="plain">兩個公式長得很像，所以考題常考「哪裡一樣、哪裡不一樣」：一樣的是平方反比、都是長程力；不一樣的是重力只吸不斥，而且弱到不行。G 是卡文迪西量的，不是牛頓。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="ABC" data-multi data-points="5">
+        <div class="q-head"><span class="q-no">21.</span><span class="tag hot">2-3 四種基本交互作用</span><span class="tag">多選</span><span class="src">自編（比照段考題型）</span><span class="pts">5 分</span></div>
+        <div class="q-stem">下列現象與「主要相關的基本交互作用」配對，哪些正確？</div>
+        <ul class="opts">
+          <li><button>月球繞地球公轉 — 重力</button></li>
+          <li><button>用手推牆時，牆對手的推力 — 電磁力</button></li>
+          <li><button>原子核內的質子不會因互相排斥而飛散 — 強力</button></li>
+          <li><button>磁鐵吸起迴紋針 — 重力</button></li>
+          <li><button>太陽核融合過程中，質子轉變成中子 — 強力</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ABC</p>
+            <p>（A）天體運動由重力主導。（B）接觸力是原子間的電磁力。（C）強力（核力）在 10<sup>−15</sup> m 內遠大於質子間的庫侖斥力。（D）磁力屬於電磁交互作用。（E）質子與中子互相轉換（改變夸克種類）是弱交互作用。</p>
+            <div class="plain">配對題的訣竅：天上的 → 重力；摸得到的、跟電或磁有關的 → 電磁力；把原子核黏住 → 強力；粒子「變身」（中子⇄質子） → 弱力。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="ABD" data-multi data-points="5">
+        <div class="q-head"><span class="q-no">22.</span><span class="tag hot">2-3 庫侖定律</span><span class="tag">多選</span><span class="src">改編自：彰化高中 111-2 第一次期中考 第 31 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">A、B、C 為三個完全相同的小金屬球。A、B 各帶電量 +<i>Q</i>，相距 <i>R</i> 時彼此的靜電力大小為 <i>F</i>；C 原本不帶電。今將 C 先與 A 接觸後分開，再與 B 接觸後分開，然後把 C 移到很遠處，A、B 仍相距 <i>R</i>。下列敘述哪些正確？</div>
+        <ul class="opts">
+          <li><button>A 最後帶電量為 +<span class="frac"><span>1</span><span>2</span></span><i>Q</i></button></li>
+          <li><button>B 最後帶電量為 +<span class="frac"><span>3</span><span>4</span></span><i>Q</i></button></li>
+          <li><button>三球最後電量總和為 +2.5<i>Q</i></button></li>
+          <li><button>若再把 A、B 距離改為 <span class="frac"><span><i>R</i></span><span>2</span></span>，兩球間靜電力為 <span class="frac"><span>3</span><span>2</span></span><i>F</i></button></li>
+          <li><button>A、B 之間的靜電力變為吸引力</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ABD</p>
+            <p>C 碰 A：(<i>Q</i> + 0) ÷ 2，A、C 各 <i>Q</i>/2。<br>C 碰 B：(<i>Q</i>/2 + <i>Q</i>) ÷ 2，B、C 各 3<i>Q</i>/4。<br>（C）總和 = <i>Q</i>/2 + 3<i>Q</i>/4 + 3<i>Q</i>/4 = 2<i>Q</i>（電荷守恆，等於原本的 2<i>Q</i>），不是 2.5<i>Q</i>。<br>相距 <i>R</i> 時 <i>F</i>′ = (1/2)(3/4)<i>F</i> = 3<i>F</i>/8；距離變 <i>R</i>/2，力變 4 倍：3<i>F</i>/8 × 4 = 3<i>F</i>/2。（D）正確。<br>（E）A、B 都帶正電，仍互相排斥。</p>
+            <div class="plain">相同金屬球「碰一下就平分」，一步一步算不要跳。最後用電荷守恆檢查：總電量一定跟一開始一樣，這招可以直接抓出 C 是錯的。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- ========== 三、非選擇題 ========== -->
+      <div class="paper-sec">三、非選擇題（共 3 題，22 分）</div>
+      <p>請寫出計算過程，答案要有單位，並注意有效數字。只寫答案不給分。</p>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">23.</span><span class="tag hot">1-3 有效數字與單位換算</span><span class="src">自編（比照段考題型）</span><span class="pts">6 分</span></div>
+        <div class="q-stem">小美用最小刻度為 1 mm 的直尺測量一塊長方形木板，記錄長 25.36 cm、寬 8.40 cm。<br>(1) 這兩個測量值分別有幾位有效數字？（2 分）<br>(2) 依有效數字運算規則，木板的周長為多少 cm？（2 分）<br>(3) 依有效數字運算規則，木板的面積為多少 m<sup>2</sup>？請用科學記號表示。（2 分）</div>
+        <details><summary>看答案、解析與評分標準</summary>
+          <div class="explain">
+            <p class="ans">答案：(1) 25.36 cm 有 4 位、8.40 cm 有 3 位 (2) 67.52 cm (3) 2.13 × 10<sup>−2</sup> m<sup>2</sup></p>
+            <p>(1) 25.36 的 4 個數字都算；8.40 結尾的 0 是估計位，也算，共 3 位。<br>(2) 加法看小數位數：25.36 + 8.40 = 33.76（兩者都到 0.01 cm）。乘以 2（周長公式中的 2 是準確數，不影響有效數字），周長 = 67.52 cm。<br>(3) 乘法看位數最少者（3 位）：25.36 × 8.40 = 213.024 → 取 3 位 = 213 cm<sup>2</sup>。1 cm<sup>2</sup> = 10<sup>−4</sup> m<sup>2</sup>，所以 213 cm<sup>2</sup> = 2.13 × 10<sup>−2</sup> m<sup>2</sup>。</p>
+            <p><strong>評分標準：</strong>每小題 2 分。(1) 兩個都對才給 2 分，對一個給 1 分。(2) 寫 67.5 或 68 扣 1 分。(3) 數值 213 cm<sup>2</sup> 正確但單位換算錯誤給 1 分；寫成 2.13024 × 10<sup>−2</sup>（沒取有效數字）扣 1 分。</p>
+            <div class="plain">加減法看「小數點後幾位」，乘除法看「總共幾位」，這是兩套規則，不要混用。面積的單位換算也要平方：1 cm = 10⁻² m，所以 1 cm² = 10⁻⁴ m²，不是 10⁻²。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">24.</span><span class="tag hot">2-3 萬有引力定律</span><span class="src">自編（比照段考題型）</span><span class="pts">8 分</span></div>
+        <div class="q-stem">已知地球質量 6.0 × 10<sup>24</sup> kg，月球質量 7.4 × 10<sup>22</sup> kg，地月中心距離 3.8 × 10<sup>8</sup> m，<i>G</i> = 6.67 × 10<sup>−11</sup> N·m<sup>2</sup>/kg<sup>2</sup>。<br>(1) 地球與月球之間的萬有引力大小約為多少牛頓？（取 2 位有效數字）（4 分）<br>(2) 假設月球質量變為原來的 2 倍，地月距離也變為原來的 2 倍，引力變為多少牛頓？（2 分）<br>(3) 地球吸引月球的力與月球吸引地球的力，大小比為何？（2 分）</div>
+        <details><summary>看答案、解析與評分標準</summary>
+          <div class="explain">
+            <p class="ans">答案：(1) 約 2.1 × 10<sup>20</sup> N (2) 約 1.0 × 10<sup>20</sup> N (3) 1 : 1</p>
+            <p>(1) <i>F</i> = <span class="frac"><span><i>GMm</i></span><span><i>r</i><sup>2</sup></span></span> = <span class="frac"><span>6.67 × 10<sup>−11</sup> × 6.0 × 10<sup>24</sup> × 7.4 × 10<sup>22</sup></span><span>(3.8 × 10<sup>8</sup>)<sup>2</sup></span></span><br>分子：6.67 × 6.0 × 7.4 ≈ 296，指數 −11 + 24 + 22 = 35，得 2.96 × 10<sup>37</sup>。<br>分母：3.8<sup>2</sup> = 14.44，得 1.444 × 10<sup>17</sup>。<br><i>F</i> ≈ 2.96 × 10<sup>37</sup> ÷ 1.444 × 10<sup>17</sup> ≈ 2.05 × 10<sup>20</sup> ≈ 2.1 × 10<sup>20</sup> N。<br>(2) <i>F</i> ∝ <i>m</i>/<i>r</i><sup>2</sup>，變為 2 ÷ 2<sup>2</sup> = 1/2 倍：2.05 × 10<sup>20</sup> ÷ 2 ≈ 1.0 × 10<sup>20</sup> N。<br>(3) 萬有引力是兩物體間的交互作用，彼此吸引的力大小相等、方向相反（作用力與反作用力），比為 1 : 1。</p>
+            <p><strong>評分標準：</strong>(1) 列式正確 2 分、數值正確 2 分（2.0～2.1 × 10<sup>20</sup> N 都給分；指數錯扣 2 分）。(2) 比例關係正確 1 分、數值 1 分。(3) 答「地球吸引月球的力較大」不給分。</p>
+            <div class="plain">(3) 是陷阱題：很多人覺得地球比較大，吸得比較用力。其實公式裡 <i>M</i> 和 <i>m</i> 的位置可以互換，算出來是同一個數字，兩邊拉力一樣大。月球跑去繞地球，是因為月球質量小、比較容易被拉動，不是因為力比較大。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">25.</span><span class="tag hot">2-3 庫侖定律</span><span class="tag">詞頭</span><span class="src">自編（比照段考題型）</span><span class="pts">8 分</span></div>
+        <div class="q-stem">兩個帶電小球 A、B 分別帶電 +2.0 μC 與 −3.0 μC，相距 0.30 m，庫侖常數 <i>k</i> = 9.0 × 10<sup>9</sup> N·m<sup>2</sup>/C<sup>2</sup>。<br>(1) 兩球間靜電力的大小為多少牛頓？是吸引還是排斥？（3 分）<br>(2) 若只改變距離，要使靜電力大小變為 0.15 N，兩球距離應為多少公尺？（3 分）<br>(3) 若距離維持 0.30 m，把 A 的電量變為 2 倍、B 的電量變為原來的 <span class="frac"><span>1</span><span>3</span></span>，靜電力大小變為多少牛頓？（2 分）</div>
+        <details><summary>看答案、解析與評分標準</summary>
+          <div class="explain">
+            <p class="ans">答案：(1) 0.60 N，吸引 (2) 0.60 m (3) 0.40 N</p>
+            <p>(1) 1 μC = 10<sup>−6</sup> C。<i>F</i> = <span class="frac"><span><i>k</i>|<i>Q</i><sub>1</sub><i>Q</i><sub>2</sub>|</span><span><i>r</i><sup>2</sup></span></span> = <span class="frac"><span>9.0 × 10<sup>9</sup> × 2.0 × 10<sup>−6</sup> × 3.0 × 10<sup>−6</sup></span><span>(0.30)<sup>2</sup></span></span> = <span class="frac"><span>5.4 × 10<sup>−2</sup></span><span>9.0 × 10<sup>−2</sup></span></span> = 0.60 N。一正一負，異性相吸。<br>(2) 0.15 N 是 0.60 N 的 1/4。<i>F</i> ∝ 1/<i>r</i><sup>2</sup>，力變 1/4 → 距離變 2 倍，<i>r</i> = 0.60 m。<br>(3) <i>F</i> ∝ <i>Q</i><sub>1</sub><i>Q</i><sub>2</sub>，變為 2 × 1/3 = 2/3 倍：0.60 × 2/3 = 0.40 N。</p>
+            <p><strong>評分標準：</strong>(1) 數值 2 分、判斷吸引 1 分；μC 沒換成 C 導致數量級錯誤，數值不給分。(2) 列出比例或代公式正確 1 分、答案 2 分。(3) 答案 2 分。</p>
+            <div class="plain">μ（微）是 10⁻⁶，這題就是在考你會不會把詞頭換掉。(2)(3) 用比例做最快：距離在分母還有平方，所以力變 ¼ 倍時，距離是變 2 倍，不是 4 倍。</div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <h3>考後檢討</h3>
+    <p>選擇題的分數上面會自動計算（滿分 78 分），非選擇題（22 分）請對照評分標準自己給分，兩者相加就是總分。</p>
+    <div class="two">
+      <div class="box ok"><span class="label">80 分以上</span>
+        <p>觀念與計算都穩了。考前把錯的題目再看一次解析，然後把時間留給「公式整理與記憶技巧」分頁的科學家與單位表，避免背的東西臨場混淆。</p>
+      </div>
+      <div class="box tip"><span class="label">60～79 分</span>
+        <p>大方向對，但有漏洞。用下面的表找出錯題集中在哪一節，回「範圍重點整理」把那一節重讀一次，再到「公式套用」做比例題的換你試試。</p>
+      </div>
+    </div>
+    <div class="box warn"><span class="label">60 分以下</span>
+      <p>先不要再做新題目。依序回「章節導覽」看 CH1 單位與有效數字、2-1 原子模型演進、2-3 四種交互作用比較表，把表格背熟；接著到「公式套用」練萬有引力與庫侖定律的比例法（只要會「乘積 ÷ 距離平方」就能拿很多分）。最後再回來重寫這份模擬卷錯的題目。</p>
+    </div>
+
+    <h4>錯題對應章節</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>題號</th><th>考點</th><th>錯了回去看</th></tr></thead>
+      <tbody>
+        <tr><td>1、2、17</td><td>科學的態度、科學方法步驟、誤差種類</td><td>範圍重點整理：第 1 章「2. 科學方法與科學態度」「7. 測量、有效數字與誤差」</td></tr>
+        <tr><td>3、4</td><td>單位運算、以 SI 基本單位表示導出單位</td><td>範圍重點整理：第 1 章「3. 物理量與 SI 單位」</td></tr>
+        <tr><td>5、7、25(1)</td><td>詞頭換算、科學記號運算</td><td>範圍重點整理：第 1 章「4. 詞頭與科學記號」；公式套用「1. 單位換算與詞頭」</td></tr>
+        <tr><td>6、8、12</td><td>數量級估算、長度比→面積比→體積比</td><td>公式套用「2. 科學記號與數量級估算」</td></tr>
+        <tr><td>18、23</td><td>有效數字位數、加減與乘除規則</td><td>公式套用「3. 有效數字運算」</td></tr>
+        <tr><td>9、10</td><td>原子模型演進、夸克組成與電量</td><td>章節導覽 2-1；範圍重點整理 2-2「原子模型的演進」</td></tr>
+        <tr><td>11、12、19</td><td>原子序、質量數、離子；原子與原子核尺度</td><td>章節導覽：2-2 原子的尺度與內部結構</td></tr>
+        <tr><td>13、14、21</td><td>四種基本交互作用的比較與實例</td><td>範圍重點整理 2-3「四種基本交互作用」「弱力與 β 衰變」</td></tr>
+        <tr><td>8、16、20、24</td><td>萬有引力定律、比例題、<i>G</i> 的測定</td><td>公式套用「4. 萬有引力比例題」</td></tr>
+        <tr><td>15、20、22、25</td><td>庫侖定律、接觸起電平分電量、比例題</td><td>公式套用「5. 庫侖力比例題」</td></tr>
+      </tbody></table></div>
   </section>
 
   <!-- ===================== APPLY ===================== -->

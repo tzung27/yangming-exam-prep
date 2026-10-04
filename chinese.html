@@ -34,6 +34,7 @@
     <button data-tab="notes">範圍重點整理</button>
     <button data-tab="formula">國學常識與記憶技巧</button>
     <button data-tab="past">考古題與白話解析</button>
+    <button data-tab="mock">模擬段考</button>
     <button data-tab="apply">題型解法套用</button>
     <button data-tab="tips">考前攻略</button>
   </nav>
@@ -1618,6 +1619,667 @@
         <div class="plain">元方很有邏輯：先說你遲到（理虧），再說你罵人（失禮），兩點都打在對方身上，所以朋友才會慚愧下車。</div>
       </div></details>
     </div>
+  </section>
+
+  <!-- ===================================================== MOCK ===================================================== -->
+  <section class="panel" id="mock" hidden>
+    <h2>模擬段考</h2>
+    <div class="box info"><span class="label">這份模擬卷怎麼來的</span>
+      <p><strong>陽明高中：</strong>搜尋陽明官網與網路公開資料，只找到考程表與範圍表，<strong>沒有找到公開的國文段考試題</strong>（試題可能只放在校內系統）。</p>
+      <p><strong>改用臺北市立成功高中公開的兩份考卷：</strong>113 學年度高一第 1 次期中考（範圍<strong>和我們一模一樣</strong>：翰林 L1 現代詩選、L2 師說、L3 鬼頭刀、L4 左忠毅公逸事），以及 110 學年度高一第 1 次期中考（L1–L3 與《世說新語》補充教材重疊）。卷面結構參考成功 113-1 的配置：單選、多選、混合題組（選擇＋手寫），再加上翻譯與短文寫作。</p>
+      <p><strong>改編原則：</strong>只保留「考點」和「題型」，題目敘述、例句、選項都重新寫過，<strong>沒有逐字照抄</strong>他校試題；閱讀題組只用公版古文（韓愈〈雜說四〉、《世說新語》）和已過著作權期的〈再別康橋〉。〈斷章〉〈鬼頭刀〉仍受著作權保護，所以只引用極短的詞句。題目也刻意避開「考古題與白話解析」分頁已經出過的題目。</p>
+    </div>
+
+    <h3>考古題來源</h3>
+    <div class="table-wrap sources"><table>
+      <thead><tr><th>學校</th><th>考試</th><th>與本次範圍重疊</th><th>原卷連結</th></tr></thead>
+      <tbody>
+        <tr><td>臺北市立陽明高中</td><td>（未找到公開國文試題）</td><td>—</td><td>官網僅見考程、範圍公告</td></tr>
+        <tr><td>臺北市立成功高中</td><td>113 學年度第 1 學期 高一國文 第 1 次期中考（教師用卷，附答案）</td><td>全卷：翰林 L1–L4 與本次完全相同（另含課外閱讀）</td><td><a href="https://www.cksh.tp.edu.tw/wp-content/uploads/doc/cg501/113-1-1%E9%AB%98%E4%B8%80%E5%9C%8B%E7%B6%9C%E8%A9%A6%E9%A1%8C.pdf" target="_blank" rel="noopener">成功高中 113-1-1 高一國綜試題（PDF）</a></td></tr>
+        <tr><td>臺北市立成功高中</td><td>110 學年度第 1 學期 高一國文 第 1 次期中考（教師用卷，附答案）</td><td>L1 現代詩選、L2 師說、L3 鬼頭刀、補充《世說新語》（第 4 課是〈項脊軒志〉，不在我們範圍）</td><td><a href="https://www.cksh.tp.edu.tw/wp-content/uploads/doc/cg501/110-1-1%E9%AB%98%E4%B8%80%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%9C%9F%E4%B8%AD%E8%80%83.pdf" target="_blank" rel="noopener">成功高中 110-1-1 高一第一次期中考（PDF）</a></td></tr>
+      </tbody></table></div>
+    <p class="muted small">想多練一份：直接把成功高中 113-1 那份原卷印出來，限時 60 分鐘寫，寫完再對答案，效果最好。</p>
+
+    <div class="exam">
+      <div class="paper-head">
+        <span class="ttl">陽明高中 高一 國文 第一次段考 模擬卷</span>
+        <span class="meta">範圍：翰林 國文I L1–L4、補充教材《世說新語》選 ｜ 時間 60 分鐘 ｜ 滿分 100 分</span>
+      </div>
+      <div class="exam-bar">
+        <div class="exam-timer" data-min="60"></div>
+        <div class="exam-score"></div>
+      </div>
+      <p class="muted small">作答方式：先按「開始計時」，像真的考試一樣一題一題寫完再看解析；點選項會立刻對答案並計分（非選題請看解析自行給分）。建議時間：單選 20 分鐘、多選 12 分鐘、混合題 10 分鐘、翻譯＋短文 15 分鐘，留 3 分鐘檢查。</p>
+
+      <!-- ========== 一、單選 ========== -->
+      <div class="paper-sec">一、單選題（每題 2 分，共 40 分）</div>
+      <p>第 1 題至第 20 題，每題 4 個選項，只有一個最適當的答案。</p>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">1.</span><span class="tag">字音</span><span class="tag">L2・L4</span><span class="src">改編自：成功高中 113-1 第一次期中考 第 1 題（題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">下列各組「」內的字，讀音<strong>完全相同</strong>的是：</div>
+        <ul class="opts">
+          <li><button>手長「鑱」／「纔」能／「攙」扶</button></li>
+          <li><button>以指撥「眥」／吹毛求「疵」／「恣」意妄為</button></li>
+          <li><button>官盛則近「諛」／豐「腴」／瑕不掩「瑜」</button></li>
+          <li><button>廊「廡」／「撫」養／荒「蕪」</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>(A) ㄔㄢˊ／ㄘㄞˊ／ㄔㄢ。(B) ㄗˋ／ㄘ／ㄗˋ。(C) 都讀 ㄩˊ。(D) ㄨˇ／ㄈㄨˇ／ㄨˊ。</p>
+          <div class="plain">「俞」「臾」當聲符的字很多都念 ㄩˊ（諛、腴、瑜、愉、渝）。「廡」「蕪」雖然都念 ㄨ，但聲調一個三聲一個二聲，這種「差一個聲調」的陷阱段考最愛。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">2.</span><span class="tag">字形</span><span class="src">改編自：成功高中 113-1 第一次期中考 第 2 題（題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">下列文句，用字<strong>完全正確</strong>的是：</div>
+        <ul class="opts">
+          <li><button>他對學問總是虛心求教，對別人的請託卻不屑一故</button></li>
+          <li><button>面對驚濤駭浪，老漁夫依然從容不迫、泰然自若</button></li>
+          <li><button>他錯過了報名期限，捶胸頓足，悔不當出</button></li>
+          <li><button>每有警報，史可法便奮不顧生，數月不曾就寢</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>(A) 不屑一「顧」。(C) 悔不當「初」。(D) 奮不顧「身」。</p>
+          <div class="plain">成語錯字通常是「同音字換掉」：顧→故、初→出、身→生。看到四字成語先在心裡唸一遍原本的意思：「連看一眼都不屑」所以是「顧」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">3.</span><span class="tag">成語</span><span class="tag">綜合</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">下列文句「」內的成語，運用<strong>最恰當</strong>的是：</div>
+        <ul class="opts">
+          <li><button>兩人因理念嚴重不合而「割席分坐」，從此不再往來</button></li>
+          <li><button>他的弟弟擅長寫詩，鄰居都稱讚他有「詠絮之才」</button></li>
+          <li><button>他在臺上演講「目光如炬」，滔滔不絕講了一小時</button></li>
+          <li><button>學生的成就超越了老師，老師笑說這就是「程門立雪」</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>(A) 割席分坐：與朋友絕交，正確。(B) 詠絮之才專指<strong>女子</strong>有文才（謝道韞）。(C) 目光如炬形容眼光明亮有神或見識遠大，與「滔滔不絕講話」無關。(D) 程門立雪是尊師重道、虔誠求學；學生超越老師應用「青出於藍」。</p>
+          <div class="plain">成語題先問自己「這個成語在講誰、講什麼」：詠絮→女生；程門立雪→學生很尊敬老師；割席→跟朋友切八段。對號入座就不會錯。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">4.</span><span class="tag">字義</span><span class="tag">L4・世說</span><span class="src">改編自：成功高中 113-1 第一次期中考 第 19 題（題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">下列各組「」內的字，意義<strong>前後相同</strong>的是：</div>
+        <ul class="opts">
+          <li><button>「去」後乃至／「去」天咫尺</button></li>
+          <li><button>「從」數騎出／吾「從」而師之</button></li>
+          <li><button>與友「期」行／君與家君「期」日中</button></li>
+          <li><button>「微」行／「微」管仲，吾其被髮左衽矣</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>(A) 離開／距離。(B) 使……跟隨（使動）／跟隨。(C) 皆為「約定」。(D) 隱藏身分、不讓人知道／如果沒有。</p>
+          <div class="plain">「期」在〈陳太丘與友期〉整篇都是「約好」的意思，篇名的「期」也是。「微行」就是現在說的「微服出巡」，跟「微管仲」（要不是管仲）完全不同。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">5.</span><span class="tag hot">高頻考點</span><span class="tag">詞性・使動</span><span class="src">改編自：成功高中 113-1 第一次期中考 第 4 題（考點）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">文言文中，「使動用法」是「使受詞怎麼樣」，例如「春風又綠江南岸」的「綠」是「使……變綠」；「意動用法」則是「認為受詞怎麼樣／以受詞為……」。下列「」內的字，屬於<strong>使動用法</strong>的是：</div>
+        <ul class="opts">
+          <li><button>生乎吾前……吾從而「師」之</button></li>
+          <li><button>一日，風雪嚴寒，「從」數騎出</button></li>
+          <li><button>於其身也，則「恥」師焉</button></li>
+          <li><button>背筐，「手」長鑱，為除不潔者</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>(A) 以……為師（意動）。(B) 使數騎跟從（使動）。(C) 以……為恥（意動）。(D) 名詞「手」轉為動詞，意為「拿著」，屬詞性轉變，不是使動。</p>
+          <div class="plain">翻譯時如果要加「讓／使」才通，就是使動：「讓幾個騎馬的人跟著」→ 從數騎。如果要加「把……當成」，就是意動：「把他當老師」「把從師當成丟臉」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">6.</span><span class="tag">修辭・設問</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">「設問」可分為：提問（自問自答）、激問（答案在問題的反面）、疑問（真的不知道而問）。下列文句屬於<strong>激問</strong>的是：</div>
+        <ul class="opts">
+          <li><button>吾師道也，夫庸知其年之先後生於吾乎？</button></li>
+          <li><button>客問元方：「尊君在不？」</button></li>
+          <li><button>公欣然曰：「白雪紛紛何所似？」</button></li>
+          <li><button>尋夢？撐一支長篙，向青草更青處漫溯</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>(A) 意思是「哪需要管他年紀比我大還是小呢？」答案在反面：不必管，屬激問。(B)(C) 都是真的發問、等對方回答，屬疑問（詢問）。(D) 先問「尋夢？」再自己答「撐一支長篙……」，屬提問。</p>
+          <div class="plain">激問就是「反問句」，像你媽說「你以為錢是天上掉下來的嗎？」答案明明是「不是」。「庸知」＝「哪裡需要知道」，就是這種口氣。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">7.</span><span class="tag">國學常識・文體</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">下列有關本次範圍各篇文體的敘述，<strong>正確</strong>的是：</div>
+        <ul class="opts">
+          <li><button>「說」是古文的一種文體，用來闡述事理、表達見解，如韓愈〈師說〉、周敦頤〈愛蓮說〉</button></li>
+          <li><button>〈左忠毅公逸事〉屬於正史本傳，完整記錄左光斗一生的經歷</button></li>
+          <li><button>〈再別康橋〉是格律嚴謹的近體詩，講究平仄與對仗</button></li>
+          <li><button>〈鬼頭刀〉是現代詩，以分行形式描寫海洋生物</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>(B)「逸事」是正史沒有記載、流傳在外的片段事蹟，不是完整傳記。(C) 是新詩（現代詩），屬新月派格律詩，但不講平仄對仗，與近體詩不同。(D) 是散文（海洋文學）。</p>
+          <div class="plain">「說」＝我來說說我的看法，所以是議論文。「逸」＝散落在外，「逸事」就是正史沒寫到的小故事，方苞從長輩那裡聽來再寫下來。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">8.</span><span class="tag">L1 新月派</span><span class="src">改編自：成功高中 110-1 第一次期中考 第 8 題（考點）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">新月派聞一多提出新詩「三美」：音樂美、繪畫美、建築美。下列以〈再別康橋〉說明「三美」的配對，<strong>錯誤</strong>的是：</div>
+        <ul class="opts">
+          <li><button>每節四行、句子長短相近，第二、四行縮排——建築美</button></li>
+          <li><button>每節偶數句押韻、節節換韻，並多用「輕輕」「悄悄」等疊字——音樂美</button></li>
+          <li><button>金柳、青荇、彩虹、星輝等色彩鮮明的意象——繪畫美</button></li>
+          <li><button>大量使用文言虛詞與歷史典故，講究上下句對仗——繪畫美</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：D</p>
+          <p>〈再別康橋〉語言是白話，沒有大量文言虛詞、典故與對仗；繪畫美指的是詞藻與色彩意象，(C) 才是。</p>
+          <div class="plain">三美很好記：「聽起來」好聽＝音樂美（押韻、疊字）；「看起來」有畫面＝繪畫美（顏色）；「排起來」整齊＝建築美（每節四行、對齊）。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">9.</span><span class="tag">L1 文意</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">〈再別康橋〉：「但我不能放歌，／悄悄是別離的笙簫；／夏蟲也為我沉默，／沉默是今晚的康橋！」這一節最主要表達的是：</div>
+        <ul class="opts">
+          <li><button>夜深人靜，詩人怕吵醒住在附近的居民</button></li>
+          <li><button>從上一節想「放歌」的激昂轉為無聲，以靜默烘托離別的不捨</button></li>
+          <li><button>詩人對康橋感到失望，因此無話可說</button></li>
+          <li><button>夏夜蟲鳴太吵，詩人無法專心唱歌</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>上一節寫「在星輝斑斕裡放歌」，情緒達到高點；此節一轉「不能放歌」，以「悄悄」的笙簫、沉默的夏蟲與康橋，營造靜謐氛圍，表現依依不捨又不忍驚擾的離情。</p>
+          <div class="plain">想像你畢業離開學校，本來想大喊「我愛這裡」，但最後只是默默走出校門——不是不愛，是捨不得到說不出話。這節就是這種「越安靜越難過」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">10.</span><span class="tag">L1 斷章</span><span class="src">改編自：成功高中 110-1 第一次期中考 第 13 題（考點）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">關於卞之琳〈斷章〉，下列敘述<strong>正確</strong>的是：</div>
+        <ul class="opts">
+          <li><button>前兩行寫「看」與「被看」的相對；後兩行由「窗子」與「夢」，寫出實景與虛境的相互裝飾</button></li>
+          <li><button>全詩以第一人稱「我」的口吻，抒發失戀的哀傷</button></li>
+          <li><button>全詩藉橋上風景抒發對故鄉的深切思念</button></li>
+          <li><button>本詩寫於一九六〇年代的臺灣，是現代派「橫的移植」代表作</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>(B) 全詩以「你」為中心，不是「我」，主旨也不是失戀。(C) 與思鄉無關，主旨在人我、物我的相對與相互依存。(D) 〈斷章〉寫於 1935 年的中國大陸，卞之琳並非臺灣現代派詩人。</p>
+          <div class="plain">〈斷章〉很短，考法都繞著「相對」：你看風景，你也是別人的風景；明月裝飾你，你裝飾別人。誰是主角、誰是配角，換個角度就不一樣。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">11.</span><span class="tag">L3 文意</span><span class="src">改編自：成功高中 113-1 第一次期中考 第 24 題（考點）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">〈鬼頭刀〉寫到鬼頭刀被捕離水後，身上亮麗的色彩很快就消褪。作者藉這個現象想表達的是：</div>
+        <ul class="opts">
+          <li><button>漁獲必須盡快冷凍，才能賣到好價錢</button></li>
+          <li><button>生命的美屬於活在海洋中的生命本身，一旦離開便消逝，暗含尊重生命的省思</button></li>
+          <li><button>鬼頭刀擅長偽裝變色，藉此躲避天敵</button></li>
+          <li><button>討海人看見魚變色，便知道天氣即將轉壞</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>作者認為鬼頭刀的價值表現在牠活著的生命上；美麗色彩隨生命消逝，傳達對生命的敬重與海洋保育的關懷。</p>
+          <div class="plain">魚在海裡閃閃發亮，抓上船就變灰——作者看了心裡很有感觸：美是活著才有的。這就是本課主旨「尊重生命」最好用的證據。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">12.</span><span class="tag">L3 作者心境</span><span class="src">改編自：成功高中 113-1 第一次期中考 第 29 題（考點）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">〈鬼頭刀〉作者身為討海人，對鬼頭刀的情感最適合形容為：</div>
+        <ul class="opts">
+          <li><button>只把牠當成漁獲，在意的只有價格與重量</button></li>
+          <li><button>痛恨牠捕食飛魚，認為應趕盡殺絕</button></li>
+          <li><button>為了生計必須捕捉牠，卻又欣賞牠的勇猛與生命力，心情矛盾</button></li>
+          <li><button>畏懼牠的兇猛，從不敢與牠正面交手</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>作者以擬人手法寫鬼頭刀的自信、驕傲與勇猛，在追捕過程中流露敬佩，又因必須獵殺牠而產生複雜的情緒，反映人與海洋生命之間的矛盾。</p>
+          <div class="plain">就像你很佩服一個對手，但比賽還是得打敗他——又敬又不得不出手。作者後來投入鯨豚保育，也跟這種心情有關。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">13.</span><span class="tag">L2 句意</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">〈師說〉：「吾師道也，夫庸知其年之先後生於吾乎？」句意為：</div>
+        <ul class="opts">
+          <li><button>我學習的是道理，哪裡需要管他年紀比我大還是比我小呢</button></li>
+          <li><button>我的老師講求道義，不會在意別人的年紀</button></li>
+          <li><button>老師的年紀一定要比我大，才能教我道理</button></li>
+          <li><button>道理會隨著年紀增長而改變，所以要先問年紀</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>「師」作動詞，「學習」；「道」，道理；「庸」，哪裡、豈。全句強調擇師以「道」為標準，不以年齡為標準。</p>
+          <div class="plain">這句是韓愈的核心：老師的資格看「懂不懂」，不看「幾歲」。下一句「無貴無賤，無長無少」就是把這個意思講得更完整。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">14.</span><span class="tag">L2 字義</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">〈師說〉末段：「李氏子蟠，年十七，好古文……不拘於時，學於余。」其中「不拘於時」的意思是：</div>
+        <ul class="opts">
+          <li><button>不受學習時間的限制，隨時都在讀書</button></li>
+          <li><button>不受當時士大夫恥於從師的風氣束縛</button></li>
+          <li><button>不拘泥於古文的格式，喜歡自由創作</button></li>
+          <li><button>不在乎考試時間將近，仍專心學古文</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>「時」指時俗、當時的風氣，即前文所批評「恥學於師」的士大夫風氣。李蟠不受影響、向韓愈求教，所以韓愈「嘉其能行古道」，作〈師說〉送他。</p>
+          <div class="plain">「時」在這裡不是「時間」，是「時下流行」。大家都覺得拜師很丟臉，李蟠偏偏不管，韓愈就很欣賞他，寫這篇文章送給他。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">15.</span><span class="tag hot">高頻考點</span><span class="tag">L4 人物</span><span class="src">改編自：成功高中 113-1 第一次期中考 第 8、23 題（考點）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">下列〈左忠毅公逸事〉的情節與其所表現的左光斗特質，配對<strong>錯誤</strong>的是：</div>
+        <ul class="opts">
+          <li><button>解貂覆生，為掩戶——愛惜人才、細心體貼</button></li>
+          <li><button>瞿然注視；呈卷，即面署第一——慧眼識才</button></li>
+          <li><button>使拜夫人，曰：「吾諸兒碌碌，他日繼吾志事，惟此生耳！」——寄望深切</button></li>
+          <li><button>因摸地上刑械，作投擊勢——性情暴躁、不念師生之情</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：D</p>
+          <p>左公作勢要打史可法，是怕他受牽連、要他速去以保全自己為國效力，正是「愛之深、責之切」，以國事為重，並非暴躁無情。</p>
+          <div class="plain">這篇的左公一路都在「識才→惜才→舉才→護才」。獄中那一幕看起來很兇，其實是最深的保護：「你快走，國家還要靠你！」</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">16.</span><span class="tag">L4 結構</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">〈左忠毅公逸事〉寫史可法「治兵，往來桐城，必躬造左公第，候太公、太母起居，拜夫人於堂上」，這段描寫的作用是：</div>
+        <ul class="opts">
+          <li><button>呼應前文左公「使拜夫人」，表現史可法不忘師恩</button></li>
+          <li><button>說明史可法想藉機接收左家的財產</button></li>
+          <li><button>暗示左家對史可法心懷怨恨，史公只好登門賠罪</button></li>
+          <li><button>交代史可法駐兵桐城，是為了躲避戰亂</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>開頭左公「使拜夫人」，結尾史公「拜夫人於堂上」，前後呼應；史公親自登門問候左公父母、拜見師母，表現對師門的感念。</p>
+          <div class="plain">開頭老師帶學生去見師母，結尾學生自己回去拜見師母——一頭一尾對起來，就是「師恩永遠記得」。段考很愛考這種「前後呼應」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">17.</span><span class="tag">L2 作者</span><span class="src">改編自：成功高中 113-1 第一次期中考 第 6 題（考點）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">下列關於韓愈的敘述，<strong>正確</strong>的是：</div>
+        <ul class="opts">
+          <li><button>字退之，自稱郡望昌黎，世稱韓昌黎；卒諡「文」，又稱韓文公</button></li>
+          <li><button>與柳宗元同為宋代古文運動的領袖</button></li>
+          <li><button>詩風平易淺白，相傳寫詩要讓老婦人也能聽懂</button></li>
+          <li><button>蘇軾稱他「文起八代之衰」，「八代」指先秦到西漢</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>(B) 韓、柳是<strong>唐代</strong>古文運動領袖。(C) 「老嫗能解」是白居易；韓愈詩風奇險。(D) 八代指東漢、魏、晉、宋、齊、梁、陳、隋。</p>
+          <div class="plain">韓愈的名字組合包：退之（字）、昌黎（郡望）、文公（諡號）。「八代」是駢文最流行的那幾個朝代，韓愈把文章風氣拉回先秦兩漢，所以說他「起衰」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">18.</span><span class="tag">詞義・時間詞</span><span class="tag">L4・世說</span><span class="src">改編自：成功高中 110-1 第一次期中考 第 16 題（篇章）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">下列「」內表示時間的詞語，解釋<strong>錯誤</strong>的是：</div>
+        <ul class="opts">
+          <li><button>與友期行，期「日中」：中午</button></li>
+          <li><button>「漏鼓」移則番代：計時的漏壺與報更的鼓聲，指時間推移</button></li>
+          <li><button>聞左公被炮烙，「旦夕」且死：早晚之間，指很快</button></li>
+          <li><button>「俄而」雪驟：過了很久以後</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：D</p>
+          <p>「俄而」是「不久、一會兒」，表示時間很短（出自《世說新語》謝太傅寒雪日內集）。</p>
+          <div class="plain">「俄」就是「一下子」，跟「俄頃」「俄然」同一家族。看到「俄」想成「突然、沒多久」就對了。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">19.</span><span class="tag">修辭・移情</span><span class="tag">L1</span><span class="src">改編自：成功高中 113-1 第 25 題、110-1 第 14 題（考點）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">〈再別康橋〉「夏蟲也為我沉默」，夏蟲原本只是沒有出聲，詩人卻說牠們「為我沉默」，是把自己的情感投射到外物上，稱為「移情」。下列詩句也運用移情的是：</div>
+        <ul class="opts">
+          <li><button>感時花濺淚，恨別鳥驚心</button></li>
+          <li><button>床前明月光，疑是地上霜</button></li>
+          <li><button>白日依山盡，黃河入海流</button></li>
+          <li><button>舉頭望明月，低頭思故鄉</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>杜甫〈春望〉：詩人感傷時局、怨恨離別，看花便覺花也落淚、聽鳥便覺鳥也驚心，將自身情緒投射於花鳥。(B) 是錯覺式的比喻。(C) 寫景。(D) 直接抒情，未把情感移到外物上。</p>
+          <div class="plain">移情＝「我難過，所以覺得全世界都在陪我難過」。花本來不會哭，是杜甫自己想哭。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">20.</span><span class="tag">L2 延伸</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">〈師說〉：「聖人無常師。」下列文句的觀點與此<strong>最接近</strong>的是：</div>
+        <ul class="opts">
+          <li><button>三人行，必有我師焉：擇其善者而從之，其不善者而改之</button></li>
+          <li><button>凡學之道，嚴師為難；師嚴然後道尊</button></li>
+          <li><button>一日為師，終身為父</button></li>
+          <li><button>學而時習之，不亦說乎</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>「無常師」＝沒有固定的老師，任何有長處的人都可以學習，與《論語》「三人行，必有我師」相合。(B) 強調尊師。(C) 強調師恩如父。(D) 強調溫習。</p>
+          <div class="plain">「無常師」的「常」是「固定」。孔子到處問人：問禮、問官名、學琴，誰懂就問誰——跟「三人行必有我師」根本是同一件事。</div>
+        </div></details>
+      </div>
+
+      <!-- ========== 二、多選 ========== -->
+      <div class="paper-sec">二、多選題（每題 3 分，共 24 分）</div>
+      <p>第 21 題至第 28 題，每題 5 個選項，至少有一個正確。本網站只判全對得 3 分、不全對 0 分（真實考試通常錯 1 個選項仍有部分分數）。</p>
+
+      <div class="q" data-answer="AE" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">21.</span><span class="tag">字義</span><span class="src">改編自：成功高中 113-1 第一次期中考 第 19 題（題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列各組「」內的字，意義<strong>前後相同</strong>的是：</div>
+        <ul class="opts">
+          <li><button>「惑」之不解／「惑」而不從師</button></li>
+          <li><button>使史公「更」敝衣草屨／使將士「更」休</button></li>
+          <li><button>元方入門不「顧」／不「顧」一切</button></li>
+          <li><button>去後「乃」至／「乃」親得之於史公云</button></li>
+          <li><button>日中不至，則是無「信」／言而有「信」</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A、E</p>
+          <p>(A) 皆為「疑惑」。(B) 更換／輪流。(C) 回頭看／顧念、考慮。(D) 才／是、就是。(E) 皆為「信用」。</p>
+          <div class="plain">「更」在左公那篇出現兩次，意思不一樣：換衣服 vs 輪流休息。「乃」也是兩用：「去後乃至」是「才到」，「乃親得之於史公」是「是（從史公那裡）親自聽來的」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="ABC" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">22.</span><span class="tag hot">高頻考點</span><span class="tag">修辭</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列文句的修辭說明，<strong>正確</strong>的是：</div>
+        <ul class="opts">
+          <li><button>「輕輕的我走了，正如我輕輕的來」——類疊</button></li>
+          <li><button>「軟泥上的青荇，油油的在水底招搖」——轉化（以物擬人）</button></li>
+          <li><button>「是故聖益聖，愚益愚」——將聖、愚兩種相反結果對照，屬映襯</button></li>
+          <li><button>「乃奮臂以指撥眥，目光如炬」——誇飾</button></li>
+          <li><button>「尋夢？撐一支長篙」——激問</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A、B、C</p>
+          <p>(D)「目光如炬」有喻詞「如」，是譬喻（明喻）。(E) 自問自答，屬提問。</p>
+          <div class="plain">有「如、像、似」先想譬喻，不是誇飾。「招搖」本來是人在搖擺炫耀，用在水草身上就是擬人。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="ACD" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">23.</span><span class="tag">國學常識</span><span class="src">改編自：成功高中 113-1 第一次期中考 第 21 題（考點）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列人物屬於「唐宋古文八大家」的是：</div>
+        <ul class="opts">
+          <li><button>韓愈</button></li>
+          <li><button>方苞</button></li>
+          <li><button>柳宗元</button></li>
+          <li><button>王安石</button></li>
+          <li><button>李白</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A、C、D</p>
+          <p>八大家：唐代韓愈、柳宗元；宋代歐陽脩、蘇洵、蘇軾、蘇轍、王安石、曾鞏。方苞是清代桐城派初祖；李白是唐代詩人。</p>
+          <div class="plain">口訣「韓柳歐陽、三蘇曾王」。方苞雖然也寫古文、也很有名，但他是清朝人，不在「唐宋」八大家裡。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="ABCE" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">24.</span><span class="tag hot">高頻考點</span><span class="tag">L4 文意</span><span class="src">改編自：成功高中 113-1 第一次期中考 第 23 題（題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">關於〈左忠毅公逸事〉的情節與寫法，敘述<strong>適當</strong>的是：</div>
+        <ul class="opts">
+          <li><button>「持五十金，涕泣謀於禁卒」——表現史可法不顧危險、設法探望恩師</button></li>
+          <li><button>「史公更敝衣草屨，背筐，手長鑱，為除不潔者」——史可法喬裝成清掃穢物的人進入監獄</button></li>
+          <li><button>「面額焦爛不可辨，左膝以下，筋骨盡脫矣」——寫左公受刑慘烈，更反襯出他意志的堅毅</button></li>
+          <li><button>左公「奮臂以指撥眥」，是因為認出史可法而喜出望外</button></li>
+          <li><button>「余宗老塗山，左公甥也……乃親得之於史公云」——交代逸事來源，增加可信度</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A、B、C、E</p>
+          <p>(D) 左公撥開眼皮後是怒斥史可法「庸奴」，責備他輕身涉險，並非欣喜。</p>
+          <div class="plain">這題就是把獄中那段「行動順序」記熟：買通獄卒→換衣喬裝→看到老師慘狀→老師撥眼皮怒罵→作勢打人→史公哭著跑出去。最後一段「消息來源」是方苞在說「這是真的，有人親口說的」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="ABC" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">25.</span><span class="tag">L2 結構</span><span class="src">改編自：成功高中 110-1 第一次期中考 第 15 題（考點）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">關於〈師說〉的結構與論證，敘述<strong>正確</strong>的是：</div>
+        <ul class="opts">
+          <li><button>首段開宗明義提出「古之學者必有師」，並說明老師的功能與擇師標準</button></li>
+          <li><button>次段以三組對比，批評當時士大夫恥於從師的風氣</button></li>
+          <li><button>第三段舉孔子向郯子、萇弘等人學習為例，證明「聖人無常師」</button></li>
+          <li><button>末段說明寫作動機，是為了責備李蟠不肯從師</button></li>
+          <li><button>全文為駢文，句句講究對仗與聲律</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A、B、C</p>
+          <p>(D) 是嘉許李蟠「能行古道」而作此文贈他。(E) 〈師說〉是古文（散文），正是用來對抗駢文的。三組對比：古之聖人／今之眾人；愛子擇師／於其身恥師；巫醫樂師百工／士大夫之族。</p>
+          <div class="plain">〈師說〉四段就是：立論（老師很重要）→ 批評（現在的人都不拜師）→ 舉例（連孔子都拜很多人為師）→ 結尾（李蟠很棒所以寫給他）。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="ABDE" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">26.</span><span class="tag">L1 綜合</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">關於徐志摩〈再別康橋〉，敘述<strong>正確</strong>的是：</div>
+        <ul class="opts">
+          <li><button>徐志摩是新月派代表詩人，作品重視音節與形式之美</button></li>
+          <li><button>「康橋」即英國劍橋（Cambridge），是作者留學過的地方</button></li>
+          <li><button>本詩寫於作者第一次抵達康橋留學時，充滿初來乍到的新奇感</button></li>
+          <li><button>「那榆蔭下的一潭，／不是清泉，是天上虹」使用了譬喻</button></li>
+          <li><button>全詩共七節，首節與末節前後呼應</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A、B、D、E</p>
+          <p>(C) 本詩作於 1928 年作者重遊英國後、返國途中，是「再別」，抒發告別母校的眷戀。(D) 「是天上虹」為譬喻（喻詞「是」）。</p>
+          <div class="plain">題目叫「再」別，就表示不是第一次了。看到「第一次」「初來」這種字眼要警覺。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="ABD" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">27.</span><span class="tag">補充 世說新語</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列《世說新語》人物與事蹟的配對，<strong>正確</strong>的是：</div>
+        <ul class="opts">
+          <li><button>管寧——鋤菜時看見片金，「揮鋤與瓦石不異」</button></li>
+          <li><button>華歆——乘船避難時起初不願讓人搭船，答應之後卻在危急時堅持不拋棄</button></li>
+          <li><button>王朗——一開始就拒絕讓人上船，最後才勉強答應</button></li>
+          <li><button>元方——七歲時以「無信」「無禮」兩點反駁父親的朋友</button></li>
+          <li><button>謝道韞——以「撒鹽空中差可擬」形容紛飛的白雪</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A、B、D</p>
+          <p>(C) 是王朗一開始爽快答應，賊追來時卻想拋棄搭船的人。(E)「撒鹽空中」是謝朗（胡兒）的回答，謝道韞答「未若柳絮因風起」。</p>
+          <div class="plain">華歆在「割席」那則是反派，在「乘船」那則卻是正面——同一個人在不同故事評價不同，最容易被考混。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="ABC" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">28.</span><span class="tag">語詞出處</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列語詞與它在本次範圍中出現的篇章，配對<strong>正確</strong>的是：</div>
+        <ul class="opts">
+          <li><button>割席分坐——《世說新語》</button></li>
+          <li><button>術業有專攻——〈師說〉</button></li>
+          <li><button>目光如炬——〈左忠毅公逸事〉</button></li>
+          <li><button>詠絮之才——〈再別康橋〉</button></li>
+          <li><button>不恥下問——〈師說〉</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A、B、C</p>
+          <p>(D) 詠絮之才典出《世說新語》謝道韞故事。(E) 「不恥下問」出自《論語・公冶長》；〈師說〉中的是「不恥相師」。</p>
+          <div class="plain">「不恥下問」和「不恥相師」長得超像，是故意設計的陷阱。〈師說〉講的是巫醫樂師百工「不恥相師」（不以互相學習為恥）。</div>
+        </div></details>
+      </div>
+
+      <!-- ========== 三、混合題 ========== -->
+      <div class="paper-sec">三、混合題（共 16 分）</div>
+      <p>本大題共 2 個題組，選擇題點選作答；手寫題請先寫在紙上，再看參考答案自行給分。</p>
+
+      <h4>題組一（第 29–31 題，共 8 分）：閱讀下文，回答問題</h4>
+      <div class="box">
+        <p>世有伯樂，然後有千里馬。千里馬常有，而伯樂不常有。故雖有名馬，祇辱於奴隸人之手，駢死於槽櫪之間，不以千里稱也。馬之千里者，一食或盡粟一石。食馬者，不知其能千里而食也。是馬也，雖有千里之能，食不飽，力不足，才美不外見，且欲與常馬等不可得，安求其能千里也？策之不以其道，食之不能盡其材，鳴之而不能通其意，執策而臨之，曰：「天下無馬！」嗚呼！其真無馬邪？其真不知馬也！</p>
+        <p class="muted small">——韓愈〈雜說四〉（公版古文）</p>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">29.</span><span class="tag">文言閱讀</span><span class="tag">L2 作者延伸</span><span class="src">自編（比照段考混合題）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">「祇辱於奴隸人之手，駢死於槽櫪之間」的意思是：</div>
+        <ul class="opts">
+          <li><button>千里馬只願意在奴僕手下工作，最後老死在馬廄裡</button></li>
+          <li><button>千里馬羞辱了養馬的奴僕，因此被關在馬槽之間</button></li>
+          <li><button>千里馬只能在平庸的養馬人手下受委屈，和普通的馬一起死在馬廄裡</button></li>
+          <li><button>千里馬因為吃太多糧食，被主人賣給奴隸</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>「祇」，只；「辱」，受屈辱；「奴隸人」，指不識馬的養馬人；「駢」，並列，指與普通馬一起；「槽櫪」，餵馬的食槽與馬廄。</p>
+          <div class="plain">一匹超級好馬，遇到不懂馬的人，就被當普通馬養、跟普通馬一起老死——天才被埋沒。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">30.</span><span class="tag">跨篇比較</span><span class="tag">L4</span><span class="src">自編（比照段考混合題）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">若以本文的比喻來看〈左忠毅公逸事〉，下列對應<strong>最恰當</strong>的是：</div>
+        <ul class="opts">
+          <li><button>伯樂——史可法</button></li>
+          <li><button>伯樂——左光斗</button></li>
+          <li><button>千里馬——左光斗</button></li>
+          <li><button>食馬者——左光斗</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>伯樂比喻能識拔人才的人；左光斗在古寺中讀了史可法的文章就看出他的才華，「面署第一」並寄予厚望，正是伯樂。史可法則是被發掘的千里馬。</p>
+          <div class="plain">誰「看出別人很厲害」誰就是伯樂。左公一眼看中史可法，所以左公＝伯樂、史公＝千里馬。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-points="4">
+        <div class="q-head"><span class="q-no">31.</span><span class="tag">手寫題</span><span class="tag">原文摘錄</span><span class="src">自編（比照段考混合題）</span><span class="pts">4 分</span></div>
+        <div class="q-stem">依據本文，千里馬「才美不外見」（才能無法表現出來）的直接原因是什麼？請以原文作答，兩句，每句 3 字。（每句 2 分）</div>
+        <details><summary>看參考答案與評分</summary><div class="explain">
+          <p class="ans">參考答案：「食不飽」、「力不足」</p>
+          <p>評分：每寫對一句得 2 分；有錯字該句不給分。若寫「食之不能盡其材」，為更上一層的原因（養馬者造成的），題目問「直接原因」，不給分。</p>
+          <div class="plain">吃不飽→沒力氣→跑不快→看不出是千里馬。題目說「以原文作答」，就一定要抄原文，不要自己翻成白話。</div>
+        </div></details>
+      </div>
+
+      <h4>題組二（第 32–34 題，共 8 分）：閱讀下文，回答問題</h4>
+      <div class="box">
+        <p>王戎七歲，嘗與諸小兒遊。看道邊李樹多子折枝，諸兒競走取之，唯戎不動。人問之，答曰：「樹在道邊而多子，此必苦李。」取之，信然。</p>
+        <p class="muted small">——《世說新語・雅量》（公版古文）</p>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">32.</span><span class="tag">文言閱讀</span><span class="tag">補充 世說新語</span><span class="src">自編（比照段考混合題）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">王戎判斷李子是苦的，依據是：</div>
+        <ul class="opts">
+          <li><button>李子的顏色還是青綠的，顯然沒有成熟</button></li>
+          <li><button>他以前吃過這棵樹的李子</button></li>
+          <li><button>李樹的樹枝已經折斷，果實必定枯萎</button></li>
+          <li><button>李樹長在人來人往的路邊卻還結滿果實，若是甜的早就被摘光了</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：D</p>
+          <p>「樹在道邊而多子」：長在路旁、行人隨手可摘，果實卻多到把樹枝壓彎（「多子折枝」），可見沒人要摘，因此推斷必是苦李。</p>
+          <div class="plain">這是超強的推理：「路邊的好東西不會留到現在」。「折枝」不是樹枝斷掉沒果子，而是果子多到把樹枝壓彎。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">33.</span><span class="tag">字義</span><span class="tag">補充 世說新語</span><span class="src">自編（比照段考混合題）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">「取之，信然」的「信」，意思是：</div>
+        <ul class="opts">
+          <li><button>信用</button></li>
+          <li><button>書信</button></li>
+          <li><button>確實、果然</button></li>
+          <li><button>相信</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>「信然」＝確實如此。與〈陳太丘與友期〉「日中不至，則是無信」的「信」（信用）不同。</p>
+          <div class="plain">摘下來一吃，「果然」是苦的。「信然」兩個字常一起出現，記成「果然如此」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-points="4">
+        <div class="q-head"><span class="q-no">34.</span><span class="tag">手寫題</span><span class="tag">跨篇比較</span><span class="src">自編（比照段考混合題）</span><span class="pts">4 分</span></div>
+        <div class="q-stem">王戎和〈陳太丘與友期〉中的元方都是七歲。請各用一個<strong>四字詞語</strong>形容兩人的特質，並各舉文中一句為依據。（每人 2 分：詞語 1 分、依據 1 分）</div>
+        <details><summary>看參考答案與評分</summary><div class="explain">
+          <p class="ans">參考答案</p>
+          <p>王戎：<strong>觀察入微／善於推理／冷靜理智</strong>（擇一或意思相近即可）；依據：「樹在道邊而多子，此必苦李。」或「諸兒競走取之，唯戎不動。」</p>
+          <p>元方：<strong>明辨是非／有理有據／守禮知義</strong>；依據：「日中不至，則是無信；對子罵父，則是無禮。」</p>
+          <p>評分：詞語要能對應人物表現（例如寫王戎「貪吃」不給分）；依據須為文中句子或明確情節。</p>
+          <div class="plain">兩個七歲小孩都很厲害，但厲害的方向不同：王戎是「頭腦好、會推理」，元方是「講道理、懂禮貌」。寫特質時一定要搭配證據，不然只會拿一半。</div>
+        </div></details>
+      </div>
+
+      <!-- ========== 四、非選 ========== -->
+      <div class="paper-sec">四、非選擇題（共 20 分）</div>
+      <p>請先寫在紙上，再看參考答案與評分標準自行給分。</p>
+
+      <div class="q" data-points="8">
+        <div class="q-head"><span class="q-no">35.</span><span class="tag hot">翻譯</span><span class="tag">L2・L4・世說</span><span class="src">自編（比照段考題型）</span><span class="pts">8 分</span></div>
+        <div class="q-stem">請將下列文句翻譯成白話文（每小題 2 分）：<br>（1）愛其子，擇師而教之；於其身也，則恥師焉，惑矣！<br>（2）聖人無常師。<br>（3）吾諸兒碌碌，他日繼吾志事，惟此生耳！<br>（4）既已納其自託，寧可以急相棄邪？</div>
+        <details><summary>看參考答案與評分</summary><div class="explain">
+          <p class="ans">參考答案</p>
+          <p>（1）疼愛自己的孩子，就選擇老師來教導他；對於自己，卻以向老師學習為可恥，真是糊塗啊！（關鍵：擇師而教之、恥師、惑）</p>
+          <p>（2）聖人沒有固定的老師。（關鍵：常＝固定）</p>
+          <p>（3）我的幾個兒子都平庸無能，將來能繼承我的志向與事業的，只有這個書生了！（關鍵：碌碌＝平庸、志事、惟＝只有）</p>
+          <p>（4）既然已經接受了他的託付，怎麼可以因為情況危急就拋棄他呢？（關鍵：納＝接受、寧＝豈、急＝危急）</p>
+          <p>評分：每小題 2 分；關鍵字詞翻錯一處扣 1 分，句意錯誤不給分。</p>
+          <div class="plain">翻譯題老師改的是「關鍵字」：常、碌碌、惟、寧、恥師……每個關鍵字都要在你的句子裡找得到對應的白話，不要只寫大意。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-points="12">
+        <div class="q-head"><span class="q-no">36.</span><span class="tag">短文寫作</span><span class="tag">L2 延伸</span><span class="src">自編（比照段考引導寫作）</span><span class="pts">12 分</span></div>
+        <div class="q-stem">韓愈說：「聞道有先後，術業有專攻。」老師不一定比學生年長，只要在某方面比我們懂，就值得學習。請以「<strong>向他學一課</strong>」為題，寫一位<strong>與你同齡或比你年紀小</strong>的人，說明你從他身上學到了什麼，並結合〈師說〉的觀點談談你的體會。文長 200–300 字。</div>
+        <details><summary>看評分標準與寫作提示</summary><div class="explain">
+          <p class="ans">評分標準（12 分）</p>
+          <div class="table-wrap"><table>
+            <thead><tr><th>等級</th><th>分數</th><th>表現</th></tr></thead>
+            <tbody>
+              <tr><td>A</td><td>10–12</td><td>人物事例具體（有一個清楚的場景）；能準確連結「聞道有先後，術業有專攻」或「無貴無賤，無長無少」；體會真誠有層次；文句流暢、無錯字。</td></tr>
+              <tr><td>B</td><td>7–9</td><td>有事例也有引用，但連結較淺，或敘述多、體會少。</td></tr>
+              <tr><td>C</td><td>4–6</td><td>事例空泛（只說「他很厲害」）；未扣合〈師說〉；或字數明顯不足。</td></tr>
+              <tr><td>D</td><td>0–3</td><td>離題（寫成老師或長輩）、未完成。</td></tr>
+            </tbody>
+          </table></div>
+          <p>寫作結構建議：①開頭一句點出對象與他擅長的事 → ②一個具體場景（他怎麼教你／你怎麼發現他比你懂）→ ③引用〈師說〉一句連結 → ④你的改變或體會。</p>
+          <div class="plain">最常見的失分是「寫成老師」——題目限定同齡或更小喔！例如：班上數學很好的同學、教你剪影片的弟弟、教你用手語的同學。一個畫面寫清楚，比列三件事都寫不深好。</div>
+        </div></details>
+      </div>
+    </div>
+
+    <h3>考後檢討</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>你的分數（選擇題 72 分＋自評非選 28 分）</th><th>建議</th></tr></thead>
+      <tbody>
+        <tr><td>80 分以上</td><td>基本功穩了。把錯題的選項逐一改寫成正確敘述，再寫一次成功高中 113-1 原卷練速度；考前一晚只看「國學常識與記憶技巧」分頁。</td></tr>
+        <tr><td>60–79 分</td><td>看錯題集中在哪一類：字音字形錯多→回「範圍重點整理」各課的字音字形表；修辭錯多→回「題型解法套用」的修辭判斷步驟；文意錯多→回「課文導覽」看段落結構圖。</td></tr>
+        <tr><td>60 分以下</td><td>先別急著寫新題。依序回「課文導覽」把五篇課文的作者、主旨、段落結構各說一遍，再看「範圍重點整理」的必背短句與翻譯，然後重寫本卷錯題。</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>錯題對應章節</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>題號</th><th>考點</th><th>回去複習</th></tr></thead>
+      <tbody>
+        <tr><td>1、2、3、28</td><td>字音、字形、成語</td><td>範圍重點整理：各課字音字形；國學常識與記憶技巧</td></tr>
+        <tr><td>6、19、22</td><td>修辭（設問、移情、類疊、轉化、映襯、譬喻）</td><td>題型解法套用：修辭判斷；範圍重點整理 L1</td></tr>
+        <tr><td>8、9、10、26</td><td>L1 現代詩選（新月派三美、〈再別康橋〉〈斷章〉）</td><td>課文導覽 L1；範圍重點整理 L1</td></tr>
+        <tr><td>5、13、14、17、20、23、25、29、35(1)(2)</td><td>L2〈師說〉、韓愈、古文運動</td><td>課文導覽 L2；國學常識（古文運動、唐宋八大家）</td></tr>
+        <tr><td>11、12</td><td>L3〈鬼頭刀〉主旨與作者心境</td><td>課文導覽 L3</td></tr>
+        <tr><td>4、7、15、16、24、30、35(3)</td><td>L4〈左忠毅公逸事〉情節、結構、字義</td><td>課文導覽 L4；範圍重點整理 L4</td></tr>
+        <tr><td>18、21、27、32、33、34、35(4)</td><td>補充《世說新語》字義與人物</td><td>範圍重點整理：補充 L2《世說新語》選；老師講義</td></tr>
+        <tr><td>31、36</td><td>原文摘錄、引導寫作</td><td>考前攻略：作答策略（非選題先列關鍵詞）</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box tip"><span class="label">小提醒</span><p>補充教材 L1 的篇名目前無法確認，本卷沒有出題；請記得照老師講義自己再複習一次。</p></div>
   </section>
 
   <!-- ===================================================== APPLY ===================================================== -->

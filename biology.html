@@ -34,6 +34,7 @@
     <button data-tab="notes">範圍重點整理</button>
     <button data-tab="formula">必背整理與記憶技巧</button>
     <button data-tab="past">考古題與白話解析</button>
+    <button data-tab="mock">模擬段考</button>
     <button data-tab="apply">題型解法套用</button>
     <button data-tab="tips">考前攻略</button>
   </nav>
@@ -1443,6 +1444,894 @@
           <div class="plain">記住兩個「加倍點」：DNA 在 S 期加倍、染色體數在後期加倍；兩者都在細胞一分為二時減半。照這張時間表套就不會錯。</div>
         </div>
       </details>
+    </div>
+  </section>
+
+  <!-- ===================== 模擬段考 ===================== -->
+  <section class="panel" id="mock" hidden>
+    <h2>模擬段考</h2>
+    <div class="box info"><span class="label">這份模擬卷怎麼來的</span>
+      <p><strong>陽明高中：</strong>官網只公告考程表和考試範圍，找不到公開的生物科段考試卷。<strong>其他臺北市高中：</strong>師大附中、中山女高、南湖、大直等校公開的只有教學進度表、命題範圍或答案公布表，沒有可以讀到題目的生物試卷。</p>
+      <p><strong>實際讀到的考卷：</strong>只有一份公開考卷可以讀到完整題目和答案：臺中一中 108 學年度第一學期第一次期中考的高一生物（108 課綱第一屆，範圍同樣是第一章「細胞」）。這份卷子不是臺北市的學校，所以只參考它的<strong>卷面結構</strong>（單選、多選、題組、非選四大題）和部分考點。另外搜尋時也看到基隆市中山高中的高一生物段考卷，但連結已經失效（404），沒有讀到內容，所以沒有使用。</p>
+      <p><strong>改編原則：</strong>不逐字照抄。標「改編自」的題目只保留考點，題目敘述、選項、數字都重寫過，答案也重新算過；其餘題目依本次範圍（南一版 1-1～1-4，到細胞週期，加上探討活動 1-1、1-2）比照段考常見題型自己出。全卷不重複「考古題與白話解析」「題型解法套用」分頁的題目。</p>
+    </div>
+
+    <h3>考古題來源</h3>
+    <div class="table-wrap sources"><table>
+      <thead><tr><th>學校</th><th>考試</th><th>與本次範圍重疊</th><th>原卷連結</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>臺中市立臺中第一高級中學（非臺北市，臺北市各校找不到公開試卷，改用這份）</td>
+          <td>108 學年度第一學期 第一次期中考 高一生物（附答案）</td>
+          <td>單選 1–12、多選 13–27 幾乎都在範圍內（細胞學說、顯微鏡、胞器、細胞膜、代謝、光合與呼吸）；閱讀題 28–37 是粒線體、溶體、內共生的延伸閱讀；非選 1–3（表面積與體積比、顯微測量、光合與呼吸）</td>
+          <td><a href="https://347.com.tw/files/mkt/highschool/108%E5%8F%B0%E4%B8%AD%E4%B8%80%E4%B8%AD-%E7%94%9F%E7%89%A9%E7%A7%91%E9%AB%98%E4%B8%80%E4%B8%8A%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83.pdf" target="_blank" rel="noopener">347.com.tw（補習班網站轉載，頁面內有「點此下載」）</a></td>
+        </tr>
+        <tr>
+          <td>臺北市立陽明高中、其他臺北市高中</td>
+          <td>高一上第一次段考 生物</td>
+          <td>找不到公開試卷（只有考程、範圍、教學進度表）</td>
+          <td>—</td>
+        </tr>
+      </tbody></table></div>
+
+    <div class="exam">
+      <div class="paper-head">
+        <span class="ttl">陽明高中 高一 基礎生物 第一次段考 模擬卷</span>
+        <span class="meta">範圍：南一版 基礎生物 1-1～1-4（到細胞週期）＋探討活動 1-1、1-2 ｜ 時間 60 分鐘 ｜ 滿分 100 分</span>
+      </div>
+      <div class="exam-bar">
+        <div class="exam-timer" data-min="60"></div>
+        <div class="exam-score"></div>
+      </div>
+      <p class="muted small">作答方式：先按「開始計時」，像真的考試一樣全部寫完再看解析；點選項會立刻對答案並計分（多選題選好後按「對答案」；非選題請看解析自行給分）。卷面結構參考臺中一中 108-1 第一次期中考：單選 → 多選 → 題組 → 非選。建議時間分配：單選 15 分鐘、多選 12 分鐘、題組 15 分鐘、非選 10 分鐘，最後 8 分鐘檢查答案卡。</p>
+
+      <!-- ========== 一、單選題 ========== -->
+      <div class="paper-sec">一、單選題（每題 2 分，共 40 分）</div>
+      <p>每題只有一個最適當的答案，答錯不倒扣。</p>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">1.</span><span class="tag">1-1 細胞學說</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">下列哪一項<strong>不是</strong>細胞學說的內容？</div>
+        <ul class="opts">
+          <li><button>所有生物都是由一個或多個細胞所構成</button></li>
+          <li><button>細胞是生物體構造和功能的基本單位</button></li>
+          <li><button>所有細胞都具有細胞核</button></li>
+          <li><button>細胞都是由原已存在的細胞分裂而來</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>細胞學說三要點為 (A)(B)(D)。(C) 錯：細菌、藍綠菌等原核細胞沒有細胞核，人類成熟紅血球也沒有細胞核。</p>
+            <div class="plain">細胞學說只講三件事：生物由細胞組成、細胞是基本單位、細胞生細胞。「都有細胞核」是出題老師加進去的陷阱，細菌就是反例。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">2.</span><span class="tag">1-1 細胞學說</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 25 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">有關虎克（Robert Hooke）的敘述，下列何者正確？</div>
+        <ul class="opts">
+          <li><button>首先觀察到活的細菌與原生生物</button></li>
+          <li><button>以顯微鏡觀察軟木塞薄片，將看到的一格格小室命名為 cell</button></li>
+          <li><button>首先在植物細胞中發現細胞核</button></li>
+          <li><button>提出「細胞都是由原已存在的細胞分裂而來」</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>(A) 是雷文霍克；(C) 是布朗；(D) 是魏修。虎克看到的是軟木塞中死細胞留下的細胞壁所圍成的空格。</p>
+            <div class="plain">虎克＝「取名字的人」，他看到空房子（細胞壁）就把它叫做 cell。看到活東西的是雷文霍克，找到細胞核的是布朗，細胞生細胞是魏修。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">3.</span><span class="tag">探討活動 1-1 顯微鏡</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 3 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">有關複式顯微鏡的構造與操作，下列敘述何者正確？</div>
+        <ul class="opts">
+          <li><button>目鏡的鏡頭越長，放大倍率越大</button></li>
+          <li><button>對焦時應一邊看目鏡，一邊轉粗調節輪把物鏡往下降到最低</button></li>
+          <li><button>製作口腔皮膜細胞玻片時，應滴蒸餾水讓細胞散開</button></li>
+          <li><button>選用較長的物鏡與較短的目鏡，總放大倍率較大</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：D</p>
+            <p>物鏡越長倍率越大；目鏡越短倍率越大，所以 (D) 正確、(A) 錯。(B) 物鏡下降時眼睛要從側面看，避免壓破玻片；看目鏡時只能把距離拉開。(C) 應滴 0.9% 生理食鹽水（等張），蒸餾水會讓動物細胞吸水脹破。</p>
+            <div class="plain">口訣「物長目短倍率大」。物鏡要往下降的時候一定是「眼睛在旁邊盯著」，看目鏡時只能往上拉。口腔細胞是動物細胞，泡清水會吸水脹破，所以要用生理食鹽水。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">4.</span><span class="tag hot">高頻考點</span><span class="tag">探討活動 1-2 顯微測量</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">以目鏡 10×、物鏡 10× 觀察時，測得視野直徑為 1.6 mm。若目鏡不變，改用物鏡 40×，視野直徑約為多少？</div>
+        <ul class="opts">
+          <li><button>6.4 mm</button></li>
+          <li><button>0.8 mm</button></li>
+          <li><button>0.4 mm</button></li>
+          <li><button>0.1 mm</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>視野直徑與總放大倍率成反比。總倍率由 100× 變為 400×（4 倍），視野直徑變為 1/4：1.6 ÷ 4 ＝ 0.4 mm（＝ 400 μm）。</p>
+            <div class="plain">放大越多，看到的範圍越小。直徑是「長度」，所以倍率變 4 倍，直徑就除以 4，不用平方。選 0.1 mm 的人是誤用了面積的平方（16 倍）。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">5.</span><span class="tag hot">高頻考點</span><span class="tag">探討活動 1-2 顯微測量</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">以目鏡 10×、物鏡 10× 觀察一排緊密相連的細胞，視野直徑上恰好排了 64 個細胞。若目鏡不變、改用物鏡 40×，視野直徑上約可看到幾個細胞？</div>
+        <ul class="opts">
+          <li><button>16 個</button></li>
+          <li><button>4 個</button></li>
+          <li><button>32 個</button></li>
+          <li><button>256 個</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>總倍率變為 4 倍，視野直徑變為 1/4，直徑上的細胞數也變為 1/4：64 ÷ 4 ＝ 16 個。</p>
+            <div class="plain">先看題目是「排成一排」（長度）還是「佈滿視野」（面積）。這題是一排，所以只除以 4。如果是佈滿整個視野，才要除以 16，會得到 4 個——那就是選項 B 的陷阱。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">6.</span><span class="tag">探討活動 1-1 顯微鏡</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">以複式顯微鏡觀察一隻草履蟲，發現它的像正朝視野的<strong>左上方</strong>游去。為了讓它保持在視野中央，玻片應往哪個方向移動？</div>
+        <ul class="opts">
+          <li><button>右下方</button></li>
+          <li><button>左上方</button></li>
+          <li><button>右上方</button></li>
+          <li><button>左下方</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>複式顯微鏡的像上下左右都顛倒，玻片移動方向與像的移動方向相反。像往左上方跑走，要讓像往右下方回到中央，玻片就要往左上方移動。</p>
+            <div class="plain">記一句話：「像在哪裡，玻片就往哪裡推。」像跑到左上，你就把玻片往左上推，它就會被拉回中間。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">7.</span><span class="tag">探討活動 1-1 細胞觀察</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 26 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">製作並觀察口腔皮膜細胞玻片時，下列敘述何者正確？</div>
+        <ul class="opts">
+          <li><button>滴加蒸餾水可讓細胞維持原來的形狀</button></li>
+          <li><button>以碘液染色後，可看到細胞壁被染成藍黑色</button></li>
+          <li><button>以亞甲藍液染色後，細胞核會染成較深的藍色而容易觀察</button></li>
+          <li><button>在細胞最外側可以看到明顯的細胞壁</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>(A) 應使用 0.9% 生理食鹽水。(B) 碘液使細胞核呈黃褐色，遇澱粉才變藍黑色；且動物細胞沒有細胞壁。(D) 口腔皮膜細胞是動物細胞，沒有細胞壁，最外層是細胞膜。</p>
+            <div class="plain">口腔細胞＝動物細胞＝沒有細胞壁，看到「細胞壁」三個字就可以刪。亞甲藍是藍色染劑，讓細胞核變成深藍色的小點。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">8.</span><span class="tag">1-2 細胞的構造</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 6 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">胰臟細胞在粗糙內質網上合成消化酶（一種蛋白質）後，這些蛋白質主要以哪一種構造運送到高基氏體進行加工？</div>
+        <ul class="opts">
+          <li><button>液泡</button></li>
+          <li><button>囊泡</button></li>
+          <li><button>溶體</button></li>
+          <li><button>中心粒</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>分泌性蛋白質的路徑：核糖體（附在粗糙內質網上）合成 → 粗糙內質網 → 以囊泡運送 → 高基氏體加工、包裝 → 囊泡運到細胞膜 → 胞吐作用送出細胞。</p>
+            <div class="plain">把細胞想成工廠：內質網是生產線，高基氏體是包裝部，中間用來搬貨的小推車就是「囊泡」。液泡是倉庫，溶體是垃圾分解站。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">9.</span><span class="tag">1-2 細胞的構造</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 7 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">某位女性的卵細胞因遺傳缺陷而無法產生足夠的 ATP。醫師將她卵細胞的細胞核取出，移入另一位健康女性已去除細胞核的卵細胞中，再進行人工受精。推測這位女性卵細胞的細胞質中，最可能是哪一種胞器有問題？</div>
+        <ul class="opts">
+          <li><button>核糖體</button></li>
+          <li><button>高基氏體</button></li>
+          <li><button>中心粒</button></li>
+          <li><button>粒線體</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：D</p>
+            <p>粒線體是有氧呼吸的主要場所，負責產生細胞所需的大部分 ATP。題目說「ATP 不足」且只換掉細胞質、保留細胞核，可推知問題出在細胞質中的粒線體。</p>
+            <div class="plain">關鍵字是「能量（ATP）不夠」，一看到就想到「發電廠＝粒線體」。醫生只換掉細胞質，就是為了換一批健康的發電廠。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">10.</span><span class="tag">1-2 原核與真核</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">下列哪一種生物的細胞具有由核膜包覆的細胞核？</div>
+        <ul class="opts">
+          <li><button>酵母菌</button></li>
+          <li><button>大腸桿菌</button></li>
+          <li><button>藍綠菌</button></li>
+          <li><button>乳酸菌</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>酵母菌是真菌，屬於真核生物，具有核膜包覆的細胞核。大腸桿菌、藍綠菌、乳酸菌都是細菌，屬於原核生物，沒有核膜。</p>
+            <div class="plain">名字裡有「菌」不代表是細菌！酵母菌是真菌，跟香菇同一類，是真核生物。真正的細菌（含藍綠菌）都沒有細胞核。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">11.</span><span class="tag">1-2 細胞的構造</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 12 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">若要研究「溶體」的功能，選用下列哪一種細胞最適合？</div>
+        <ul class="opts">
+          <li><button>需要大量 ATP 的肌肉細胞</button></li>
+          <li><button>有許多突起、負責傳遞訊息的神經細胞</button></li>
+          <li><button>具有大型中央液泡的植物細胞</button></li>
+          <li><button>會吞入細菌並加以分解的白血球</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：D</p>
+            <p>溶體內含多種水解酵素，可分解吞入的細菌、異物及老舊胞器。吞噬性白血球以胞吞作用吞入細菌，再與溶體結合分解，所以溶體特別多。</p>
+            <div class="plain">溶體＝細胞的「消化室、垃圾處理場」。哪種細胞最常吃東西、處理垃圾？就是會吞細菌的白血球。肌肉細胞要找的是粒線體。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">12.</span><span class="tag">1-2 細胞的構造</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 10 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">植物行光合作用時用來吸收光能的葉綠素，位於葉綠體的哪個部位？</div>
+        <ul class="opts">
+          <li><button>葉綠體外膜</button></li>
+          <li><button>類囊體的膜上</button></li>
+          <li><button>葉綠體基質</button></li>
+          <li><button>粒線體內膜</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>葉綠體具雙層膜，內部有許多扁平囊狀的類囊體（堆疊成葉綠餅），葉綠素等光合色素位於類囊體膜上；基質是類囊體外的液態部分。(D) 粒線體不含葉綠素。</p>
+            <div class="plain">葉綠體裡面一疊一疊像硬幣的就是類囊體，色素「貼」在它的膜上負責吸光。外膜只是外殼，基質是裡面的湯。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">13.</span><span class="tag">1-2 細胞膜</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 8 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">有關細胞膜構造的敘述，下列何者正確？</div>
+        <ul class="opts">
+          <li><button>主要由單層磷脂質分子排列而成</button></li>
+          <li><button>細胞膜為全透性，任何物質都能自由通過</button></li>
+          <li><button>蛋白質鑲嵌在磷脂雙層中，有些可作為特定物質進出細胞的通道</button></li>
+          <li><button>膜上的磷脂質與蛋白質位置固定，不會移動</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>細胞膜以磷脂雙層為基本架構，蛋白質鑲嵌其中，分子可在膜上流動（流體鑲嵌模型）。細胞膜具選擇性通透（半透性），全透性的是細胞壁。</p>
+            <div class="plain">細胞膜是「兩層」磷脂質，像一片會流動的油膜，上面插著蛋白質當門。它會挑東西進出（選擇性），不是什麼都放行——全透性的是細胞壁。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">14.</span><span class="tag">1-2 物質進出細胞</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">人體的白血球將入侵的細菌整個包入細胞內，是利用下列哪一種方式？</div>
+        <ul class="opts">
+          <li><button>擴散作用</button></li>
+          <li><button>主動運輸</button></li>
+          <li><button>促進性擴散</button></li>
+          <li><button>胞吞作用</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：D</p>
+            <p>細菌屬於大型顆粒，無法通過膜上的運輸蛋白，須由細胞膜內凹包覆形成囊泡進入細胞，即胞吞（內噬）作用，此過程需消耗能量。</p>
+            <div class="plain">東西太大、過不了「門」（運輸蛋白），細胞就直接把膜凹下去把它包起來吞掉，這就是胞吞。反過來把東西包好丟出去叫胞吐。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">15.</span><span class="tag">1-2 滲透作用</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">農夫一次施用過量的肥料後，作物反而出現萎凋的「燒苗」現象。最主要的原因是：</div>
+        <ul class="opts">
+          <li><button>土壤溶液濃度高於根毛細胞內的濃度，根毛細胞因滲透作用失水</button></li>
+          <li><button>土壤溶液濃度低於根毛細胞內的濃度，根毛細胞吸水過多而脹破</button></li>
+          <li><button>肥料的礦物質以擴散作用大量進入細胞，使細胞壁溶解</button></li>
+          <li><button>根毛細胞的細胞膜變成全透性，水分自由流失</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>施肥過量使土壤溶液成為高張溶液，水分由根毛細胞（低濃度、水多）經滲透作用移向土壤（高濃度、水少），植物失水而萎凋。</p>
+            <div class="plain">水會往「比較鹹」的地方跑。肥料太多，土壤比根還鹹，水就從根被拉出去，植物就像被醃過一樣軟掉。醃菜撒鹽出水也是同一個道理。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">16.</span><span class="tag">1-3 細胞活動的能量</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 21 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">細胞內的代謝作用可分為合成作用與分解作用。下列敘述何者正確？</div>
+        <ul class="opts">
+          <li><button>分解作用屬於需能反應，需消耗 ATP 才能進行</button></li>
+          <li><button>合成作用常伴隨 ATP 分解為 ADP 與磷酸的反應</button></li>
+          <li><button>合成作用是將大分子分解成小分子的過程</button></li>
+          <li><button>只有植物能進行合成作用，動物只能進行分解作用</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>合成作用（小分子 → 大分子，如胺基酸 → 蛋白質）需要能量，常由 ATP → ADP ＋ Pi 提供；分解作用（大分子 → 小分子，如呼吸作用分解葡萄糖）釋出能量，可用來合成 ATP。動植物細胞都同時進行兩種作用。</p>
+            <div class="plain">「蓋房子」（合成）要花錢，錢就是 ATP；「拆房子」（分解）會拿回錢，拿來存成 ATP。動物也會長肌肉，當然會合成。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="2">
+        <div class="q-head"><span class="q-no">17.</span><span class="tag">1-3 酵素</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">將唾液澱粉酶與蛋白質溶液混合，置於 37°C 下一段時間，結果蛋白質並未被分解。這個結果最能說明酵素的哪一項特性？</div>
+        <ul class="opts">
+          <li><button>反應前後不被消耗，可重複使用</button></li>
+          <li><button>高溫會使酵素變性而失去活性</button></li>
+          <li><button>一種酵素通常只能作用於特定的受質（專一性）</button></li>
+          <li><button>酵素可降低反應所需的活化能</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>37°C 是唾液澱粉酶的適宜溫度，酵素沒有失活；蛋白質未被分解是因為澱粉酶只能分解澱粉，此為酵素的專一性。</p>
+            <div class="plain">溫度剛好、酵素也是好的，卻什麼事都沒發生——因為「鑰匙不對鎖」。澱粉酶這把鑰匙只開澱粉這個鎖。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="2">
+        <div class="q-head"><span class="q-no">18.</span><span class="tag">1-3 呼吸作用</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">有關真核細胞有氧呼吸作用的敘述，下列何者正確？</div>
+        <ul class="opts">
+          <li><button>主要在粒線體中進行，葡萄糖中的化學能一部分轉存於 ATP，其餘以熱能散失</button></li>
+          <li><button>原核細胞沒有粒線體，因此都不能進行有氧呼吸</button></li>
+          <li><button>葡萄糖中的化學能可以全部轉存到 ATP 中</button></li>
+          <li><button>植物白天行光合作用，只有在夜間才進行呼吸作用</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：A</p>
+            <p>(B) 許多細菌雖無粒線體，仍能進行有氧呼吸。(C) 能量轉換不可能百分之百，有相當部分以熱能散失（這也是體溫的來源之一）。(D) 植物細胞日夜都進行呼吸作用。</p>
+            <div class="plain">呼吸作用像燒柴發電，一定有一部分變成熱跑掉，不可能全部存起來。植物「整天」都在呼吸，白天只是光合作用比較明顯。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="2">
+        <div class="q-head"><span class="q-no">19.</span><span class="tag">1-4 細胞週期</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">在有絲分裂的某一時期，核膜逐漸消失，染色質濃縮成棒狀的染色體，紡錘絲也開始出現。此時期為：</div>
+        <ul class="opts">
+          <li><button>間期</button></li>
+          <li><button>前期</button></li>
+          <li><button>中期</button></li>
+          <li><button>末期</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>前期：染色質濃縮成染色體、核膜與核仁消失、紡錘絲出現。中期：染色體排列在赤道板。後期：姊妹染色分體分離移向兩極。末期：核膜重新出現、染色體解開成染色質，並進行細胞質分裂。</p>
+            <div class="plain">前期就是「開工準備」：拆掉核膜這道牆、把線團（染色質）捲成好搬的棒子（染色體）、把拉繩（紡錘絲）架起來。末期剛好相反，把牆蓋回去。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="2">
+        <div class="q-head"><span class="q-no">20.</span><span class="tag">1-4 細胞週期</span><span class="src">自編（比照段考題型）</span><span class="pts">2 分</span></div>
+        <div class="q-stem">有關細胞週期中 G<sub>1</sub> 期的敘述，下列何者正確？</div>
+        <ul class="opts">
+          <li><button>進行 DNA 複製，使 DNA 含量加倍</button></li>
+          <li><button>染色體排列在細胞中央的赤道板上</button></li>
+          <li><button>核膜消失，紡錘絲出現</button></li>
+          <li><button>細胞生長，並合成所需的蛋白質與胞器，為 DNA 複製做準備</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：D</p>
+            <p>間期分為 G<sub>1</sub>（生長、合成蛋白質等物質）、S（DNA 複製）、G<sub>2</sub>（繼續生長、為分裂做準備）。(A) 為 S 期；(B) 為中期；(C) 為前期。</p>
+            <div class="plain">G 可以想成 Gap（空檔），但空檔不是休息，是在「長大、備料」。真正複製 DNA 的是 S（Synthesis）期。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- ========== 二、多選題 ========== -->
+      <div class="paper-sec">二、多選題（每題 3 分，共 24 分）</div>
+      <p>每題有兩個或兩個以上的正確選項。段考計分通常為：全對得 3 分，錯一個選項得 1.8 分，錯兩個得 0.6 分，錯三個以上 0 分；本網站只判斷全對或不對。</p>
+
+      <div class="q" data-answer="ACD" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">21.</span><span class="tag">1-2 細胞的構造</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 16 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">胰臟中負責分泌消化酶（蛋白質）的細胞，在大量製造並分泌消化酶時，下列哪些構造會比一般細胞發達？</div>
+        <ul class="opts">
+          <li><button>粗糙內質網</button></li>
+          <li><button>平滑內質網</button></li>
+          <li><button>高基氏體</button></li>
+          <li><button>粒線體</button></li>
+          <li><button>中心粒</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ACD</p>
+            <p>分泌蛋白質需要：粗糙內質網（附有核糖體，合成蛋白質）、高基氏體（加工、包裝、分泌）、粒線體（提供合成與運輸所需的 ATP）。平滑內質網主要與脂質合成、解毒有關；中心粒與細胞分裂有關。</p>
+            <div class="plain">把「做蛋白質→包裝→出貨」整條生產線想一遍：工廠（粗糙內質網）、包裝部（高基氏體），再加上全程都要電（粒線體）。平滑內質網做的是油脂，不是蛋白質。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="ABD" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">22.</span><span class="tag">1-2 細胞的構造</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 19 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列哪些生物的細胞具有細胞壁？</div>
+        <ul class="opts">
+          <li><button>大腸桿菌</button></li>
+          <li><button>酵母菌</button></li>
+          <li><button>人類的口腔皮膜細胞</button></li>
+          <li><button>洋蔥鱗葉表皮細胞</button></li>
+          <li><button>變形蟲</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ABD</p>
+            <p>細菌（大腸桿菌）、真菌（酵母菌）、植物（洋蔥）細胞都有細胞壁，只是成分不同（植物以纖維素為主）。動物細胞（口腔皮膜細胞）與變形蟲等原生動物沒有細胞壁。</p>
+            <div class="plain">有細胞壁的不只植物：細菌和真菌也有。沒有的是動物和「像動物的」原生生物（變形蟲、草履蟲），所以它們形狀可以變來變去。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="AB" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">23.</span><span class="tag">探討活動 1-1 細胞觀察</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">在顯微鏡下比較洋蔥鱗葉表皮細胞與口腔皮膜細胞，下列哪些構造是<strong>洋蔥表皮細胞有、口腔皮膜細胞沒有</strong>的？</div>
+        <ul class="opts">
+          <li><button>細胞壁</button></li>
+          <li><button>大型液泡</button></li>
+          <li><button>葉綠體</button></li>
+          <li><button>粒線體</button></li>
+          <li><button>細胞核</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：AB</p>
+            <p>洋蔥是植物，具細胞壁與大型中央液泡。(C) 洋蔥鱗葉長在地下、不照光，表皮細胞沒有葉綠體。(D)(E) 兩種細胞都有粒線體和細胞核。</p>
+            <div class="plain">最大陷阱是葉綠體：洋蔥鱗葉是白色或紫色的，不是綠色，所以沒有葉綠體。「植物細胞」不等於「一定有葉綠體」。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="ABC" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">24.</span><span class="tag">1-2 細胞的構造</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 24 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列哪些位置可以找到核糖體？</div>
+        <ul class="opts">
+          <li><button>粗糙內質網的表面</button></li>
+          <li><button>真核細胞的細胞質中（游離狀態）</button></li>
+          <li><button>原核細胞的細胞質中</button></li>
+          <li><button>高基氏體的內部</button></li>
+          <li><button>溶體的內部</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ABC</p>
+            <p>核糖體是合成蛋白質的場所，可附著在粗糙內質網上，也可游離於細胞質中；原核細胞雖無膜狀胞器，但也有核糖體。高基氏體與溶體內沒有核糖體。</p>
+            <div class="plain">每個細胞都要做蛋白質，所以「核糖體」是原核、真核都有的東西。粗糙內質網之所以「粗糙」，就是因為表面黏滿了核糖體。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="ACE" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">25.</span><span class="tag">1-2 原核與真核</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 23 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">藍綠菌能進行光合作用。下列哪些構造是藍綠菌細胞具有的？</div>
+        <ul class="opts">
+          <li><button>DNA</button></li>
+          <li><button>葉綠體</button></li>
+          <li><button>細胞膜</button></li>
+          <li><button>核膜</button></li>
+          <li><button>細胞壁</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ACE</p>
+            <p>藍綠菌為原核生物：具 DNA、細胞膜、細胞壁、核糖體；沒有核膜，也沒有葉綠體等膜狀胞器。它的光合色素（葉綠素）位於細胞內的膜狀構造上，而非葉綠體中。</p>
+            <div class="plain">「會光合作用」不代表「有葉綠體」。藍綠菌有葉綠素但沒有葉綠體，這是段考最愛的陷阱。它是原核生物，有膜狀包覆的胞器一律沒有。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="BCE" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">26.</span><span class="tag">1-2 物質進出細胞</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 17 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列哪些物質進出細胞的過程，<strong>需要</strong>細胞膜上的運輸蛋白協助？</div>
+        <ul class="opts">
+          <li><button>氧氣由肺泡擴散進入微血管的細胞</button></li>
+          <li><button>葡萄糖順著濃度梯度進入紅血球（促進性擴散）</button></li>
+          <li><button>根毛細胞逆著濃度梯度吸收礦物質離子</button></li>
+          <li><button>二氧化碳由細胞擴散到血液中</button></li>
+          <li><button>水分子經由水通道蛋白大量進入細胞</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：BCE</p>
+            <p>O<sub>2</sub>、CO<sub>2</sub> 等小分子可直接穿過磷脂雙層（簡單擴散），不需運輸蛋白。促進性擴散與主動運輸都需運輸蛋白；水分子除了可少量直接穿過磷脂雙層外，也可經水通道蛋白快速通過。</p>
+            <div class="plain">氧氣、二氧化碳又小又能溶在油裡，直接穿牆就過了。葡萄糖、離子是「要走門的」，門就是運輸蛋白；逆著濃度走（主動運輸）還要另外付 ATP。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="ABD" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">27.</span><span class="tag">1-3 ATP</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">下列哪些生理活動需要直接消耗 ATP？</div>
+        <ul class="opts">
+          <li><button>肌肉收縮</button></li>
+          <li><button>主動運輸</button></li>
+          <li><button>氧氣擴散進入細胞</button></li>
+          <li><button>以胺基酸合成蛋白質</button></li>
+          <li><button>水分子以滲透作用進入細胞</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ABD</p>
+            <p>肌肉收縮、主動運輸（逆濃度梯度）、合成作用都需 ATP 提供能量。擴散與滲透都是物質順著濃度差移動，不需消耗 ATP。</p>
+            <div class="plain">順著濃度「下坡」走的（擴散、滲透）都免費；要「上坡」（主動運輸）、要出力（肌肉）、要蓋東西（合成）才要花 ATP。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="ABD" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">28.</span><span class="tag">1-4 細胞週期</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">有關染色質與染色體的敘述，下列哪些正確？</div>
+        <ul class="opts">
+          <li><button>染色質與染色體是同一種物質在不同時期的不同型態</button></li>
+          <li><button>主要由 DNA 與蛋白質組成</button></li>
+          <li><button>間期時以棒狀染色體存在，在光學顯微鏡下最容易觀察</button></li>
+          <li><button>DNA 複製後，一條染色體含有兩條相同的姊妹染色分體，以著絲點相連</button></li>
+          <li><button>姊妹染色分體在中期彼此分離，移向細胞兩極</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：ABD</p>
+            <p>(C) 間期時以細長鬆散的染色質存在，不易觀察；分裂期才濃縮成染色體，中期最清楚。(E) 姊妹染色分體在後期才分離。</p>
+            <div class="plain">平常（間期）是一團散開的毛線（染色質），要搬家（分裂）時才捲成一根根棒子（染色體）。中期排隊、後期才分開，順序不要記反。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- ========== 三、題組 ========== -->
+      <div class="paper-sec">三、題組（每題 3 分，共 24 分）</div>
+      <p>依圖表與實驗資料作答；題目註明「多選」者為多選題，其餘為單選題。</p>
+
+      <div>
+        <p><strong>題組一（29–31 題）</strong>下圖為某動物細胞的構造模式圖，甲～戊代表不同構造。</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 300" role="img" aria-label="動物細胞模式圖：甲為細胞中央具雙層膜與核仁的構造，乙為具內褶的橢圓形構造，丙為表面有顆粒的層狀膜構造，丁為無顆粒的彎曲扁囊堆疊構造，戊為兩個互相垂直的小圓柱">
+            <ellipse cx="240" cy="150" rx="190" ry="125" style="fill:var(--sheet);stroke:var(--ink);stroke-width:2.5"/>
+            <!-- 甲 nucleus -->
+            <circle cx="210" cy="150" r="48" style="fill:none;stroke:var(--blue);stroke-width:2"/>
+            <circle cx="210" cy="150" r="42" style="fill:none;stroke:var(--blue);stroke-width:2"/>
+            <circle cx="218" cy="145" r="11" style="fill:var(--blue)"/>
+            <!-- 乙 mitochondrion -->
+            <ellipse cx="335" cy="95" rx="34" ry="16" style="fill:none;stroke:var(--card-red);stroke-width:2"/>
+            <path d="M308,95 L314,85 L320,105 L326,85 L332,105 L338,85 L344,105 L350,85 L356,105 L361,95" style="fill:none;stroke:var(--card-red);stroke-width:1.5"/>
+            <!-- 丙 rough ER -->
+            <path d="M120,200 Q150,232 190,238 M112,212 Q145,246 186,252 M106,224 Q140,258 180,264" style="fill:none;stroke:var(--graphite);stroke-width:2"/>
+            <circle cx="132" cy="210" r="2.5" style="fill:var(--ink)"/>
+            <circle cx="150" cy="224" r="2.5" style="fill:var(--ink)"/>
+            <circle cx="170" cy="233" r="2.5" style="fill:var(--ink)"/>
+            <circle cx="125" cy="223" r="2.5" style="fill:var(--ink)"/>
+            <circle cx="145" cy="238" r="2.5" style="fill:var(--ink)"/>
+            <circle cx="166" cy="247" r="2.5" style="fill:var(--ink)"/>
+            <circle cx="120" cy="236" r="2.5" style="fill:var(--ink)"/>
+            <circle cx="140" cy="251" r="2.5" style="fill:var(--ink)"/>
+            <circle cx="160" cy="260" r="2.5" style="fill:var(--ink)"/>
+            <!-- 丁 Golgi -->
+            <path d="M305,185 Q335,170 365,185 M305,197 Q335,182 365,197 M305,209 Q335,194 365,209 M305,221 Q335,206 365,221" style="fill:none;stroke:var(--ink);stroke-width:2.5"/>
+            <circle cx="375" cy="230" r="5" style="fill:none;stroke:var(--ink);stroke-width:1.5"/>
+            <circle cx="296" cy="232" r="4" style="fill:none;stroke:var(--ink);stroke-width:1.5"/>
+            <!-- 戊 centrioles -->
+            <rect x="112" y="92" width="22" height="8" style="fill:var(--graphite)"/>
+            <rect x="140" y="82" width="8" height="22" style="fill:var(--graphite)"/>
+            <!-- leader lines -->
+            <line x1="162" y1="150" x2="36" y2="150" style="stroke:var(--graphite);stroke-width:1"/>
+            <line x1="367" y1="92" x2="470" y2="66" style="stroke:var(--graphite);stroke-width:1"/>
+            <line x1="112" y1="232" x2="36" y2="266" style="stroke:var(--graphite);stroke-width:1"/>
+            <line x1="366" y1="200" x2="470" y2="226" style="stroke:var(--graphite);stroke-width:1"/>
+            <line x1="112" y1="96" x2="36" y2="62" style="stroke:var(--graphite);stroke-width:1"/>
+            <!-- labels -->
+            <text x="12" y="156" style="fill:var(--ink);font-size:18px;font-weight:700">甲</text>
+            <text x="476" y="72" style="fill:var(--ink);font-size:18px;font-weight:700">乙</text>
+            <text x="12" y="272" style="fill:var(--ink);font-size:18px;font-weight:700">丙</text>
+            <text x="476" y="232" style="fill:var(--ink);font-size:18px;font-weight:700">丁</text>
+            <text x="12" y="68" style="fill:var(--ink);font-size:18px;font-weight:700">戊</text>
+          </svg>
+          <figcaption>動物細胞模式圖（示意，未依比例）</figcaption>
+        </figure>
+      </div>
+
+      <div class="q" data-answer="B" data-points="3">
+        <div class="q-head"><span class="q-no">29.</span><span class="tag">1-2 細胞的構造</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 13–15 題（細胞模式圖題組）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">圖中哪一個構造是細胞產生 ATP 的主要場所？</div>
+        <ul class="opts">
+          <li><button>甲</button></li>
+          <li><button>乙</button></li>
+          <li><button>丙</button></li>
+          <li><button>丁</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>乙為粒線體：外膜光滑、內膜向內摺疊（圖中鋸齒狀），是有氧呼吸的主要場所，產生大部分 ATP。甲為細胞核、丙為粗糙內質網、丁為高基氏體、戊為中心粒。</p>
+            <div class="plain">認圖先找特徵：裡面有「波浪摺痕」的橢圓就是粒線體。摺痕讓內膜面積變大，能做更多 ATP。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="AB" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">30.</span><span class="tag">1-2 細胞的構造</span><span class="src">改編自：臺中一中 108-1 第一次期中考 第 15 題</span><span class="pts">3 分</span></div>
+        <div class="q-stem">（多選）圖中哪些構造由<strong>雙層膜</strong>包覆？</div>
+        <ul class="opts">
+          <li><button>甲</button></li>
+          <li><button>乙</button></li>
+          <li><button>丙</button></li>
+          <li><button>丁</button></li>
+          <li><button>戊</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：AB</p>
+            <p>雙層膜構造：細胞核（核膜）、粒線體、葉綠體。內質網（丙）、高基氏體（丁）為單層膜；中心粒（戊）無膜。</p>
+            <div class="plain">雙層膜只有三個：「核、粒、葉」（細胞核、粒線體、葉綠體）。這張是動物細胞，沒有葉綠體，所以答案就是甲、乙。中心粒和核糖體連膜都沒有。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="D" data-points="3">
+        <div class="q-head"><span class="q-no">31.</span><span class="tag">1-2 動植物細胞比較</span><span class="src">自編（比照段考題型）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">若改畫一般開花植物（如洋蔥）的細胞，圖中哪一個構造通常<strong>不會</strong>出現？</div>
+        <ul class="opts">
+          <li><button>甲</button></li>
+          <li><button>丙</button></li>
+          <li><button>丁</button></li>
+          <li><button>戊</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：D</p>
+            <p>戊為中心粒，存在於動物細胞（及部分低等植物），一般開花植物細胞沒有中心粒。細胞核、內質網、高基氏體動植物細胞皆有。</p>
+            <div class="plain">動物有、植物（開花植物）沒有的：中心粒。植物有、動物沒有的：細胞壁、葉綠體、大液泡。兩邊各記一組就好。</div>
+          </div>
+        </details>
+      </div>
+
+      <div>
+        <p><strong>題組二（32–34 題）</strong>小華在 37°C 下測量甲、乙兩種人體消化酶在不同 pH 值下的活性，結果如下圖。</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 480 270" role="img" aria-label="酵素活性與 pH 值關係圖：甲曲線在 pH 2 附近活性最高，乙曲線在 pH 7 附近活性最高，兩者在 pH 4.5 附近活性都接近零">
+            <line x1="60" y1="210" x2="450" y2="210" style="stroke:var(--ink);stroke-width:2"/>
+            <line x1="60" y1="210" x2="60" y2="30" style="stroke:var(--ink);stroke-width:2"/>
+            <line x1="136" y1="210" x2="136" y2="216" style="stroke:var(--ink);stroke-width:1.5"/>
+            <line x1="212" y1="210" x2="212" y2="216" style="stroke:var(--ink);stroke-width:1.5"/>
+            <line x1="288" y1="210" x2="288" y2="216" style="stroke:var(--ink);stroke-width:1.5"/>
+            <line x1="364" y1="210" x2="364" y2="216" style="stroke:var(--ink);stroke-width:1.5"/>
+            <line x1="440" y1="210" x2="440" y2="216" style="stroke:var(--ink);stroke-width:1.5"/>
+            <text x="60" y="232" text-anchor="middle" style="fill:var(--ink);font-size:13px">0</text>
+            <text x="136" y="232" text-anchor="middle" style="fill:var(--ink);font-size:13px">2</text>
+            <text x="212" y="232" text-anchor="middle" style="fill:var(--ink);font-size:13px">4</text>
+            <text x="288" y="232" text-anchor="middle" style="fill:var(--ink);font-size:13px">6</text>
+            <text x="364" y="232" text-anchor="middle" style="fill:var(--ink);font-size:13px">8</text>
+            <text x="440" y="232" text-anchor="middle" style="fill:var(--ink);font-size:13px">10</text>
+            <text x="250" y="258" text-anchor="middle" style="fill:var(--graphite);font-size:13px">pH 值</text>
+            <text x="22" y="120" text-anchor="middle" transform="rotate(-90 22 120)" style="fill:var(--graphite);font-size:13px">酵素活性（相對值）</text>
+            <path d="M79,210 C110,210 115,50 136,50 C157,50 175,210 212,210" style="fill:none;stroke:var(--card-red);stroke-width:2.5"/>
+            <path d="M231,210 C280,210 300,60 326,60 C352,60 372,210 421,210" style="fill:none;stroke:var(--blue);stroke-width:2.5;stroke-dasharray:7 4"/>
+            <text x="160" y="52" style="fill:var(--card-red);font-size:16px;font-weight:700">甲</text>
+            <text x="348" y="58" style="fill:var(--blue);font-size:16px;font-weight:700">乙</text>
+          </svg>
+          <figcaption>甲（實線）、乙（虛線）兩種消化酶的活性與 pH 值的關係</figcaption>
+        </figure>
+      </div>
+
+      <div class="q" data-answer="B" data-points="3">
+        <div class="q-head"><span class="q-no">32.</span><span class="tag">1-3 酵素</span><span class="src">自編（比照段考實驗/圖表判讀題）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">甲酵素最可能是下列哪一種？</div>
+        <ul class="opts">
+          <li><button>唾液中的澱粉酶</button></li>
+          <li><button>胃液中的胃蛋白酶</button></li>
+          <li><button>小腸中的胰蛋白酶（最適 pH 約為 8）</button></li>
+          <li><button>由圖無法判斷</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>甲的最適 pH 約為 2，屬強酸性環境，與胃液（含鹽酸）相符，故為胃蛋白酶。唾液澱粉酶最適 pH 接近中性（約 7），較符合乙曲線。</p>
+            <div class="plain">看曲線的「山頂」在哪裡：甲的山頂在 pH 2（很酸），人體裡最酸的地方就是胃，所以是胃蛋白酶。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="3">
+        <div class="q-head"><span class="q-no">33.</span><span class="tag">1-3 酵素</span><span class="src">自編（比照段考實驗/圖表判讀題）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">若將甲酵素從 pH 2 的環境移到 pH 7 的環境中（溫度不變），依圖判斷其活性會如何變化？</div>
+        <ul class="opts">
+          <li><button>維持不變</button></li>
+          <li><button>明顯增加</button></li>
+          <li><button>大幅下降，幾乎沒有活性</button></li>
+          <li><button>先增加後下降</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>由圖可知甲在 pH 4 以上活性已趨近於零，pH 7 時幾乎沒有活性。酵素的活性受 pH 影響，偏離最適 pH 太多時活性會大幅下降。</p>
+            <div class="plain">直接在圖上找 pH 7 的位置往上看：甲的實線早就掉到底了，所以幾乎不工作。這也是為什麼胃蛋白酶到了小腸就「下班」了。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="AB" data-multi data-points="3">
+        <div class="q-head"><span class="q-no">34.</span><span class="tag">1-3 酵素</span><span class="src">自編（比照段考實驗/圖表判讀題）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">（多選）根據此實驗結果，下列推論哪些合理？</div>
+        <ul class="opts">
+          <li><button>不同酵素的最適 pH 值可能不同</button></li>
+          <li><button>乙酵素在 pH 7 附近活性最高</button></li>
+          <li><button>pH 值越高，酵素活性一定越高</button></li>
+          <li><button>在 pH 4.5 時，甲、乙兩種酵素的活性都達到最高</button></li>
+          <li><button>由此圖可以看出溫度對酵素活性的影響</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：AB</p>
+            <p>(C) 兩條曲線皆先升後降，並非 pH 越高越好。(D) pH 4.5 時兩者活性都接近零。(E) 實驗中溫度固定為 37°C，變因只有 pH，無法得知溫度的影響。</p>
+            <div class="plain">實驗只改了 pH（操縱變因），溫度都是 37°C（控制變因），所以這張圖只能談 pH，不能談溫度。這種「圖能不能推出這句話」的題目，先問自己：實驗改了什麼？</div>
+          </div>
+        </details>
+      </div>
+
+      <div>
+        <p><strong>題組三（35–36 題）</strong>小明觀察洋蔥根尖分生區的玻片標本，隨機計數 200 個細胞所處的時期，結果如下表。已知這些細胞的分裂並不同步，某時期的細胞數占總數的比例，約等於該時期占細胞週期時間的比例；此洋蔥根尖細胞的細胞週期約為 20 小時。</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>時期</th><th>間期</th><th>前期</th><th>中期</th><th>後期</th><th>末期</th><th>合計</th></tr></thead>
+          <tbody><tr><td>細胞數</td><td>176</td><td>12</td><td>4</td><td>3</td><td>5</td><td>200</td></tr></tbody>
+        </table></div>
+      </div>
+
+      <div class="q" data-answer="B" data-points="3">
+        <div class="q-head"><span class="q-no">35.</span><span class="tag">1-4 細胞週期</span><span class="src">自編（比照段考實驗/圖表判讀題）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">此細胞週期中，分裂期（M 期，前期＋中期＋後期＋末期）約持續多少小時？</div>
+        <ul class="opts">
+          <li><button>1.2 小時</button></li>
+          <li><button>2.4 小時</button></li>
+          <li><button>4.8 小時</button></li>
+          <li><button>17.6 小時</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：B</p>
+            <p>分裂期細胞數 ＝ 12 ＋ 4 ＋ 3 ＋ 5 ＝ 24。占比 24 ÷ 200 ＝ 0.12，時間 ＝ 0.12 × 20 ＝ 2.4 小時。（17.6 小時是間期：176 ÷ 200 × 20。）</p>
+            <div class="plain">「看到幾成的細胞在這個時期，就代表這個時期占了幾成的時間」。分裂期有 24 個，占 12%，20 小時的 12% 就是 2.4 小時。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="3">
+        <div class="q-head"><span class="q-no">36.</span><span class="tag">1-4 細胞週期</span><span class="src">自編（比照段考實驗/圖表判讀題）</span><span class="pts">3 分</span></div>
+        <div class="q-stem">中期約持續多久？</div>
+        <ul class="opts">
+          <li><button>4 分鐘</button></li>
+          <li><button>40 分鐘</button></li>
+          <li><button>24 分鐘</button></li>
+          <li><button>2.4 小時</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：C</p>
+            <p>中期占比 4 ÷ 200 ＝ 0.02，時間 ＝ 0.02 × 20 小時 ＝ 0.4 小時 ＝ 0.4 × 60 ＝ 24 分鐘。</p>
+            <div class="plain">先算出 0.4 小時，最後一步別忘了換成分鐘（乘 60）。很多人在這裡直接選「4 分鐘」或「40 分鐘」，就是單位換算出錯。</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- ========== 四、非選擇題 ========== -->
+      <div class="paper-sec">四、非選擇題（共 12 分）</div>
+      <p>請將答案寫在答案卷上；計算題需寫出過程。對照解析自行給分。</p>
+
+      <div class="q" data-points="6">
+        <div class="q-head"><span class="q-no">一、</span><span class="tag">1-2 細胞的構造（延伸：細胞大小）</span><span class="src">改編自：臺中一中 108-1 第一次期中考 非選第 1 題</span><span class="pts">6 分</span></div>
+        <div class="q-stem">
+          <p>以立方體模擬細胞：甲為一個邊長 4 cm 的立方體；乙是把甲平均切成 8 個邊長 2 cm 的小立方體。</p>
+          <ol>
+            <li>完成下表（各 1 分，共 4 分）：
+              <div class="table-wrap"><table>
+                <thead><tr><th></th><th>甲（1 個大立方體）</th><th>乙（8 個小立方體合計）</th></tr></thead>
+                <tbody>
+                  <tr><td>總表面積（cm<sup>2</sup>）</td><td>(a)</td><td>(b)</td></tr>
+                  <tr><td>總體積（cm<sup>3</sup>）</td><td>64</td><td>64</td></tr>
+                  <tr><td>表面積 ÷ 體積</td><td>(c)</td><td>(d)</td></tr>
+                </tbody>
+              </table></div>
+            </li>
+            <li>由上表推論：細胞越小，表面積與體積的比值越大或越小？這對細胞有什麼好處？（2 分）</li>
+          </ol>
+        </div>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：(a) 96　(b) 192　(c) 1.5　(d) 3；(2) 比值越大，單位體積可用來與外界交換物質的表面積越大，物質交換越有效率。</p>
+            <p>(a) 6 面 × 4 × 4 ＝ 96。(b) 每個小立方體 6 × 2 × 2 ＝ 24，共 8 個：24 × 8 ＝ 192。(c) 96 ÷ 64 ＝ 1.5。(d) 192 ÷ 64 ＝ 3。</p>
+            <p>評分：(1) 每格 1 分。(2) 寫出「比值越大」1 分；寫出「物質交換（養分、氧氣進入，廢物排出）較有效率」1 分。</p>
+            <div class="plain">同樣多的「肉」（體積），切成小塊後「皮」（表面積）變多了。細胞靠細胞膜這層「皮」吃東西、丟垃圾，皮相對越多，進出就越快——這就是細胞都很小的原因。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-points="4">
+        <div class="q-head"><span class="q-no">二、</span><span class="tag hot">高頻考點</span><span class="tag">探討活動 1-2 顯微測量</span><span class="src">改編自：臺中一中 108-1 第一次期中考 非選第 2 題（原題用目鏡測微器，改為視野直徑法）</span><span class="pts">4 分</span></div>
+        <div class="q-stem">
+          <p>小美用目鏡 10×、物鏡 4× 觀察透明方格尺，測得視野直徑為 4.5 mm。目鏡維持不變：</p>
+          <ol>
+            <li>改用物鏡 10× 時，視野直徑為多少 μm？（2 分）</li>
+            <li>改用物鏡 40× 觀察口腔皮膜細胞，發現一個細胞的長度約占視野直徑的 1/9，則此細胞長約多少 μm？（2 分）</li>
+          </ol>
+        </div>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：(1) 1800 μm　(2) 約 50 μm</p>
+            <p>(1) 總倍率由 40× 變為 100×（2.5 倍），視野直徑 ＝ 4.5 ÷ 2.5 ＝ 1.8 mm ＝ 1800 μm。</p>
+            <p>(2) 總倍率 400×，為 40× 的 10 倍，視野直徑 ＝ 4.5 ÷ 10 ＝ 0.45 mm ＝ 450 μm；細胞長 ＝ 450 × 1/9 ＝ 50 μm。</p>
+            <p>評分：每小題列式 1 分、答案含正確單位 1 分。</p>
+            <div class="plain">兩步驟：先用「倍率變幾倍、直徑就除以幾」算出新的視野直徑，再乘上細胞占的比例。最後記得 1 mm ＝ 1000 μm，單位寫錯會被扣分。</div>
+          </div>
+        </details>
+      </div>
+
+      <div class="q" data-points="2">
+        <div class="q-head"><span class="q-no">三、</span><span class="tag">1-3 光合作用與呼吸作用</span><span class="src">改編自：臺中一中 108-1 第一次期中考 非選第 3 題</span><span class="pts">2 分</span></div>
+        <div class="q-stem">
+          <p>植物細胞中有下列兩種作用：</p>
+          <p>甲作用：二氧化碳 ＋ 水 →（光能）→ 葡萄糖 ＋ 氧氣<br>乙作用：葡萄糖 ＋ 氧氣 → 二氧化碳 ＋ 水 ＋ 能量（部分合成 ATP）</p>
+          <p>寫出甲、乙作用的名稱，以及在真核細胞中主要進行的胞器。（每格 0.5 分）</p>
+        </div>
+        <details><summary>看答案與解析</summary>
+          <div class="explain">
+            <p class="ans">答案：甲＝光合作用，在葉綠體；乙＝（有氧）呼吸作用，主要在粒線體。</p>
+            <p>光合作用將光能轉換為化學能儲存在葡萄糖中；呼吸作用分解葡萄糖，將化學能轉存於 ATP 供細胞利用。兩者的反應物與產物剛好相反。</p>
+            <div class="plain">「吃光、吐氧氣」的是光合作用（葉綠體），「吃氧氣、吐二氧化碳、做 ATP」的是呼吸作用（粒線體）。一個存錢、一個領錢。</div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <h3>考後檢討</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>得分</th><th>代表什麼</th><th>接下來怎麼做</th></tr></thead>
+      <tbody>
+        <tr><td>80 分以上</td><td>觀念穩，段考主要失分會在陷阱選項與計算粗心</td><td>只看錯題的白話解析，把陷阱寫進「考前一晚必看清單」；再寫一次「考古題與白話解析」的多選題。</td></tr>
+        <tr><td>60–80 分</td><td>大方向對，但某幾節的細節不熟</td><td>用下表找出錯最多的章節，回「範圍重點整理」把那一節的比較表再讀一遍；顯微測量錯的話去「題型解法套用」重做計算題。</td></tr>
+        <tr><td>60 分以下</td><td>基礎觀念還沒建立</td><td>先回「章節導覽」看每章圖表，再讀「範圍重點整理」主題一（細胞學說、顯微鏡）和主題三（胞器）——這兩塊占分最多；背熟「必背整理與記憶技巧」的口訣後再重寫本卷。</td></tr>
+      </tbody>
+    </table></div>
+
+    <h4>錯題對應章節</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>章節</th><th>題號</th><th>回去複習</th></tr></thead>
+      <tbody>
+        <tr><td>1-1 細胞學說</td><td>1、2</td><td>範圍重點整理 主題一：人物與貢獻表</td></tr>
+        <tr><td>探討活動 1-1 顯微鏡與細胞觀察</td><td>3、6、7、23</td><td>主題二：顯微鏡構造、操作步驟、像的移動、染色</td></tr>
+        <tr><td>探討活動 1-2 顯微測量</td><td>4、5、非選二</td><td>主題二「低倍 → 高倍」；題型解法套用的倍率計算</td></tr>
+        <tr><td>1-2 細胞的構造（胞器、原核真核、動植物比較）</td><td>8–12、21、22、24、25、29–31、非選一</td><td>主題三：胞器功能總表、動植物 / 原核真核比較表</td></tr>
+        <tr><td>1-2 細胞膜與物質運輸</td><td>13–15、26</td><td>主題四：五種運輸方式比較、滲透作用</td></tr>
+        <tr><td>1-3 細胞活動的能量</td><td>16–18、27、32–34、非選三</td><td>主題五：ATP 循環、酵素特性、光合與呼吸比較</td></tr>
+        <tr><td>1-4 細胞週期</td><td>19、20、28、35、36</td><td>主題六：細胞週期各期事件、染色質與染色體</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box warn"><span class="label">本卷提醒</span>
+      <p>這是模擬卷，不是陽明高中的真題。實際段考的題數、配分和多選題計分方式以老師的考卷為準；答案卡要用 2B 鉛筆劃記。</p>
     </div>
   </section>
 
