@@ -1,0 +1,1469 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>數學 第二次段考準備</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&family=LXGW+WenKai+TC&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar" id="topbar"></header>
+<main class="wrap">
+  <div class="subject-head">
+    <div>
+      <p class="eyebrow">Subject · Math · Exam 2</p>
+      <h1>數學 第二次段考</h1>
+      <p class="lede">範圍是翰林 數學I 的 <strong>2-2 常用對數</strong>到第三章 <strong>多項式函數</strong>（3-1、3-2、3-3），但 <mark>3-3 的「二次不等式」與「高次不等式」不考</mark>。重點：用 log 算位數與首位數字、餘式定理與因式定理、綜合除法、二次函數配方求最值、三次函數的對稱中心與一次近似。</p>
+    </div>
+    <aside class="slot">
+      <div class="when">11/24（二）–11/25（三）</div>
+      <dl>
+        <dt>日期</dt><dd>第二次段考 11/24（二）–11/25（三）</dd>
+        <dt>節次</dt><dd><span class="pending">節次待公告</span>（去年 114-1 數學在第一天第 1 節 08:20–09:30，今年可能相同）</dd>
+        <dt>時間</dt><dd>70 分鐘，<strong>不可使用計算機</strong></dd>
+        <dt>範圍</dt><dd>翰林 數學I 2-2～3-3</dd>
+        <dt>不考</dt><dd>3-3 的二次不等式、高次不等式</dd>
+        <dt>課本</dt><dd>翰林版 數學I（高一上）</dd>
+      </dl>
+    </aside>
+  </div>
+
+  <nav class="tabs" aria-label="分頁">
+    <button data-tab="chapters">章節導覽</button>
+    <button data-tab="notes">範圍重點整理</button>
+    <button data-tab="formula">公式整理與記憶技巧</button>
+    <button data-tab="past">考古題與白話解析</button>
+    <button data-tab="mock">模擬段考</button>
+    <button data-tab="apply">公式套用</button>
+    <button data-tab="tips">考前攻略</button>
+  </nav>
+
+  <!-- ================= 章節導覽 ================= -->
+  <section class="panel" id="chapters">
+    <h2>章節導覽</h2>
+    <p class="muted">本次範圍是翰林 數學I 的 4 節：第二章最後一節 2-2 常用對數，加上第三章「多項式函數」的 3-1、3-2、3-3（3-3 只考「多項式函數的圖形」，後半的二次不等式、高次不等式不考）。先看總覽表抓重點，再點章節卡；細節到「範圍重點整理」分頁看。</p>
+
+    <div class="mindmap"><div class="mm-center">數學I 第二次段考</div>
+      <div class="mm-branches">
+        <div class="mm-branch"><b>第二章 指數、對數</b><ul><li>2-1 指數（第一次段考已考）</li><li>2-2 常用對數（<strong>考</strong>）</li></ul></div>
+        <div class="mm-branch"><b>第三章 多項式函數</b><ul><li>3-1 多項式的運算與應用</li><li>3-2 簡單多項式函數及其圖形</li><li>3-3 多項式函數的圖形（不等式部分不考）</li></ul></div>
+        <div class="mm-branch"><b>貫穿全範圍的能力</b><ul><li>不用計算機：背 log2、log3、log7</li><li>綜合除法要快又準</li><li>配方：二次配成頂點式、三次配成對稱中心式</li></ul></div>
+      </div>
+    </div>
+
+    <h3>範圍總覽</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>章節</th><th>主題</th><th>重要度／常考題型</th><th>建議複習時間</th></tr></thead>
+      <tbody>
+        <tr><td>2-2 常用對數</td><td>對數的定義、對數律、常用對數表、科學記號與位數</td><td>★★★　log 化簡、求位數與首位數字、小數點後第幾位不為 0、比較大小、成長／衰減應用題</td><td>約 3 小時</td></tr>
+        <tr><td>3-1 多項式的運算與應用</td><td>多項式名詞、四則運算、除法原理、綜合除法、餘式定理、因式定理、插值多項式</td><td>★★★　求餘式（一次、二次除式）、因式定理求係數、連續綜合除法、已知函數值求多項式</td><td>約 3 小時</td></tr>
+        <tr><td>3-2 簡單多項式函數及其圖形</td><td>函數概念、一次函數、二次函數（頂點式、平移、開口）、最大最小值</td><td>★★★　配方求頂點、區間最值、由圖判斷 <i>a</i>、<i>b</i>、<i>c</i> 正負、平移</td><td>約 2 小時</td></tr>
+        <tr><td>3-3 多項式函數的圖形（前半）</td><td>三次函數 <i>y</i>＝<i>ax</i><sup>3</sup>、<i>y</i>＝<i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i>、對稱中心、一次近似、廣域特徵</td><td>★★☆　求對稱中心、局部一次近似與近似值、由圖選函數、能否由 <i>y</i>＝<i>ax</i><sup>3</sup> 平移</td><td>約 2.5 小時</td></tr>
+        <tr><td class="mine">3-3 多項式不等式（後半）</td><td class="mine">二次不等式、高次不等式</td><td class="mine"><strong>本次不考</strong></td><td class="mine">0（下次段考再讀）</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted">節名依翰林版數學I及師大附中（翰林版）113 學年度高一教學進度表：2-2 對數（常用對數）、3-1 多項式的運算與應用、3-2 簡單多項式函數及其圖形、3-3 多項式函數的圖形與多項式不等式。小節細項若與課本略有不同，以課本與老師公告為準。</p>
+
+    <ul class="ch-toc">
+      <li><a href="#ch-2-2"><span class="no">2-2</span><span class="tt">常用對數</span><span class="ds">log 就是「10 的幾次方」，用來算位數</span></a></li>
+      <li><a href="#ch-3-1"><span class="no">3-1</span><span class="tt">多項式的運算與應用</span><span class="ds">除法原理、餘式定理、因式定理、綜合除法</span></a></li>
+      <li><a href="#ch-3-2"><span class="no">3-2</span><span class="tt">簡單多項式函數及其圖形</span><span class="ds">一次、二次函數，配方找頂點</span></a></li>
+      <li><a href="#ch-3-3"><span class="no">3-3</span><span class="tt">多項式函數的圖形</span><span class="ds">三次函數對稱中心、一次近似（不等式不考）</span></a></li>
+    </ul>
+
+    <!-- ===== 2-2 ===== -->
+    <article class="chapter" id="ch-2-2">
+      <header class="ch-head"><span class="ch-no">2-2</span><h3>常用對數</h3><span class="tag hot">必考</span><span class="ch-sub">第二章 指數、對數：把「乘法」變「加法」、把「很大的數」變成「好比較的小數」。</span></header>
+      <dl class="facts">
+        <dt>課本主題</dt><dd>常用對數的定義 log <i>a</i>＝<i>x</i> ⇔ 10<sup><i>x</i></sup>＝<i>a</i>；對數律；常用對數表（查表、內插，以課本為準）；科學記號與位數；應用（地震規模、分貝、pH、複利）</dd>
+        <dt>前置知識</dt><dd>2-1 指數律、科學記號</dd>
+        <dt>常考題型</dt><dd>log 化簡求值、<i>a</i><sup><i>n</i></sup> 是幾位數、首位數字、小數點後第幾位開始不為 0、比較大小、成長衰減「至少幾年」</dd>
+        <dt>考試提供</dt><dd>段考不能用計算機，題目通常會給 log2≈0.3010、log3≈0.4771、log7≈0.8451（log5＝1−log2≈0.6990）</dd>
+      </dl>
+      <h4>章節內容</h4>
+      <ul>
+        <li><strong>定義：</strong>對正數 <i>a</i>，log <i>a</i> 是「10 要幾次方才會等於 <i>a</i>」。所以 log 1＝0、log 10＝1、log 100＝2、log 0.01＝−2。<mark>真數一定要是正數</mark>。</li>
+        <li><strong>對數律：</strong>乘變加、除變減、次方往前拿：log(<i>ab</i>)＝log <i>a</i>＋log <i>b</i>、log(<i>a</i>/<i>b</i>)＝log <i>a</i>−log <i>b</i>、log <i>a</i><sup><i>r</i></sup>＝<i>r</i> log <i>a</i>。</li>
+        <li><strong>位數：</strong>寫成 <i>N</i>＝<i>a</i>×10<sup><i>n</i></sup>（1 ≤ <i>a</i> &lt; 10）時，log <i>N</i>＝<i>n</i>＋log <i>a</i>，整數部分 <i>n</i> 決定大小（位數），小數部分 log <i>a</i>（0 ≤ log <i>a</i> &lt; 1）決定首位數字。</li>
+        <li><strong>應用：</strong>地震規模、聲音分貝、酸鹼值、複利與人口成長、放射性衰變。</li>
+      </ul>
+      <h4>圖解：求位數與首位數字的流程</h4>
+      <ol class="flow">
+        <li><b>取 log</b>log 2<sup>50</sup>＝50×0.3010</li>
+        <li><b>拆整數＋小數</b>15.05＝15＋0.05</li>
+        <li><b>整數→位數</b>10<sup>15</sup> 等級 ⇒ 16 位</li>
+        <li><b>小數→首位</b>0 ≤ 0.05 &lt; log2 ⇒ 首位 1</li>
+      </ol>
+      <h4>重點表格：必背對數值</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th><i>x</i></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr></thead>
+        <tbody><tr><td>log <i>x</i> ≈</td><td>0</td><td>0.3010</td><td>0.4771</td><td>0.6020</td><td>0.6990</td><td>0.7781</td><td>0.8451</td><td>0.9030</td><td>0.9542</td><td>1</td></tr></tbody>
+      </table></div>
+      <p class="small muted">4、5、6、8、9 都能由 log2、log3 算出：log4＝2log2、log5＝1−log2、log6＝log2＋log3、log8＝3log2、log9＝2log3。</p>
+      <h4>關鍵詞</h4>
+      <ul class="chips"><li class="hot">log <i>a</i>＝<i>x</i> ⇔ 10<sup><i>x</i></sup>＝<i>a</i></li><li class="hot">對數律</li><li class="hot">位數＝整數部分＋1</li><li class="hot">首位數字</li><li>小數點後第幾位</li><li>科學記號</li><li>真數 &gt; 0</li><li>地震規模</li></ul>
+      <div class="box key"><span class="label">這章最常考</span><p>①「<i>a</i><sup><i>n</i></sup> 是幾位數、首位數字是多少」；②「(0.<i>x</i>)<sup><i>n</i></sup> 在小數點後第幾位開始不為 0」；③ 成長／衰減「至少要幾年」（記得無條件進位）；④ log 律的是非判斷（log(<i>a</i>＋<i>b</i>) ≠ log <i>a</i>＋log <i>b</i>）。</p></div>
+      <div class="mnemonic">「log 問 10 的幾次方」；「乘變加、除變減、次方跑前面」；「整數管位數、小數管首位」。</div>
+    </article>
+
+    <!-- ===== 3-1 ===== -->
+    <article class="chapter" id="ch-3-1">
+      <header class="ch-head"><span class="ch-no">3-1</span><h3>多項式的運算與應用</h3><span class="tag hot">必考</span><span class="ch-sub">第三章 多項式函數：學會「多項式的除法」，再用餘式定理、因式定理快速算餘式、找因式。</span></header>
+      <dl class="facts">
+        <dt>課本主題</dt><dd>多項式的名詞（次數、係數、首項、常數項）、加減乘、除法原理、綜合除法、餘式定理、因式定理、插值多項式（已知幾個函數值求多項式）</dd>
+        <dt>前置知識</dt><dd>國中的多項式乘除、因式分解、乘法公式</dd>
+        <dt>常考題型</dt><dd>求 <i>f</i>(<i>x</i>) 除以一次式／二次式的餘式、因式定理求係數、連續綜合除法改寫成 (<i>x</i>−<i>a</i>) 的多項式、已知函數值求 <i>f</i>(<i>x</i>)</dd>
+      </dl>
+      <h4>章節內容</h4>
+      <ul>
+        <li><strong>除法原理：</strong><i>f</i>(<i>x</i>)＝<i>g</i>(<i>x</i>)·<i>Q</i>(<i>x</i>)＋<i>r</i>(<i>x</i>)，其中 <i>r</i>(<i>x</i>)＝0 或 deg <i>r</i> &lt; deg <i>g</i>。除式是一次 ⇒ 餘式是常數；除式是二次 ⇒ 餘式設 <i>ax</i>＋<i>b</i>。</li>
+        <li><strong>綜合除法：</strong>除以 <i>x</i>−<i>a</i> 時，只寫係數（缺項補 0），「下拉、乘 <i>a</i>、相加」。除以 <i>ax</i>−<i>b</i> 時先用 <i>x</i>−<span class="frac"><span><i>b</i></span><span><i>a</i></span></span> 除，商再除以 <i>a</i>，餘式不變。</li>
+        <li><strong>餘式定理：</strong><i>f</i>(<i>x</i>) 除以 <i>x</i>−<i>a</i> 的餘式＝<i>f</i>(<i>a</i>)；除以 <i>ax</i>−<i>b</i> 的餘式＝<i>f</i>(<span class="frac"><span><i>b</i></span><span><i>a</i></span></span>)。</li>
+        <li><strong>因式定理：</strong><i>x</i>−<i>a</i> 是 <i>f</i>(<i>x</i>) 的因式 ⇔ <i>f</i>(<i>a</i>)＝0。</li>
+        <li><strong>連續綜合除法：</strong>把 <i>f</i>(<i>x</i>) 改寫成 <i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>b</i>(<i>x</i>−<i>h</i>)<sup>2</sup>＋<i>c</i>(<i>x</i>−<i>h</i>)＋<i>d</i>，用來求除以 (<i>x</i>−<i>h</i>)<sup>2</sup> 的餘式、近似值、對稱中心。</li>
+        <li><strong>插值多項式：</strong>已知 <i>n</i>＋1 個點，可以決定一個次數不超過 <i>n</i> 的多項式；已知根就先寫成因式乘積再代點（拉格朗日／牛頓插值的寫法以課本為準）。</li>
+      </ul>
+      <h4>圖解：綜合除法（2<i>x</i><sup>3</sup>−5<i>x</i><sup>2</sup>＋4<i>x</i>−7 除以 <i>x</i>−2）</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th></th><th><i>x</i><sup>3</sup></th><th><i>x</i><sup>2</sup></th><th><i>x</i></th><th>常數</th><th>說明</th></tr></thead>
+        <tbody>
+          <tr><td>係數</td><td>2</td><td>−5</td><td>4</td><td>−7</td><td>缺項要補 0</td></tr>
+          <tr><td>×2 往右上加</td><td></td><td>4</td><td>−2</td><td>4</td><td>下面的數 ×2 寫到下一格</td></tr>
+          <tr><td>結果</td><td>2</td><td>−1</td><td>2</td><td><strong>−3</strong></td><td>商 2<i>x</i><sup>2</sup>−<i>x</i>＋2，餘 −3</td></tr>
+        </tbody>
+      </table></div>
+      <ol class="flow">
+        <li><b>看除式次數</b>一次 → 餘式是常數；二次 → 設 <i>ax</i>＋<i>b</i></li>
+        <li><b>找讓除式＝0 的 <i>x</i></b>代進 <i>f</i>(<i>x</i>)＝<i>Q</i>·<i>g</i>＋<i>r</i></li>
+        <li><b>商那項消失</b>只剩 <i>r</i> 的方程式</li>
+        <li><b>解聯立</b>得到餘式</li>
+      </ol>
+      <h4>重點表格：除式與餘式</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>除式</th><th>餘式的樣子</th><th>最快做法</th></tr></thead>
+        <tbody>
+          <tr><td><i>x</i>−<i>a</i></td><td>常數 <i>r</i></td><td><i>r</i>＝<i>f</i>(<i>a</i>)</td></tr>
+          <tr><td><i>ax</i>−<i>b</i></td><td>常數 <i>r</i></td><td><i>r</i>＝<i>f</i>(<i>b</i>/<i>a</i>)</td></tr>
+          <tr><td>(<i>x</i>−<i>a</i>)(<i>x</i>−<i>b</i>)</td><td><i>px</i>＋<i>q</i></td><td>代 <i>a</i>、<i>b</i> 解聯立</td></tr>
+          <tr><td>(<i>x</i>−<i>a</i>)<sup>2</sup></td><td><i>px</i>＋<i>q</i></td><td>連續綜合除法取最後兩個餘數</td></tr>
+          <tr><td><i>x</i><sup>2</sup>＋<i>x</i>＋1 這類不好分解的</td><td><i>px</i>＋<i>q</i></td><td>用「<i>x</i><sup>2</sup>＝−<i>x</i>−1」降次，或長除法</td></tr>
+        </tbody>
+      </table></div>
+      <h4>關鍵詞</h4>
+      <ul class="chips"><li class="hot">除法原理</li><li class="hot">餘式定理</li><li class="hot">因式定理</li><li class="hot">綜合除法</li><li>首項係數</li><li>deg</li><li>連續綜合除法</li><li>插值多項式</li></ul>
+      <div class="box key"><span class="label">這章最常考</span><p>① 除以二次式的餘式（設 <i>ax</i>＋<i>b</i>、代兩個根）；② 因式定理求未知係數；③ 除以 <i>ax</i>＋<i>b</i>（例如除以 2026<i>x</i>＋2026 其實就是代 <i>x</i>＝−1）；④ 已知三次函數的根與函數值，求 <i>f</i>(0) 或其他值。</p></div>
+      <div class="mnemonic">「除式等於零，代進去，餘式就出來」；「一次除式餘常數，二次除式設 <i>ax</i>＋<i>b</i>」；綜合除法口訣「下拉、相乘、往上加」。</div>
+    </article>
+
+    <!-- ===== 3-2 ===== -->
+    <article class="chapter" id="ch-3-2">
+      <header class="ch-head"><span class="ch-no">3-2</span><h3>簡單多項式函數及其圖形</h3><span class="tag hot">必考</span><span class="ch-sub">認識函數，畫出一次函數（直線）與二次函數（拋物線），會配方找頂點與最大最小值。</span></header>
+      <dl class="facts">
+        <dt>課本主題</dt><dd>函數的意義（一個 <i>x</i> 對應唯一 <i>y</i>）、常數函數、一次函數（斜率）、二次函數圖形（開口、頂點、對稱軸）、圖形平移、最大值與最小值</dd>
+        <dt>前置知識</dt><dd>國中的一次函數、二次函數、配方法</dd>
+        <dt>常考題型</dt><dd>配方求頂點、限制範圍的最大最小值、由圖形判斷 <i>a</i>、<i>b</i>、<i>c</i>、判別式的正負、圖形平移後的方程式</dd>
+      </dl>
+      <h4>章節內容</h4>
+      <ul>
+        <li><strong>一次函數</strong> <i>f</i>(<i>x</i>)＝<i>ax</i>＋<i>b</i>：圖形是直線，<i>a</i> 是斜率，「<i>x</i> 每增加 1，<i>y</i> 增加 <i>a</i>」；兩點就能決定。</li>
+        <li><strong>二次函數</strong> <i>y</i>＝<i>ax</i><sup>2</sup>＋<i>bx</i>＋<i>c</i>（<i>a</i>≠0）配方成 <i>y</i>＝<i>a</i>(<i>x</i>−<i>h</i>)<sup>2</sup>＋<i>k</i>：頂點 (<i>h</i>, <i>k</i>)，<i>h</i>＝−<span class="frac"><span><i>b</i></span><span>2<i>a</i></span></span>，對稱軸 <i>x</i>＝<i>h</i>。</li>
+        <li><strong>平移：</strong><i>y</i>＝<i>ax</i><sup>2</sup> 向右 <i>h</i>、向上 <i>k</i> ⇒ <i>y</i>＝<i>a</i>(<i>x</i>−<i>h</i>)<sup>2</sup>＋<i>k</i>（右移是「減」）。開口大小只看 |<i>a</i>|，平移不會改變 <i>a</i>。</li>
+        <li><strong>最值：</strong>全體實數時只看頂點；有範圍時比較「頂點（若在範圍內）」和「兩個端點」。</li>
+        <li><strong>與 <i>x</i> 軸交點：</strong>判別式 <i>D</i>＝<i>b</i><sup>2</sup>−4<i>ac</i>：<i>D</i>&gt;0 兩交點、<i>D</i>＝0 相切、<i>D</i>&lt;0 不相交。</li>
+      </ul>
+      <h4>圖解：拋物線 <i>y</i>＝(<i>x</i>−2)<sup>2</sup>−1</h4>
+      <figure class="diagram">
+        <svg viewBox="0 0 320 220" role="img" aria-label="拋物線 y 等於 x 減 2 的平方減 1，頂點在 (2, −1)，對稱軸 x 等於 2，與 x 軸交於 1 和 3">
+          <line x1="20" y1="164" x2="310" y2="164" style="stroke:var(--graphite);fill:none" stroke-width="1.2"/>
+          <line x1="85" y1="210" x2="85" y2="10" style="stroke:var(--graphite);fill:none" stroke-width="1.2"/>
+          <text x="300" y="158" style="fill:var(--graphite)" font-size="12">x</text>
+          <text x="90" y="20" style="fill:var(--graphite)" font-size="12">y</text>
+          <line x1="175" y1="20" x2="175" y2="205" style="stroke:var(--blue);fill:none" stroke-width="1.2" stroke-dasharray="5 4"/>
+          <text x="180" y="32" style="fill:var(--blue)" font-size="12">對稱軸 x＝2</text>
+          <path d="M58.0,60.3 L63.9,72.2 L69.7,83.4 L75.6,94.1 L81.4,104.1 L87.2,113.6 L93.1,122.4 L98.9,130.6 L104.8,138.2 L110.6,145.2 L116.5,151.6 L122.3,157.4 L128.2,162.5 L134.1,167.1 L139.9,171.0 L145.8,174.4 L151.6,177.1 L157.4,179.3 L163.3,180.8 L169.1,181.7 L175.0,182.0 L180.8,181.7 L186.7,180.8 L192.5,179.3 L198.4,177.1 L204.2,174.4 L210.1,171.0 L215.9,167.1 L221.8,162.5 L227.7,157.4 L233.5,151.6 L239.3,145.2 L245.2,138.2 L251.0,130.6 L256.9,122.4 L262.8,113.6 L268.6,104.1 L274.4,94.1 L280.3,83.4 L286.1,72.2 L292.0,60.3" style="stroke:var(--card-red);fill:none" stroke-width="2.2"/>
+          <circle cx="175" cy="182" r="4" style="fill:var(--card-red)"/>
+          <text x="184" y="200" style="fill:var(--ink)" font-size="12">頂點 (2, −1)</text>
+          <circle cx="130" cy="164" r="3.5" style="fill:var(--ink)"/>
+          <circle cx="220" cy="164" r="3.5" style="fill:var(--ink)"/>
+          <text x="118" y="152" style="fill:var(--ink)" font-size="12">1</text>
+          <text x="226" y="152" style="fill:var(--ink)" font-size="12">3</text>
+          <circle cx="85" cy="110" r="3.5" style="fill:var(--ink)"/>
+          <text x="20" y="114" style="fill:var(--ink)" font-size="12">(0, 3)</text>
+        </svg>
+        <figcaption>開口向上（<i>a</i>＝1&gt;0）、頂點是最低點 (2, −1)；兩根 1、3 對稱於 <i>x</i>＝2；<i>y</i> 截距＝<i>c</i>＝3。</figcaption>
+      </figure>
+      <h4>重點表格：由圖形判斷係數</h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>看什麼</th><th>判斷</th></tr></thead>
+        <tbody>
+          <tr><td>開口方向</td><td>向上 <i>a</i>&gt;0；向下 <i>a</i>&lt;0</td></tr>
+          <tr><td>對稱軸 <i>x</i>＝−<i>b</i>/(2<i>a</i>) 在 <i>y</i> 軸左或右</td><td>在右邊 ⇒ <i>a</i>、<i>b</i> 異號；在左邊 ⇒ 同號（「左同右異」）</td></tr>
+          <tr><td><i>y</i> 截距</td><td>就是 <i>c</i>＝<i>f</i>(0)</td></tr>
+          <tr><td>與 <i>x</i> 軸交點個數</td><td>2 個 <i>D</i>&gt;0；1 個 <i>D</i>＝0；0 個 <i>D</i>&lt;0</td></tr>
+          <tr><td><i>a</i>＋<i>b</i>＋<i>c</i>、<i>a</i>−<i>b</i>＋<i>c</i></td><td>就是 <i>f</i>(1)、<i>f</i>(−1)，看圖在 <i>x</i>＝1、−1 的高度</td></tr>
+        </tbody>
+      </table></div>
+      <h4>關鍵詞</h4>
+      <ul class="chips"><li class="hot">配方</li><li class="hot">頂點 (<i>h</i>, <i>k</i>)</li><li class="hot">區間最值</li><li>對稱軸</li><li>判別式</li><li>平移</li><li>斜率</li><li>左同右異</li></ul>
+      <div class="box key"><span class="label">這章最常考</span><p>① 在 <i>a</i> ≤ <i>x</i> ≤ <i>b</i> 求最大最小值（頂點在不在範圍內）；② 看圖判斷 <i>a</i>、<i>b</i>、<i>c</i>、<i>D</i> 正負；③ 已知對稱軸與一根，求另一根；④ 已知兩點求一次函數。</p></div>
+      <div class="mnemonic">「配方找頂點，範圍比端點」；「開口看 <i>a</i>，截距看 <i>c</i>，軸在左同號、在右異號」；「右移減、左移加，上移下移加在後面」。</div>
+    </article>
+
+    <!-- ===== 3-3 ===== -->
+    <article class="chapter" id="ch-3-3">
+      <header class="ch-head"><span class="ch-no">3-3</span><h3>多項式函數的圖形（不含不等式）</h3><span class="tag hot">常考</span><span class="ch-sub">三次函數的圖形一定有「對稱中心」，靠近中心像一條直線、離很遠像 <i>y</i>＝<i>ax</i><sup>3</sup>。</span></header>
+      <dl class="facts">
+        <dt>課本主題</dt><dd><i>y</i>＝<i>ax</i><sup>3</sup> 與 <i>y</i>＝<i>ax</i><sup>3</sup>＋<i>px</i> 的圖形、三次函數配成 <i>y</i>＝<i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i>、對稱中心、局部的一次近似、廣域（大範圍）特徵</dd>
+        <dt>不考</dt><dd>本節後半的<strong>二次不等式、高次不等式</strong></dd>
+        <dt>常考題型</dt><dd>求對稱中心、在某點附近的近似直線與近似值、由圖選函數、判斷能否由 <i>y</i>＝<i>ax</i><sup>3</sup> 平移得到</dd>
+      </dl>
+      <h4>章節內容</h4>
+      <ul>
+        <li><strong><i>y</i>＝<i>ax</i><sup>3</sup>：</strong>對稱於原點；<i>a</i>&gt;0 左下到右上，<i>a</i>&lt;0 左上到右下。</li>
+        <li><strong><i>y</i>＝<i>ax</i><sup>3</sup>＋<i>px</i>：</strong>仍對稱於原點；<i>ap</i> ≥ 0 時一路單調（沒有「起伏」），<i>ap</i>&lt;0 時有一上一下的「波浪」，和 <i>x</i> 軸交三點。</li>
+        <li><strong>一般三次函數</strong> <i>y</i>＝<i>ax</i><sup>3</sup>＋<i>bx</i><sup>2</sup>＋<i>cx</i>＋<i>d</i>：用連續綜合除法以 <i>h</i>＝−<span class="frac"><span><i>b</i></span><span>3<i>a</i></span></span> 展開成 <i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i>（平方項係數一定是 0），對稱中心 (<i>h</i>, <i>k</i>)＝(<i>h</i>, <i>f</i>(<i>h</i>))。</li>
+        <li><strong>一次近似：</strong>把 <i>f</i>(<i>x</i>) 寫成 (<i>x</i>−<i>a</i>) 的多項式後，<i>x</i> 很接近 <i>a</i> 時高次項很小，<i>f</i>(<i>x</i>) ≈ <i>c</i>(<i>x</i>−<i>a</i>)＋<i>d</i>，這條直線就是圖形在 <i>x</i>＝<i>a</i> 附近的樣子（在對稱中心附近就是 <i>y</i>＝<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i>）。</li>
+        <li><strong>廣域特徵：</strong>|<i>x</i>| 很大時，<i>f</i>(<i>x</i>) 的走勢由首項 <i>ax</i><sup><i>n</i></sup> 決定。</li>
+      </ul>
+      <h4>圖解：<i>y</i>＝(<i>x</i>−1)<sup>3</sup>−3(<i>x</i>−1)＋1 的對稱中心</h4>
+      <figure class="diagram">
+        <svg viewBox="0 0 320 220" role="img" aria-label="三次函數圖形，對稱中心在 (1, 1)，中心附近近似直線 y 等於 −3(x−1)+1">
+          <line x1="20" y1="110" x2="310" y2="110" style="stroke:var(--graphite);fill:none" stroke-width="1.2"/>
+          <line x1="160" y1="210" x2="160" y2="10" style="stroke:var(--graphite);fill:none" stroke-width="1.2"/>
+          <text x="300" y="104" style="fill:var(--graphite)" font-size="12">x</text>
+          <text x="165" y="20" style="fill:var(--graphite)" font-size="12">y</text>
+          <line x1="160" y1="22" x2="250" y2="154" style="stroke:var(--blue);fill:none" stroke-width="1.4" stroke-dasharray="5 4"/>
+          <path d="M106.0,177.1 L111.0,150.9 L115.9,128.1 L120.9,108.4 L125.8,91.8 L130.8,77.9 L135.7,66.7 L140.7,58.0 L145.6,51.5 L150.6,47.1 L155.5,44.7 L160.5,44.0 L165.4,44.9 L170.4,47.2 L175.3,50.8 L180.2,55.4 L185.2,60.8 L190.2,67.0 L195.1,73.7 L200.1,80.8 L205.0,88.0 L209.9,95.2 L214.9,102.3 L219.9,109.0 L224.8,115.2 L229.8,120.6 L234.7,125.2 L239.7,128.8 L244.6,131.1 L249.6,132.0 L254.5,131.3 L259.4,128.9 L264.4,124.5 L269.4,118.0 L274.3,109.3 L279.2,98.1 L284.2,84.2 L289.1,67.6 L294.1,47.9 L299.1,25.1" style="stroke:var(--card-red);fill:none" stroke-width="2.2"/>
+          <circle cx="205" cy="88" r="4.5" style="fill:var(--ink)"/>
+          <text x="214" y="84" style="fill:var(--ink)" font-size="12">對稱中心 (1, 1)</text>
+          <text x="22" y="200" style="fill:var(--blue)" font-size="12">虛線：中心附近的近似直線 y＝−3(x−1)＋1</text>
+        </svg>
+        <figcaption>把圖形繞中心轉 180° 會和自己重合；在中心附近，圖形幾乎貼著斜率 <i>p</i>＝−3 的直線。</figcaption>
+      </figure>
+      <h4>重點表格：三次函數 <i>y</i>＝<i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i></h4>
+      <div class="table-wrap"><table>
+        <thead><tr><th>條件</th><th>圖形長相</th><th>與 <i>y</i>＝<i>ax</i><sup>3</sup> 的關係</th></tr></thead>
+        <tbody>
+          <tr><td><i>p</i>＝0</td><td>和 <i>y</i>＝<i>ax</i><sup>3</sup> 一樣，只是搬家</td><td>可由 <i>y</i>＝<i>ax</i><sup>3</sup> 平移得到</td></tr>
+          <tr><td><i>a</i>、<i>p</i> 同號</td><td>一路上升（或一路下降），中心附近較「陡」</td><td>不能平移得到（<i>p</i>≠0）</td></tr>
+          <tr><td><i>a</i>、<i>p</i> 異號</td><td>有一個小山丘和一個小山谷（波浪）</td><td>不能平移得到</td></tr>
+          <tr><td>任何情況</td><td>對稱中心 (<i>h</i>, <i>k</i>)，<i>h</i>＝−<i>b</i>/(3<i>a</i>)</td><td>廣域特徵像 <i>y</i>＝<i>ax</i><sup>3</sup></td></tr>
+        </tbody>
+      </table></div>
+      <h4>關鍵詞</h4>
+      <ul class="chips"><li class="hot">對稱中心</li><li class="hot">一次近似</li><li class="hot"><i>h</i>＝−<i>b</i>/(3<i>a</i>)</li><li>廣域特徵</li><li>連續綜合除法</li><li>平移</li><li class="mine">二次／高次不等式（不考）</li></ul>
+      <div class="box key"><span class="label">這章最常考</span><p>① 求對稱中心（<i>h</i>＝−<i>b</i>/(3<i>a</i>)，<i>k</i>＝<i>f</i>(<i>h</i>)）；② 求 <i>f</i>(1.99)、<i>f</i>(2.01) 這類近似值（用 (<i>x</i>−<i>a</i>) 展開）；③ 圖形上兩點對稱於中心 ⇒ 中心是中點；④ 選哪個圖形最可能是 <i>y</i>＝<i>f</i>(<i>x</i>)。</p></div>
+      <div class="mnemonic">「三次找中心，<i>b</i> 除 3<i>a</i> 加負號」；「近看是直線，遠看是 <i>ax</i>³」；「平方項消失，就站在中心」。</div>
+    </article>
+  </section>
+
+  <!-- ================= 範圍重點整理 ================= -->
+  <section class="panel" id="notes" hidden>
+    <h2>範圍重點整理</h2>
+    <p class="muted">一節一節像講義一樣整理。每個觀念後面都附「老師最愛考」與易錯點。本次範圍：2-2 常用對數、3-1 多項式的運算與應用、3-2 簡單多項式函數及其圖形、3-3 多項式函數的圖形（<strong>不含</strong>二次不等式、高次不等式）。</p>
+
+    <h3>2-2 常用對數</h3>
+    <h4>一、定義</h4>
+    <div class="box key"><span class="label">核心觀念</span>
+      <p>若 <i>a</i> &gt; 0，滿足 10<sup><i>x</i></sup>＝<i>a</i> 的實數 <i>x</i> 只有一個，記作 <i>x</i>＝log <i>a</i>，叫做 <i>a</i> 的<strong>常用對數</strong>（以 10 為底），<i>a</i> 叫「真數」。</p>
+      <p>所以 10<sup>log <i>a</i></sup>＝<i>a</i>、log 10<sup><i>x</i></sup>＝<i>x</i>。例：log 1000＝3、log 0.001＝−3、log <span class="sqrt">√<span>10</span></span>＝<span class="frac"><span>1</span><span>2</span></span>、log 1＝0。</p>
+    </div>
+    <div class="box warn"><span class="label">易錯陷阱</span><p>log 0、log(−5) <strong>沒有定義</strong>（10 的任何次方都是正數）。但 log <i>a</i> 本身可以是負數或 0，例如 log 0.5 &lt; 0。</p></div>
+
+    <h4>二、對數律（<i>a</i>、<i>b</i> &gt; 0，<i>r</i> 為實數）</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>性質</th><th>式子</th><th>例子</th></tr></thead>
+      <tbody>
+        <tr><td>乘變加</td><td>log(<i>ab</i>)＝log <i>a</i>＋log <i>b</i></td><td>log 6＝log 2＋log 3 ≈ 0.7781</td></tr>
+        <tr><td>除變減</td><td>log <span class="frac"><span><i>a</i></span><span><i>b</i></span></span>＝log <i>a</i>−log <i>b</i></td><td>log 5＝log <span class="frac"><span>10</span><span>2</span></span>＝1−log 2 ≈ 0.6990</td></tr>
+        <tr><td>次方往前</td><td>log <i>a</i><sup><i>r</i></sup>＝<i>r</i> log <i>a</i></td><td>log 8＝3 log 2 ≈ 0.9030</td></tr>
+        <tr><td>倒數</td><td>log <span class="frac"><span>1</span><span><i>a</i></span></span>＝−log <i>a</i></td><td>log 0.5＝−log 2 ≈ −0.3010</td></tr>
+        <tr><td>根號</td><td>log <span class="sqrt">√<span><i>a</i></span></span>＝<span class="frac"><span>1</span><span>2</span></span> log <i>a</i></td><td>log <span class="sqrt">√<span>3</span></span> ≈ 0.23855</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box warn"><span class="label">常見錯誤</span>
+      <ul>
+        <li>log(<i>a</i>＋<i>b</i>) ≠ log <i>a</i>＋log <i>b</i>（例如 log(1＋1)＝log 2 ≠ 0）。</li>
+        <li>(log <i>a</i>)<sup>2</sup> ≠ log <i>a</i><sup>2</sup>＝2 log <i>a</i>。</li>
+        <li><span class="frac"><span>log <i>a</i></span><span>log <i>b</i></span></span> ≠ log <span class="frac"><span><i>a</i></span><span><i>b</i></span></span>。</li>
+      </ul>
+    </div>
+
+    <h4>三、單調性與比較大小</h4>
+    <p>真數越大，log 越大：0 &lt; <i>a</i> &lt; <i>b</i> ⇔ log <i>a</i> &lt; log <i>b</i>。所以比較 2<sup>30</sup>、3<sup>20</sup>、5<sup>13</sup>：分別取 log 得 9.030、9.542、9.087，得 3<sup>20</sup> &gt; 5<sup>13</sup> &gt; 2<sup>30</sup>。</p>
+    <p>反過來，比較 (0.1)<sup>log 3</sup> 與 (0.1)<sup>log 2</sup>：(0.1)<sup>log 3</sup>＝10<sup>−log 3</sup>＝<span class="frac"><span>1</span><span>3</span></span>，(0.1)<sup>log 2</sup>＝<span class="frac"><span>1</span><span>2</span></span>，所以前者較小。</p>
+
+    <h4>四、科學記號、位數、首位數字</h4>
+    <div class="box key"><span class="label">核心觀念</span>
+      <p>正數 <i>N</i>＝<i>a</i>×10<sup><i>n</i></sup>（1 ≤ <i>a</i> &lt; 10，<i>n</i> 為整數）⇒ log <i>N</i>＝<i>n</i>＋log <i>a</i>，且 0 ≤ log <i>a</i> &lt; 1。</p>
+      <ul>
+        <li><strong>整數部分 <i>n</i> ≥ 0</strong>：<i>N</i> 的整數部分是 <strong><i>n</i>＋1 位數</strong>。</li>
+        <li><strong><i>n</i> &lt; 0</strong>（<i>N</i> &lt; 1）：<i>N</i> 在<strong>小數點後第 |<i>n</i>| 位</strong>開始出現不為 0 的數字。</li>
+        <li><strong>小數部分 log <i>a</i></strong>：找 <i>k</i> 使 log <i>k</i> ≤ log <i>a</i> &lt; log(<i>k</i>＋1)，首位數字就是 <i>k</i>。</li>
+      </ul>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>例子</th><th>log 值</th><th>拆成 整數＋[0,1) 小數</th><th>結論</th></tr></thead>
+      <tbody>
+        <tr><td>2<sup>50</sup></td><td>50×0.3010＝15.05</td><td>15＋0.05</td><td>16 位數，首位 1（0.05 &lt; log 2）</td></tr>
+        <tr><td>3<sup>40</sup></td><td>40×0.4771＝19.084</td><td>19＋0.084</td><td>20 位數，首位 1</td></tr>
+        <tr><td>6<sup>20</sup></td><td>20×0.7781＝15.562</td><td>15＋0.562</td><td>16 位數，首位 3（log3 ≤ 0.562 &lt; log4）</td></tr>
+        <tr><td>(<span class="frac"><span>1</span><span>3</span></span>)<sup>20</sup></td><td>−20×0.4771＝−9.542</td><td><strong>−10＋0.458</strong></td><td>小數點後第 10 位開始不為 0，首位 2</td></tr>
+        <tr><td>(0.3)<sup>10</sup></td><td>10×(0.4771−1)＝−5.229</td><td>−6＋0.771</td><td>小數點後第 6 位開始不為 0，首位 5（log5 ≤ 0.771 &lt; log6）</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box warn"><span class="label">易錯陷阱</span><p>負數的 log 要拆成「<strong>負整數＋正小數</strong>」：−9.542＝−10＋0.458，<strong>不是</strong> −9−0.542。小數部分一定要落在 0 到 1 之間。</p></div>
+
+    <h4>五、應用題</h4>
+    <ul>
+      <li><strong>成長／衰減：</strong>每期變成 <i>r</i> 倍，<i>n</i> 期後是 <i>r</i><sup><i>n</i></sup> 倍。「至少幾期才超過（或低於）某值」⇒ 兩邊取 log 解 <i>n</i>，答案<strong>無條件進位</strong>取整數。注意 <i>r</i> &lt; 1 時 log <i>r</i> &lt; 0，兩邊除以它不等號要變向。</li>
+      <li><strong>地震規模：</strong>log <i>E</i>＝11.8＋1.5<i>M</i>，規模差 Δ<i>M</i>，能量差 10<sup>1.5Δ<i>M</i></sup> 倍；規模差 1 ⇒ 能量約差 10<sup>1.5</sup> ≈ 31.6 倍；規模差 2 ⇒ 1000 倍。</li>
+      <li><strong>已知 log 值求比值：</strong>log <i>a</i>＝4.6、log <i>c</i>＝1.6 ⇒ <span class="frac"><span><i>a</i></span><span><i>c</i></span></span>＝10<sup>3</sup>；看到「差」的分式要先提公因數 10 的次方。</li>
+    </ul>
+    <div class="box tip"><span class="label">小撇步</span><p>考卷給的 log 值記得抄在題目旁邊；把 log4、log5、log6、log8、log9 先算好寫在角落，算首位數字時一眼就能比較。</p></div>
+
+    <h3>3-1 多項式的運算與應用</h3>
+    <h4>一、名詞</h4>
+    <ul>
+      <li><i>f</i>(<i>x</i>)＝<i>a<sub>n</sub></i><i>x</i><sup><i>n</i></sup>＋…＋<i>a</i><sub>1</sub><i>x</i>＋<i>a</i><sub>0</sub>，<i>a<sub>n</sub></i> ≠ 0 時：<strong>次數</strong> deg <i>f</i>＝<i>n</i>，<strong>首項係數</strong> <i>a<sub>n</sub></i>，<strong>常數項</strong> <i>a</i><sub>0</sub>＝<i>f</i>(0)。</li>
+      <li>零多項式（0）不定義次數；非零常數多項式是 0 次。</li>
+      <li><strong>各項係數和</strong>＝<i>f</i>(1)；偶次項係數和＝<span class="frac"><span><i>f</i>(1)＋<i>f</i>(−1)</span><span>2</span></span>；奇次項係數和＝<span class="frac"><span><i>f</i>(1)−<i>f</i>(−1)</span><span>2</span></span>。</li>
+      <li>兩多項式相等 ⇔ 同次項係數全部相等。</li>
+    </ul>
+    <h4>二、除法原理</h4>
+    <div class="box key"><span class="label">核心觀念</span><p><i>f</i>(<i>x</i>)＝<i>g</i>(<i>x</i>)<i>Q</i>(<i>x</i>)＋<i>r</i>(<i>x</i>)，<i>r</i>(<i>x</i>)＝0 或 deg <i>r</i> &lt; deg <i>g</i>。商式與餘式唯一。<br>次數關係：deg <i>Q</i>＝deg <i>f</i>−deg <i>g</i>。</p></div>
+    <h4>三、綜合除法</h4>
+    <ul>
+      <li>除以 <i>x</i>−<i>a</i>：係數依降冪排好（缺項補 0），第一個係數直接拉下，乘 <i>a</i> 加到下一個，重複，最後一格是餘式。</li>
+      <li>除以 <i>ax</i>−<i>b</i>：先除以 <i>x</i>−<span class="frac"><span><i>b</i></span><span><i>a</i></span></span> 得商 <i>q</i>(<i>x</i>)、餘 <i>r</i>，則 <i>f</i>(<i>x</i>)＝(<i>ax</i>−<i>b</i>)·<span class="frac"><span><i>q</i>(<i>x</i>)</span><span><i>a</i></span></span>＋<i>r</i>：<strong>商要除以 <i>a</i>，餘式不變</strong>。</li>
+      <li><strong>連續綜合除法</strong>：對商式重複除以 <i>x</i>−<i>h</i>，由下往上讀餘數，即可寫成 <i>f</i>(<i>x</i>)＝<i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>b</i>(<i>x</i>−<i>h</i>)<sup>2</sup>＋<i>c</i>(<i>x</i>−<i>h</i>)＋<i>d</i>。<br>例：<i>x</i><sup>3</sup>＋2<i>x</i><sup>2</sup>−3<i>x</i>＋5＝(<i>x</i>−1)<sup>3</sup>＋5(<i>x</i>−1)<sup>2</sup>＋4(<i>x</i>−1)＋5。</li>
+    </ul>
+    <h4>四、餘式定理與因式定理</h4>
+    <div class="two">
+      <div class="box key"><span class="label">餘式定理</span><p><i>f</i>(<i>x</i>) 除以 <i>x</i>−<i>a</i> 的餘式＝<i>f</i>(<i>a</i>)。<br><i>f</i>(<i>x</i>) 除以 <i>ax</i>−<i>b</i> 的餘式＝<i>f</i>(<span class="frac"><span><i>b</i></span><span><i>a</i></span></span>)。</p></div>
+      <div class="box key"><span class="label">因式定理</span><p><i>x</i>−<i>a</i> 是 <i>f</i>(<i>x</i>) 的因式 ⇔ <i>f</i>(<i>a</i>)＝0。<br><i>ax</i>−<i>b</i> 是因式 ⇔ <i>f</i>(<span class="frac"><span><i>b</i></span><span><i>a</i></span></span>)＝0。</p></div>
+    </div>
+    <p><strong>除以二次式：</strong>設餘式 <i>px</i>＋<i>q</i>。例：<i>f</i>(<i>x</i>) 除以 <i>x</i>−1 餘 3、除以 <i>x</i>＋2 餘 −6，則 <i>f</i>(<i>x</i>)＝(<i>x</i>−1)(<i>x</i>＋2)<i>Q</i>(<i>x</i>)＋<i>px</i>＋<i>q</i>，代 <i>x</i>＝1、−2：<i>p</i>＋<i>q</i>＝3、−2<i>p</i>＋<i>q</i>＝−6 ⇒ <i>p</i>＝3、<i>q</i>＝0，餘式 3<i>x</i>。</p>
+    <p><strong>除以不能分解的二次式（降次法）：</strong>求 (<i>x</i><sup>2</sup>＋<i>x</i>＋5)<sup>5</sup> 除以 <i>x</i><sup>2</sup>＋<i>x</i>＋1 的餘式：因為 <i>x</i><sup>2</sup>＋<i>x</i>＋5＝(<i>x</i><sup>2</sup>＋<i>x</i>＋1)＋4，展開後除了 4<sup>5</sup> 以外每一項都含因式 <i>x</i><sup>2</sup>＋<i>x</i>＋1，所以餘式＝4<sup>5</sup>＝1024。（口語：在除以 <i>x</i><sup>2</sup>＋<i>x</i>＋1 時，<i>x</i><sup>2</sup>＋<i>x</i> 可以當成 −1。）</p>
+    <p><strong>除以 (<i>x</i>−<i>a</i>)<sup>2</sup>：</strong>連續綜合除法兩次，餘式＝<i>c</i>(<i>x</i>−<i>a</i>)＋<i>d</i>。也可令 <i>t</i>＝<i>x</i>−<i>a</i>，丟掉 <i>t</i><sup>2</sup> 以上的項。</p>
+    <div class="box warn"><span class="label">易錯陷阱</span>
+      <ul>
+        <li>除以 <i>x</i>＋2 要代 <i>x</i>＝<strong>−2</strong>，不是 2。</li>
+        <li>除以 2026<i>x</i>＋2026＝2026(<i>x</i>＋1)，餘式是 <i>f</i>(−1)（除式乘上非零常數不影響餘式）。</li>
+        <li>綜合除法忘了補 0（例如 <i>x</i><sup>3</sup>−2<i>x</i>＋1 的 <i>x</i><sup>2</sup> 係數是 0）。</li>
+        <li>除以 2<i>x</i>−1 時，商要再除以 2。</li>
+      </ul>
+    </div>
+    <h4>五、插值：已知函數值求多項式</h4>
+    <ul>
+      <li><strong>已知根先用因式定理：</strong>三次 <i>f</i> 滿足 <i>f</i>(1)＝<i>f</i>(3)＝0 ⇒ 設 <i>f</i>(<i>x</i>)＝(<i>x</i>−1)(<i>x</i>−3)(<i>ax</i>＋<i>b</i>)，再用其他兩個值解 <i>a</i>、<i>b</i>。</li>
+      <li><strong>已知三點求二次：</strong>可設 <i>f</i>(<i>x</i>)＝<i>a</i>＋<i>b</i>(<i>x</i>−<i>x</i><sub>1</sub>)＋<i>c</i>(<i>x</i>−<i>x</i><sub>1</sub>)(<i>x</i>−<i>x</i><sub>2</sub>)，一個一個代就能解；或用拉格朗日形式直接寫出（寫法以課本為準）。</li>
+      <li>「<i>f</i>(<i>x</i>) 除以 <i>x</i> 的餘式」就是 <i>f</i>(0)。</li>
+    </ul>
+
+    <h3>3-2 簡單多項式函數及其圖形</h3>
+    <h4>一、函數</h4>
+    <p>每一個 <i>x</i> 都恰好對應<strong>一個</strong> <i>y</i>，就叫 <i>y</i> 是 <i>x</i> 的函數，記作 <i>y</i>＝<i>f</i>(<i>x</i>)。圖形判斷法：任何鉛直線和圖形最多交一點。</p>
+    <h4>二、一次函數 <i>f</i>(<i>x</i>)＝<i>ax</i>＋<i>b</i></h4>
+    <ul>
+      <li>圖形是直線，斜率 <i>a</i>＝<span class="frac"><span><i>f</i>(<i>x</i><sub>2</sub>)−<i>f</i>(<i>x</i><sub>1</sub>)</span><span><i>x</i><sub>2</sub>−<i>x</i><sub>1</sub></span></span>，<i>y</i> 截距 <i>b</i>。</li>
+      <li>例：<i>f</i>(−4)＝19、<i>f</i>(−1)＝7 ⇒ 斜率 <span class="frac"><span>7−19</span><span>−1−(−4)</span></span>＝−4，<i>f</i>(<i>x</i>)＝−4<i>x</i>＋3。</li>
+      <li><i>a</i>＝0 時是常數函數（水平線）。</li>
+    </ul>
+    <h4>三、二次函數 <i>y</i>＝<i>ax</i><sup>2</sup>＋<i>bx</i>＋<i>c</i>（<i>a</i> ≠ 0）</h4>
+    <div class="box key"><span class="label">核心觀念：配方</span>
+      <p><i>y</i>＝<i>a</i>(<i>x</i>＋<span class="frac"><span><i>b</i></span><span>2<i>a</i></span></span>)<sup>2</sup>＋<span class="frac"><span>4<i>ac</i>−<i>b</i><sup>2</sup></span><span>4<i>a</i></span></span>，頂點 (−<span class="frac"><span><i>b</i></span><span>2<i>a</i></span></span>, −<span class="frac"><span><i>D</i></span><span>4<i>a</i></span></span>)，<i>D</i>＝<i>b</i><sup>2</sup>−4<i>ac</i>。</p>
+      <p><i>a</i>&gt;0：開口向上，頂點是最低點（有最小值）；<i>a</i>&lt;0：開口向下，頂點是最高點（有最大值）。</p>
+    </div>
+    <ul>
+      <li><strong>頂點式</strong> <i>y</i>＝<i>a</i>(<i>x</i>−<i>h</i>)<sup>2</sup>＋<i>k</i>；<strong>兩根式</strong> <i>y</i>＝<i>a</i>(<i>x</i>−α)(<i>x</i>−β)，對稱軸 <i>x</i>＝<span class="frac"><span>α＋β</span><span>2</span></span>。</li>
+      <li><strong>平移：</strong><i>y</i>＝<i>f</i>(<i>x</i>) 向右 <i>h</i>、向上 <i>k</i> ⇒ <i>y</i>＝<i>f</i>(<i>x</i>−<i>h</i>)＋<i>k</i>；向左 <i>h</i>、向下 <i>k</i> ⇒ <i>y</i>＝<i>f</i>(<i>x</i>＋<i>h</i>)−<i>k</i>。</li>
+      <li><strong>對稱：</strong><i>f</i>(<i>h</i>＋<i>t</i>)＝<i>f</i>(<i>h</i>−<i>t</i>)。例如對稱軸 <i>x</i>＝1 ⇒ <i>f</i>(4)＝<i>f</i>(−2)、<i>f</i>(5)＝<i>f</i>(−3)。</li>
+    </ul>
+    <h4>四、最大值與最小值</h4>
+    <div class="table-wrap"><table>
+      <thead><tr><th>情況（以 <i>a</i>&gt;0 為例）</th><th>最小值</th><th>最大值</th></tr></thead>
+      <tbody>
+        <tr><td>定義域是全體實數</td><td>頂點 <i>k</i></td><td>沒有</td></tr>
+        <tr><td>範圍 [<i>p</i>, <i>q</i>] 且頂點 <i>h</i> 在範圍內</td><td>頂點 <i>k</i></td><td>比較 <i>f</i>(<i>p</i>)、<i>f</i>(<i>q</i>)，離 <i>h</i> 較遠的端點較大</td></tr>
+        <tr><td>範圍 [<i>p</i>, <i>q</i>] 且頂點在範圍外</td><td>靠近 <i>h</i> 的端點</td><td>離 <i>h</i> 較遠的端點</td></tr>
+      </tbody>
+    </table></div>
+    <p>例：<i>y</i>＝<i>x</i><sup>2</sup>−4<i>x</i>＋1＝(<i>x</i>−2)<sup>2</sup>−3，在 0 ≤ <i>x</i> ≤ 5：最小 −3（<i>x</i>＝2），最大 <i>f</i>(5)＝6（5 離 2 比 0 遠）。</p>
+    <p>例：<i>f</i>(<i>x</i>)＝(<i>x</i>−1)<sup>2</sup>＋(<i>x</i>＋1)<sup>2</sup>＋(2<i>x</i>−4)<sup>2</sup>＝6<i>x</i><sup>2</sup>−16<i>x</i>＋18 ⇒ 頂點 <i>x</i>＝<span class="frac"><span>4</span><span>3</span></span>，最小值 <span class="frac"><span>22</span><span>3</span></span>。這種「好幾個平方和」先展開合併成一個二次式再配方。</p>
+    <div class="box warn"><span class="label">易錯陷阱</span><p>有範圍的最值題，<strong>一定要先檢查頂點在不在範圍內</strong>；最大值也要比較兩端點，不能只算一端。</p></div>
+
+    <h3>3-3 多項式函數的圖形（本次只考圖形，不考不等式）</h3>
+    <h4>一、<i>y</i>＝<i>ax</i><sup>3</sup> 與 <i>y</i>＝<i>ax</i><sup>3</sup>＋<i>px</i></h4>
+    <ul>
+      <li><i>f</i>(−<i>x</i>)＝−<i>f</i>(<i>x</i>)，圖形<strong>對稱於原點</strong>。</li>
+      <li><i>y</i>＝<i>ax</i><sup>3</sup>：在原點附近很「平」（貼近 <i>x</i> 軸），|<i>x</i>| 大時增長很快。</li>
+      <li><i>y</i>＝<i>ax</i><sup>3</sup>＋<i>px</i>：在原點附近像直線 <i>y</i>＝<i>px</i>；<i>a</i>、<i>p</i> 異號時與 <i>x</i> 軸交三點（0 與 ±<span class="sqrt">√<span>−<i>p</i>/<i>a</i></span></span>），同號時只交於原點。</li>
+    </ul>
+    <h4>二、一般三次函數的對稱中心</h4>
+    <div class="box key"><span class="label">核心觀念</span>
+      <p>任何三次函數 <i>f</i>(<i>x</i>)＝<i>ax</i><sup>3</sup>＋<i>bx</i><sup>2</sup>＋<i>cx</i>＋<i>d</i> 都能寫成 <i>f</i>(<i>x</i>)＝<i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i>，其中 <i>h</i>＝−<span class="frac"><span><i>b</i></span><span>3<i>a</i></span></span>、<i>k</i>＝<i>f</i>(<i>h</i>)。</p>
+      <p>圖形是 <i>y</i>＝<i>ax</i><sup>3</sup>＋<i>px</i> 平移到以 (<i>h</i>, <i>k</i>) 為中心，所以 (<i>h</i>, <i>k</i>) 是<strong>對稱中心</strong>：圖形上任兩點若對稱於中心，中心就是它們的中點。</p>
+    </div>
+    <p>例：<i>f</i>(<i>x</i>)＝<i>x</i><sup>3</sup>−6<i>x</i><sup>2</sup>＋10<i>x</i>−1，<i>h</i>＝<span class="frac"><span>6</span><span>3</span></span>＝2，連續綜合除法得 <i>f</i>(<i>x</i>)＝(<i>x</i>−2)<sup>3</sup>＋0·(<i>x</i>−2)<sup>2</sup>−2(<i>x</i>−2)＋3，對稱中心 (2, 3)。</p>
+    <ul>
+      <li><i>p</i>＝0 ⇔ 圖形可由 <i>y</i>＝<i>ax</i><sup>3</sup> 平移得到。</li>
+      <li>平移不會改變 <i>a</i> 和 <i>p</i>；<i>y</i>＝<i>f</i>(<i>x</i>) 往右 <i>m</i>、往上 <i>n</i>，中心也跟著往右 <i>m</i>、往上 <i>n</i>。</li>
+      <li>已知 <i>g</i>(<i>x</i>)＝<i>f</i>(<i>x</i>＋2) 的中心 (−1, 7)，則 <i>f</i>(<i>x</i>)＝<i>g</i>(<i>x</i>−2) 的中心是 (1, 7)（往右 2）。</li>
+    </ul>
+    <h4>三、局部特徵：一次近似</h4>
+    <div class="box key"><span class="label">核心觀念</span><p>把 <i>f</i>(<i>x</i>) 寫成 <i>f</i>(<i>x</i>)＝<i>a</i>(<i>x</i>−<i>t</i>)<sup>3</sup>＋<i>b</i>(<i>x</i>−<i>t</i>)<sup>2</sup>＋<i>c</i>(<i>x</i>−<i>t</i>)＋<i>d</i>。當 <i>x</i> 很靠近 <i>t</i>，(<i>x</i>−<i>t</i>)<sup>2</sup>、(<i>x</i>−<i>t</i>)<sup>3</sup> 非常小，所以 <i>f</i>(<i>x</i>) ≈ <i>c</i>(<i>x</i>−<i>t</i>)＋<i>d</i>。直線 <i>y</i>＝<i>c</i>(<i>x</i>−<i>t</i>)＋<i>d</i> 就是 <i>y</i>＝<i>f</i>(<i>x</i>) 在 <i>x</i>＝<i>t</i> 附近的一次近似。</p></div>
+    <p>例：<i>f</i>(<i>x</i>)＝<i>x</i><sup>3</sup>−3<i>x</i><sup>2</sup>＋5<i>x</i>＋1＝(<i>x</i>−1)<sup>3</sup>＋2(<i>x</i>−1)＋4，<i>f</i>(1.01) ≈ 2(0.01)＋4＝4.02（真值 4.020001）。</p>
+    <p>若要四捨五入到小數點後第二位，一次近似通常就夠；但二次項係數很大或要求更多位數時，要把 <i>b</i>(<i>x</i>−<i>t</i>)<sup>2</sup> 也算進去檢查。</p>
+    <h4>四、廣域特徵</h4>
+    <p>|<i>x</i>| 很大時 <i>f</i>(<i>x</i>) 的走勢由<strong>首項</strong>決定：例如 −2<i>x</i><sup>3</sup>＋100<i>x</i><sup>2</sup>＋… 在 <i>x</i> 很大時往下（→ −∞）、<i>x</i> 很負時往上。看圖選函數時，先用「兩端的走向」刪選項，再用 <i>y</i> 截距、根的位置判斷。</p>
+    <div class="box info"><span class="label">本次不考</span><p>3-3 後半的「二次不等式」（如 <i>x</i><sup>2</sup>−<i>x</i>−6 &lt; 0）與「高次不等式」（如 (<i>x</i>−1)(<i>x</i>＋2)(<i>x</i>−3) ≥ 0）依範圍公告不在本次考試範圍。若老師上課已教到，以老師公告為準。</p></div>
+  </section>
+
+  <!-- ================= 公式整理 ================= -->
+  <section class="panel" id="formula" hidden>
+    <h2>公式整理與記憶技巧</h2>
+    <p class="muted">考前最後一天只看這頁就好。每張公式卡下面寫了「什麼時候用」。</p>
+
+    <h3>2-2 常用對數</h3>
+    <div class="formula">
+      <div class="name">定義</div>
+      <div class="expr">log <i>a</i>＝<i>x</i> ⇔ 10<sup><i>x</i></sup>＝<i>a</i>　（<i>a</i> &gt; 0）</div>
+      <div class="note">10<sup>log <i>a</i></sup>＝<i>a</i>、log 10<sup><i>x</i></sup>＝<i>x</i>、log 1＝0、log 10＝1。真數必須是正數。</div>
+    </div>
+    <div class="formula">
+      <div class="name">對數律</div>
+      <div class="expr">log <i>ab</i>＝log <i>a</i>＋log <i>b</i>　log <span class="frac"><span><i>a</i></span><span><i>b</i></span></span>＝log <i>a</i>−log <i>b</i>　log <i>a</i><sup><i>r</i></sup>＝<i>r</i> log <i>a</i></div>
+      <div class="note">化簡、把乘方變乘法。沒有「log(<i>a</i>＋<i>b</i>)」的公式！</div>
+    </div>
+    <div class="formula">
+      <div class="name">位數與首位數字</div>
+      <div class="expr">log <i>N</i>＝<i>n</i>＋log <i>a</i>，<i>n</i> 為整數，0 ≤ log <i>a</i> &lt; 1</div>
+      <div class="note"><i>n</i> ≥ 0：整數部分 <i>n</i>＋1 位；<i>n</i> &lt; 0：小數點後第 |<i>n</i>| 位開始不為 0。log <i>k</i> ≤ log <i>a</i> &lt; log(<i>k</i>＋1) ⇒ 首位數字 <i>k</i>。</div>
+    </div>
+    <div class="formula">
+      <div class="name">換算常用值</div>
+      <div class="expr">log 5＝1−log 2　log 4＝2 log 2　log 6＝log 2＋log 3　log 8＝3 log 2　log 9＝2 log 3</div>
+      <div class="note">考卷只給 log2、log3、log7 時，其他都要自己換算。</div>
+    </div>
+    <div class="formula">
+      <div class="name">地震規模（應用）</div>
+      <div class="expr">log <i>E</i>＝11.8＋1.5<i>M</i> ⇒ <span class="frac"><span><i>E</i><sub>1</sub></span><span><i>E</i><sub>2</sub></span></span>＝10<sup>1.5(<i>M</i><sub>1</sub>−<i>M</i><sub>2</sub>)</sup></div>
+      <div class="note">公式由題目給；重點是「相減後取 10 的次方」。</div>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>數</th><th>log ≈</th><th>記法</th></tr></thead>
+      <tbody>
+        <tr><td>2</td><td>0.3010</td><td>「三零一零」</td></tr>
+        <tr><td>3</td><td>0.4771</td><td>「四七七一」：司機七七一</td></tr>
+        <tr><td>5</td><td>0.6990</td><td>1−0.3010</td></tr>
+        <tr><td>7</td><td>0.8451</td><td>「八四五一」：爸死我一（很好記，抱歉）</td></tr>
+        <tr><td>6</td><td>0.7781</td><td>0.3010＋0.4771</td></tr>
+      </tbody>
+    </table></div>
+    <div class="mnemonic">「log 問 10 的幾次方」；「整數管位數、小數管首位」；「負的要借 1：−9.542＝−10＋0.458」。</div>
+
+    <h3>3-1 多項式的運算與應用</h3>
+    <div class="formula">
+      <div class="name">除法原理</div>
+      <div class="expr"><i>f</i>(<i>x</i>)＝<i>g</i>(<i>x</i>)<i>Q</i>(<i>x</i>)＋<i>r</i>(<i>x</i>)，deg <i>r</i> &lt; deg <i>g</i> 或 <i>r</i>＝0</div>
+      <div class="note">餘式的次數一定比除式小：除以二次式 ⇒ 設 <i>px</i>＋<i>q</i>；除以三次式 ⇒ 設 <i>px</i><sup>2</sup>＋<i>qx</i>＋<i>s</i>。</div>
+    </div>
+    <div class="formula">
+      <div class="name">餘式定理</div>
+      <div class="expr"><i>f</i>(<i>x</i>) ÷ (<i>x</i>−<i>a</i>) 的餘式＝<i>f</i>(<i>a</i>)；<i>f</i>(<i>x</i>) ÷ (<i>ax</i>−<i>b</i>) 的餘式＝<i>f</i>(<span class="frac"><span><i>b</i></span><span><i>a</i></span></span>)</div>
+      <div class="note">求餘式不用真的除。</div>
+    </div>
+    <div class="formula">
+      <div class="name">因式定理</div>
+      <div class="expr">(<i>x</i>−<i>a</i>) | <i>f</i>(<i>x</i>) ⇔ <i>f</i>(<i>a</i>)＝0</div>
+      <div class="note">已知因式求係數；找整係數方程式的有理根時，試 ±<span class="frac"><span>常數項因數</span><span>首項係數因數</span></span>。</div>
+    </div>
+    <div class="formula">
+      <div class="name">係數和</div>
+      <div class="expr">全部係數和＝<i>f</i>(1)　常數項＝<i>f</i>(0)　偶次項和＝<span class="frac"><span><i>f</i>(1)＋<i>f</i>(−1)</span><span>2</span></span></div>
+      <div class="note">選擇題常見的快速判斷。</div>
+    </div>
+    <div class="formula">
+      <div class="name">連續綜合除法（以 <i>x</i>−<i>h</i> 展開）</div>
+      <div class="expr"><i>f</i>(<i>x</i>)＝<i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>b</i>(<i>x</i>−<i>h</i>)<sup>2</sup>＋<i>c</i>(<i>x</i>−<i>h</i>)＋<i>d</i></div>
+      <div class="note"><i>d</i>＝<i>f</i>(<i>h</i>)；除以 (<i>x</i>−<i>h</i>)<sup>2</sup> 的餘式＝<i>c</i>(<i>x</i>−<i>h</i>)＋<i>d</i>；在 <i>x</i>＝<i>h</i> 附近 <i>f</i>(<i>x</i>) ≈ <i>c</i>(<i>x</i>−<i>h</i>)＋<i>d</i>。</div>
+    </div>
+    <div class="mnemonic">「除式等於零，代進去」；「一次餘常數，二次設 <i>px</i>＋<i>q</i>」；綜合除法「拉下來、乘過去、加起來」。</div>
+
+    <h3>3-2 簡單多項式函數</h3>
+    <div class="formula">
+      <div class="name">一次函數</div>
+      <div class="expr"><i>f</i>(<i>x</i>)＝<i>ax</i>＋<i>b</i>，<i>a</i>＝<span class="frac"><span><i>f</i>(<i>x</i><sub>2</sub>)−<i>f</i>(<i>x</i><sub>1</sub>)</span><span><i>x</i><sub>2</sub>−<i>x</i><sub>1</sub></span></span></div>
+      <div class="note">已知兩個函數值就能寫出一次函數。</div>
+    </div>
+    <div class="formula">
+      <div class="name">二次函數配方</div>
+      <div class="expr"><i>y</i>＝<i>ax</i><sup>2</sup>＋<i>bx</i>＋<i>c</i>＝<i>a</i>(<i>x</i>＋<span class="frac"><span><i>b</i></span><span>2<i>a</i></span></span>)<sup>2</sup>−<span class="frac"><span><i>b</i><sup>2</sup>−4<i>ac</i></span><span>4<i>a</i></span></span></div>
+      <div class="note">頂點 <i>x</i> 坐標 −<i>b</i>/(2<i>a</i>)，代回原式求 <i>y</i> 坐標比背公式快。</div>
+    </div>
+    <div class="formula">
+      <div class="name">平移</div>
+      <div class="expr"><i>y</i>＝<i>f</i>(<i>x</i>) → 右 <i>h</i>、上 <i>k</i> → <i>y</i>＝<i>f</i>(<i>x</i>−<i>h</i>)＋<i>k</i></div>
+      <div class="note">「右減左加、上加下減」。平移後 <i>a</i> 不變。</div>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>判別式 <i>D</i>＝<i>b</i><sup>2</sup>−4<i>ac</i></th><th>與 <i>x</i> 軸</th><th><i>ax</i><sup>2</sup>＋<i>bx</i>＋<i>c</i>＝0 的根</th></tr></thead>
+      <tbody>
+        <tr><td><i>D</i> &gt; 0</td><td>交兩點</td><td>兩相異實根</td></tr>
+        <tr><td><i>D</i>＝0</td><td>相切（一點）</td><td>重根</td></tr>
+        <tr><td><i>D</i> &lt; 0</td><td>不相交</td><td>沒有實根</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>3-3 三次函數的圖形</h3>
+    <div class="formula">
+      <div class="name">對稱中心</div>
+      <div class="expr"><i>y</i>＝<i>ax</i><sup>3</sup>＋<i>bx</i><sup>2</sup>＋<i>cx</i>＋<i>d</i>＝<i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i>，<i>h</i>＝−<span class="frac"><span><i>b</i></span><span>3<i>a</i></span></span>，<i>k</i>＝<i>f</i>(<i>h</i>)</div>
+      <div class="note">對稱中心 (<i>h</i>, <i>k</i>)；圖形上兩點對稱於中心 ⇒ 中心是兩點中點。</div>
+    </div>
+    <div class="formula">
+      <div class="name">中心附近的一次近似</div>
+      <div class="expr"><i>y</i> ≈ <i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i></div>
+      <div class="note"><i>p</i>＝0 ⇔ 可由 <i>y</i>＝<i>ax</i><sup>3</sup> 平移；<i>ap</i> &lt; 0 有波浪，<i>ap</i> ≥ 0 單調。</div>
+    </div>
+    <div class="formula">
+      <div class="name">廣域特徵</div>
+      <div class="expr">|<i>x</i>| 很大時 <i>f</i>(<i>x</i>) ≈ 首項 <i>a<sub>n</sub>x<sup>n</sup></i></div>
+      <div class="note">看圖選函數：先看左右兩端往上還是往下。</div>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>比較</th><th>二次函數</th><th>三次函數</th></tr></thead>
+      <tbody>
+        <tr><td>對稱</td><td>線對稱（對稱軸 <i>x</i>＝−<i>b</i>/(2<i>a</i>)）</td><td>點對稱（中心 <i>x</i>＝−<i>b</i>/(3<i>a</i>)）</td></tr>
+        <tr><td>標準式</td><td><i>a</i>(<i>x</i>−<i>h</i>)<sup>2</sup>＋<i>k</i></td><td><i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i></td></tr>
+        <tr><td>怎麼得到</td><td>配方</td><td>連續綜合除法（除以 <i>x</i>−<i>h</i>）</td></tr>
+        <tr><td>特別點</td><td>頂點（最高或最低）</td><td>對稱中心（不一定是最高或最低）</td></tr>
+      </tbody>
+    </table></div>
+    <div class="mnemonic">「二次除以 2，三次除以 3」：二次對稱軸 −<i>b</i>/(2<i>a</i>)、三次對稱中心 −<i>b</i>/(3<i>a</i>)。「近看是直線，遠看是首項」。</div>
+  </section>
+
+  <!-- ================= 考古題 ================= -->
+  <section class="panel" id="past" hidden>
+    <h2>考古題與白話解析</h2>
+    <div class="box info"><span class="label">說明</span><p>以下為依本次範圍（2-2～3-3，不含二次不等式、高次不等式）、比照歷屆段考常見題型整理的練習題，<strong>非陽明高中原始試卷</strong>。題目數字皆自行設計並驗算。點選項會立刻對答案；多選題選好後按確認。想做「整份考卷」請到「模擬段考」分頁。</p></div>
+
+    <h3>一、單選題</h3>
+
+    <div class="q" data-answer="A">
+      <div class="q-head"><span class="q-no">第 1 題</span><span class="tag">2-2 對數定義</span></div>
+      <div class="q-stem">log 0.001＋log <span class="sqrt">√<span>10</span></span>＋log 1 的值為何？</div>
+      <ul class="opts">
+        <li><button>−<span class="frac"><span>5</span><span>2</span></span></button></li>
+        <li><button>−3</button></li>
+        <li><button>−2</button></li>
+        <li><button><span class="frac"><span>5</span><span>2</span></span></button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：A</p>
+        <p>log 0.001＝log 10<sup>−3</sup>＝−3；log <span class="sqrt">√<span>10</span></span>＝log 10<sup>1/2</sup>＝<span class="frac"><span>1</span><span>2</span></span>；log 1＝0。合計 −<span class="frac"><span>5</span><span>2</span></span>。</p>
+        <div class="plain">每一個都問自己「10 的幾次方是它？」0.001 是 10 的 −3 次方，根號 10 是 10 的二分之一次方，1 是 10 的 0 次方。加起來就好。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">第 2 題</span><span class="tag hot">高頻考點</span><span class="tag">2-2 位數</span></div>
+      <div class="q-stem">已知 log 2 ≈ 0.3010，則 2<sup>50</sup> 是幾位數？</div>
+      <ul class="opts">
+        <li><button>14 位</button></li>
+        <li><button>15 位</button></li>
+        <li><button>16 位</button></li>
+        <li><button>17 位</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p>log 2<sup>50</sup>＝50×0.3010＝15.05，所以 10<sup>15</sup> ≤ 2<sup>50</sup> &lt; 10<sup>16</sup>，是 15＋1＝16 位數。（實際 2<sup>50</sup>＝1125899906842624，16 位。）</p>
+        <div class="plain">10<sup>15</sup> 是「1 後面 15 個 0」，共 16 位。所以 log 的整數部分是 15，位數就是 16。記住「位數＝整數部分＋1」，最常錯的是直接答 15。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">第 3 題</span><span class="tag hot">高頻考點</span><span class="tag">2-2 小數第幾位</span></div>
+      <div class="q-stem">已知 log 3 ≈ 0.4771。(<span class="frac"><span>1</span><span>3</span></span>)<sup>20</sup> 化成小數後，從小數點後第幾位開始出現不為 0 的數字？</div>
+      <ul class="opts">
+        <li><button>第 8 位</button></li>
+        <li><button>第 9 位</button></li>
+        <li><button>第 10 位</button></li>
+        <li><button>第 11 位</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p>log(<span class="frac"><span>1</span><span>3</span></span>)<sup>20</sup>＝−20×0.4771＝−9.542＝−10＋0.458。所以 (<span class="frac"><span>1</span><span>3</span></span>)<sup>20</sup>＝10<sup>0.458</sup>×10<sup>−10</sup>，而 1 ≤ 10<sup>0.458</sup> &lt; 10，故從小數點後第 10 位開始不為 0（實際約 2.87×10<sup>−10</sup>）。</p>
+        <div class="plain">負的 log 一定要「借 1」把小數部分變正的：−9.542 要寫成 −10＋0.458，答案看 −10，所以是第 10 位。直接看到 9 就選第 9 位是最經典的陷阱。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="B">
+      <div class="q-head"><span class="q-no">第 4 題</span><span class="tag">2-2 比較大小</span></div>
+      <div class="q-stem">已知 log 2 ≈ 0.3010、log 3 ≈ 0.4771。設 <i>a</i>＝2<sup>30</sup>、<i>b</i>＝3<sup>20</sup>、<i>c</i>＝5<sup>13</sup>，下列大小關係何者正確？</div>
+      <ul class="opts">
+        <li><button><i>a</i> &gt; <i>b</i> &gt; <i>c</i></button></li>
+        <li><button><i>b</i> &gt; <i>c</i> &gt; <i>a</i></button></li>
+        <li><button><i>c</i> &gt; <i>b</i> &gt; <i>a</i></button></li>
+        <li><button><i>b</i> &gt; <i>a</i> &gt; <i>c</i></button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：B</p>
+        <p>log <i>a</i>＝30×0.3010＝9.030；log <i>b</i>＝20×0.4771＝9.542；log <i>c</i>＝13×(1−0.3010)＝13×0.6990＝9.087。log 越大數越大，所以 <i>b</i> &gt; <i>c</i> &gt; <i>a</i>。</p>
+        <div class="plain">三個數都很大，直接比不可能，取 log 就變成比三個小數。log 5 要用 1−log 2 換出來，這一步常被忘記。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="D">
+      <div class="q-head"><span class="q-no">第 5 題</span><span class="tag hot">高頻考點</span><span class="tag">3-1 餘式定理</span></div>
+      <div class="q-stem"><i>f</i>(<i>x</i>)＝2<i>x</i><sup>3</sup>−5<i>x</i><sup>2</sup>＋4<i>x</i>−7 除以 <i>x</i>−2 的餘式為何？</div>
+      <ul class="opts">
+        <li><button>3</button></li>
+        <li><button>−1</button></li>
+        <li><button>−11</button></li>
+        <li><button>−3</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：D</p>
+        <p>由餘式定理，餘式＝<i>f</i>(2)＝16−20＋8−7＝−3。（綜合除法：2, −5, 4, −7 → 2, −1, 2, <strong>−3</strong>。）</p>
+        <div class="plain">除以 <i>x</i>−2，就把 <i>x</i>＝2 代進去，代出來的數就是餘式，不用真的做除法。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="B">
+      <div class="q-head"><span class="q-no">第 6 題</span><span class="tag hot">高頻考點</span><span class="tag">3-1 除以二次式</span></div>
+      <div class="q-stem">多項式 <i>f</i>(<i>x</i>) 除以 <i>x</i>−1 的餘式為 3，除以 <i>x</i>＋2 的餘式為 −6，則 <i>f</i>(<i>x</i>) 除以 (<i>x</i>−1)(<i>x</i>＋2) 的餘式為何？</div>
+      <ul class="opts">
+        <li><button>3</button></li>
+        <li><button>3<i>x</i></button></li>
+        <li><button>−3<i>x</i>＋6</button></li>
+        <li><button>2<i>x</i>＋1</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：B</p>
+        <p>設 <i>f</i>(<i>x</i>)＝(<i>x</i>−1)(<i>x</i>＋2)<i>Q</i>(<i>x</i>)＋<i>px</i>＋<i>q</i>。<i>f</i>(1)＝<i>p</i>＋<i>q</i>＝3，<i>f</i>(−2)＝−2<i>p</i>＋<i>q</i>＝−6，相減得 3<i>p</i>＝9，<i>p</i>＝3，<i>q</i>＝0。餘式 3<i>x</i>。</p>
+        <div class="plain">除式是二次，餘式最多一次，所以設 <i>px</i>＋<i>q</i>。再代「讓除式變 0 的兩個數」，商那一大串就消失了，只剩兩條方程式。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="A">
+      <div class="q-head"><span class="q-no">第 7 題</span><span class="tag">3-1 因式定理</span></div>
+      <div class="q-stem">若 <i>x</i>−1 與 <i>x</i>＋2 都是 <i>f</i>(<i>x</i>)＝<i>x</i><sup>3</sup>＋<i>ax</i><sup>2</sup>＋<i>bx</i>−6 的因式，則數對 (<i>a</i>, <i>b</i>)＝？</div>
+      <ul class="opts">
+        <li><button>(4, 1)</button></li>
+        <li><button>(1, 4)</button></li>
+        <li><button>(2, 3)</button></li>
+        <li><button>(−4, 1)</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：A</p>
+        <p><i>f</i>(1)＝1＋<i>a</i>＋<i>b</i>−6＝0 ⇒ <i>a</i>＋<i>b</i>＝5；<i>f</i>(−2)＝−8＋4<i>a</i>−2<i>b</i>−6＝0 ⇒ 2<i>a</i>−<i>b</i>＝7。相加得 3<i>a</i>＝12，<i>a</i>＝4，<i>b</i>＝1。驗算：<i>x</i><sup>3</sup>＋4<i>x</i><sup>2</sup>＋<i>x</i>−6＝(<i>x</i>−1)(<i>x</i>＋2)(<i>x</i>＋3)。</p>
+        <div class="plain">「是因式」＝「代進去等於 0」。兩個因式給兩條方程式，剛好解兩個未知數。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">第 8 題</span><span class="tag">3-2 二次函數頂點</span></div>
+      <div class="q-stem">二次函數 <i>y</i>＝−2<i>x</i><sup>2</sup>＋8<i>x</i>−3 的圖形，下列敘述何者正確？</div>
+      <ul class="opts">
+        <li><button>開口向上，頂點 (2, 5)</button></li>
+        <li><button>開口向下，頂點 (−2, 5)</button></li>
+        <li><button>開口向下，頂點 (2, 5)，有最大值 5</button></li>
+        <li><button>開口向下，頂點 (2, −3)，有最大值 −3</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p><i>y</i>＝−2(<i>x</i><sup>2</sup>−4<i>x</i>)−3＝−2(<i>x</i>−2)<sup>2</sup>＋8−3＝−2(<i>x</i>−2)<sup>2</sup>＋5。<i>a</i>＝−2 &lt; 0 開口向下，頂點 (2, 5) 是最高點，最大值 5。</p>
+        <div class="plain">先看 <i>x</i><sup>2</sup> 前面是負的 → 開口向下 → 頂點是山頂。頂點 <i>x</i>＝−<span class="frac"><span>8</span><span>2×(−2)</span></span>＝2，代回去 <i>y</i>＝−8＋16−3＝5。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="D">
+      <div class="q-head"><span class="q-no">第 9 題</span><span class="tag hot">高頻考點</span><span class="tag">3-2 區間最值</span></div>
+      <div class="q-stem">當 0 ≤ <i>x</i> ≤ 5 時，<i>f</i>(<i>x</i>)＝<i>x</i><sup>2</sup>−4<i>x</i>＋1 的最大值為 <i>M</i>、最小值為 <i>m</i>，則 <i>M</i>＋<i>m</i>＝？</div>
+      <ul class="opts">
+        <li><button>−2</button></li>
+        <li><button>4</button></li>
+        <li><button>7</button></li>
+        <li><button>3</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：D</p>
+        <p><i>f</i>(<i>x</i>)＝(<i>x</i>−2)<sup>2</sup>−3，頂點 <i>x</i>＝2 在範圍內 ⇒ <i>m</i>＝−3。端點 <i>f</i>(0)＝1、<i>f</i>(5)＝6 ⇒ <i>M</i>＝6。<i>M</i>＋<i>m</i>＝3。</p>
+        <div class="plain">開口向上的拋物線，最低點是頂點；最高點一定在端點，哪個端點離頂點遠就是哪個。5 離 2 有 3 格、0 離 2 只有 2 格，所以最大值在 5。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="B">
+      <div class="q-head"><span class="q-no">第 10 題</span><span class="tag hot">高頻考點</span><span class="tag">3-3 對稱中心</span></div>
+      <div class="q-stem">三次函數 <i>y</i>＝<i>x</i><sup>3</sup>−6<i>x</i><sup>2</sup>＋10<i>x</i>−1 圖形的對稱中心為何？</div>
+      <ul class="opts">
+        <li><button>(−2, −37)</button></li>
+        <li><button>(2, 3)</button></li>
+        <li><button>(3, 2)</button></li>
+        <li><button>(0, −1)</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：B</p>
+        <p><i>h</i>＝−<span class="frac"><span>−6</span><span>3×1</span></span>＝2，<i>k</i>＝<i>f</i>(2)＝8−24＋20−1＝3。連續綜合除法得 <i>y</i>＝(<i>x</i>−2)<sup>3</sup>−2(<i>x</i>−2)＋3，對稱中心 (2, 3)。</p>
+        <div class="plain">三次函數的中心 <i>x</i> 坐標是「−<i>b</i> 除以 3<i>a</i>」，和二次函數的 −<i>b</i>/(2<i>a</i>) 很像，只是 2 換成 3。找到 <i>x</i> 再代回去求 <i>y</i>。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="A">
+      <div class="q-head"><span class="q-no">第 11 題</span><span class="tag">3-3 一次近似</span></div>
+      <div class="q-stem">承上題，<i>y</i>＝<i>x</i><sup>3</sup>−6<i>x</i><sup>2</sup>＋10<i>x</i>−1 的圖形在對稱中心附近最接近下列哪一條直線？</div>
+      <ul class="opts">
+        <li><button><i>y</i>＝−2<i>x</i>＋7</button></li>
+        <li><button><i>y</i>＝2<i>x</i>−1</button></li>
+        <li><button><i>y</i>＝10<i>x</i>−1</button></li>
+        <li><button><i>y</i>＝−2<i>x</i>＋3</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：A</p>
+        <p><i>y</i>＝(<i>x</i>−2)<sup>3</sup>−2(<i>x</i>−2)＋3，<i>x</i> 靠近 2 時 (<i>x</i>−2)<sup>3</sup> 極小，<i>y</i> ≈ −2(<i>x</i>−2)＋3＝−2<i>x</i>＋7。</p>
+        <div class="plain">把三次項丟掉，剩下的那條直線就是「近看的樣子」。(D) 是把 −2(<i>x</i>−2)＋3 誤寫成 −2<i>x</i>＋3 的陷阱。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="C">
+      <div class="q-head"><span class="q-no">第 12 題</span><span class="tag">3-3 近似值</span></div>
+      <div class="q-stem">設 <i>f</i>(<i>x</i>)＝<i>x</i><sup>3</sup>−3<i>x</i><sup>2</sup>＋5<i>x</i>＋1，則 <i>f</i>(1.01) 四捨五入到小數點後第二位為何？</div>
+      <ul class="opts">
+        <li><button>4.00</button></li>
+        <li><button>4.01</button></li>
+        <li><button>4.02</button></li>
+        <li><button>4.05</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：C</p>
+        <p>連續綜合除法（除以 <i>x</i>−1）：<i>f</i>(<i>x</i>)＝(<i>x</i>−1)<sup>3</sup>＋0·(<i>x</i>−1)<sup>2</sup>＋2(<i>x</i>−1)＋4。<i>f</i>(1.01)＝0.000001＋0.02＋4＝4.020001 ≈ 4.02。</p>
+        <div class="plain">直接把 1.01 代進三次方很痛苦。改用 (<i>x</i>−1) 展開，<i>x</i>−1＝0.01，三次方只有 0.000001，幾乎可以忽略。</div>
+      </div></details>
+    </div>
+
+    <h3>二、多選題</h3>
+
+    <div class="q" data-answer="BCD" data-multi>
+      <div class="q-head"><span class="q-no">第 13 題</span><span class="tag hot">高頻考點</span><span class="tag">2-2 對數律</span></div>
+      <div class="q-stem">設 <i>a</i>、<i>b</i> 為正數，選出恆成立的選項。</div>
+      <ul class="opts">
+        <li><button>log(<i>a</i>＋<i>b</i>)＝log <i>a</i>＋log <i>b</i></button></li>
+        <li><button>log(<i>ab</i>)＝log <i>a</i>＋log <i>b</i></button></li>
+        <li><button>log 8＝3 log 2</button></li>
+        <li><button>log <span class="frac"><span>1</span><span><i>a</i></span></span>＝−log <i>a</i></button></li>
+        <li><button><span class="frac"><span>log <i>a</i></span><span>log <i>b</i></span></span>＝log(<i>a</i>−<i>b</i>)</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：BCD</p>
+        <p>(A) 反例 <i>a</i>＝<i>b</i>＝1：log 2 ≠ 0。(B) 對數律。(C) log 2<sup>3</sup>＝3 log 2。(D) log <i>a</i><sup>−1</sup>＝−log <i>a</i>。(E) 反例 <i>a</i>＝100、<i>b</i>＝10：左邊 2，右邊 log 90 ≠ 2；且 <i>a</i> ≤ <i>b</i> 時右邊無意義。</p>
+        <div class="plain">對數律只有「乘變加、除變減、次方往前」三招。看到「加」在 log 裡面、或兩個 log 相除，都沒有公式可用，直接找反例打掉。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="ABCD" data-multi>
+      <div class="q-head"><span class="q-no">第 14 題</span><span class="tag">3-1 餘式定理</span></div>
+      <div class="q-stem">已知多項式 <i>f</i>(<i>x</i>) 除以 <i>x</i><sup>2</sup>−1 的餘式為 2<i>x</i>＋3，選出正確的選項。</div>
+      <ul class="opts">
+        <li><button><i>f</i>(1)＝5</button></li>
+        <li><button><i>f</i>(−1)＝1</button></li>
+        <li><button><i>f</i>(<i>x</i>) 除以 <i>x</i>−1 的餘式為 5</button></li>
+        <li><button><i>x</i>＋1 是 <i>f</i>(<i>x</i>)−2<i>x</i>−3 的因式</button></li>
+        <li><button><i>f</i>(<i>x</i>) 除以 <i>x</i>＋1 的餘式為 −1</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：ABCD</p>
+        <p><i>f</i>(<i>x</i>)＝(<i>x</i>−1)(<i>x</i>＋1)<i>Q</i>(<i>x</i>)＋2<i>x</i>＋3。<i>f</i>(1)＝5、<i>f</i>(−1)＝1。(C) 餘式＝<i>f</i>(1)＝5 ✓。(D) <i>f</i>(<i>x</i>)−2<i>x</i>−3＝(<i>x</i>−1)(<i>x</i>＋1)<i>Q</i>(<i>x</i>)，含因式 <i>x</i>＋1 ✓。(E) 餘式＝<i>f</i>(−1)＝1 ✗。</p>
+        <div class="plain">把除法原理的式子寫出來，所有選項都是「代數字」就能判斷。(E) 是把 −1 直接代進 2<i>x</i>＋3 時算錯符號的陷阱：2(−1)＋3＝1。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="ABD" data-multi>
+      <div class="q-head"><span class="q-no">第 15 題</span><span class="tag hot">高頻考點</span><span class="tag">3-2 圖形判斷係數</span></div>
+      <div class="q-stem">二次函數 <i>y</i>＝<i>ax</i><sup>2</sup>＋<i>bx</i>＋<i>c</i> 的圖形開口向下，頂點在第一象限，且圖形與 <i>y</i> 軸交於負的部分。選出正確的選項。</div>
+      <ul class="opts">
+        <li><button><i>a</i> &lt; 0</button></li>
+        <li><button><i>b</i> &gt; 0</button></li>
+        <li><button><i>c</i> &gt; 0</button></li>
+        <li><button><i>b</i><sup>2</sup>−4<i>ac</i> &gt; 0</button></li>
+        <li><button><i>a</i>＋<i>b</i>＋<i>c</i> &gt; 0</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：ABD</p>
+        <p>(A) 開口向下 ⇒ <i>a</i>&lt;0 ✓。(B) 頂點 <i>x</i>＝−<i>b</i>/(2<i>a</i>) &gt; 0，<i>a</i>&lt;0 ⇒ <i>b</i>&gt;0 ✓。(C) <i>y</i> 截距 <i>c</i>&lt;0 ✗。(D) 山頂在 <i>x</i> 軸上方、開口向下 ⇒ 與 <i>x</i> 軸交兩點 ⇒ <i>D</i>&gt;0 ✓。(E) <i>a</i>＋<i>b</i>＋<i>c</i>＝<i>f</i>(1)，題目沒給 <i>x</i>＝1 的位置，不一定（例：<i>y</i>＝−(<i>x</i>−5)<sup>2</sup>＋1，<i>f</i>(1)＝−15&lt;0）✗。</p>
+        <div class="plain">開口看 <i>a</i>、截距看 <i>c</i>、對稱軸在右邊 ⇒ <i>a</i>、<i>b</i> 異號。(E) 要看圖在 <i>x</i>＝1 的高度，條件不夠就不能選。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="ACD" data-multi>
+      <div class="q-head"><span class="q-no">第 16 題</span><span class="tag">3-3 三次函數圖形</span></div>
+      <div class="q-stem">選出正確的選項。</div>
+      <ul class="opts">
+        <li><button><i>y</i>＝<i>x</i><sup>3</sup> 的圖形對稱於原點</button></li>
+        <li><button>三次函數 <i>y</i>＝<i>ax</i><sup>3</sup>＋<i>bx</i><sup>2</sup>＋<i>cx</i>＋<i>d</i> 的對稱中心 <i>x</i> 坐標為 −<span class="frac"><span><i>b</i></span><span>2<i>a</i></span></span></button></li>
+        <li><button><i>y</i>＝(<i>x</i>−1)<sup>3</sup>＋2 的圖形可由 <i>y</i>＝<i>x</i><sup>3</sup> 向右平移 1、向上平移 2 得到</button></li>
+        <li><button><i>y</i>＝<i>x</i><sup>3</sup>＋<i>x</i> 的圖形與 <i>x</i> 軸只交於一點</button></li>
+        <li><button><i>y</i>＝<i>x</i><sup>3</sup>−3<i>x</i> 的圖形可由 <i>y</i>＝<i>x</i><sup>3</sup> 經平移得到</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：ACD</p>
+        <p>(A) (−<i>x</i>)<sup>3</sup>＝−<i>x</i><sup>3</sup> ✓。(B) 應為 −<span class="frac"><span><i>b</i></span><span>3<i>a</i></span></span> ✗。(C) 右減上加 ✓。(D) <i>x</i>(<i>x</i><sup>2</sup>＋1)＝0 只有 <i>x</i>＝0 ✓。(E) <i>p</i>＝−3 ≠ 0，圖形有起伏，不能由 <i>y</i>＝<i>x</i><sup>3</sup> 平移得到 ✗。</p>
+        <div class="plain">「能不能由 <i>y</i>＝<i>ax</i><sup>3</sup> 平移得到」就看配成中心式後 <i>p</i> 是不是 0。<i>y</i>＝<i>x</i><sup>3</sup>−3<i>x</i> 有一上一下的波浪，<i>y</i>＝<i>x</i><sup>3</sup> 沒有，怎麼搬都搬不成一樣。</div>
+      </div></details>
+    </div>
+
+    <div class="q" data-answer="ABE" data-multi>
+      <div class="q-head"><span class="q-no">第 17 題</span><span class="tag">3-3 廣域特徵＋對稱中心</span></div>
+      <div class="q-stem">設 <i>f</i>(<i>x</i>)＝−2<i>x</i><sup>3</sup>＋6<i>x</i><sup>2</sup>＋<i>x</i>−4，選出正確的選項。</div>
+      <ul class="opts">
+        <li><button>當 |<i>x</i>| 很大時，<i>y</i>＝<i>f</i>(<i>x</i>) 的圖形與 <i>y</i>＝−2<i>x</i><sup>3</sup> 的走勢相同</button></li>
+        <li><button>圖形的對稱中心為 (1, 1)</button></li>
+        <li><button>在對稱中心附近，圖形近似於直線 <i>y</i>＝7<i>x</i>＋1</button></li>
+        <li><button><i>y</i>＝<i>f</i>(<i>x</i>) 的圖形可由 <i>y</i>＝−2<i>x</i><sup>3</sup> 平移得到</button></li>
+        <li><button><i>f</i>(<i>x</i>) 除以 <i>x</i>−1 的餘式為 1</button></li>
+      </ul>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：ABE</p>
+        <p><i>h</i>＝−<span class="frac"><span>6</span><span>3×(−2)</span></span>＝1，<i>f</i>(1)＝−2＋6＋1−4＝1。連續綜合除法（除以 <i>x</i>−1）得 <i>f</i>(<i>x</i>)＝−2(<i>x</i>−1)<sup>3</sup>＋0·(<i>x</i>−1)<sup>2</sup>＋7(<i>x</i>−1)＋1。<br>(A) 首項 −2<i>x</i><sup>3</sup> 決定廣域走勢 ✓。(B) ✓。(C) 中心附近 <i>y</i> ≈ 7(<i>x</i>−1)＋1＝7<i>x</i>−6，不是 7<i>x</i>＋1 ✗。(D) <i>p</i>＝7 ≠ 0 ✗。(E) 餘式＝<i>f</i>(1)＝1 ✓。</p>
+        <div class="plain">一題考三件事：遠看看首項、中心用 −<i>b</i>/(3<i>a</i>)、近看用 <i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i>。(C) 的陷阱是忘了把 (<i>x</i>−1) 乘開：7(<i>x</i>−1)＋1 要化成 7<i>x</i>−6。</div>
+      </div></details>
+    </div>
+
+    <h3>三、填充題（非選）</h3>
+
+    <div class="q">
+      <div class="q-head"><span class="q-no">第 18 題</span><span class="tag hot">高頻考點</span><span class="tag">2-2 位數與首位</span></div>
+      <div class="q-stem">已知 log 2 ≈ 0.3010、log 3 ≈ 0.4771。3<sup>40</sup> 是 (1) ＿＿ 位數，(2) 首位數字是 ＿＿。</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：(1) 20　(2) 1</p>
+        <p>log 3<sup>40</sup>＝40×0.4771＝19.084＝19＋0.084。整數部分 19 ⇒ 20 位數。小數部分 0.084：log 1＝0 ≤ 0.084 &lt; 0.3010＝log 2 ⇒ 首位數字 1。（實際 3<sup>40</sup>＝12157665459056928801。）</p>
+        <div class="plain">整數部分管「幾位」，小數部分管「開頭是誰」。小數部分夾在 log1 和 log2 之間，開頭就是 1。</div>
+      </div></details>
+    </div>
+
+    <div class="q">
+      <div class="q-head"><span class="q-no">第 19 題</span><span class="tag hot">高頻考點</span><span class="tag">2-2 衰減應用</span></div>
+      <div class="q-stem">某放射性物質每經過一年，剩下的量是前一年的 0.8 倍。至少要經過 ＿＿ 年，剩下的量才會少於原來的 <span class="frac"><span>1</span><span>10</span></span>？（log 2 ≈ 0.3010）</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：11</p>
+        <p>求最小整數 <i>n</i> 使 0.8<sup><i>n</i></sup> &lt; 0.1。取 log：<i>n</i> log 0.8 &lt; −1。log 0.8＝log 8−1＝3×0.3010−1＝−0.097。<br>−0.097<i>n</i> &lt; −1 ⇒ <i>n</i> &gt; <span class="frac"><span>1</span><span>0.097</span></span> ≈ 10.31（兩邊除以負數，不等號變向），所以至少 11 年。</p>
+        <div class="plain">log 0.8 是負的，除過去不等號要翻面，這是最容易錯的地方。算出 10.31 年，表示 10 年還不夠，要無條件進位到 11 年。</div>
+      </div></details>
+    </div>
+
+    <div class="q">
+      <div class="q-head"><span class="q-no">第 20 題</span><span class="tag">2-2 由 log 值求真數</span></div>
+      <div class="q-stem">已知 log 2 ≈ 0.3010、log 3 ≈ 0.4771。若 log <i>x</i>＝2.3010、log <i>y</i>＝−1.5229，則 (1) <i>x</i>＝＿＿，(2) <i>y</i>＝＿＿。</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：(1) 200　(2) 0.03</p>
+        <p>(1) 2.3010＝2＋0.3010＝log 100＋log 2＝log 200 ⇒ <i>x</i>＝200。<br>(2) −1.5229＝−2＋0.4771＝log 0.01＋log 3＝log 0.03 ⇒ <i>y</i>＝0.03。</p>
+        <div class="plain">反過來用：把 log 值拆成「整數＋認得的小數」。負的要先借成 −2＋0.4771，才看得出 0.4771 是 log 3。</div>
+      </div></details>
+    </div>
+
+    <div class="q">
+      <div class="q-head"><span class="q-no">第 21 題</span><span class="tag hot">高頻考點</span><span class="tag">3-1 連續綜合除法</span></div>
+      <div class="q-stem">將 <i>f</i>(<i>x</i>)＝<i>x</i><sup>3</sup>＋2<i>x</i><sup>2</sup>−3<i>x</i>＋5 寫成 <i>a</i>(<i>x</i>−1)<sup>3</sup>＋<i>b</i>(<i>x</i>−1)<sup>2</sup>＋<i>c</i>(<i>x</i>−1)＋<i>d</i>，求 (1) (<i>a</i>, <i>b</i>, <i>c</i>, <i>d</i>)＝？ (2) <i>f</i>(<i>x</i>) 除以 (<i>x</i>−1)<sup>2</sup> 的餘式＝？</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：(1) (1, 5, 4, 5)　(2) 4<i>x</i>＋1</p>
+        <p>用 1 做連續綜合除法：<br>1, 2, −3, 5 → 1, 3, 0, <strong>5</strong>（<i>d</i>＝5）<br>1, 3, 0 → 1, 4, <strong>4</strong>（<i>c</i>＝4）<br>1, 4 → 1, <strong>5</strong>（<i>b</i>＝5），<i>a</i>＝1。<br>除以 (<i>x</i>−1)<sup>2</sup> 的餘式＝4(<i>x</i>−1)＋5＝4<i>x</i>＋1。</p>
+        <div class="plain">每除一次就把「最後一格」收起來，剩下的商再除一次。收集到的餘數由下往上排就是 <i>d</i>、<i>c</i>、<i>b</i>，最後剩的首項係數是 <i>a</i>。</div>
+      </div></details>
+    </div>
+
+    <div class="q">
+      <div class="q-head"><span class="q-no">第 22 題</span><span class="tag">3-1 插值（因式定理）</span></div>
+      <div class="q-stem">三次多項式 <i>f</i>(<i>x</i>) 滿足 <i>f</i>(1)＝<i>f</i>(3)＝0、<i>f</i>(0)＝6、<i>f</i>(2)＝−4，求 <i>f</i>(−1)＝？</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：8</p>
+        <p>設 <i>f</i>(<i>x</i>)＝(<i>x</i>−1)(<i>x</i>−3)(<i>ax</i>＋<i>b</i>)。<i>f</i>(0)＝3<i>b</i>＝6 ⇒ <i>b</i>＝2；<i>f</i>(2)＝(1)(−1)(2<i>a</i>＋2)＝−4 ⇒ <i>a</i>＝1。<i>f</i>(−1)＝(−2)(−4)(1)＝8。</p>
+        <div class="plain">已經知道兩個根，就先把 (<i>x</i>−1)(<i>x</i>−3) 寫出來，剩下的一次因式用另外兩個條件決定。比設 <i>ax</i>³＋<i>bx</i>²＋<i>cx</i>＋<i>d</i> 解四元聯立快很多。</div>
+      </div></details>
+    </div>
+
+    <div class="q">
+      <div class="q-head"><span class="q-no">第 23 題</span><span class="tag">3-1 除以 (<i>x</i>−1)<sup>2</sup></span></div>
+      <div class="q-stem">求 <i>f</i>(<i>x</i>)＝<i>x</i><sup>5</sup>＋<i>x</i><sup>4</sup>＋<i>x</i><sup>3</sup>＋<i>x</i><sup>2</sup>＋<i>x</i>＋1 除以 (<i>x</i>−1)<sup>2</sup> 的餘式。</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：15<i>x</i>−9</p>
+        <p>令 <i>t</i>＝<i>x</i>−1，<i>x</i>＝1＋<i>t</i>。(1＋<i>t</i>)<sup><i>n</i></sup> 展開後只留到 <i>t</i> 的一次：(1＋<i>t</i>)<sup><i>n</i></sup>＝1＋<i>nt</i>＋（含 <i>t</i><sup>2</sup> 的項）。<br>所以 <i>f</i>＝(1＋5<i>t</i>)＋(1＋4<i>t</i>)＋(1＋3<i>t</i>)＋(1＋2<i>t</i>)＋(1＋<i>t</i>)＋1＋…＝6＋15<i>t</i>＋（<i>t</i><sup>2</sup> 的倍式）。<br>餘式＝15(<i>x</i>−1)＋6＝15<i>x</i>−9。（也可用連續綜合除法兩次驗算：第一次餘 6，第二次餘 15。）</p>
+        <div class="plain">除以 (<i>x</i>−1)² 就是「只看 <i>x</i>＝1 附近到一次為止」。連續綜合除法最穩：係數 1,1,1,1,1,1 用 1 除，第一次最後一格 6，商再除一次最後一格 15，餘式 15(<i>x</i>−1)＋6。</div>
+      </div></details>
+    </div>
+
+    <div class="q">
+      <div class="q-head"><span class="q-no">第 24 題</span><span class="tag">3-2 兩根式求頂點</span></div>
+      <div class="q-stem">二次函數 <i>y</i>＝<i>f</i>(<i>x</i>) 的圖形通過 (0, 3)、(1, 0)、(3, 0)，求頂點坐標。</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：(2, −1)</p>
+        <p>設 <i>f</i>(<i>x</i>)＝<i>a</i>(<i>x</i>−1)(<i>x</i>−3)，<i>f</i>(0)＝3<i>a</i>＝3 ⇒ <i>a</i>＝1。對稱軸 <i>x</i>＝<span class="frac"><span>1＋3</span><span>2</span></span>＝2，<i>f</i>(2)＝(1)(−1)＝−1，頂點 (2, −1)。</p>
+        <div class="plain">知道與 <i>x</i> 軸的兩個交點就用兩根式，頂點 <i>x</i> 坐標是兩根的中點。這題的圖就是章節導覽裡那張拋物線。</div>
+      </div></details>
+    </div>
+
+    <div class="q">
+      <div class="q-head"><span class="q-no">第 25 題</span><span class="tag hot">高頻考點</span><span class="tag">3-3 對稱中心＋一次近似</span></div>
+      <div class="q-stem"><i>f</i>(<i>x</i>)＝2<i>x</i><sup>3</sup>＋6<i>x</i><sup>2</sup>＋<i>x</i>−4。求 (1) 對稱中心；(2) 圖形在對稱中心附近近似的直線方程式。</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：(1) (−1, −1)　(2) <i>y</i>＝−5<i>x</i>−6</p>
+        <p><i>h</i>＝−<span class="frac"><span>6</span><span>3×2</span></span>＝−1，<i>f</i>(−1)＝−2＋6−1−4＝−1。<br>用 −1 連續綜合除法：<i>f</i>(<i>x</i>)＝2(<i>x</i>＋1)<sup>3</sup>＋0·(<i>x</i>＋1)<sup>2</sup>−5(<i>x</i>＋1)−1。<br>中心附近 <i>y</i> ≈ −5(<i>x</i>＋1)−1＝−5<i>x</i>−6。</p>
+        <div class="plain">連續綜合除法做完，(<i>x</i>＋1)² 的係數一定是 0，可以拿來檢查有沒有算錯。<i>a</i>＝2、<i>p</i>＝−5 異號，所以這個圖形有一上一下的波浪。</div>
+      </div></details>
+    </div>
+  </section>
+
+  <!-- ================= 模擬段考 ================= -->
+  <section class="panel" id="mock" hidden>
+    <h2>模擬段考</h2>
+    <div class="box info"><span class="label">這份模擬卷怎麼來的</span>
+      <p><strong>陽明高中：</strong>第一次段考時已搜尋過陽明高中官網與相關網頁，只有考程表與範圍表，<strong>沒有公開的數學段考試卷</strong>。</p>
+      <p><strong>改用北一女：</strong>北一女數學科網站公開了 101～114 學年度「高一上第二次段考」試卷。我們實際打開讀過 108～114 學年度共 7 份，發現北一女高一上第二次段考多半考「直線與圓」（110、111、112、114 學年度），和我們的範圍不同；<strong>113 學年度第二次期中考範圍正好是「第一冊 多項式函數」</strong>，108 學年度第二次段考則考「常用對數＋直線與圓」。因此本卷以這兩份為主要改編來源，再補上北一女 114 學年度期末考（範圍：多項式函數）與 111、113 學年度第一次期中考中的對數題（那些題目第一次段考時因範圍不符而排除）。</p>
+      <p><strong>改編原則：</strong>保留考點與題型，題目敘述、數字、選項全部重新設計，答案自己重算並用程式驗算，沒有逐字照抄。原卷中屬於<strong>二次不等式、高次不等式</strong>的題目（如 113-1 第 10、12、15 題）全部排除。</p>
+      <p><strong>卷面結構：</strong>參考北一女 113-1 第二次期中考（單選＋多選＋填充，總分 100）與第一次段考模擬卷的格式，調整成 70 分鐘寫得完的份量：單選 5 題、多選 3 題、填充 7 題、計算 2 題。</p>
+    </div>
+
+    <h3>考古題來源</h3>
+    <div class="table-wrap sources"><table>
+      <thead><tr><th>學校</th><th>考試</th><th>與本次範圍重疊</th><th>原卷連結</th></tr></thead>
+      <tbody>
+        <tr><td>北一女中</td><td>113 學年度第 1 學期 高一數學 第二次期中考（範圍：第一冊多項式函數；題目＋答案）</td><td>第 1～9、11、13、14、16 題；第 10、12、15 題屬二次／高次不等式，本次不考</td><td><a href="https://drive.google.com/file/d/1WGB8Gb6w81vDVjUJ4ys-oyu4DeUa4F_g/view" target="_blank" rel="noopener">113-1 第二次段考 PDF</a></td></tr>
+        <tr><td>北一女中</td><td>108 學年度第 1 學期 高一數學 第二次段考（範圍：常用對數、直線與圓）</td><td>多選第 1 題、填充第 1、2 題（常用對數）；其餘為直線與圓，不考</td><td><a href="https://drive.google.com/file/d/10XS_eCHyGlkVKdlcSDIdttX_-40YhOkg/view" target="_blank" rel="noopener">108-1 第二次段考 PDF</a></td></tr>
+        <tr><td>北一女中</td><td>114 學年度第 1 學期 高一數學 期末考（範圍：多項式函數）</td><td>單選 1、3，多選 5、6，選填 A、C、F；單選 2、4 與選填 B、D、E 含不等式，不考</td><td><a href="https://drive.google.com/file/d/1gNa3fioR9ej8wvpIQoSPr6JZb4VmK4Dd/view" target="_blank" rel="noopener">114-1 期末考 PDF</a></td></tr>
+        <tr><td>北一女中</td><td>111 學年度第 1 學期 高一數學 第一次期中考</td><td>填充第 5、7 題（常用對數、地震規模）</td><td><a href="https://drive.google.com/file/d/1YUjYawd0XYqKuUF_r8x5qAec19QiHHA9/view" target="_blank" rel="noopener">111-1 第一次段考 PDF</a></td></tr>
+        <tr><td>北一女中</td><td>113 學年度第 1 學期 高一數學 第一次期中考</td><td>填充第 6、7 題（常用對數）</td><td><a href="https://drive.google.com/file/d/10gZpGel12DVK49co9iaDYvVThcxJiI8Y/view" target="_blank" rel="noopener">113-1 第一次段考 PDF</a></td></tr>
+        <tr><td>北一女中</td><td>110、111、112、114 學年度第 1 學期 第二次段考</td><td>範圍為「直線與圓」，<strong>與本次範圍不重疊</strong>，未採用</td><td><a href="https://sites.google.com/a/gapps.fg.tp.edu.tw/math/exam" target="_blank" rel="noopener">北一女數學科 段考試題總頁</a></td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted">連結是北一女數學科網站上公開的 Google 雲端硬碟檔案，著作權屬原命題老師；這裡只提供連結，方便你下載原卷練習（寫之前先跳過不等式的題目）。北一女 112、114 學年度部分考卷允許使用計算機，我們的段考不行，改編時已調整成手算得出來的數字。</p>
+
+    <div class="exam">
+      <div class="paper-head">
+        <span class="ttl">陽明高中 高一 數學 第二次段考 模擬卷</span>
+        <span class="meta">範圍：翰林 數學I 2-2 常用對數～3-3 多項式函數的圖形（不含二次不等式、高次不等式） ｜ 時間 70 分鐘 ｜ 滿分 100 分 ｜ 不使用計算機</span>
+      </div>
+      <div class="exam-bar">
+        <div class="exam-timer" data-min="70"></div>
+        <div class="exam-score"></div>
+      </div>
+      <p class="muted small">作答方式：先按「開始計時」，像真的考試一樣拿紙筆一題一題寫完再看解析。選擇題點選項會立刻對答案並計分（多選題選好後按藍色按鈕；網站只判「全對才給分」，正式考試通常每個選項各 2 分）。填充與計算題請寫完再打開解析，依評分標準自己給分。選擇題共 50 分，加上非選 50 分＝100 分。<br>參考數值：log 2 ≈ 0.3010、log 3 ≈ 0.4771、log 7 ≈ 0.8451。</p>
+
+      <div class="paper-sec">一、單選題（每題 4 分，共 20 分）</div>
+      <p>每題有 5 個選項，只有一個正確。</p>
+
+      <div class="q" data-answer="C" data-points="4">
+        <div class="q-head"><span class="q-no">1.</span><span class="tag">3-2 一次函數</span><span class="src">改編自：北一女 113-1 第二次期中考 第 1 題</span><span class="pts">4 分</span></div>
+        <div class="q-stem">一次函數 <i>f</i>(<i>x</i>) 滿足 <i>f</i>(−4)＝19、<i>f</i>(−1)＝7，則 <i>f</i>(3) 的值為何？</div>
+        <ul class="opts">
+          <li><button>−5</button></li>
+          <li><button>15</button></li>
+          <li><button>−9</button></li>
+          <li><button>−12</button></li>
+          <li><button>9</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>斜率＝<span class="frac"><span>7−19</span><span>−1−(−4)</span></span>＝<span class="frac"><span>−12</span><span>3</span></span>＝−4。<i>f</i>(3)＝<i>f</i>(−1)＋(−4)×(3−(−1))＝7−16＝−9。（<i>f</i>(<i>x</i>)＝−4<i>x</i>＋3。）</p>
+          <div class="plain">一次函數就是「<i>x</i> 每多 1，<i>y</i> 就固定變多少」。從 −4 到 −1 走了 3 步，<i>y</i> 少了 12，所以一步少 4；從 −1 再走 4 步到 3，就再少 16。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="4">
+        <div class="q-head"><span class="q-no">2.</span><span class="tag">3-2 區間最值</span><span class="src">改編自：北一女 113-1 第二次期中考 第 2 題</span><span class="pts">4 分</span></div>
+        <div class="q-stem">設 <i>f</i>(<i>x</i>)＝(<i>x</i>−1)<sup>2</sup>＋(<i>x</i>＋1)<sup>2</sup>＋(2<i>x</i>−4)<sup>2</sup>，則 <i>f</i>(<i>x</i>) 在 0 ≤ <i>x</i> ≤ 3 的最小值為何？</div>
+        <ul class="opts">
+          <li><button>6</button></li>
+          <li><button><span class="frac"><span>22</span><span>3</span></span></button></li>
+          <li><button>8</button></li>
+          <li><button>10</button></li>
+          <li><button>18</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>展開：(<i>x</i><sup>2</sup>−2<i>x</i>＋1)＋(<i>x</i><sup>2</sup>＋2<i>x</i>＋1)＋(4<i>x</i><sup>2</sup>−16<i>x</i>＋16)＝6<i>x</i><sup>2</sup>−16<i>x</i>＋18＝6(<i>x</i>−<span class="frac"><span>4</span><span>3</span></span>)<sup>2</sup>＋<span class="frac"><span>22</span><span>3</span></span>。頂點 <i>x</i>＝<span class="frac"><span>4</span><span>3</span></span> 在 [0, 3] 內，最小值 <span class="frac"><span>22</span><span>3</span></span>。</p>
+          <div class="plain">三個平方加起來還是一個二次函數，展開合併後配方。(A) 6 是誤以為 <i>x</i>＝1 時最小（只看其中一項）；(E) 18 是端點 <i>f</i>(0)。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="B" data-points="4">
+        <div class="q-head"><span class="q-no">3.</span><span class="tag">3-1 餘式定理</span><span class="src">改編自：北一女 114-1 期末考 第 1 題</span><span class="pts">4 分</span></div>
+        <div class="q-stem"><i>x</i><sup>101</sup>＋101 除以 2026<i>x</i>＋2026 的餘式為何？</div>
+        <ul class="opts">
+          <li><button>99</button></li>
+          <li><button>100</button></li>
+          <li><button>101</button></li>
+          <li><button>102</button></li>
+          <li><button>−100</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：B</p>
+          <p>2026<i>x</i>＋2026＝2026(<i>x</i>＋1)，讓除式為 0 的 <i>x</i>＝−1。餘式＝(−1)<sup>101</sup>＋101＝−1＋101＝100。</p>
+          <div class="plain">2026 是嚇人的數字，提出來後除式就是 <i>x</i>＋1 的常數倍，代 <i>x</i>＝−1 就好。−1 的奇數次方是 −1。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="A" data-points="4">
+        <div class="q-head"><span class="q-no">4.</span><span class="tag">3-3 對稱中心</span><span class="src">改編自：北一女 114-1 期末考 第 3 題</span><span class="pts">4 分</span></div>
+        <div class="q-stem">三次函數 <i>y</i>＝<i>f</i>(<i>x</i>) 圖形的對稱中心與 <i>y</i>＝3(<i>x</i>＋1)<sup>2</sup>−2 圖形的頂點相同，<i>f</i>(<i>x</i>) 的首項係數為 2，且 <i>x</i>−1 是 <i>f</i>(<i>x</i>) 的因式。求 <i>f</i>(0)。</div>
+        <ul class="opts">
+          <li><button>−7</button></li>
+          <li><button>−5</button></li>
+          <li><button>0</button></li>
+          <li><button>7</button></li>
+          <li><button>9</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：A</p>
+          <p>頂點 (−1, −2) ⇒ 設 <i>f</i>(<i>x</i>)＝2(<i>x</i>＋1)<sup>3</sup>＋<i>p</i>(<i>x</i>＋1)−2。<i>f</i>(1)＝16＋2<i>p</i>−2＝0 ⇒ <i>p</i>＝−7。<i>f</i>(0)＝2−7−2＝−7。</p>
+          <div class="plain">三次函數知道中心 (<i>h</i>, <i>k</i>) 和首項係數，就只剩一個未知數 <i>p</i>；「<i>x</i>−1 是因式」就是 <i>f</i>(1)＝0，剛好解出 <i>p</i>。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="C" data-points="4">
+        <div class="q-head"><span class="q-no">5.</span><span class="tag">2-2 應用（地震規模）</span><span class="src">改編自：北一女 111-1 第一次期中考 填充第 7 題</span><span class="pts">4 分</span></div>
+        <div class="q-stem">地震規模 <i>M</i> 與釋放能量 <i>E</i> 的關係為 log <i>E</i>＝11.8＋1.5<i>M</i>。規模 6.5 的地震釋放的能量約為規模 5.3 地震的幾倍？</div>
+        <ul class="opts">
+          <li><button>介於 10 與 20 之間</button></li>
+          <li><button>介於 20 與 50 之間</button></li>
+          <li><button>介於 50 與 100 之間</button></li>
+          <li><button>介於 100 與 500 之間</button></li>
+          <li><button>介於 500 與 1000 之間</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：C</p>
+          <p>log <i>E</i><sub>1</sub>−log <i>E</i><sub>2</sub>＝1.5×(6.5−5.3)＝1.8 ⇒ <span class="frac"><span><i>E</i><sub>1</sub></span><span><i>E</i><sub>2</sub></span></span>＝10<sup>1.8</sup>＝10×10<sup>0.8</sup>。log 6＝0.7781 &lt; 0.8 &lt; 0.8451＝log 7 ⇒ 6 &lt; 10<sup>0.8</sup> &lt; 7，故倍數介於 60 與 70 之間（約 63 倍）。</p>
+          <div class="plain">兩個 log 相減＝比值的 log。規模只差 1.2，能量卻差了六十幾倍，這就是 log 的威力。把 1.8 拆成 1＋0.8，0.8 夾在 log6 和 log7 之間。</div>
+        </div></details>
+      </div>
+
+      <div class="paper-sec">二、多選題（每題 10 分，共 30 分）</div>
+      <p>每題有 5 個選項，至少有一個正確。網站只判全對；正式考試通常每個選項 2 分。</p>
+
+      <div class="q" data-answer="ABD" data-multi data-points="10">
+        <div class="q-head"><span class="q-no">6.</span><span class="tag">2-2 對數性質</span><span class="src">改編自：北一女 108-1 第二次段考 多選第 1 題</span><span class="pts">10 分</span></div>
+        <div class="q-stem">選出正確的選項。</div>
+        <ul class="opts">
+          <li><button>對任意正數 <i>x</i>，必存在實數 <i>y</i> 使得 <i>x</i>＝10<sup><i>y</i></sup></button></li>
+          <li><button>(0.1)<sup>log 3</sup> &lt; (0.1)<sup>log 2</sup></button></li>
+          <li><button>10<sup>3 log 2</sup>＝6</button></li>
+          <li><button>100<sup>log 5</sup>×10<sup>log 4</sup>＝100</button></li>
+          <li><button>若正數 <i>x</i>、<i>y</i> 滿足 log <i>x</i>＝2＋log <i>y</i>，則 <i>x</i>＝<i>y</i>＋100</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：ABD</p>
+          <p>(A) 取 <i>y</i>＝log <i>x</i> 即可 ✓。(B) (0.1)<sup>log 3</sup>＝10<sup>−log 3</sup>＝<span class="frac"><span>1</span><span>3</span></span>，(0.1)<sup>log 2</sup>＝<span class="frac"><span>1</span><span>2</span></span>，<span class="frac"><span>1</span><span>3</span></span> &lt; <span class="frac"><span>1</span><span>2</span></span> ✓。(C) 10<sup>3 log 2</sup>＝10<sup>log 8</sup>＝8 ✗。(D) 100<sup>log 5</sup>＝10<sup>2 log 5</sup>＝25，10<sup>log 4</sup>＝4，乘積 100 ✓。(E) log <i>x</i>＝log 100＋log <i>y</i>＝log 100<i>y</i> ⇒ <i>x</i>＝100<i>y</i> ✗。</p>
+          <div class="plain">核心只有一句：10<sup>log <i>a</i></sup>＝<i>a</i>。前面的係數要先「搬進 log 變次方」再用這句。(E) 是把「log 的加法」誤當成「真數的加法」。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="BCD" data-multi data-points="10">
+        <div class="q-head"><span class="q-no">7.</span><span class="tag">3-1 連續綜合除法＋3-3 近似</span><span class="src">改編自：北一女 114-1 期末考 第 6 題</span><span class="pts">10 分</span></div>
+        <div class="q-stem">多項式 <i>f</i>(<i>x</i>) 滿足：(a) <i>f</i>(<i>x</i>) 除以 <i>x</i>−1 的商式為 <i>Q</i><sub>1</sub>(<i>x</i>)、餘式為 3；(b) <i>Q</i><sub>1</sub>(<i>x</i>) 除以 <i>x</i>−1 的商式為 <i>Q</i><sub>2</sub>(<i>x</i>)、餘式為 −2；(c) <i>Q</i><sub>2</sub>(<i>x</i>) 除以 <i>x</i>−1 的商式為 2、餘式為 1。選出正確的選項。</div>
+        <ul class="opts">
+          <li><button><i>f</i>(<i>x</i>) 的常數項為 3</button></li>
+          <li><button><i>f</i>(1)＝3</button></li>
+          <li><button><i>f</i>(<i>x</i>) 除以 (<i>x</i>−1)<sup>2</sup> 的餘式為 −2<i>x</i>＋5</button></li>
+          <li><button><i>f</i>(1.01) 四捨五入到小數點後第二位為 2.98</button></li>
+          <li><button><i>y</i>＝<i>f</i>(<i>x</i>) 的圖形可由 <i>y</i>＝2<i>x</i><sup>3</sup> 的圖形平移得到</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：BCD</p>
+          <p>由 (c)(b)(a) 倒推：<i>Q</i><sub>2</sub>＝2(<i>x</i>−1)＋1，<i>Q</i><sub>1</sub>＝<i>Q</i><sub>2</sub>(<i>x</i>−1)−2，<i>f</i>＝<i>Q</i><sub>1</sub>(<i>x</i>−1)＋3，所以<br><i>f</i>(<i>x</i>)＝2(<i>x</i>−1)<sup>3</sup>＋(<i>x</i>−1)<sup>2</sup>−2(<i>x</i>−1)＋3＝2<i>x</i><sup>3</sup>−5<i>x</i><sup>2</sup>＋2<i>x</i>＋4。<br>(A) 常數項 <i>f</i>(0)＝−2＋1＋2＋3＝4 ✗。(B) ✓。(C) 餘式＝−2(<i>x</i>−1)＋3＝−2<i>x</i>＋5 ✓。(D) <i>f</i>(1.01)＝0.000002＋0.0001−0.02＋3＝2.980102 ≈ 2.98 ✓。(E) 對稱中心 <i>x</i>＝<span class="frac"><span>5</span><span>6</span></span>，以 <i>x</i>−<span class="frac"><span>5</span><span>6</span></span> 展開得 <i>p</i>＝−<span class="frac"><span>13</span><span>6</span></span> ≠ 0，不能由 <i>y</i>＝2<i>x</i><sup>3</sup> 平移得到 ✗。</p>
+          <div class="plain">這三個條件就是「連續綜合除法」倒過來寫：餘數 3、−2、1、最後的商 2，由下往上就是 (<i>x</i>−1) 展開式的 <i>d</i>、<i>c</i>、<i>b</i>、<i>a</i>。(A) 常數項是 <i>f</i>(0) 不是 <i>f</i>(1)，最容易搞混。</div>
+        </div></details>
+      </div>
+
+      <div class="q" data-answer="ACE" data-multi data-points="10">
+        <div class="q-head"><span class="q-no">8.</span><span class="tag">3-2 二次函數圖形</span><span class="src">改編自：北一女 113-1 第二次期中考 第 5 題</span><span class="pts">10 分</span></div>
+        <div class="q-stem">設 <i>a</i>、<i>b</i>、<i>c</i> 為實數，二次函數 <i>y</i>＝<i>ax</i><sup>2</sup>＋2<i>bx</i>＋<i>c</i> 的圖形開口向下，與 <i>x</i> 軸交於 (−3, 0)，且對稱軸為 <i>x</i>＝1。選出正確的選項。</div>
+        <ul class="opts">
+          <li><button><i>ac</i> &lt; 0</button></li>
+          <li><button><i>f</i>(−4) &gt; 0</button></li>
+          <li><button><i>a</i>＋<i>b</i>＝0</button></li>
+          <li><button><i>b</i><sup>2</sup>−<i>ac</i> &lt; 0</button></li>
+          <li><button><i>f</i>(4)＝<i>f</i>(−2)</button></li>
+        </ul>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：ACE</p>
+          <p>對稱軸 1，一根 −3 ⇒ 另一根 5，<i>f</i>(<i>x</i>)＝<i>a</i>(<i>x</i>＋3)(<i>x</i>−5)＝<i>ax</i><sup>2</sup>−2<i>ax</i>−15<i>a</i>，<i>a</i> &lt; 0。比較係數：2<i>b</i>＝−2<i>a</i> ⇒ <i>b</i>＝−<i>a</i>；<i>c</i>＝−15<i>a</i> &gt; 0。<br>(A) <i>a</i>&lt;0、<i>c</i>&gt;0 ⇒ <i>ac</i>&lt;0 ✓。(B) −4 在兩根外側，開口向下 ⇒ <i>f</i>(−4)＝9<i>a</i> &lt; 0 ✗。(C) ✓。(D) 判別式 (2<i>b</i>)<sup>2</sup>−4<i>ac</i>＝4(<i>b</i><sup>2</sup>−<i>ac</i>) &gt; 0（有兩根）✗；實際 <i>b</i><sup>2</sup>−<i>ac</i>＝16<i>a</i><sup>2</sup>&gt;0。(E) 4 和 −2 對稱於 <i>x</i>＝1 ✓。</p>
+          <div class="plain">先用對稱找出另一根 5，整個函數就只剩一個負數 <i>a</i>。開口向下的拋物線在兩根之間是正的、兩根外面是負的，−4 在外面所以是負的。注意題目的一次項是 2<i>b</i>，不是 <i>b</i>。</div>
+        </div></details>
+      </div>
+
+      <div class="paper-sec">三、填充題（每題 5 分，共 35 分）</div>
+      <p>答案須化為最簡形式；有兩格的題目兩格都對才給分。</p>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">9.</span><span class="tag">2-2 對數求比值</span><span class="src">改編自：北一女 108-1 第二次段考 填充第 1 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">已知正數 <i>a</i>、<i>b</i>、<i>c</i>、<i>d</i> 滿足 log <i>a</i>＝4.3、log <i>b</i>＝4.6、log <i>c</i>＝1.3、log <i>d</i>＝1.6，則 <span class="frac"><span><i>b</i>−<i>a</i></span><span><i>d</i>−<i>c</i></span></span>＝＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：1000</p>
+          <p><i>b</i>−<i>a</i>＝10<sup>4.6</sup>−10<sup>4.3</sup>＝10<sup>3</sup>(10<sup>1.6</sup>−10<sup>1.3</sup>)＝10<sup>3</sup>(<i>d</i>−<i>c</i>)，所以比值＝1000。</p>
+          <div class="plain">不要真的去算 10<sup>4.6</sup>！注意 4.6 和 1.6、4.3 和 1.3 都剛好差 3，分子可以提出 10<sup>3</sup>，剩下的跟分母一模一樣。</div>
+          <p class="small muted">評分：答案正確 5 分。</p>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">10.</span><span class="tag">2-2 位數與首位數字</span><span class="src">改編自：北一女 113-1 第一次期中考 填充第 6 題（對數求倍數）</span><span class="pts">5 分</span></div>
+        <div class="q-stem">6<sup>20</sup> 是 ＿＿＿ 位數，且其首位數字為 ＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：16 位數；首位數字 3</p>
+          <p>log 6<sup>20</sup>＝20(log 2＋log 3)＝20×0.7781＝15.562＝15＋0.562。整數部分 15 ⇒ 16 位數。log 3＝0.4771 ≤ 0.562 &lt; 0.6020＝log 4 ⇒ 首位數字 3。（實際 6<sup>20</sup>＝3656158440062976。）</p>
+          <div class="plain">log 6 要拆成 log 2＋log 3。首位數字就是看 0.562 夾在哪兩個 log 之間：比 log 3 大、比 log 4 小，所以是 3 開頭。</div>
+          <p class="small muted">評分：兩格皆對 5 分。</p>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">11.</span><span class="tag">3-1 因式定理＋插值</span><span class="src">改編自：北一女 113-1 第二次期中考 第 7 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">實係數三次多項式 <i>f</i>(<i>x</i>) 滿足 <i>f</i>(1)＝<i>f</i>(2)＝0、<i>f</i>(3)＝10、<i>f</i>(−1)＝−18，則 <i>f</i>(<i>x</i>) 除以 <i>x</i> 的餘式為 ＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：−2</p>
+          <p>設 <i>f</i>(<i>x</i>)＝(<i>x</i>−1)(<i>x</i>−2)(<i>ax</i>＋<i>b</i>)。<i>f</i>(3)＝2(3<i>a</i>＋<i>b</i>)＝10 ⇒ 3<i>a</i>＋<i>b</i>＝5；<i>f</i>(−1)＝(−2)(−3)(−<i>a</i>＋<i>b</i>)＝6(<i>b</i>−<i>a</i>)＝−18 ⇒ <i>b</i>−<i>a</i>＝−3。解得 <i>a</i>＝2、<i>b</i>＝−1。餘式＝<i>f</i>(0)＝(−1)(−2)(−1)＝−2。</p>
+          <div class="plain">「除以 <i>x</i> 的餘式」就是 <i>f</i>(0)，也就是常數項。兩根已知，剩一個一次因式 <i>ax</i>＋<i>b</i>，用兩個函數值解出來。</div>
+          <p class="small muted">評分：答案正確 5 分。</p>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">12.</span><span class="tag">3-1 降次求餘式</span><span class="src">改編自：北一女 113-1 第二次期中考 第 13 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem"><i>f</i>(<i>x</i>)＝(<i>x</i><sup>2</sup>＋<i>x</i>＋5)<sup>5</sup> 除以 <i>x</i><sup>2</sup>＋<i>x</i>＋1 的餘式為 ＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：1024</p>
+          <p>令 <i>u</i>＝<i>x</i><sup>2</sup>＋<i>x</i>＋1，則 <i>x</i><sup>2</sup>＋<i>x</i>＋5＝<i>u</i>＋4，(<i>u</i>＋4)<sup>5</sup> 展開後除了 4<sup>5</sup> 以外的每一項都含 <i>u</i> 這個因式，所以 <i>f</i>(<i>x</i>)＝<i>u</i>·<i>Q</i>(<i>x</i>)＋4<sup>5</sup>，餘式 4<sup>5</sup>＝1024。</p>
+          <div class="plain">看到被除式裡藏著除式，就把除式當成一整塊。被除式＝除式＋4，五次方之後只有「4 的五次方」那項不含除式，它就是餘式。</div>
+          <p class="small muted">評分：答案正確 5 分。</p>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">13.</span><span class="tag">3-3 一次近似求近似值</span><span class="src">改編自：北一女 113-1 第二次期中考 第 9 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">設 <i>f</i>(<i>x</i>)＝<i>x</i><sup>3</sup>−4<i>x</i><sup>2</sup>＋3<i>x</i>＋7，則 <i>f</i>(2.01) 四捨五入到小數點後第二位的近似值為 ＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：4.99</p>
+          <p>用 2 做連續綜合除法：<i>f</i>(<i>x</i>)＝(<i>x</i>−2)<sup>3</sup>＋2(<i>x</i>−2)<sup>2</sup>−(<i>x</i>−2)＋5。<br><i>f</i>(2.01)＝0.000001＋0.0002−0.01＋5＝4.990201 ≈ 4.99。</p>
+          <div class="plain">先展開成 (<i>x</i>−2) 的多項式，代 0.01 進去，三次方、二次方都很小。一次近似 −0.01＋5＝4.99 已經夠用，二次項 0.0002 不影響第二位。</div>
+          <p class="small muted">評分：答案正確 5 分。</p>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">14.</span><span class="tag">3-3 平移與對稱中心</span><span class="src">改編自：北一女 113-1 第二次期中考 第 14 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">三次多項式 <i>f</i>(<i>x</i>) 滿足 <i>f</i>(<i>x</i>＋2)＝<i>x</i><sup>3</sup>＋3<i>x</i><sup>2</sup>−<i>x</i>＋4，則 <i>y</i>＝<i>f</i>(<i>x</i>) 圖形的對稱中心為 ＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：(1, 7)</p>
+          <p>令 <i>g</i>(<i>x</i>)＝<i>f</i>(<i>x</i>＋2)＝<i>x</i><sup>3</sup>＋3<i>x</i><sup>2</sup>−<i>x</i>＋4，中心 <i>x</i>＝−<span class="frac"><span>3</span><span>3</span></span>＝−1，<i>g</i>(−1)＝−1＋3＋1＋4＝7，<i>g</i> 的中心 (−1, 7)。<br><i>f</i>(<i>x</i>)＝<i>g</i>(<i>x</i>−2) 是 <i>g</i> 的圖形向右平移 2，中心變為 (1, 7)。</p>
+          <div class="plain">先找已知那個函數的中心，再想「<i>f</i> 和 <i>g</i> 差了什麼平移」。<i>f</i>(<i>x</i>)＝<i>g</i>(<i>x</i>−2)，括號裡「減 2」是往右 2。常見錯誤是往左移得到 (−3, 7)。</div>
+          <p class="small muted">評分：坐標完全正確 5 分。</p>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">15.</span><span class="tag">3-3 對稱中心應用</span><span class="src">改編自：北一女 113-1 第二次期中考 第 11 題</span><span class="pts">5 分</span></div>
+        <div class="q-stem">某三次函數 <i>y</i>＝<i>f</i>(<i>x</i>) 的首項係數為 1，圖形通過原點，且 <i>A</i>(1, 4)、<i>B</i>(3, 0) 兩點都在圖形上並對稱於圖形的對稱中心。若 <i>C</i>(5, <i>t</i>) 也在圖形上，則 <i>t</i>＝＿＿＿。</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：20</p>
+          <p>對稱中心是 <i>A</i>、<i>B</i> 的中點 (2, 2)。設 <i>f</i>(<i>x</i>)＝(<i>x</i>−2)<sup>3</sup>＋<i>p</i>(<i>x</i>−2)＋2。過 <i>A</i>：−1−<i>p</i>＋2＝4 ⇒ <i>p</i>＝−3。驗證過原點：<i>f</i>(0)＝−8＋6＋2＝0 ✓。<i>t</i>＝<i>f</i>(5)＝27−9＋2＝20。</p>
+          <div class="plain">「兩點對稱於中心」＝「中心是兩點的中點」，一下就拿到 (<i>h</i>, <i>k</i>)。接著只剩 <i>p</i> 要求，代一個點就好；多出來的條件（過原點）拿來檢查。</div>
+          <p class="small muted">評分：答案正確 5 分。</p>
+        </div></details>
+      </div>
+
+      <div class="paper-sec">四、計算題（共 15 分）</div>
+      <p>須寫出完整過程，只寫答案不給分。</p>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">16.</span><span class="tag">3-1 因式定理＋綜合除法</span><span class="src">改編自：北一女 114-1 期末考 選填 A（除法與係數）</span><span class="pts">8 分</span></div>
+        <div class="q-stem">已知 <i>f</i>(<i>x</i>)＝<i>x</i><sup>4</sup>＋<i>ax</i><sup>3</sup>−<i>x</i><sup>2</sup>＋<i>bx</i>＋6 可被 <i>x</i><sup>2</sup>−3<i>x</i>＋2 整除。(1) 求 <i>a</i>、<i>b</i>。（4 分）(2) 將 <i>f</i>(<i>x</i>) 因式分解，並求 <i>f</i>(<i>x</i>)＝0 的所有實根。（4 分）</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：(1) <i>a</i>＝−1、<i>b</i>＝−5　(2) <i>f</i>(<i>x</i>)＝(<i>x</i>−1)(<i>x</i>−2)(<i>x</i><sup>2</sup>＋2<i>x</i>＋3)，實根 1、2</p>
+          <p>(1) <i>x</i><sup>2</sup>−3<i>x</i>＋2＝(<i>x</i>−1)(<i>x</i>−2)，由因式定理 <i>f</i>(1)＝<i>f</i>(2)＝0：<br><i>f</i>(1)＝1＋<i>a</i>−1＋<i>b</i>＋6＝0 ⇒ <i>a</i>＋<i>b</i>＝−6；<br><i>f</i>(2)＝16＋8<i>a</i>−4＋2<i>b</i>＋6＝0 ⇒ 4<i>a</i>＋<i>b</i>＝−9。<br>相減得 3<i>a</i>＝−3，<i>a</i>＝−1，<i>b</i>＝−5。<br>(2) <i>f</i>(<i>x</i>)＝<i>x</i><sup>4</sup>−<i>x</i><sup>3</sup>−<i>x</i><sup>2</sup>−5<i>x</i>＋6，除以 <i>x</i><sup>2</sup>−3<i>x</i>＋2 得商 <i>x</i><sup>2</sup>＋2<i>x</i>＋3（綜合除法：1, −1, −1, −5, 6 除以 <i>x</i>−1 得 1, 0, −1, −6，餘 0；再除以 <i>x</i>−2 得 1, 2, 3，餘 0）。<br>驗算：(<i>x</i><sup>2</sup>−3<i>x</i>＋2)(<i>x</i><sup>2</sup>＋2<i>x</i>＋3)＝<i>x</i><sup>4</sup>−<i>x</i><sup>3</sup>−<i>x</i><sup>2</sup>−5<i>x</i>＋6 ✓。<br><i>x</i><sup>2</sup>＋2<i>x</i>＋3 的判別式 4−12＝−8 &lt; 0，無實根。故實根只有 1、2。</p>
+          <p class="small muted">評分：(1) 列出兩條方程式 2 分、解出 <i>a</i>、<i>b</i> 2 分；(2) 正確商式 2 分、說明二次因式無實根並寫出實根 2 分。</p>
+          <div class="plain">「被二次式整除」先把二次式分解，就變成兩個「是因式」的條件。最後剩下的二次式要用判別式說明為什麼沒有實根，不能只寫「無解」。</div>
+        </div></details>
+      </div>
+
+      <div class="q">
+        <div class="q-head"><span class="q-no">17.</span><span class="tag">3-3 三次函數圖形</span><span class="src">改編自：北一女 113-1 第二次期中考 第 3 題、114-1 期末考 選填 F</span><span class="pts">7 分</span></div>
+        <div class="q-stem">設 <i>f</i>(<i>x</i>)＝<i>x</i><sup>3</sup>＋3<i>x</i><sup>2</sup>−<i>x</i>−1。(1) 將 <i>f</i>(<i>x</i>) 寫成 (<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i> 的形式。（3 分）(2) 寫出對稱中心，以及圖形在對稱中心附近近似的直線方程式。（2 分）(3) <i>y</i>＝<i>f</i>(<i>x</i>) 的圖形能否由 <i>y</i>＝<i>x</i><sup>3</sup> 平移得到？說明理由。（2 分）</div>
+        <details><summary>看答案與解析</summary><div class="explain">
+          <p class="ans">答案：(1) <i>f</i>(<i>x</i>)＝(<i>x</i>＋1)<sup>3</sup>−4(<i>x</i>＋1)＋2　(2) 中心 (−1, 2)，<i>y</i>＝−4<i>x</i>−2　(3) 不能</p>
+          <p>(1) <i>h</i>＝−<span class="frac"><span>3</span><span>3</span></span>＝−1。用 −1 連續綜合除法：<br>1, 3, −1, −1 → 1, 2, −3, <strong>2</strong>；1, 2, −3 → 1, 1, <strong>−4</strong>；1, 1 → 1, <strong>0</strong>。<br>故 <i>f</i>(<i>x</i>)＝(<i>x</i>＋1)<sup>3</sup>＋0·(<i>x</i>＋1)<sup>2</sup>−4(<i>x</i>＋1)＋2。<br>(2) 對稱中心 (−1, 2)；中心附近 <i>y</i> ≈ −4(<i>x</i>＋1)＋2＝−4<i>x</i>−2。<br>(3) <i>p</i>＝−4 ≠ 0。<i>y</i>＝<i>x</i><sup>3</sup> 平移後必為 <i>y</i>＝(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>k</i>（<i>p</i>＝0），在中心附近貼近水平線；而 <i>f</i> 在中心附近像斜率 −4 的直線，形狀不同，所以不能。</p>
+          <p class="small muted">評分：(1) 展開式正確 3 分（<i>h</i> 正確給 1 分）；(2) 中心與直線各 1 分；(3) 結論與理由 2 分（只寫結論給 1 分）。</p>
+          <div class="plain">配成中心式的步驟跟二次函數配方是同一個精神，只是改用連續綜合除法。判斷能不能平移，就看 <i>p</i> 是不是 0。</div>
+        </div></details>
+      </div>
+    </div>
+
+    <h3>考後檢討</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>得分</th><th>建議</th></tr></thead>
+      <tbody>
+        <tr><td>85 分以上</td><td>觀念很穩。把錯的題目重算一次，再挑北一女 113-1 第二次期中考原卷（跳過不等式題）計時練習。</td></tr>
+        <tr><td>65–84 分</td><td>計算細節要加強：回「公式套用」把對應方法的步驟再走一次，特別是連續綜合除法與 log 的「借 1」。</td></tr>
+        <tr><td>65 分以下</td><td>先回「範圍重點整理」把四節重讀一遍，再做「考古題與白話解析」1–25 題，最後再寫一次這份模擬卷。</td></tr>
+      </tbody>
+    </table></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>錯的題號</th><th>對應章節</th><th>回去看</th></tr></thead>
+      <tbody>
+        <tr><td>5、6、9、10</td><td>2-2 常用對數</td><td>重點整理 2-2 第四、五點；公式套用 1～3</td></tr>
+        <tr><td>3、7、11、12、16</td><td>3-1 多項式的運算與應用</td><td>重點整理 3-1；公式套用 4～6</td></tr>
+        <tr><td>1、2、8</td><td>3-2 簡單多項式函數</td><td>重點整理 3-2；公式套用 7</td></tr>
+        <tr><td>4、13、14、15、17</td><td>3-3 多項式函數的圖形</td><td>重點整理 3-3；公式套用 8</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ================= 公式套用 ================= -->
+  <section class="panel" id="apply" hidden>
+    <h2>公式套用</h2>
+    <p class="muted">8 個最常考的方法，每個都是「看到題目 → 判斷用哪招 → 代入 → 算出」。看完示範一定要自己寫「換你試試」。</p>
+
+    <h3>1. 求位數與首位數字（2-2）</h3>
+    <div class="box tip"><span class="label">什麼時候用</span><p>題目問「<i>a</i><sup><i>n</i></sup> 是幾位數」「最高位數字是多少」。</p></div>
+    <p><strong>例：</strong>2<sup>100</sup> 是幾位數？首位數字？（log 2 ≈ 0.3010）</p>
+    <ol class="steps">
+      <li>取 log：log 2<sup>100</sup>＝100×0.3010＝30.10。</li>
+      <li>拆成整數＋小數：30＋0.10。</li>
+      <li>整數部分 30 ⇒ 31 位數。</li>
+      <li>小數 0.10 夾在 log 1＝0 與 log 2＝0.3010 之間 ⇒ 首位數字 1。</li>
+    </ol>
+    <div class="q">
+      <div class="q-head"><span class="q-no">換你試試 1</span><span class="tag">2-2</span></div>
+      <div class="q-stem">5<sup>30</sup> 是幾位數？首位數字是多少？（log 2 ≈ 0.3010、log 3 ≈ 0.4771）</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：21 位數，首位數字 9</p>
+        <p>log 5＝1−0.3010＝0.6990，30×0.6990＝20.97＝20＋0.97。整數 20 ⇒ 21 位。log 9＝2×0.4771＝0.9542 ≤ 0.97 &lt; 1 ⇒ 首位 9。</p>
+        <div class="plain">小數部分很接近 1，首位數字就很大。要比到 log 9，記得 log 9＝2 log 3。</div>
+      </div></details>
+    </div>
+
+    <h3>2. 小數點後第幾位開始不為 0（2-2）</h3>
+    <div class="box tip"><span class="label">什麼時候用</span><p>底數小於 1 的次方，例如 (0.3)<sup>10</sup>、(<span class="frac"><span>1</span><span>3</span></span>)<sup>20</sup>。</p></div>
+    <p><strong>例：</strong>(0.3)<sup>10</sup> 從小數點後第幾位開始不為 0？該位數字為何？</p>
+    <ol class="steps">
+      <li>log 0.3＝log 3−1＝−0.5229，乘 10 得 −5.229。</li>
+      <li>借 1：−5.229＝−6＋0.771（小數部分要在 0～1 之間）。</li>
+      <li>−6 ⇒ 小數點後第 6 位開始不為 0。</li>
+      <li>log 5＝0.6990 ≤ 0.771 &lt; 0.7781＝log 6 ⇒ 該位數字 5（實際 0.0000059049）。</li>
+    </ol>
+    <div class="q">
+      <div class="q-head"><span class="q-no">換你試試 2</span><span class="tag">2-2</span></div>
+      <div class="q-stem">(0.2)<sup>15</sup> 從小數點後第幾位開始出現不為 0 的數字？那個數字是多少？</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：第 11 位，數字 3</p>
+        <p>log 0.2＝0.3010−1＝−0.6990，×15＝−10.485＝−11＋0.515。第 11 位開始不為 0。log 3＝0.4771 ≤ 0.515 &lt; 0.6020＝log 4 ⇒ 數字 3。（實際 0.2<sup>15</sup> ≈ 3.2768×10<sup>−11</sup>。）</p>
+        <div class="plain">−10.485 不要看成第 10 位！借 1 變 −11＋0.515，才是正確的拆法。</div>
+      </div></details>
+    </div>
+
+    <h3>3. 成長／衰減「至少幾次」（2-2）</h3>
+    <div class="box tip"><span class="label">什麼時候用</span><p>每次變成固定倍數，問至少多久才超過或低於某個量。</p></div>
+    <p><strong>例：</strong>每年剩 0.8 倍，至少幾年會少於原本的 <span class="frac"><span>1</span><span>10</span></span>？</p>
+    <ol class="steps">
+      <li>列式：0.8<sup><i>n</i></sup> &lt; 0.1。</li>
+      <li>取 log：<i>n</i>×log 0.8 &lt; −1，log 0.8＝3 log 2−1＝−0.097。</li>
+      <li>除以負數不等號變向：<i>n</i> &gt; 1 ÷ 0.097 ≈ 10.31。</li>
+      <li>取最小整數：<i>n</i>＝11。</li>
+    </ol>
+    <div class="q">
+      <div class="q-head"><span class="q-no">換你試試 3</span><span class="tag">2-2</span></div>
+      <div class="q-stem">某種細胞每小時分裂一次，數量變成 2 倍。從 1 個細胞開始，至少經過幾小時，數量會超過 10<sup>10</sup> 個？（log 2 ≈ 0.3010）</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：34 小時</p>
+        <p>2<sup><i>n</i></sup> &gt; 10<sup>10</sup> ⇒ 0.3010<i>n</i> &gt; 10 ⇒ <i>n</i> &gt; 33.2…，最小整數 34。（驗算：2<sup>33</sup> ≈ 8.6×10<sup>9</sup> 還不到，2<sup>34</sup> ≈ 1.7×10<sup>10</sup> 超過。）</p>
+        <div class="plain">2 的次方長很快：每 10 次方大約乘上 1000（2<sup>10</sup>＝1024）。0.3010<i>n</i> &gt; 10 解出來 33.2，要無條件進位。</div>
+      </div></details>
+    </div>
+
+    <h3>4. 餘式定理（3-1）</h3>
+    <div class="box tip"><span class="label">什麼時候用</span><p>除式是一次式 <i>x</i>−<i>a</i> 或 <i>ax</i>−<i>b</i>，只問餘式。</p></div>
+    <p><strong>例：</strong><i>x</i><sup>101</sup>＋101 除以 2026<i>x</i>＋2026 的餘式。</p>
+    <ol class="steps">
+      <li>除式＝0 ⇒ 2026(<i>x</i>＋1)＝0 ⇒ <i>x</i>＝−1。</li>
+      <li>代入被除式：(−1)<sup>101</sup>＋101。</li>
+      <li>算出：−1＋101＝100。</li>
+    </ol>
+    <div class="q">
+      <div class="q-head"><span class="q-no">換你試試 4</span><span class="tag">3-1</span></div>
+      <div class="q-stem">求 <i>f</i>(<i>x</i>)＝4<i>x</i><sup>3</sup>−2<i>x</i><sup>2</sup>＋<i>x</i>＋5 除以 2<i>x</i>−1 的餘式。</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：<span class="frac"><span>11</span><span>2</span></span></p>
+        <p><i>f</i>(<span class="frac"><span>1</span><span>2</span></span>)＝4×<span class="frac"><span>1</span><span>8</span></span>−2×<span class="frac"><span>1</span><span>4</span></span>＋<span class="frac"><span>1</span><span>2</span></span>＋5＝<span class="frac"><span>1</span><span>2</span></span>−<span class="frac"><span>1</span><span>2</span></span>＋<span class="frac"><span>1</span><span>2</span></span>＋5＝<span class="frac"><span>11</span><span>2</span></span>。</p>
+        <div class="plain">除以 2<i>x</i>−1 代的是 <i>x</i>＝<span class="frac"><span>1</span><span>2</span></span>，不是 1 也不是 2。餘式可以是分數。</div>
+      </div></details>
+    </div>
+
+    <h3>5. 除以二次式的餘式（3-1）</h3>
+    <div class="box tip"><span class="label">什麼時候用</span><p>已知除以兩個一次式的餘式，求除以它們乘積的餘式。</p></div>
+    <ol class="steps">
+      <li>寫除法原理：<i>f</i>(<i>x</i>)＝(<i>x</i>−<i>a</i>)(<i>x</i>−<i>b</i>)<i>Q</i>(<i>x</i>)＋<i>px</i>＋<i>q</i>。</li>
+      <li>代 <i>x</i>＝<i>a</i>：<i>pa</i>＋<i>q</i>＝<i>f</i>(<i>a</i>)。</li>
+      <li>代 <i>x</i>＝<i>b</i>：<i>pb</i>＋<i>q</i>＝<i>f</i>(<i>b</i>)。</li>
+      <li>解聯立得 <i>p</i>、<i>q</i>。</li>
+    </ol>
+    <div class="q">
+      <div class="q-head"><span class="q-no">換你試試 5</span><span class="tag">3-1</span></div>
+      <div class="q-stem"><i>f</i>(<i>x</i>) 除以 <i>x</i>−2 餘 5，除以 <i>x</i>＋1 餘 −1，求 <i>f</i>(<i>x</i>) 除以 (<i>x</i>−2)(<i>x</i>＋1) 的餘式。</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：2<i>x</i>＋1</p>
+        <p>2<i>p</i>＋<i>q</i>＝5，−<i>p</i>＋<i>q</i>＝−1，相減 3<i>p</i>＝6，<i>p</i>＝2，<i>q</i>＝1。驗算：2·2＋1＝5 ✓、2·(−1)＋1＝−1 ✓。</p>
+        <div class="plain">餘式算出來後，把兩個 <i>x</i> 值代回餘式檢查，10 秒就能確認對不對。</div>
+      </div></details>
+    </div>
+
+    <h3>6. 因式定理求係數（3-1）</h3>
+    <div class="box tip"><span class="label">什麼時候用</span><p>題目說「某某是因式」「可被某某整除」，要求未知係數。</p></div>
+    <ol class="steps">
+      <li>把除式分解成一次因式（例 <i>x</i><sup>2</sup>−3<i>x</i>＋2＝(<i>x</i>−1)(<i>x</i>−2)）。</li>
+      <li>每個因式給一條「<i>f</i>(根)＝0」。</li>
+      <li>解聯立求係數。</li>
+      <li>（若要分解）用綜合除法把已知因式除掉，看剩下的式子。</li>
+    </ol>
+    <div class="q">
+      <div class="q-head"><span class="q-no">換你試試 6</span><span class="tag">3-1</span></div>
+      <div class="q-stem">若 <i>x</i>−1 與 <i>x</i>−2 都是 <i>x</i><sup>3</sup>＋<i>ax</i><sup>2</sup>＋<i>bx</i>＋6 的因式，求 <i>a</i>、<i>b</i>，並把此多項式因式分解。</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：<i>a</i>＝0、<i>b</i>＝−7；<i>x</i><sup>3</sup>−7<i>x</i>＋6＝(<i>x</i>−1)(<i>x</i>−2)(<i>x</i>＋3)</p>
+        <p><i>f</i>(1)＝7＋<i>a</i>＋<i>b</i>＝0；<i>f</i>(2)＝14＋4<i>a</i>＋2<i>b</i>＝0 ⇒ 2<i>a</i>＋<i>b</i>＝−7。相減得 <i>a</i>＝0，<i>b</i>＝−7。三根乘積：常數項 6＝−(1)(2)(<i>r</i>) ⇒ <i>r</i>＝−3，第三個因式 <i>x</i>＋3。</p>
+        <div class="plain"><i>a</i>＝0 代表沒有 <i>x</i>² 項，綜合除法要記得補 0：1, 0, −7, 6。</div>
+      </div></details>
+    </div>
+
+    <h3>7. 二次函數區間最值（3-2）</h3>
+    <div class="box tip"><span class="label">什麼時候用</span><p>二次函數加上 <i>x</i> 的範圍，問最大、最小值。</p></div>
+    <ol class="steps">
+      <li>配方：<i>y</i>＝<i>a</i>(<i>x</i>−<i>h</i>)<sup>2</sup>＋<i>k</i>。</li>
+      <li>看頂點 <i>h</i> 在不在範圍內。</li>
+      <li>在範圍內：頂點給一個極值（<i>a</i>&gt;0 最小、<i>a</i>&lt;0 最大）；另一個極值比較兩端點。</li>
+      <li>不在範圍內：兩端點分別代入比大小。</li>
+    </ol>
+    <div class="q">
+      <div class="q-head"><span class="q-no">換你試試 7</span><span class="tag">3-2</span></div>
+      <div class="q-stem">當 0 ≤ <i>x</i> ≤ 4 時，<i>y</i>＝−<i>x</i><sup>2</sup>＋6<i>x</i>−4 的最大值與最小值各為何？</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：最大值 5，最小值 −4</p>
+        <p><i>y</i>＝−(<i>x</i>−3)<sup>2</sup>＋5，開口向下，頂點 <i>x</i>＝3 在範圍內 ⇒ 最大 5。端點 <i>f</i>(0)＝−4、<i>f</i>(4)＝4 ⇒ 最小 −4（0 離 3 較遠）。</p>
+        <div class="plain">開口向下時頂點是山頂（最大），最小值跑到離山頂最遠的端點。</div>
+      </div></details>
+    </div>
+
+    <h3>8. 三次函數對稱中心與一次近似（3-3）</h3>
+    <div class="box tip"><span class="label">什麼時候用</span><p>問對稱中心、圖形在某點附近像哪條直線、<i>f</i>(2.01) 這類近似值。</p></div>
+    <ol class="steps">
+      <li><i>h</i>＝−<span class="frac"><span><i>b</i></span><span>3<i>a</i></span></span>（求近似值時改用題目給的點）。</li>
+      <li>用 <i>h</i> 做連續綜合除法，寫成 <i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>b</i>′(<i>x</i>−<i>h</i>)<sup>2</sup>＋<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i>（中心時 <i>b</i>′＝0）。</li>
+      <li>對稱中心 (<i>h</i>, <i>k</i>)；近似直線 <i>y</i>＝<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i>，記得乘開化簡。</li>
+      <li>求近似值：代 <i>x</i>−<i>h</i>＝很小的數，高次項幾乎是 0。</li>
+    </ol>
+    <div class="q">
+      <div class="q-head"><span class="q-no">換你試試 8</span><span class="tag">3-3</span></div>
+      <div class="q-stem"><i>f</i>(<i>x</i>)＝2<i>x</i><sup>3</sup>−12<i>x</i><sup>2</sup>＋20<i>x</i>−3。求 (1) 對稱中心；(2) 中心附近的近似直線；(3) <i>f</i>(2.01) 四捨五入到小數點後第二位。</div>
+      <details><summary>看答案與解析</summary><div class="explain">
+        <p class="ans">答案：(1) (2, 5)　(2) <i>y</i>＝−4<i>x</i>＋13　(3) 4.96</p>
+        <p><i>h</i>＝<span class="frac"><span>12</span><span>6</span></span>＝2，連續綜合除法得 <i>f</i>(<i>x</i>)＝2(<i>x</i>−2)<sup>3</sup>−4(<i>x</i>−2)＋5。中心 (2, 5)，近似直線 −4(<i>x</i>−2)＋5＝−4<i>x</i>＋13。<i>f</i>(2.01)＝0.000002−0.04＋5＝4.960002 ≈ 4.96。</p>
+        <div class="plain">這題的中心剛好就是要求近似值的點，一次展開三個小題全部解決。</div>
+      </div></details>
+    </div>
+  </section>
+
+  <!-- ================= 考前攻略 ================= -->
+  <section class="panel" id="tips" hidden>
+    <h2>考前讀書計畫（11/16 起算）</h2>
+    <p>第二次段考在 <strong>11/24（二）–11/25（三）</strong>，數學的節次<span class="pending">待公告</span>（去年 114-1 是第一天第 1 節 08:20–09:30，今年可能相同）。如果數學又排在第一天第一節，11/23（一）晚上就要收尾。</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>日期</th><th>數學任務</th><th>建議時間</th></tr></thead>
+      <tbody>
+        <tr><td>11/16（一）</td><td>讀「章節導覽」＋「範圍重點整理」2-2；背 log2、log3、log7 與換算值；做考古題 1–4、13、18–20。</td><td>約 1.5 小時</td></tr>
+        <tr><td>11/17（二）</td><td>公式套用 1–3（位數、小數第幾位、成長衰減）；課本 2-2 例題蓋住答案重算。</td><td>約 1.5 小時</td></tr>
+        <tr><td>11/18（三）</td><td>重點整理 3-1；練綜合除法到不用想；考古題 5–7、14、21–23；公式套用 4–6。</td><td>約 2 小時</td></tr>
+        <tr><td>11/19（四）</td><td>重點整理 3-2；配方、區間最值、看圖判斷係數；考古題 8、9、15、24；公式套用 7。</td><td>約 1.5 小時</td></tr>
+        <tr><td>11/20（五）</td><td>重點整理 3-3（只讀圖形部分）；考古題 10–12、16、17、25；公式套用 8。</td><td>約 1.5 小時</td></tr>
+        <tr><td>11/21（六）</td><td><strong>計時 70 分鐘</strong>寫「模擬段考」，對答案、依考後檢討表回頭補弱點。</td><td>約 2.5 小時</td></tr>
+        <tr><td>11/22（日）</td><td>寫北一女 113-1 第二次期中考原卷（跳過第 10、12、15 題的不等式題）或學校講義綜合題；整理錯題本。</td><td>約 2.5 小時</td></tr>
+        <tr><td>11/23（一）考前一晚</td><td>只看「公式整理」＋錯題本＋下方檢核清單；<strong>不做新難題</strong>。<mark>23:00 前睡</mark>。</td><td>約 1 小時</td></tr>
+        <tr><td>考試當天早上</td><td>口唸一遍：log 值、餘式定理、−<i>b</i>/(2<i>a</i>) 與 −<i>b</i>/(3<i>a</i>)、「負的 log 要借 1」。做 2 題綜合除法暖手。</td><td>15 分鐘</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>70 分鐘時間分配</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>時段</th><th>做什麼</th></tr></thead>
+      <tbody>
+        <tr><td>開始 0–2 分</td><td>劃記班級座號；翻一遍看題數與配分；把考卷給的 log 值抄到題目旁邊。</td></tr>
+        <tr><td>2–20 分</td><td>單選題。一題超過 2 分鐘沒頭緒就先圈起來跳過。</td></tr>
+        <tr><td>20–35 分</td><td>多選題。每個選項獨立判斷，能舉反例就舉反例。</td></tr>
+        <tr><td>35–60 分</td><td>填充與計算題。連續綜合除法寫整齊，計算題寫完整過程。</td></tr>
+        <tr><td>60–70 分</td><td>回頭做跳過的題目、驗算（見下表）、<mark>檢查答案卡劃記</mark>。鐘響停筆，不可提早交卷。</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box warn"><span class="label">考試規則</span><p><strong>不能用計算機</strong>，log 值題目會給，但乘法要自己算（例如 20×0.7781）。答案卡用 <strong>2B 鉛筆</strong>，帶好橡皮擦。</p></div>
+
+    <h2>不用計算機的驗算方法</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>題型</th><th>驗算方法</th></tr></thead>
+      <tbody>
+        <tr><td>位數</td><td>用已知值估：2<sup>10</sup>＝1024≈10<sup>3</sup>，所以 2<sup>50</sup>≈10<sup>15</sup>，16 位合理。</td></tr>
+        <tr><td>首位數字</td><td>確認小數部分落在 [log <i>k</i>, log(<i>k</i>＋1))，並且 0 ≤ 小數 &lt; 1。</td></tr>
+        <tr><td>至少幾年</td><td>把答案 <i>n</i> 和 <i>n</i>−1 都代回去：<i>n</i> 要符合、<i>n</i>−1 要不符合。</td></tr>
+        <tr><td>餘式</td><td>把讓除式為 0 的 <i>x</i> 代回「餘式」，要等於代回原式的值。</td></tr>
+        <tr><td>因式分解</td><td>把因式乘回去，或代 <i>x</i>＝0（常數項）、<i>x</i>＝1（係數和）檢查。</td></tr>
+        <tr><td>連續綜合除法</td><td>對稱中心展開時 (<i>x</i>−<i>h</i>)<sup>2</sup> 係數必為 0；<i>d</i> 必等於 <i>f</i>(<i>h</i>)。</td></tr>
+        <tr><td>二次最值</td><td>頂點 <i>x</i> 代回原式（不用配方式）再算一次。</td></tr>
+      </tbody>
+    </table></div>
+
+    <h2>常見失分原因</h2>
+    <div class="box warn"><span class="label">易錯陷阱</span>
+      <ul>
+        <li>位數答成整數部分（少 1 位）；負的 log 沒有借 1，小數第幾位答錯。</li>
+        <li>log 5、log 6、log 9 沒有用 log2、log3 換算；把 log(<i>a</i>＋<i>b</i>) 拆開。</li>
+        <li>衰減題 log 0.8 是負的，除過去沒變號；「至少幾年」沒有無條件進位。</li>
+        <li>除以 <i>x</i>＋2 代成 <i>x</i>＝2；除以 2<i>x</i>−1 時商沒有除以 2。</li>
+        <li>綜合除法缺項沒補 0。</li>
+        <li>區間最值沒檢查頂點是否在範圍內，或只比一個端點。</li>
+        <li>三次函數中心用成 −<i>b</i>/(2<i>a</i>)；近似直線 <i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i> 沒乘開或乘錯。</li>
+        <li>寫了不考的不等式題浪費時間（若考卷真的出現，以老師公告為準）。</li>
+        <li>多選題漏選、答案卡劃記錯位。</li>
+      </ul>
+    </div>
+
+    <h2>考前一晚必看清單</h2>
+    <ul class="checklist" data-key="math2-final">
+      <li><label><input type="checkbox"><span>能說出 log <i>a</i> 的定義，知道真數要大於 0。</span></label></li>
+      <li><label><input type="checkbox"><span>背熟 log2≈0.3010、log3≈0.4771、log7≈0.8451，會換算 log4、5、6、8、9。</span></label></li>
+      <li><label><input type="checkbox"><span>對數律三條，並知道 log(<i>a</i>＋<i>b</i>) 沒有公式。</span></label></li>
+      <li><label><input type="checkbox"><span>會求 <i>a</i><sup><i>n</i></sup> 的位數與首位數字。</span></label></li>
+      <li><label><input type="checkbox"><span>會求小於 1 的數從小數點後第幾位開始不為 0（負的要借 1）。</span></label></li>
+      <li><label><input type="checkbox"><span>會解成長／衰減「至少幾次」，注意變號與進位。</span></label></li>
+      <li><label><input type="checkbox"><span>綜合除法（含除以 <i>ax</i>−<i>b</i>）、連續綜合除法都會。</span></label></li>
+      <li><label><input type="checkbox"><span>餘式定理、因式定理；除以二次式設 <i>px</i>＋<i>q</i>。</span></label></li>
+      <li><label><input type="checkbox"><span>已知根與函數值，會用因式形式求多項式。</span></label></li>
+      <li><label><input type="checkbox"><span>二次函數配方、頂點、對稱軸、平移、區間最值。</span></label></li>
+      <li><label><input type="checkbox"><span>看圖判斷 <i>a</i>、<i>b</i>、<i>c</i>、判別式的正負。</span></label></li>
+      <li><label><input type="checkbox"><span>三次函數對稱中心 −<i>b</i>/(3<i>a</i>)，會寫成 <i>a</i>(<i>x</i>−<i>h</i>)<sup>3</sup>＋<i>p</i>(<i>x</i>−<i>h</i>)＋<i>k</i>。</span></label></li>
+      <li><label><input type="checkbox"><span>會用一次近似求 <i>f</i>(2.01) 這類近似值。</span></label></li>
+      <li><label><input type="checkbox"><span>知道 <i>p</i>＝0 才能由 <i>y</i>＝<i>ax</i><sup>3</sup> 平移得到；廣域特徵看首項。</span></label></li>
+      <li><label><input type="checkbox"><span>確認考程公告的數學節次，準備好 2B 鉛筆、橡皮擦、黑筆，書包裡不放計算機。</span></label></li>
+    </ul>
+
+    <h2>免費線上資源</h2>
+    <ul>
+      <li><a href="https://www.junyiacademy.org/" target="_blank" rel="noopener">均一教育平台</a>：搜尋「常用對數」「餘式定理」「因式定理」「二次函數」「三次函數」等主題，有影片與練習題。</li>
+      <li><a href="https://cooc.tp.edu.tw/" target="_blank" rel="noopener">臺北酷課雲</a>：臺北市教育局的線上學習平台，有高中數學課程影片。</li>
+      <li><a href="https://adl.edu.tw/" target="_blank" rel="noopener">教育部因材網</a>：知識節點診斷，找出哪個觀念沒弄懂。</li>
+      <li><a href="https://sites.google.com/a/gapps.fg.tp.edu.tw/math/exam" target="_blank" rel="noopener">北一女數學科 段考試題</a>：「高一試題」裡有歷年考卷，113-1 第二次期中考範圍最接近。</li>
+    </ul>
+    <div class="box ok"><span class="label">學長姐的話</span><p>這次範圍的計算量比第一次段考少，但「綜合除法」和「log 借 1」一錯就整題沒分。把這頁 25 題考古題、8 題換你試試和模擬卷做到不看解析也能全對，就準備得很好了！</p></div>
+  </section>
+
+  <footer class="footer">資料來源：陽明高中 115-1 第二次段考範圍表（1112 公告）、學校行事曆（第二次段考 11/24–11/25）、115 學年度教科書版本表；節名參考師大附中 113 學年度高一數學教學進度表（翰林版）。考程節次尚未公告，以學校公告為準。練習題為依範圍自編，模擬卷改編自北一女中公開試題，非陽明高中原始試卷。</footer>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>

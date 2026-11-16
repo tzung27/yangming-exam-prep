@@ -421,3 +421,15 @@ td.mine, th.mine { background: var(--card-red-soft); }
 .sources td a { word-break: break-all; }
 .sources table { min-width: 640px; }
 @media (max-width: 560px) { .table-wrap table { min-width: 520px; } }
+
+/* 第一次 / 第二次段考 切換 */
+.exam-switch {
+  display: inline-flex; border: 1.5px solid var(--ink); border-radius: 999px; overflow: hidden; flex: none;
+  font-size: 13px; font-weight: 700;
+}
+.exam-switch a { text-decoration: none; color: var(--ink); padding: 3px 12px; white-space: nowrap; }
+.exam-switch a + a { border-left: 1.5px solid var(--ink); }
+.exam-switch a[aria-current="true"] { background: var(--ink); color: var(--sheet); }
+.exam-switch a:not([aria-current="true"]):hover { background: var(--paper); }
+:root[data-exam="2"] .brand .seat { border-style: double; border-width: 3px; }
+.pending { color: var(--warn); font-weight: 700; }

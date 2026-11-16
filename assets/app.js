@@ -1,7 +1,9 @@
 /* 共用腳本：導覽列、分頁籤、互動考古題、倒數、檢核清單 */
 (function () {
-  var NAV = [
-    ["index.html", "首頁"],
+  /* 兩次段考各一套頁面：第一次段考用原檔名（math.html），第二次段考加 -2（math-2.html）。
+     首頁例外：index.html 是第二次段考首頁，index-1.html 是第一次段考首頁。 */
+  var NAV1 = [
+    ["index-1.html", "首頁"],
     ["exam.html", "考試日期與規範"],
     ["books.html", "教科書與範圍"],
     "|",
@@ -13,6 +15,22 @@
     ["history.html", "歷史"],
     ["biology.html", "生物"]
   ];
+  var NAV2 = [
+    ["index.html", "首頁"],
+    ["exam-2.html", "考試日期與規範"],
+    ["books-2.html", "教科書與範圍"],
+    "|",
+    ["math-2.html", "數學"],
+    ["chinese-2.html", "國文"],
+    ["writing-2.html", "作文"],
+    ["english-2.html", "英文"],
+    ["physics-2.html", "物理"],
+    ["biology-2.html", "生物"],
+    ["history-2.html", "歷史"],
+    ["geography-2.html", "地理"],
+    ["pe-2.html", "體育"]
+  ];
+  var ONLY2 = { "writing-2.html": 1, "pe-2.html": 1 };  // 第一次段考沒有考的科目
 
   function store(key, val) {
     try {
@@ -23,16 +41,28 @@
 
   /* 首頁連結：本機開檔用 index.html，網站上用 ./ */
   var HOME = location.protocol === "file:" ? "index.html" : "./";
+  var href = function (f) { return f === "index.html" ? HOME : f; };
+
+  var here = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+  if (here.indexOf(".html") < 0) here = "index.html";
+  var isExam2 = here === "index.html" || /-2\.html$/.test(here);
+  var other = isExam2
+    ? (here === "index.html" ? "index-1.html" : ONLY2[here] ? "index-1.html" : here.replace(/-2\.html$/, ".html"))
+    : (here === "index-1.html" ? "index.html" : here.replace(/\.html$/, "-2.html"));
+  var hash = location.hash && /^#(chapters|notes|formula|past|mock|apply|tips)$/.test(location.hash) ? location.hash : "";
 
   /* ---------- nav ---------- */
   var bar = document.getElementById("topbar");
   if (bar) {
-    var here = (location.pathname.split("/").pop() || "index.html").toLowerCase();
-    if (here.indexOf(".html") < 0) here = "index.html";
-    var html = '<div class="topbar-inner"><a class="brand" href="' + HOME + '">陽明高一段考衝刺 <span class="seat">107</span></a><nav class="nav" aria-label="主選單">';
+    var NAV = isExam2 ? NAV2 : NAV1;
+    var html = '<div class="topbar-inner"><a class="brand" href="' + href(isExam2 ? "index.html" : "index-1.html") + '">陽明高一段考衝刺 <span class="seat">107</span></a>' +
+      '<div class="exam-switch" role="group" aria-label="切換段考">' +
+      '<a href="' + href(isExam2 ? other : here) + (isExam2 && !ONLY2[here] ? hash : "") + '"' + (isExam2 ? "" : ' aria-current="true"') + (isExam2 && ONLY2[here] ? ' title="第一次段考沒有考這一科"' : "") + '>第一次段考</a>' +
+      '<a href="' + href(isExam2 ? here : other) + (isExam2 ? "" : hash) + '"' + (isExam2 ? ' aria-current="true"' : "") + '>第二次段考</a></div>' +
+      '<nav class="nav" aria-label="主選單">';
     NAV.forEach(function (n) {
       if (n === "|") { html += '<span class="sep" aria-hidden="true"></span>'; return; }
-      html += '<a href="' + (n[0] === "index.html" ? HOME : n[0]) + '"' + (here === n[0] ? ' aria-current="page"' : "") + ">" + n[1] + "</a>";
+      html += '<a href="' + href(n[0]) + '"' + (here === n[0] ? ' aria-current="page"' : "") + ">" + n[1] + "</a>";
     });
     bar.innerHTML = html + "</nav></div>";
     var setH = function () { document.documentElement.style.setProperty("--topbar-h", bar.offsetHeight + "px"); };
@@ -40,6 +70,7 @@
   }
 
   document.querySelectorAll('a[href="index.html"]').forEach(function (a) { a.setAttribute("href", HOME); });
+  document.documentElement.dataset.exam = isExam2 ? "2" : "1";
 
   /* ---------- tabs ---------- */
   var tabBar = document.querySelector(".tabs");
@@ -168,10 +199,11 @@
     function tick() {
       var ms = target - Date.now();
       var out = el.querySelector(".num"), unit = el.querySelector(".unit");
+      if (ms <= -2 * 864e5) { out.textContent = "已考完"; unit.textContent = el.dataset.doneLabel || "這次段考已經結束"; return; }
       if (ms <= 0) { out.textContent = "考試週"; unit.textContent = "加油，穩穩寫！"; return; }
       var d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5);
       out.innerHTML = d + "<small>天</small>" + h + "<small>小時</small>";
-      unit.textContent = "距離第一節數學開考（10/07 08:20）";
+      unit.textContent = el.dataset.label || "距離第一節開考";
     }
     tick(); setInterval(tick, 60000);
   });
