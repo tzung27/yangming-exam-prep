@@ -433,3 +433,24 @@ td.mine, th.mine { background: var(--card-red-soft); }
 .exam-switch a:not([aria-current="true"]):hover { background: var(--paper); }
 :root[data-exam="2"] .brand .seat { border-style: double; border-width: 3px; }
 .pending { color: var(--warn); font-weight: 700; }
+
+/* 日本交流頁：輸入欄、Wh 計算、地圖、日期卡 */
+.field { display: grid; gap: 2px; font-size: 13px; color: var(--graphite); }
+.field input {
+  font: inherit; font-size: 15px; color: var(--ink); background: var(--sheet);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 5px 8px; width: 100%; min-width: 0;
+}
+.field input:focus-visible { outline: 2px solid var(--card-red); outline-offset: 1px; }
+.fill-row { display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 120px), 1fr)); margin: 10px 0 4px; }
+.wh-calc { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); align-items: end; }
+.wh-out { grid-column: 1 / -1; font-weight: 700; padding: 8px 12px; border-radius: 8px; background: var(--paper); }
+.wh-out.ok { background: var(--ok-soft); color: var(--ok); }
+.wh-out.warn { background: var(--warn-soft); color: var(--warn); }
+.wh-out.bad { background: var(--card-red-soft); color: var(--card-red); }
+.map-figure { margin: 14px 0; }
+.map-figure img { display: block; width: 100%; max-width: 760px; height: auto; border-radius: 12px; border: 1px solid var(--rule); }
+.map-figure figcaption { font-size: 13px; color: var(--graphite); margin-top: 6px; }
+.kana td, .kana th { text-align: center; padding: 6px 4px; }
+.kana td b { display: block; font-family: var(--f-display); font-size: 22px; line-height: 1.2; }
+.kana td span { font-family: var(--f-mono); font-size: 12px; color: var(--graphite); }
+.jp { font-family: "Noto Sans JP", var(--f-body); }

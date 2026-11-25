@@ -13,7 +13,9 @@
     ["physics.html", "物理"],
     ["english.html", "英文"],
     ["history.html", "歷史"],
-    ["biology.html", "生物"]
+    ["biology.html", "生物"],
+    "|",
+    ["japan.html", "日本交流"]
   ];
   var NAV2 = [
     ["index.html", "首頁"],
@@ -28,9 +30,12 @@
     ["biology-2.html", "生物"],
     ["history-2.html", "歷史"],
     ["geography-2.html", "地理"],
-    ["pe-2.html", "體育"]
+    ["pe-2.html", "體育"],
+    "|",
+    ["japan.html", "日本交流"]
   ];
   var ONLY2 = { "writing-2.html": 1, "pe-2.html": 1 };  // 第一次段考沒有考的科目
+  var NEUTRAL = { "japan.html": 1 };                      // 不屬於任何一次段考的頁面
 
   function store(key, val) {
     try {
@@ -45,7 +50,8 @@
 
   var here = (location.pathname.split("/").pop() || "index.html").toLowerCase();
   if (here.indexOf(".html") < 0) here = "index.html";
-  var isExam2 = here === "index.html" || /-2\.html$/.test(here);
+  var neutral = !!NEUTRAL[here];
+  var isExam2 = neutral || here === "index.html" || /-2\.html$/.test(here);
   var other = isExam2
     ? (here === "index.html" ? "index-1.html" : ONLY2[here] ? "index-1.html" : here.replace(/-2\.html$/, ".html"))
     : (here === "index-1.html" ? "index.html" : here.replace(/\.html$/, "-2.html"));
@@ -56,9 +62,11 @@
   if (bar) {
     var NAV = isExam2 ? NAV2 : NAV1;
     var html = '<div class="topbar-inner"><a class="brand" href="' + href(isExam2 ? "index.html" : "index-1.html") + '">陽明高一段考衝刺 <span class="seat">107</span></a>' +
-      '<div class="exam-switch" role="group" aria-label="切換段考">' +
+      (neutral
+        ? '<div class="exam-switch" role="group" aria-label="切換段考"><a href="index-1.html">第一次段考</a><a href="' + href("index.html") + '">第二次段考</a></div>'
+        : '<div class="exam-switch" role="group" aria-label="切換段考">' +
       '<a href="' + href(isExam2 ? other : here) + (isExam2 && !ONLY2[here] ? hash : "") + '"' + (isExam2 ? "" : ' aria-current="true"') + (isExam2 && ONLY2[here] ? ' title="第一次段考沒有考這一科"' : "") + '>第一次段考</a>' +
-      '<a href="' + href(isExam2 ? here : other) + (isExam2 ? "" : hash) + '"' + (isExam2 ? ' aria-current="true"' : "") + '>第二次段考</a></div>' +
+      '<a href="' + href(isExam2 ? here : other) + (isExam2 ? "" : hash) + '"' + (isExam2 ? ' aria-current="true"' : "") + '>第二次段考</a></div>') +
       '<nav class="nav" aria-label="主選單">';
     NAV.forEach(function (n) {
       if (n === "|") { html += '<span class="sep" aria-hidden="true"></span>'; return; }
@@ -191,6 +199,28 @@
     });
     el.querySelector('[data-act="reset"]').addEventListener("click", function () { stop(); left = total; draw(); go.textContent = "開始計時"; });
     draw();
+  });
+
+  /* ---------- 自己填的欄位（例如房號），只存在這台裝置 ---------- */
+  document.querySelectorAll("input[data-save], textarea[data-save]").forEach(function (el) {
+    var key = "janet-field-" + el.dataset.save;
+    var v = store(key);
+    if (typeof v === "string") el.value = v;
+    el.addEventListener("input", function () { store(key, el.value); });
+  });
+
+  /* ---------- 行動電源 Wh 計算 ---------- */
+  document.querySelectorAll(".wh-calc").forEach(function (box) {
+    var mah = box.querySelector("[name=mah]"), volt = box.querySelector("[name=volt]"), out = box.querySelector(".wh-out");
+    function calc() {
+      var a = parseFloat(mah.value), v = parseFloat(volt.value);
+      if (!(a > 0) || !(v > 0)) { out.textContent = "輸入行動電源上標示的 mAh 與電壓"; out.className = "wh-out"; return; }
+      var wh = a * v / 1000, r = Math.round(wh * 10) / 10;
+      if (wh <= 100) { out.textContent = r + " Wh：100 Wh 以下，可放手提行李（每人備用電池最多 2 個）"; out.className = "wh-out ok"; }
+      else if (wh <= 160) { out.textContent = r + " Wh：超過 100 Wh，要航空公司同意才能帶"; out.className = "wh-out warn"; }
+      else { out.textContent = r + " Wh：超過 160 Wh，不能帶上飛機"; out.className = "wh-out bad"; }
+    }
+    mah.addEventListener("input", calc); volt.addEventListener("input", calc); calc();
   });
 
   /* ---------- countdown ---------- */
