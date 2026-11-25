@@ -472,3 +472,23 @@ td.mine, th.mine { background: var(--card-red-soft); }
 .copy-btn:hover { border-color: var(--ink); }
 .line3 td.jp b { font-size: 16px; display: block; }
 .line3 td.jp span { font-family: var(--f-mono); font-size: 13px; color: var(--blue); }
+
+/* 回到頂端 */
+.to-top {
+  position: fixed; z-index: 30;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  width: 52px; height: 52px; border-radius: 50%;
+  display: grid; place-items: center; align-content: center; gap: 0;
+  font: inherit; cursor: pointer;
+  background: var(--card-red); color: var(--sheet);
+  border: 2px solid var(--sheet); box-shadow: var(--shadow), 0 2px 10px rgba(0, 0, 0, .18);
+  transition: transform .15s ease, opacity .2s ease;
+}
+.to-top span { font-size: 20px; line-height: 1; font-weight: 700; }
+.to-top small { font-size: 10px; line-height: 1.1; letter-spacing: .05em; }
+.to-top:hover { transform: translateY(-2px); }
+.to-top:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .to-top { transition: none; } .to-top:hover { transform: none; } }
+@media print { .to-top { display: none; } }
+.to-top[hidden] { display: none; }

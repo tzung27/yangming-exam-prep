@@ -264,6 +264,27 @@
     render();
   });
 
+  /* ---------- 回到頂端（右下角） ---------- */
+  (function () {
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "to-top";
+    btn.setAttribute("aria-label", "回到頂端");
+    btn.innerHTML = '<span aria-hidden="true">↑</span><small>頂端</small>';
+    btn.hidden = true;
+    document.body.appendChild(btn);
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    btn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+      var first = document.querySelector(".brand");
+      if (first) first.focus({ preventScroll: true });
+    });
+    var ticking = false;
+    function update() { btn.hidden = window.scrollY < 400; ticking = false; }
+    window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    update();
+  })();
+
   /* ---------- countdown ---------- */
   document.querySelectorAll("[data-countdown]").forEach(function (el) {
     var target = new Date(el.dataset.countdown).getTime();
