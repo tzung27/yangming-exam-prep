@@ -46,6 +46,7 @@
     <button data-tab="packing">行李檢查清單</button>
     <button data-tab="japanese">日文教學</button>
     <button data-tab="english">常用英文</button>
+    <button data-tab="intro">自我介紹</button>
   </nav>
 
   <!-- ============ 1 航班資訊 / 集合注意事項 ============ -->
@@ -1092,7 +1093,153 @@
     </div>
   </section>
 
-  <footer class="footer">資料來源：臺北市立陽明高中《陽明日本國際教育交流活動 行前手冊》。行程、航班、住宿如有變動，以學校與領隊公告為準。「交流小準備」「寄宿家庭小提醒」「自我介紹」與「常用英文」分頁為本站補充整理。</footer>
+  <!-- ============ 13 自我介紹（本站補充） ============ -->
+  <section class="panel" id="intro" hidden>
+    <h2>自我介紹</h2>
+    <p class="muted">D2 西武台千葉高校、D3 寄宿家庭、D5 三島北高校都會用到。先用「產生器」做出自己的版本（中文、日文＋羅馬拼音、英文三種），再看逐句對照把每句念熟。</p>
+
+    <div class="box intro-builder">
+      <span class="label">自我介紹產生器</span>
+      <p class="small muted">填好名字、選好內容，下面三種語言會一起更新。填的資料只存在你這台手機或電腦，不會上傳。</p>
+      <div class="intro-form">
+        <label class="field">中文名字<input name="zhname" id="intro-zhname" type="text" placeholder="例：王小明" value="王小明"></label>
+        <label class="field">英文名字<input name="enname" id="intro-enname" type="text" placeholder="例：Ming" value="Ming"></label>
+        <label class="field">名字的日文寫法（片假名，可不填）<input name="janame" id="intro-janame" type="text" placeholder="例：ミン" value="ミン" data-fallback="enname"></label>
+        <label class="field">名字的日文拼音（可不填）<input name="jaromaji" id="intro-jaromaji" type="text" placeholder="例：Min" value="Min" data-fallback="enname"></label>
+        <label class="field">興趣<select name="hobby" id="intro-hobby">
+            <option value="0" data-zh="聽音樂" data-ja="音楽を聴くこと" data-r="ongaku o kiku koto" data-en="listening to music" selected>聽音樂</option>
+            <option value="1" data-zh="打籃球" data-ja="バスケットボール" data-r="basukettobooru" data-en="playing basketball">打籃球</option>
+            <option value="2" data-zh="看動畫" data-ja="アニメを見ること" data-r="anime o miru koto" data-en="watching anime">看動畫</option>
+            <option value="3" data-zh="畫畫" data-ja="絵を描くこと" data-r="e o kaku koto" data-en="drawing">畫畫</option>
+            <option value="4" data-zh="閱讀" data-ja="読書" data-r="dokusho" data-en="reading">閱讀</option>
+            <option value="5" data-zh="跳舞" data-ja="ダンス" data-r="dansu" data-en="dancing">跳舞</option>
+            <option value="6" data-zh="打羽球" data-ja="バドミントン" data-r="badominton" data-en="playing badminton">打羽球</option>
+            <option value="7" data-zh="彈鋼琴" data-ja="ピアノを弾くこと" data-r="piano o hiku koto" data-en="playing the piano">彈鋼琴</option>
+            <option value="8" data-zh="拍照" data-ja="写真を撮ること" data-r="shashin o toru koto" data-en="taking photos">拍照</option>
+            <option value="9" data-zh="打電動" data-ja="ゲーム" data-r="geemu" data-en="playing video games">打電動</option>
+            <option value="10" data-zh="旅行" data-ja="旅行" data-r="ryokou" data-en="traveling">旅行</option>
+            <option value="11" data-zh="做料理" data-ja="料理" data-r="ryouri" data-en="cooking">做料理</option>
+            <option value="12" data-zh="唱歌" data-ja="歌うこと" data-r="utau koto" data-en="singing">唱歌</option>
+            <option value="13" data-zh="游泳" data-ja="水泳" data-r="suiei" data-en="swimming">游泳</option>
+          </select></label>
+        <label class="field">社團<select name="club" id="intro-club">
+            <option value="0" data-zh="" data-ja="" data-r="" data-en="" selected>（不說這句）</option>
+            <option value="1" data-zh="熱音社" data-ja="軽音楽部" data-r="Keiongakubu" data-en="pop music club">熱音社</option>
+            <option value="2" data-zh="籃球社" data-ja="バスケットボール部" data-r="Basukettobooru-bu" data-en="basketball club">籃球社</option>
+            <option value="3" data-zh="熱舞社" data-ja="ダンス部" data-r="Dansu-bu" data-en="dance club">熱舞社</option>
+            <option value="4" data-zh="吉他社" data-ja="ギター部" data-r="Gitaa-bu" data-en="guitar club">吉他社</option>
+            <option value="5" data-zh="動漫社" data-ja="アニメ研究部" data-r="Anime kenkyuu-bu" data-en="anime club">動漫社</option>
+            <option value="6" data-zh="管樂社" data-ja="吹奏楽部" data-r="Suisougakubu" data-en="school band">管樂社</option>
+            <option value="7" data-zh="合唱團" data-ja="合唱部" data-r="Gasshoubu" data-en="choir">合唱團</option>
+            <option value="8" data-zh="羽球社" data-ja="バドミントン部" data-r="Badominton-bu" data-en="badminton club">羽球社</option>
+            <option value="9" data-zh="排球社" data-ja="バレーボール部" data-r="Bareebooru-bu" data-en="volleyball club">排球社</option>
+            <option value="10" data-zh="攝影社" data-ja="写真部" data-r="Shashinbu" data-en="photography club">攝影社</option>
+            <option value="11" data-zh="美術社" data-ja="美術部" data-r="Bijutsubu" data-en="art club">美術社</option>
+          </select></label>
+        <label class="field">最喜歡的日本食物<select name="food" id="intro-food">
+            <option value="0" data-zh="壽司" data-ja="お寿司" data-r="osushi" data-en="sushi">壽司</option>
+            <option value="1" data-zh="拉麵" data-ja="ラーメン" data-r="raamen" data-en="ramen" selected>拉麵</option>
+            <option value="2" data-zh="章魚燒" data-ja="たこ焼き" data-r="takoyaki" data-en="takoyaki">章魚燒</option>
+            <option value="3" data-zh="烏龍麵" data-ja="うどん" data-r="udon" data-en="udon">烏龍麵</option>
+            <option value="4" data-zh="天婦羅" data-ja="天ぷら" data-r="tenpura" data-en="tempura">天婦羅</option>
+            <option value="5" data-zh="日式咖哩" data-ja="カレーライス" data-r="karee raisu" data-en="Japanese curry">日式咖哩</option>
+            <option value="6" data-zh="抹茶甜點" data-ja="抹茶のスイーツ" data-r="maccha no suiitsu" data-en="matcha desserts">抹茶甜點</option>
+            <option value="7" data-zh="飯糰" data-ja="おにぎり" data-r="onigiri" data-en="onigiri (rice balls)">飯糰</option>
+          </select></label>
+        <label class="field">推薦的台灣美食・景點<select name="tw" id="intro-tw">
+            <option value="0" data-zh="珍珠奶茶" data-ja="タピオカミルクティー" data-r="tapioka miruku tii" data-en="bubble tea" selected>珍珠奶茶</option>
+            <option value="1" data-zh="夜市" data-ja="夜市" data-r="yoichi" data-en="the night markets">夜市</option>
+            <option value="2" data-zh="小籠包" data-ja="小籠包" data-r="shouronpou" data-en="xiaolongbao (soup dumplings)">小籠包</option>
+            <option value="3" data-zh="牛肉麵" data-ja="牛肉麺" data-r="gyuuniku men" data-en="beef noodles">牛肉麵</option>
+            <option value="4" data-zh="鳳梨酥" data-ja="パイナップルケーキ" data-r="painappuru keeki" data-en="pineapple cakes">鳳梨酥</option>
+            <option value="5" data-zh="台北 101" data-ja="台北101" data-r="Taipei ichi-zero-ichi" data-en="Taipei 101">台北 101</option>
+            <option value="6" data-zh="九份" data-ja="九份" data-r="Kyuufun" data-en="Jiufen">九份</option>
+            <option value="7" data-zh="芒果冰" data-ja="マンゴーかき氷" data-r="mangoo kakigoori" data-en="mango shaved ice">芒果冰</option>
+          </select></label>
+      </div>
+      <p class="small muted">日文名字兩格不填，就直接用英文名字。名字的片假名可以請日文老師或領隊幫忙確認，例如「明」常寫成「ミン」（Min）。</p>
+
+      <div class="intro-out">
+        <div class="intro-card">
+          <header><b>中文</b><button type="button" class="copy-btn" data-copy="#intro-zh">複製</button></header>
+          <p class="say" id="intro-zh" data-template="大家好，我叫 {zhname}，英文名字是 {enname}。我來自台灣台北，是陽明高中一年級的學生。我的興趣是{hobby.zh}。[[我參加{club.zh}。]]日本的食物我最喜歡{food.zh}。我推薦台灣的{tw.zh}，歡迎大家來台灣玩！很開心來到日本，請多多指教！"></p>
+        </div>
+        <div class="intro-card">
+          <header><b>日本語</b><button type="button" class="copy-btn" data-copy="#intro-ja">複製</button></header>
+          <p class="say jp" id="intro-ja" data-template="はじめまして。{janame} です。台湾の台北から来ました。陽明高校の一年生です。趣味は{hobby.ja}です。[[{club.ja}に入っています。]]日本の食べ物では{food.ja}が一番好きです。台湾のおすすめは{tw.ja}です。ぜひ台湾に来てください！日本に来られて、とてもうれしいです。よろしくお願いします。"></p>
+          <p class="romaji" id="intro-r" data-template="Hajimemashite. {jaromaji} desu. Taiwan no Taipei kara kimashita. Youmei koukou no ichinensei desu. Shumi wa {hobby.r} desu. [[{club.r} ni haitte imasu. ]]Nihon no tabemono de wa {food.r} ga ichiban suki desu. Taiwan no osusume wa {tw.r} desu. Zehi Taiwan ni kite kudasai! Nihon ni korarete, totemo ureshii desu. Yoroshiku onegaishimasu."></p>
+        </div>
+        <div class="intro-card">
+          <header><b>English</b><button type="button" class="copy-btn" data-copy="#intro-en">複製</button></header>
+          <p class="say" id="intro-en" data-template="Hi, nice to meet you! My name is {enname}. I&#x27;m from Taipei, Taiwan, and I&#x27;m a first-year student at Yangming High School. I like {hobby.en}. [[I&#x27;m in the {club.en}. ]]My favorite Japanese food is {food.en}. In Taiwan, I recommend {tw.en}, so please come and visit! I&#x27;m very happy to be in Japan. Thank you!"></p>
+        </div>
+      </div>
+    </div>
+
+    <h3>逐句對照（中・日・英）</h3>
+    <p class="muted">日文下面藍色那行是羅馬拼音，＿＿ 換成自己的資料。</p>
+    <div class="table-wrap line3">
+      <table>
+        <thead><tr><th>句子</th><th>中文</th><th>日文（羅馬拼音）</th><th>English</th></tr></thead>
+        <tbody>
+          <tr><td>打招呼</td><td>大家好，很高興認識你們。</td><td class="jp"><b>はじめまして。</b><span>Hajimemashite.</span></td><td>Hi, nice to meet you!</td></tr>
+          <tr><td>名字</td><td>我叫＿＿。</td><td class="jp"><b>＿＿です。</b><span>＿＿ desu.</span></td><td>My name is ＿＿.</td></tr>
+          <tr><td>從哪裡來</td><td>我來自台灣台北。</td><td class="jp"><b>台湾の台北から来ました。</b><span>Taiwan no Taipei kara kimashita.</span></td><td>I&#x27;m from Taipei, Taiwan.</td></tr>
+          <tr><td>學校年級</td><td>我是陽明高中一年級的學生。</td><td class="jp"><b>陽明高校の一年生です。</b><span>Youmei koukou no ichinensei desu.</span></td><td>I&#x27;m a first-year student at Yangming High School.</td></tr>
+          <tr><td>興趣</td><td>我的興趣是＿＿。</td><td class="jp"><b>趣味は＿＿です。</b><span>Shumi wa ＿＿ desu.</span></td><td>I like ＿＿.</td></tr>
+          <tr><td>社團</td><td>我參加＿＿。</td><td class="jp"><b>＿＿に入っています。</b><span>＿＿ ni haitte imasu.</span></td><td>I&#x27;m in the ＿＿.</td></tr>
+          <tr><td>喜歡的日本食物</td><td>日本的食物我最喜歡＿＿。</td><td class="jp"><b>日本の食べ物では＿＿が一番好きです。</b><span>Nihon no tabemono de wa ＿＿ ga ichiban suki desu.</span></td><td>My favorite Japanese food is ＿＿.</td></tr>
+          <tr><td>推薦台灣</td><td>我推薦台灣的＿＿。</td><td class="jp"><b>台湾のおすすめは＿＿です。</b><span>Taiwan no osusume wa ＿＿ desu.</span></td><td>In Taiwan, I recommend ＿＿.</td></tr>
+          <tr><td>邀請</td><td>歡迎大家來台灣玩！</td><td class="jp"><b>ぜひ台湾に来てください！</b><span>Zehi Taiwan ni kite kudasai!</span></td><td>Please come and visit Taiwan!</td></tr>
+          <tr><td>心情</td><td>很開心來到日本。</td><td class="jp"><b>日本に来られて、とてもうれしいです。</b><span>Nihon ni korarete, totemo ureshii desu.</span></td><td>I&#x27;m very happy to be in Japan.</td></tr>
+          <tr><td>結尾</td><td>請多多指教！</td><td class="jp"><b>よろしくお願いします。</b><span>Yoroshiku onegaishimasu.</span></td><td>Thank you!</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>30 秒精簡版</h3>
+    <p class="muted">時間很短、或剛見面打招呼時用。</p>
+    <div class="intro-out">
+      <div class="intro-card"><header><b>中文</b></header><p class="say">大家好，我叫＿＿，來自台灣台北的陽明高中，今年高一。很開心認識大家，請多多指教！</p></div>
+      <div class="intro-card"><header><b>日本語</b></header><p class="say jp">はじめまして。＿＿です。台湾の陽明高校から来ました。高校一年生です。よろしくお願いします。</p><p class="romaji">Hajimemashite. ＿＿ desu. Taiwan no Youmei koukou kara kimashita. Koukou ichinensei desu. Yoroshiku onegaishimasu.</p></div>
+      <div class="intro-card"><header><b>English</b></header><p class="say">Hi! I&#x27;m ＿＿ from Yangming High School in Taipei, Taiwan. I&#x27;m a first-year student. Nice to meet you!</p></div>
+    </div>
+
+    <h3>羅馬拼音怎麼念</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>拼音</th><th>念法</th><th>例子</th></tr></thead>
+        <tbody>
+          <tr><td>ou、oo</td><td>「o」拉長一拍</td><td>koukou（高校）念「扣—扣—」</td></tr>
+          <tr><td>uu、ii、ee、aa</td><td>母音拉長一拍</td><td>raamen（ラーメン）、geemu（ゲーム）</td></tr>
+          <tr><td>desu、masu</td><td>結尾的 u 幾乎不發音</td><td>desu 念「得斯」，kimashita 的 shi 也念得很輕</td></tr>
+          <tr><td>tsu</td><td>像「ㄘ」</td><td>tsu（つ）</td></tr>
+          <tr><td>shi、chi</td><td>像「西」「七」</td><td>shumi（趣味）、ichinensei（一年生）</td></tr>
+          <tr><td>r</td><td>介於「ㄌ」和「ㄖ」之間，舌頭輕輕彈一下</td><td>yoroshiku（よろしく）</td></tr>
+          <tr><td>n（單獨）</td><td>鼻音「ㄣ」，算一拍</td><td>nensei（年生）</td></tr>
+          <tr><td>雙子音（小っ）</td><td>前面停頓一拍</td><td>basukettobooru 的 tt</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>上台小技巧</h3>
+    <ol class="steps">
+      <li><div>開始和結束時都<strong>鞠躬</strong>，說完「よろしくお願いします」再鞠躬一次。</div></li>
+      <li><div>說慢一點、看著對方，忘詞時笑一下、說「すみません」（不好意思）再繼續。</div></li>
+      <li><div>帶一張台灣的照片或一個小禮物，邊介紹邊拿出來，話題會自然打開。</div></li>
+      <li><div>日文說不完整就改用英文，再不行就比手畫腳，對方會很樂意幫你。</div></li>
+      <li><div>出發前對著手機錄音聽一次，日文、英文各念 3 遍就很順了。</div></li>
+    </ol>
+
+    <ul class="checklist" data-key="japan-intro">
+      <li><label><input type="checkbox"><span>用產生器做好自己的版本，並確定日文名字（片假名）</span></label></li>
+      <li><label><input type="checkbox"><span>日文版能不看稿念完</span></label></li>
+      <li><label><input type="checkbox"><span>英文版能不看稿念完</span></label></li>
+      <li><label><input type="checkbox"><span>準備好一張台灣照片或小禮物</span></label></li>
+    </ul>
+  </section>
+
+  <footer class="footer">資料來源：臺北市立陽明高中《陽明日本國際教育交流活動 行前手冊》。行程、航班、住宿如有變動，以學校與領隊公告為準。「交流小準備」「寄宿家庭小提醒」與「常用英文」「自我介紹」分頁為本站補充整理。</footer>
 </main>
 <script src="assets/app.js"></script>
 </body>

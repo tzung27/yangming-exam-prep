@@ -223,6 +223,47 @@
     mah.addEventListener("input", calc); volt.addEventListener("input", calc); calc();
   });
 
+  /* ---------- 自我介紹產生器：選項存在 option 的 data-zh/ja/r/en，模板寫在輸出元素的 data-template ---------- */
+  document.querySelectorAll(".intro-builder").forEach(function (root) {
+    var fields = Array.prototype.slice.call(root.querySelectorAll("input[name], select[name]"));
+    var outs = Array.prototype.slice.call(root.querySelectorAll("[data-template]"));
+    fields.forEach(function (f) {
+      var key = "janet-intro-" + f.name, v = store(key);
+      if (typeof v === "string") f.value = v;
+      f.addEventListener("input", function () { store(key, f.value); render(); });
+      f.addEventListener("change", function () { store(key, f.value); render(); });
+    });
+    function val(token) {
+      var parts = token.split("."), f = root.querySelector('[name="' + parts[0] + '"]');
+      if (!f) return "";
+      if (f.tagName === "SELECT") { var o = f.options[f.selectedIndex]; return o ? (o.dataset[parts[1] || "zh"] || "") : ""; }
+      var v = f.value.trim();
+      if (!v && f.dataset.fallback) { var fb = root.querySelector('[name="' + f.dataset.fallback + '"]'); v = fb ? fb.value.trim() : ""; }
+      return v;
+    }
+    function fill(t) {
+      // [[ ... ]] 片段裡只要有空的欄位，整段省略（例如沒參加社團）
+      t = t.replace(/\[\[([\s\S]*?)\]\]/g, function (_, seg) {
+        var empty = false;
+        seg.replace(/\{([\w.]+)\}/g, function (__, k) { if (!val(k)) empty = true; return ""; });
+        return empty ? "" : seg;
+      });
+      return t.replace(/\{([\w.]+)\}/g, function (_, k) { return val(k) || "＿＿"; }).replace(/\s{2,}/g, " ").trim();
+    }
+    function render() { outs.forEach(function (o) { o.textContent = fill(o.dataset.template); }); }
+    root.querySelectorAll("[data-copy]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var el = root.querySelector(btn.dataset.copy), text = el ? el.textContent : "";
+        var done = function () { var t = btn.textContent; btn.textContent = "已複製"; setTimeout(function () { btn.textContent = t; }, 1500); };
+        try {
+          navigator.clipboard.writeText(text).then(done, function () { selectText(el); });
+        } catch (e) { selectText(el); }
+      });
+    });
+    function selectText(el) { try { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); } catch (e) {} }
+    render();
+  });
+
   /* ---------- countdown ---------- */
   document.querySelectorAll("[data-countdown]").forEach(function (el) {
     var target = new Date(el.dataset.countdown).getTime();

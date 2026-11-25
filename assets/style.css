@@ -454,3 +454,21 @@ td.mine, th.mine { background: var(--card-red-soft); }
 .kana td b { display: block; font-family: var(--f-display); font-size: 22px; line-height: 1.2; }
 .kana td span { font-family: var(--f-mono); font-size: 12px; color: var(--graphite); }
 .jp { font-family: "Noto Sans JP", var(--f-body); }
+
+/* 自我介紹產生器 */
+.intro-form { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+.field select {
+  font: inherit; font-size: 15px; color: var(--ink); background: var(--sheet);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 5px 8px; width: 100%; min-width: 0;
+}
+.intro-out { display: grid; gap: 12px; margin-top: 14px; }
+.intro-card { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; padding: 14px 16px; min-width: 0; }
+.intro-card header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+.intro-card header b { font-family: var(--f-display); font-size: 17px; }
+.intro-card .say { font-size: 17px; line-height: 1.9; margin: 0; }
+.intro-card .say.jp { font-size: 18px; }
+.intro-card .romaji { font-family: var(--f-mono); font-size: 14px; line-height: 1.8; color: var(--blue); margin: 8px 0 0; padding-top: 8px; border-top: 1px dashed var(--rule); }
+.copy-btn { font: inherit; font-size: 13px; cursor: pointer; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 6px; padding: 2px 10px; white-space: nowrap; }
+.copy-btn:hover { border-color: var(--ink); }
+.line3 td.jp b { font-size: 16px; display: block; }
+.line3 td.jp span { font-family: var(--f-mono); font-size: 13px; color: var(--blue); }
